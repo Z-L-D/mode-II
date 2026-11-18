@@ -1,0 +1,2785 @@
+[
+ {
+  "dataset": "ZIT archive (CFG1, 8 steps)",
+  "variant": "as loaded",
+  "rows": 256386,
+  "gens": 487,
+  "layers": 30,
+  "steps": 100,
+  "depth_turning_layers": [
+   0.26,
+   2.95,
+   3.01,
+   4.62,
+   8.17,
+   10.37,
+   12.07,
+   15.33,
+   17.48,
+   18.89,
+   20.06,
+   23.43,
+   25.06
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0313,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "attn": 0,
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.000779,
+     "pos\u2192neg"
+    ],
+    [
+     0.001443,
+     "neg\u2192pos"
+    ],
+    [
+     0.001735,
+     "pos\u2192neg"
+    ],
+    [
+     0.002344,
+     "neg\u2192pos"
+    ],
+    [
+     0.003729,
+     "pos\u2192neg"
+    ],
+    [
+     0.004253,
+     "neg\u2192pos"
+    ],
+    [
+     0.005147,
+     "pos\u2192neg"
+    ],
+    [
+     0.00563,
+     "neg\u2192pos"
+    ],
+    [
+     0.007523,
+     "pos\u2192neg"
+    ],
+    [
+     0.008303,
+     "neg\u2192pos"
+    ],
+    [
+     0.009529,
+     "pos\u2192neg"
+    ],
+    [
+     0.011918,
+     "neg\u2192pos"
+    ],
+    [
+     0.014094,
+     "pos\u2192neg"
+    ],
+    [
+     0.019679,
+     "neg\u2192pos"
+    ],
+    [
+     0.02368,
+     "pos\u2192neg"
+    ],
+    [
+     0.02421,
+     "neg\u2192pos"
+    ],
+    [
+     0.024842,
+     "pos\u2192neg"
+    ],
+    [
+     0.026072,
+     "neg\u2192pos"
+    ],
+    [
+     0.026659,
+     "pos\u2192neg"
+    ],
+    [
+     0.029201,
+     "neg\u2192pos"
+    ],
+    [
+     0.034045,
+     "pos\u2192neg"
+    ],
+    [
+     0.034252,
+     "neg\u2192pos"
+    ],
+    [
+     0.034863,
+     "pos\u2192neg"
+    ],
+    [
+     0.046549,
+     "neg\u2192pos"
+    ],
+    [
+     0.05638,
+     "pos\u2192neg"
+    ]
+   ],
+   "mlp": [
+    [
+     0.000866,
+     "pos\u2192neg"
+    ],
+    [
+     0.001501,
+     "neg\u2192pos"
+    ],
+    [
+     0.003353,
+     "pos\u2192neg"
+    ],
+    [
+     0.004574,
+     "neg\u2192pos"
+    ],
+    [
+     0.007965,
+     "pos\u2192neg"
+    ],
+    [
+     0.010219,
+     "neg\u2192pos"
+    ],
+    [
+     0.013986,
+     "pos\u2192neg"
+    ],
+    [
+     0.015458,
+     "neg\u2192pos"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=2.226, 90% CI [2.186, 3.921] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.695, 90% CI [0.200, 0.707]",
+  "temporal_boundaries": [
+   [
+    8.22,
+    "peak",
+    0.971
+   ],
+   [
+    10.6,
+    "trough",
+    0.962
+   ],
+   [
+    13.49,
+    "peak",
+    0.951
+   ],
+   [
+    22.32,
+    "trough",
+    0.913
+   ],
+   [
+    85.3,
+    "peak",
+    0.341
+   ]
+  ],
+  "rows_without_g": 6
+ },
+ {
+  "dataset": "ZIT archive (CFG1, 8 steps)",
+  "variant": "attn only",
+  "rows": 128196,
+  "gens": 487,
+  "layers": 30,
+  "steps": 100,
+  "depth_turning_layers": [
+   0.41,
+   4.56,
+   5.88,
+   7.56,
+   8.2,
+   10.38,
+   12.08,
+   15.34,
+   17.48,
+   18.89,
+   20.07,
+   23.42,
+   25.14
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0562,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.000779,
+     "pos\u2192neg"
+    ],
+    [
+     0.001443,
+     "neg\u2192pos"
+    ],
+    [
+     0.001735,
+     "pos\u2192neg"
+    ],
+    [
+     0.002344,
+     "neg\u2192pos"
+    ],
+    [
+     0.003729,
+     "pos\u2192neg"
+    ],
+    [
+     0.004253,
+     "neg\u2192pos"
+    ],
+    [
+     0.005147,
+     "pos\u2192neg"
+    ],
+    [
+     0.00563,
+     "neg\u2192pos"
+    ],
+    [
+     0.007523,
+     "pos\u2192neg"
+    ],
+    [
+     0.008303,
+     "neg\u2192pos"
+    ],
+    [
+     0.009529,
+     "pos\u2192neg"
+    ],
+    [
+     0.011918,
+     "neg\u2192pos"
+    ],
+    [
+     0.014094,
+     "pos\u2192neg"
+    ],
+    [
+     0.019679,
+     "neg\u2192pos"
+    ],
+    [
+     0.02368,
+     "pos\u2192neg"
+    ],
+    [
+     0.02421,
+     "neg\u2192pos"
+    ],
+    [
+     0.024842,
+     "pos\u2192neg"
+    ],
+    [
+     0.026072,
+     "neg\u2192pos"
+    ],
+    [
+     0.026659,
+     "pos\u2192neg"
+    ],
+    [
+     0.029201,
+     "neg\u2192pos"
+    ],
+    [
+     0.034045,
+     "pos\u2192neg"
+    ],
+    [
+     0.034252,
+     "neg\u2192pos"
+    ],
+    [
+     0.034863,
+     "pos\u2192neg"
+    ],
+    [
+     0.046549,
+     "neg\u2192pos"
+    ],
+    [
+     0.05638,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=2.226, 90% CI [2.186, 3.921] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.695, 90% CI [0.200, 0.707]",
+  "temporal_boundaries": [
+   [
+    5.01,
+    "peak",
+    0.646
+   ],
+   [
+    10.6,
+    "trough",
+    0.962
+   ],
+   [
+    81.06,
+    "peak",
+    0.412
+   ]
+  ],
+  "rows_without_g": 6
+ },
+ {
+  "dataset": "ZIT archive (CFG1, 8 steps)",
+  "variant": "mlp only",
+  "rows": 128190,
+  "gens": 486,
+  "layers": 30,
+  "steps": 100,
+  "depth_turning_layers": [
+   0.16,
+   2.91,
+   3.04,
+   4.68,
+   7.86,
+   8.26,
+   11.89,
+   12.16,
+   13.65,
+   14.44,
+   15.5,
+   16.78,
+   18.63,
+   20.55,
+   21.16
+  ],
+  "n_depth_turns": 15,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 16,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0086,
+    "pos\u2192neg"
+   ],
+   [
+    0.015,
+    "neg\u2192pos"
+   ],
+   [
+    0.022,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "mlp": [
+    [
+     0.000866,
+     "pos\u2192neg"
+    ],
+    [
+     0.001501,
+     "neg\u2192pos"
+    ],
+    [
+     0.003353,
+     "pos\u2192neg"
+    ],
+    [
+     0.004574,
+     "neg\u2192pos"
+    ],
+    [
+     0.007965,
+     "pos\u2192neg"
+    ],
+    [
+     0.010219,
+     "neg\u2192pos"
+    ],
+    [
+     0.013986,
+     "pos\u2192neg"
+    ],
+    [
+     0.015458,
+     "neg\u2192pos"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "",
+  "temporal_boundaries": [
+   [
+    3.41,
+    "trough",
+    0.801
+   ],
+   [
+    10.61,
+    "peak",
+    0.962
+   ],
+   [
+    48.39,
+    "trough",
+    0.762
+   ]
+  ],
+  "rows_without_g": 6
+ },
+ {
+  "dataset": "ZIB archive (CFG4 pooled, 25 steps)",
+  "variant": "as loaded",
+  "rows": 716040,
+  "gens": 482,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.29,
+   4.63,
+   5.92,
+   6.21,
+   8.02,
+   10.38,
+   12.15,
+   15.52,
+   17.46,
+   18.84,
+   19.92,
+   23.37,
+   25.12
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0499,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "attn": 0,
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.001031,
+     "pos\u2192neg"
+    ],
+    [
+     0.001884,
+     "neg\u2192pos"
+    ],
+    [
+     0.004917,
+     "pos\u2192neg"
+    ],
+    [
+     0.005391,
+     "neg\u2192pos"
+    ],
+    [
+     0.008663,
+     "pos\u2192neg"
+    ],
+    [
+     0.013494,
+     "neg\u2192pos"
+    ],
+    [
+     0.015849,
+     "pos\u2192neg"
+    ],
+    [
+     0.017797,
+     "neg\u2192pos"
+    ],
+    [
+     0.02242,
+     "pos\u2192neg"
+    ],
+    [
+     0.025587,
+     "neg\u2192pos"
+    ],
+    [
+     0.041451,
+     "pos\u2192neg"
+    ],
+    [
+     0.04323,
+     "neg\u2192pos"
+    ],
+    [
+     0.043696,
+     "pos\u2192neg"
+    ],
+    [
+     0.044923,
+     "neg\u2192pos"
+    ],
+    [
+     0.049373,
+     "pos\u2192neg"
+    ],
+    [
+     0.050999,
+     "neg\u2192pos"
+    ],
+    [
+     0.055088,
+     "pos\u2192neg"
+    ],
+    [
+     0.057088,
+     "neg\u2192pos"
+    ],
+    [
+     0.063566,
+     "pos\u2192neg"
+    ],
+    [
+     0.069038,
+     "neg\u2192pos"
+    ],
+    [
+     0.089417,
+     "pos\u2192neg"
+    ]
+   ],
+   "mlp": [
+    [
+     0.001113,
+     "pos\u2192neg"
+    ],
+    [
+     0.00231,
+     "neg\u2192pos"
+    ],
+    [
+     0.007721,
+     "pos\u2192neg"
+    ],
+    [
+     0.008418,
+     "neg\u2192pos"
+    ],
+    [
+     0.011607,
+     "pos\u2192neg"
+    ],
+    [
+     0.012914,
+     "neg\u2192pos"
+    ],
+    [
+     0.016925,
+     "pos\u2192neg"
+    ],
+    [
+     0.022272,
+     "neg\u2192pos"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=4.281, 90% CI [2.152, 5.085] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.216, 90% CI [0.162, 0.727]",
+  "temporal_boundaries": [
+   [
+    6.65,
+    "peak",
+    0.892
+   ],
+   [
+    7.22,
+    "trough",
+    0.881
+   ],
+   [
+    18.29,
+    "peak",
+    0.524
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "ZIB archive (CFG4 pooled, 25 steps)",
+  "variant": "attn only",
+  "rows": 358020,
+  "gens": 482,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.42,
+   4.56,
+   5.82,
+   7.54,
+   8.18,
+   10.42,
+   12.15,
+   15.52,
+   17.45,
+   18.84,
+   19.96,
+   23.37,
+   25.21,
+   27.98
+  ],
+  "n_depth_turns": 14,
+  "depth_argmax_layer": 24,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0591,
+    "pos\u2192neg"
+   ],
+   [
+    0.0621,
+    "neg\u2192pos"
+   ],
+   [
+    0.0794,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.001031,
+     "pos\u2192neg"
+    ],
+    [
+     0.001884,
+     "neg\u2192pos"
+    ],
+    [
+     0.004917,
+     "pos\u2192neg"
+    ],
+    [
+     0.005391,
+     "neg\u2192pos"
+    ],
+    [
+     0.008663,
+     "pos\u2192neg"
+    ],
+    [
+     0.013494,
+     "neg\u2192pos"
+    ],
+    [
+     0.015849,
+     "pos\u2192neg"
+    ],
+    [
+     0.017797,
+     "neg\u2192pos"
+    ],
+    [
+     0.02242,
+     "pos\u2192neg"
+    ],
+    [
+     0.025587,
+     "neg\u2192pos"
+    ],
+    [
+     0.041451,
+     "pos\u2192neg"
+    ],
+    [
+     0.04323,
+     "neg\u2192pos"
+    ],
+    [
+     0.043696,
+     "pos\u2192neg"
+    ],
+    [
+     0.044923,
+     "neg\u2192pos"
+    ],
+    [
+     0.049373,
+     "pos\u2192neg"
+    ],
+    [
+     0.050999,
+     "neg\u2192pos"
+    ],
+    [
+     0.055088,
+     "pos\u2192neg"
+    ],
+    [
+     0.057088,
+     "neg\u2192pos"
+    ],
+    [
+     0.063566,
+     "pos\u2192neg"
+    ],
+    [
+     0.069038,
+     "neg\u2192pos"
+    ],
+    [
+     0.089417,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=4.281, 90% CI [2.152, 5.085] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.216, 90% CI [0.162, 0.727]",
+  "temporal_boundaries": [
+   [
+    17.04,
+    "peak",
+    0.583
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "ZIB archive (CFG4 pooled, 25 steps)",
+  "variant": "mlp only",
+  "rows": 358020,
+  "gens": 482,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.19,
+   4.71,
+   7.73,
+   8.29,
+   13.57,
+   14.44,
+   15.64,
+   17.24,
+   18.61,
+   20.54,
+   21.17,
+   23.86,
+   24.08
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 16,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0136,
+    "pos\u2192neg"
+   ],
+   [
+    0.0176,
+    "neg\u2192pos"
+   ],
+   [
+    0.0188,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "mlp": [
+    [
+     0.001113,
+     "pos\u2192neg"
+    ],
+    [
+     0.00231,
+     "neg\u2192pos"
+    ],
+    [
+     0.007721,
+     "pos\u2192neg"
+    ],
+    [
+     0.008418,
+     "neg\u2192pos"
+    ],
+    [
+     0.011607,
+     "pos\u2192neg"
+    ],
+    [
+     0.012914,
+     "neg\u2192pos"
+    ],
+    [
+     0.016925,
+     "pos\u2192neg"
+    ],
+    [
+     0.022272,
+     "neg\u2192pos"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "",
+  "temporal_boundaries": [
+   [
+    1.12,
+    "peak",
+    0.985
+   ],
+   [
+    13.01,
+    "trough",
+    0.734
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "MOCHI archive (CFG4.5, 30 steps)",
+  "variant": "as loaded",
+  "rows": 691632,
+  "gens": 431,
+  "layers": 48,
+  "steps": 30,
+  "depth_turning_layers": [
+   0.49,
+   1.67,
+   2.8,
+   4.02,
+   5.67,
+   6.56,
+   8.47,
+   11.95,
+   13.78,
+   17.24,
+   22.33,
+   25.61,
+   27.98,
+   29.14,
+   30.59,
+   32.03,
+   33.61,
+   35.73,
+   38.56,
+   39.64,
+   40.1,
+   41.95,
+   44.14,
+   45.69
+  ],
+  "n_depth_turns": 24,
+  "depth_argmax_layer": 34,
+  "depth_argmin_layer": 46,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0491,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.000402,
+     "pos\u2192neg"
+    ],
+    [
+     0.000516,
+     "neg\u2192pos"
+    ],
+    [
+     0.00271,
+     "pos\u2192neg"
+    ],
+    [
+     0.002815,
+     "neg\u2192pos"
+    ],
+    [
+     0.003023,
+     "pos\u2192neg"
+    ],
+    [
+     0.003861,
+     "neg\u2192pos"
+    ],
+    [
+     0.006933,
+     "pos\u2192neg"
+    ],
+    [
+     0.007544,
+     "neg\u2192pos"
+    ],
+    [
+     0.00786,
+     "pos\u2192neg"
+    ],
+    [
+     0.008467,
+     "neg\u2192pos"
+    ],
+    [
+     0.009411,
+     "pos\u2192neg"
+    ],
+    [
+     0.009885,
+     "neg\u2192pos"
+    ],
+    [
+     0.010765,
+     "pos\u2192neg"
+    ],
+    [
+     0.011887,
+     "neg\u2192pos"
+    ],
+    [
+     0.012963,
+     "pos\u2192neg"
+    ],
+    [
+     0.015142,
+     "neg\u2192pos"
+    ],
+    [
+     0.021688,
+     "pos\u2192neg"
+    ],
+    [
+     0.024637,
+     "neg\u2192pos"
+    ],
+    [
+     0.027557,
+     "pos\u2192neg"
+    ],
+    [
+     0.030179,
+     "neg\u2192pos"
+    ],
+    [
+     0.031947,
+     "pos\u2192neg"
+    ],
+    [
+     0.036319,
+     "neg\u2192pos"
+    ],
+    [
+     0.040524,
+     "pos\u2192neg"
+    ],
+    [
+     0.040989,
+     "neg\u2192pos"
+    ],
+    [
+     0.041382,
+     "pos\u2192neg"
+    ],
+    [
+     0.041728,
+     "neg\u2192pos"
+    ],
+    [
+     0.042174,
+     "pos\u2192neg"
+    ],
+    [
+     0.043424,
+     "neg\u2192pos"
+    ],
+    [
+     0.045534,
+     "pos\u2192neg"
+    ],
+    [
+     0.046075,
+     "neg\u2192pos"
+    ],
+    [
+     0.046706,
+     "pos\u2192neg"
+    ],
+    [
+     0.051993,
+     "neg\u2192pos"
+    ],
+    [
+     0.053798,
+     "pos\u2192neg"
+    ],
+    [
+     0.054163,
+     "neg\u2192pos"
+    ],
+    [
+     0.054608,
+     "pos\u2192neg"
+    ],
+    [
+     0.056323,
+     "neg\u2192pos"
+    ],
+    [
+     0.058636,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=6.711, 90% CI [6.554, 6.789] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.049, 90% CI [0.048, 0.050]",
+  "temporal_boundaries": [
+   [
+    21.15,
+    "peak",
+    0.715
+   ]
+  ],
+  "rows_without_g": 73152
+ },
+ {
+  "dataset": "MOCHI archive (CFG1, 100 steps)",
+  "variant": "as loaded",
+  "rows": 288000,
+  "gens": 60,
+  "layers": 48,
+  "steps": 100,
+  "depth_turning_layers": [
+   0.5,
+   1.67,
+   2.86,
+   4.01,
+   5.71,
+   6.46,
+   7.99,
+   11.92,
+   13.8,
+   17.3,
+   22.28,
+   25.34,
+   28.05,
+   29.26,
+   30.51,
+   32.05,
+   33.59,
+   35.78,
+   38.35,
+   39.68,
+   40.15,
+   41.99,
+   44.16,
+   45.69
+  ],
+  "n_depth_turns": 24,
+  "depth_argmax_layer": 34,
+  "depth_argmin_layer": 46,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0113,
+    "pos\u2192neg"
+   ],
+   [
+    0.0116,
+    "neg\u2192pos"
+   ],
+   [
+    0.0202,
+    "pos\u2192neg"
+   ],
+   [
+    0.0204,
+    "neg\u2192pos"
+   ],
+   [
+    0.054,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 5,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.000416,
+     "pos\u2192neg"
+    ],
+    [
+     0.000485,
+     "neg\u2192pos"
+    ],
+    [
+     0.002791,
+     "pos\u2192neg"
+    ],
+    [
+     0.00297,
+     "neg\u2192pos"
+    ],
+    [
+     0.004072,
+     "pos\u2192neg"
+    ],
+    [
+     0.007905,
+     "neg\u2192pos"
+    ],
+    [
+     0.008696,
+     "pos\u2192neg"
+    ],
+    [
+     0.009647,
+     "neg\u2192pos"
+    ],
+    [
+     0.010927,
+     "pos\u2192neg"
+    ],
+    [
+     0.011852,
+     "neg\u2192pos"
+    ],
+    [
+     0.017192,
+     "pos\u2192neg"
+    ],
+    [
+     0.025904,
+     "neg\u2192pos"
+    ],
+    [
+     0.027437,
+     "pos\u2192neg"
+    ],
+    [
+     0.028619,
+     "neg\u2192pos"
+    ],
+    [
+     0.031497,
+     "pos\u2192neg"
+    ],
+    [
+     0.03325,
+     "neg\u2192pos"
+    ],
+    [
+     0.034147,
+     "pos\u2192neg"
+    ],
+    [
+     0.035693,
+     "neg\u2192pos"
+    ],
+    [
+     0.03737,
+     "pos\u2192neg"
+    ],
+    [
+     0.04115,
+     "neg\u2192pos"
+    ],
+    [
+     0.042761,
+     "pos\u2192neg"
+    ],
+    [
+     0.04331,
+     "neg\u2192pos"
+    ],
+    [
+     0.044818,
+     "pos\u2192neg"
+    ],
+    [
+     0.045346,
+     "neg\u2192pos"
+    ],
+    [
+     0.046109,
+     "pos\u2192neg"
+    ],
+    [
+     0.046502,
+     "neg\u2192pos"
+    ],
+    [
+     0.047788,
+     "pos\u2192neg"
+    ],
+    [
+     0.051179,
+     "neg\u2192pos"
+    ],
+    [
+     0.053363,
+     "pos\u2192neg"
+    ],
+    [
+     0.05537,
+     "neg\u2192pos"
+    ],
+    [
+     0.055559,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=6.373, 90% CI [1.426, 9.636] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.038, 90% CI [0.020, 0.190]",
+  "temporal_boundaries": [
+   [
+    68.47,
+    "peak",
+    0.734
+   ],
+   [
+    69.38,
+    "trough",
+    0.726
+   ],
+   [
+    70.42,
+    "peak",
+    0.716
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "SD35M archive (CFG4.5, 40 steps)",
+  "variant": "as loaded",
+  "rows": 460848,
+  "gens": 481,
+  "layers": 24,
+  "steps": 40,
+  "depth_turning_layers": [
+   2.87,
+   5.1,
+   6.63,
+   8.63,
+   9.69,
+   10.34,
+   11.31,
+   12.66,
+   14.41,
+   15.13,
+   16.46,
+   17.74,
+   18.44,
+   20.44,
+   21.19
+  ],
+  "n_depth_turns": 15,
+  "depth_argmax_layer": 3,
+  "depth_argmin_layer": 0,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0178,
+    "pos\u2192neg"
+   ],
+   [
+    0.0196,
+    "neg\u2192pos"
+   ],
+   [
+    0.0765,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.010561,
+     "pos\u2192neg"
+    ],
+    [
+     0.041444,
+     "neg\u2192pos"
+    ],
+    [
+     0.047307,
+     "pos\u2192neg"
+    ],
+    [
+     0.050376,
+     "neg\u2192pos"
+    ],
+    [
+     0.070016,
+     "pos\u2192neg"
+    ],
+    [
+     0.076313,
+     "neg\u2192pos"
+    ],
+    [
+     0.08112,
+     "pos\u2192neg"
+    ],
+    [
+     0.092655,
+     "neg\u2192pos"
+    ],
+    [
+     0.10544,
+     "pos\u2192neg"
+    ],
+    [
+     0.116042,
+     "neg\u2192pos"
+    ],
+    [
+     0.126611,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=4.474, 90% CI [4.124, 4.551] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.841, 90% CI [0.809, 0.850]",
+  "temporal_boundaries": [
+   [
+    2.02,
+    "trough",
+    0.983
+   ],
+   [
+    34.76,
+    "peak",
+    0.311
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "SD35L archive (CFG3.5, 28 steps)",
+  "variant": "as loaded",
+  "rows": 516192,
+  "gens": 486,
+  "layers": 38,
+  "steps": 28,
+  "depth_turning_layers": [
+   1.92,
+   3.74,
+   4.36,
+   7.0,
+   7.0,
+   8.5,
+   9.33,
+   11.48,
+   12.39,
+   13.52,
+   15.0,
+   16.73,
+   17.11,
+   18.44,
+   19.59,
+   20.53,
+   24.12,
+   25.82,
+   27.54,
+   29.44,
+   30.49,
+   31.65,
+   34.31,
+   35.51
+  ],
+  "n_depth_turns": 24,
+  "depth_argmax_layer": 19,
+  "depth_argmin_layer": 35,
+  "beta_layer_cloud_crossings": [
+   [
+    0.023,
+    "pos\u2192neg"
+   ],
+   [
+    0.0426,
+    "neg\u2192pos"
+   ],
+   [
+    0.0735,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.000945,
+     "pos\u2192neg"
+    ],
+    [
+     0.001145,
+     "neg\u2192pos"
+    ],
+    [
+     0.003212,
+     "pos\u2192neg"
+    ],
+    [
+     0.004517,
+     "neg\u2192pos"
+    ],
+    [
+     0.006553,
+     "pos\u2192neg"
+    ],
+    [
+     0.008206,
+     "neg\u2192pos"
+    ],
+    [
+     0.017063,
+     "pos\u2192neg"
+    ],
+    [
+     0.026739,
+     "neg\u2192pos"
+    ],
+    [
+     0.037742,
+     "pos\u2192neg"
+    ],
+    [
+     0.044439,
+     "neg\u2192pos"
+    ],
+    [
+     0.050326,
+     "pos\u2192neg"
+    ],
+    [
+     0.058138,
+     "neg\u2192pos"
+    ],
+    [
+     0.060447,
+     "pos\u2192neg"
+    ],
+    [
+     0.061021,
+     "neg\u2192pos"
+    ],
+    [
+     0.062386,
+     "pos\u2192neg"
+    ],
+    [
+     0.063937,
+     "neg\u2192pos"
+    ],
+    [
+     0.066307,
+     "pos\u2192neg"
+    ],
+    [
+     0.069285,
+     "neg\u2192pos"
+    ],
+    [
+     0.072292,
+     "pos\u2192neg"
+    ],
+    [
+     0.07718,
+     "neg\u2192pos"
+    ],
+    [
+     0.083422,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=3.324, 90% CI [2.962, 3.560] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.072, 90% CI [0.046, 0.212]",
+  "temporal_boundaries": [
+   [
+    20.99,
+    "peak",
+    0.5
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "as loaded",
+  "rows": 60000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.29,
+   4.63,
+   8.19,
+   10.34,
+   12.07,
+   15.33,
+   17.48,
+   18.86,
+   20.17,
+   23.36,
+   25.12
+  ],
+  "n_depth_turns": 11,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.012,
+    "pos\u2192neg"
+   ],
+   [
+    0.0136,
+    "neg\u2192pos"
+   ],
+   [
+    0.0245,
+    "pos\u2192neg"
+   ],
+   [
+    0.0267,
+    "neg\u2192pos"
+   ],
+   [
+    0.0297,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 5,
+  "mean_profile_crossings_as_written": {
+   "attn": 0,
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.00083,
+     "pos\u2192neg"
+    ],
+    [
+     0.001629,
+     "neg\u2192pos"
+    ],
+    [
+     0.001986,
+     "pos\u2192neg"
+    ],
+    [
+     0.002633,
+     "neg\u2192pos"
+    ],
+    [
+     0.004213,
+     "pos\u2192neg"
+    ],
+    [
+     0.00468,
+     "neg\u2192pos"
+    ],
+    [
+     0.005964,
+     "pos\u2192neg"
+    ],
+    [
+     0.006041,
+     "neg\u2192pos"
+    ],
+    [
+     0.008894,
+     "pos\u2192neg"
+    ],
+    [
+     0.009525,
+     "neg\u2192pos"
+    ],
+    [
+     0.010942,
+     "pos\u2192neg"
+    ],
+    [
+     0.014807,
+     "neg\u2192pos"
+    ],
+    [
+     0.018645,
+     "pos\u2192neg"
+    ],
+    [
+     0.022376,
+     "neg\u2192pos"
+    ],
+    [
+     0.026423,
+     "pos\u2192neg"
+    ],
+    [
+     0.028937,
+     "neg\u2192pos"
+    ],
+    [
+     0.030046,
+     "pos\u2192neg"
+    ],
+    [
+     0.030672,
+     "neg\u2192pos"
+    ],
+    [
+     0.033974,
+     "pos\u2192neg"
+    ],
+    [
+     0.035081,
+     "neg\u2192pos"
+    ],
+    [
+     0.04158,
+     "pos\u2192neg"
+    ],
+    [
+     0.043909,
+     "neg\u2192pos"
+    ],
+    [
+     0.052879,
+     "pos\u2192neg"
+    ]
+   ],
+   "mlp": [
+    [
+     0.000677,
+     "pos\u2192neg"
+    ],
+    [
+     0.000807,
+     "neg\u2192pos"
+    ],
+    [
+     0.001357,
+     "pos\u2192neg"
+    ],
+    [
+     0.001666,
+     "neg\u2192pos"
+    ],
+    [
+     0.003271,
+     "pos\u2192neg"
+    ],
+    [
+     0.003817,
+     "neg\u2192pos"
+    ],
+    [
+     0.005367,
+     "pos\u2192neg"
+    ],
+    [
+     0.007236,
+     "neg\u2192pos"
+    ],
+    [
+     0.010457,
+     "pos\u2192neg"
+    ],
+    [
+     0.012528,
+     "neg\u2192pos"
+    ],
+    [
+     0.013543,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=2.402, 90% CI [2.236, 5.056] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.686, 90% CI [0.180, 0.731]",
+  "temporal_boundaries": [
+   [
+    19.36,
+    "peak",
+    0.466
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "attn only",
+  "rows": 30000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.41,
+   4.56,
+   5.84,
+   7.51,
+   8.23,
+   10.37,
+   12.07,
+   15.34,
+   17.48,
+   18.86,
+   20.18,
+   21.99,
+   22.0,
+   23.36,
+   25.18
+  ],
+  "n_depth_turns": 15,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0496,
+    "pos\u2192neg"
+   ],
+   [
+    0.0505,
+    "neg\u2192pos"
+   ],
+   [
+    0.0535,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.00083,
+     "pos\u2192neg"
+    ],
+    [
+     0.001629,
+     "neg\u2192pos"
+    ],
+    [
+     0.001986,
+     "pos\u2192neg"
+    ],
+    [
+     0.002633,
+     "neg\u2192pos"
+    ],
+    [
+     0.004213,
+     "pos\u2192neg"
+    ],
+    [
+     0.00468,
+     "neg\u2192pos"
+    ],
+    [
+     0.005964,
+     "pos\u2192neg"
+    ],
+    [
+     0.006041,
+     "neg\u2192pos"
+    ],
+    [
+     0.008894,
+     "pos\u2192neg"
+    ],
+    [
+     0.009525,
+     "neg\u2192pos"
+    ],
+    [
+     0.010942,
+     "pos\u2192neg"
+    ],
+    [
+     0.014807,
+     "neg\u2192pos"
+    ],
+    [
+     0.018645,
+     "pos\u2192neg"
+    ],
+    [
+     0.022376,
+     "neg\u2192pos"
+    ],
+    [
+     0.026423,
+     "pos\u2192neg"
+    ],
+    [
+     0.028937,
+     "neg\u2192pos"
+    ],
+    [
+     0.030046,
+     "pos\u2192neg"
+    ],
+    [
+     0.030672,
+     "neg\u2192pos"
+    ],
+    [
+     0.033974,
+     "pos\u2192neg"
+    ],
+    [
+     0.035081,
+     "neg\u2192pos"
+    ],
+    [
+     0.04158,
+     "pos\u2192neg"
+    ],
+    [
+     0.043909,
+     "neg\u2192pos"
+    ],
+    [
+     0.052879,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=2.402, 90% CI [2.236, 5.056] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.686, 90% CI [0.180, 0.731]",
+  "temporal_boundaries": [
+   [
+    18.21,
+    "peak",
+    0.527
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "mlp only",
+  "rows": 30000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.2,
+   4.7,
+   7.84,
+   8.29,
+   11.96,
+   12.07,
+   13.63,
+   14.44,
+   15.54,
+   16.86,
+   18.64,
+   20.53,
+   21.18
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 5,
+  "depth_argmin_layer": 16,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0111,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "mlp": [
+    [
+     0.000677,
+     "pos\u2192neg"
+    ],
+    [
+     0.000807,
+     "neg\u2192pos"
+    ],
+    [
+     0.001357,
+     "pos\u2192neg"
+    ],
+    [
+     0.001666,
+     "neg\u2192pos"
+    ],
+    [
+     0.003271,
+     "pos\u2192neg"
+    ],
+    [
+     0.003817,
+     "neg\u2192pos"
+    ],
+    [
+     0.005367,
+     "pos\u2192neg"
+    ],
+    [
+     0.007236,
+     "neg\u2192pos"
+    ],
+    [
+     0.010457,
+     "pos\u2192neg"
+    ],
+    [
+     0.012528,
+     "neg\u2192pos"
+    ],
+    [
+     0.013543,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "",
+  "temporal_boundaries": [
+   [
+    0.69,
+    "peak",
+    0.991
+   ],
+   [
+    12.19,
+    "trough",
+    0.759
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "cond branch, attn only",
+  "rows": 15000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.4,
+   4.56,
+   5.87,
+   7.53,
+   8.24,
+   10.4,
+   12.08,
+   15.36,
+   17.48,
+   18.86,
+   20.14,
+   23.38,
+   25.23
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0524,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.001128,
+     "pos\u2192neg"
+    ],
+    [
+     0.002212,
+     "neg\u2192pos"
+    ],
+    [
+     0.004809,
+     "pos\u2192neg"
+    ],
+    [
+     0.00544,
+     "neg\u2192pos"
+    ],
+    [
+     0.008248,
+     "pos\u2192neg"
+    ],
+    [
+     0.008943,
+     "neg\u2192pos"
+    ],
+    [
+     0.010753,
+     "pos\u2192neg"
+    ],
+    [
+     0.013664,
+     "neg\u2192pos"
+    ],
+    [
+     0.019012,
+     "pos\u2192neg"
+    ],
+    [
+     0.021778,
+     "neg\u2192pos"
+    ],
+    [
+     0.025004,
+     "pos\u2192neg"
+    ],
+    [
+     0.029372,
+     "neg\u2192pos"
+    ],
+    [
+     0.039692,
+     "pos\u2192neg"
+    ],
+    [
+     0.043952,
+     "neg\u2192pos"
+    ],
+    [
+     0.053586,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=3.388, 90% CI [2.266, 8.737] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.238, 90% CI [0.103, 0.706]",
+  "temporal_boundaries": [
+   [
+    18.36,
+    "peak",
+    0.52
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "cond branch, mlp only",
+  "rows": 15000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.2,
+   4.7,
+   7.85,
+   8.28,
+   11.94,
+   12.08,
+   13.64,
+   14.44,
+   15.53,
+   16.83,
+   18.64,
+   20.54,
+   21.17
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 5,
+  "depth_argmin_layer": 16,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0115,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "mlp": [
+    [
+     0.000467,
+     "neg\u2192pos"
+    ],
+    [
+     0.000948,
+     "pos\u2192neg"
+    ],
+    [
+     0.001565,
+     "neg\u2192pos"
+    ],
+    [
+     0.003729,
+     "pos\u2192neg"
+    ],
+    [
+     0.005239,
+     "neg\u2192pos"
+    ],
+    [
+     0.010178,
+     "pos\u2192neg"
+    ],
+    [
+     0.013745,
+     "neg\u2192pos"
+    ],
+    [
+     0.017431,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "",
+  "temporal_boundaries": [
+   [
+    0.39,
+    "peak",
+    0.995
+   ],
+   [
+    12.15,
+    "trough",
+    0.76
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "uncond branch, attn only",
+  "rows": 15000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.41,
+   4.56,
+   5.82,
+   7.49,
+   8.22,
+   10.33,
+   12.07,
+   15.32,
+   17.48,
+   18.86,
+   20.22,
+   21.95,
+   22.03,
+   23.34,
+   25.13
+  ],
+  "n_depth_turns": 15,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.034,
+    "pos\u2192neg"
+   ],
+   [
+    0.0384,
+    "neg\u2192pos"
+   ],
+   [
+    0.0418,
+    "pos\u2192neg"
+   ],
+   [
+    0.044,
+    "neg\u2192pos"
+   ],
+   [
+    0.0527,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 5,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.001418,
+     "pos\u2192neg"
+    ],
+    [
+     0.002072,
+     "neg\u2192pos"
+    ],
+    [
+     0.003681,
+     "pos\u2192neg"
+    ],
+    [
+     0.00471,
+     "neg\u2192pos"
+    ],
+    [
+     0.006333,
+     "pos\u2192neg"
+    ],
+    [
+     0.009285,
+     "neg\u2192pos"
+    ],
+    [
+     0.010983,
+     "pos\u2192neg"
+    ],
+    [
+     0.013359,
+     "neg\u2192pos"
+    ],
+    [
+     0.016816,
+     "pos\u2192neg"
+    ],
+    [
+     0.023047,
+     "neg\u2192pos"
+    ],
+    [
+     0.025594,
+     "pos\u2192neg"
+    ],
+    [
+     0.027719,
+     "neg\u2192pos"
+    ],
+    [
+     0.029061,
+     "pos\u2192neg"
+    ],
+    [
+     0.032222,
+     "neg\u2192pos"
+    ],
+    [
+     0.034394,
+     "pos\u2192neg"
+    ],
+    [
+     0.03646,
+     "neg\u2192pos"
+    ],
+    [
+     0.038004,
+     "pos\u2192neg"
+    ],
+    [
+     0.043822,
+     "neg\u2192pos"
+    ],
+    [
+     0.052098,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=2.476, 90% CI [2.165, 4.211] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.374, 90% CI [0.271, 0.782]",
+  "temporal_boundaries": [
+   [
+    18.06,
+    "peak",
+    0.536
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG4, explicit branches)",
+  "variant": "uncond branch, mlp only",
+  "rows": 15000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.2,
+   4.71,
+   7.83,
+   8.29,
+   11.97,
+   12.05,
+   13.61,
+   14.45,
+   15.55,
+   16.9,
+   18.65,
+   20.52,
+   21.19,
+   23.96,
+   24.02
+  ],
+  "n_depth_turns": 15,
+  "depth_argmax_layer": 5,
+  "depth_argmin_layer": 16,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0109,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "mlp": [
+    [
+     0.000941,
+     "pos\u2192neg"
+    ],
+    [
+     0.00154,
+     "neg\u2192pos"
+    ],
+    [
+     0.005283,
+     "pos\u2192neg"
+    ],
+    [
+     0.006811,
+     "neg\u2192pos"
+    ],
+    [
+     0.009104,
+     "pos\u2192neg"
+    ],
+    [
+     0.012288,
+     "neg\u2192pos"
+    ],
+    [
+     0.013884,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "",
+  "temporal_boundaries": [
+   [
+    0.99,
+    "peak",
+    0.986
+   ],
+   [
+    12.22,
+    "trough",
+    0.758
+   ]
+  ],
+  "rows_without_g": 1
+ },
+ {
+  "dataset": "ZIB R4 (CFG1, cond)",
+  "variant": "as loaded",
+  "rows": 30000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.27,
+   2.93,
+   3.02,
+   4.63,
+   8.16,
+   10.37,
+   12.08,
+   15.35,
+   17.48,
+   18.87,
+   20.09,
+   23.42,
+   25.11
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0108,
+    "pos\u2192neg"
+   ],
+   [
+    0.0118,
+    "neg\u2192pos"
+   ],
+   [
+    0.0321,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "attn": 0,
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.001163,
+     "pos\u2192neg"
+    ],
+    [
+     0.00195,
+     "neg\u2192pos"
+    ],
+    [
+     0.007931,
+     "pos\u2192neg"
+    ],
+    [
+     0.008449,
+     "neg\u2192pos"
+    ],
+    [
+     0.010197,
+     "pos\u2192neg"
+    ],
+    [
+     0.012428,
+     "neg\u2192pos"
+    ],
+    [
+     0.014895,
+     "pos\u2192neg"
+    ],
+    [
+     0.02105,
+     "neg\u2192pos"
+    ],
+    [
+     0.024777,
+     "pos\u2192neg"
+    ],
+    [
+     0.028538,
+     "neg\u2192pos"
+    ],
+    [
+     0.034317,
+     "pos\u2192neg"
+    ],
+    [
+     0.034384,
+     "neg\u2192pos"
+    ],
+    [
+     0.037893,
+     "pos\u2192neg"
+    ],
+    [
+     0.046371,
+     "neg\u2192pos"
+    ],
+    [
+     0.057226,
+     "pos\u2192neg"
+    ]
+   ],
+   "mlp": [
+    [
+     0.000878,
+     "pos\u2192neg"
+    ],
+    [
+     0.001496,
+     "neg\u2192pos"
+    ],
+    [
+     0.003605,
+     "pos\u2192neg"
+    ],
+    [
+     0.004959,
+     "neg\u2192pos"
+    ],
+    [
+     0.006951,
+     "pos\u2192neg"
+    ],
+    [
+     0.011818,
+     "neg\u2192pos"
+    ],
+    [
+     0.014964,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=3.346, 90% CI [2.132, 8.829] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.220, 90% CI [0.084, 0.749]",
+  "temporal_boundaries": [
+   [
+    4.65,
+    "peak",
+    0.929
+   ],
+   [
+    7.94,
+    "trough",
+    0.866
+   ],
+   [
+    19.92,
+    "peak",
+    0.433
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "ZIB R4 (CFG1, cond)",
+  "variant": "attn only",
+  "rows": 15000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.39,
+   4.56,
+   5.88,
+   7.57,
+   8.22,
+   10.39,
+   12.08,
+   15.36,
+   17.48,
+   18.87,
+   20.1,
+   23.42,
+   25.2
+  ],
+  "n_depth_turns": 13,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 1,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0563,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 1,
+  "mean_profile_crossings_as_written": {
+   "attn": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "attn": [
+    [
+     0.001163,
+     "pos\u2192neg"
+    ],
+    [
+     0.00195,
+     "neg\u2192pos"
+    ],
+    [
+     0.007931,
+     "pos\u2192neg"
+    ],
+    [
+     0.008449,
+     "neg\u2192pos"
+    ],
+    [
+     0.010197,
+     "pos\u2192neg"
+    ],
+    [
+     0.012428,
+     "neg\u2192pos"
+    ],
+    [
+     0.014895,
+     "pos\u2192neg"
+    ],
+    [
+     0.02105,
+     "neg\u2192pos"
+    ],
+    [
+     0.024777,
+     "pos\u2192neg"
+    ],
+    [
+     0.028538,
+     "neg\u2192pos"
+    ],
+    [
+     0.034317,
+     "pos\u2192neg"
+    ],
+    [
+     0.034384,
+     "neg\u2192pos"
+    ],
+    [
+     0.037893,
+     "pos\u2192neg"
+    ],
+    [
+     0.046371,
+     "neg\u2192pos"
+    ],
+    [
+     0.057226,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "Outer Ratio g\u2083/g\u2081 \u2014 Bootstrap (n=300) median=3.346, 90% CI [2.132, 8.829] || Interval Split \u0394\u2081/span \u2014 Bootstrap median=0.220, 90% CI [0.084, 0.749]",
+  "temporal_boundaries": [
+   [
+    19.04,
+    "peak",
+    0.484
+   ]
+  ],
+  "rows_without_g": 0
+ },
+ {
+  "dataset": "ZIB R4 (CFG1, cond)",
+  "variant": "mlp only",
+  "rows": 15000,
+  "gens": 20,
+  "layers": 30,
+  "steps": 25,
+  "depth_turning_layers": [
+   0.17,
+   2.89,
+   3.05,
+   4.71,
+   7.84,
+   8.29,
+   11.93,
+   12.1,
+   13.64,
+   14.44,
+   15.51,
+   16.81,
+   18.64,
+   20.55,
+   21.17
+  ],
+  "n_depth_turns": 15,
+  "depth_argmax_layer": 29,
+  "depth_argmin_layer": 16,
+  "beta_layer_cloud_crossings": [
+   [
+    0.0096,
+    "pos\u2192neg"
+   ],
+   [
+    0.0166,
+    "neg\u2192pos"
+   ],
+   [
+    0.0184,
+    "pos\u2192neg"
+   ]
+  ],
+  "n_cloud_crossings": 3,
+  "mean_profile_crossings_as_written": {
+   "mlp": 0
+  },
+  "mean_profile_crossings_no_token_type": {
+   "mlp": [
+    [
+     0.000878,
+     "pos\u2192neg"
+    ],
+    [
+     0.001496,
+     "neg\u2192pos"
+    ],
+    [
+     0.003605,
+     "pos\u2192neg"
+    ],
+    [
+     0.004959,
+     "neg\u2192pos"
+    ],
+    [
+     0.006951,
+     "pos\u2192neg"
+    ],
+    [
+     0.011818,
+     "neg\u2192pos"
+    ],
+    [
+     0.014964,
+     "pos\u2192neg"
+    ]
+   ]
+  },
+  "bootstrap_ratio_no_token_type": "",
+  "temporal_boundaries": [
+   [
+    11.85,
+    "trough",
+    0.769
+   ]
+  ],
+  "rows_without_g": 0
+ }
+]

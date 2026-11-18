@@ -1,0 +1,26 @@
+step,sigma,n_cross,crossings,g_star_first_pos_neg,inside_window
+0,1.0,5,0.00370 pos→neg;0.00430 neg→pos;0.01090 pos→neg;0.01260 neg→pos;0.02320 pos→neg,0.0037,False
+1,0.9863,1,0.01810 pos→neg,0.0181,False
+2,0.9718,1,0.04020 pos→neg,0.0402,True
+3,0.9565,5,0.01370 pos→neg;0.01970 neg→pos;0.05080 pos→neg;0.05200 neg→pos;0.05740 pos→neg,0.0137,True
+4,0.9403,1,0.03370 pos→neg,0.0337,True
+5,0.9231,0,,,True
+6,0.9048,1,0.01630 pos→neg,0.0163,True
+7,0.8852,1,0.01100 pos→neg,0.011,True
+8,0.8644,1,0.00880 pos→neg,0.0088,True
+9,0.8421,3,0.00780 pos→neg;0.01920 neg→pos;0.02180 pos→neg,0.0078,True
+10,0.8182,3,0.00730 pos→neg;0.01780 neg→pos;0.02290 pos→neg,0.0073,True
+11,0.7925,3,0.00700 pos→neg;0.01670 neg→pos;0.02410 pos→neg,0.007,False
+12,0.7647,2,0.00680 pos→neg;0.01650 neg→pos,0.0068,False
+13,0.7347,2,0.00690 pos→neg;0.01670 neg→pos,0.0069,False
+14,0.7021,2,0.00700 pos→neg;0.01600 neg→pos,0.007,False
+15,0.6667,4,0.00320 pos→neg;0.00350 neg→pos;0.00730 pos→neg;0.01720 neg→pos,0.0032,False
+16,0.6279,1,0.00760 pos→neg,0.0076,False
+17,0.5854,3,0.00280 pos→neg;0.00370 neg→pos;0.00800 pos→neg,0.0028,False
+18,0.5385,3,0.00290 pos→neg;0.00370 neg→pos;0.00840 pos→neg,0.0029,False
+19,0.4865,3,0.00290 pos→neg;0.00380 neg→pos;0.00900 pos→neg,0.0029,False
+20,0.4286,3,0.00320 pos→neg;0.00390 neg→pos;0.01000 pos→neg,0.0032,False
+21,0.3636,3,0.00360 pos→neg;0.00420 neg→pos;0.01020 pos→neg,0.0036,False
+22,0.2903,3,0.00440 pos→neg;0.00460 neg→pos;0.01090 pos→neg,0.0044,False
+23,0.2069,1,0.01200 pos→neg,0.012,False
+24,0.1111,1,0.01450 pos→neg,0.0145,False

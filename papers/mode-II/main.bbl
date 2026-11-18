@@ -1,0 +1,491 @@
+\begin{thebibliography}{59}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ando(1979)]{ando1979concavity}
+T.~Ando.
+\newblock Concavity of certain maps on positive definite matrices and
+  applications to {H}adamard products.
+\newblock \emph{Linear Algebra and its Applications}, 26:\penalty0 203--241,
+  1979.
+\newblock \doi{10.1016/0024-3795(79)90179-4}.
+\newblock URL \url{https://doi.org/10.1016/0024-3795(79)90179-4}.
+
+\bibitem[Ashkboos et~al.(2024)Ashkboos, Croci, do~Nascimento, Hoefler, and
+  Hensman]{ashkboos2024slicegpt}
+Saleh Ashkboos, Maximilian~L. Croci, Marcelo~Gennari do~Nascimento, Torsten
+  Hoefler, and James Hensman.
+\newblock {SliceGPT}: Compress large language models by deleting rows and
+  columns.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2401.15024}.
+
+\bibitem[Bhatia(1997)]{bhatia1997matrix}
+Rajendra Bhatia.
+\newblock \emph{Matrix Analysis}, volume 169 of \emph{Graduate Texts in
+  Mathematics}.
+\newblock Springer, New York, 1997.
+\newblock \doi{10.1007/978-1-4612-0653-8}.
+\newblock URL \url{https://link.springer.com/book/10.1007/978-1-4612-0653-8}.
+
+\bibitem[Biroli et~al.(2024)Biroli, Bonnaire, de~Bortoli, and
+  M{\'e}zard]{biroli2024dynamical}
+Giulio Biroli, Tony Bonnaire, Valentin de~Bortoli, and Marc M{\'e}zard.
+\newblock Dynamical regimes of diffusion models.
+\newblock \emph{Nature Communications}, 15:\penalty0 9957, 2024.
+\newblock \doi{10.1038/s41467-024-54281-3}.
+\newblock URL \url{https://www.nature.com/articles/s41467-024-54281-3}.
+
+\bibitem[Bolhuis et~al.(2002)Bolhuis, Chandler, Dellago, and
+  Geissler]{bolhuis2002transition}
+Peter~G. Bolhuis, David Chandler, Christoph Dellago, and Phillip~L. Geissler.
+\newblock Transition path sampling: Throwing ropes over rough mountain passes,
+  in the dark.
+\newblock \emph{Annual Review of Physical Chemistry}, 53:\penalty0 291--318,
+  2002.
+\newblock \doi{10.1146/annurev.physchem.53.082301.113146}.
+\newblock URL \url{https://doi.org/10.1146/annurev.physchem.53.082301.113146}.
+
+\bibitem[Boyd and Vandenberghe(2004)]{boyd2004convex}
+Stephen Boyd and Lieven Vandenberghe.
+\newblock \emph{Convex Optimization}.
+\newblock Cambridge University Press, Cambridge, UK, 2004.
+\newblock URL \url{https://web.stanford.edu/~boyd/cvxbook/}.
+
+\bibitem[Carlen(2010)]{carlen2010trace}
+Eric~A. Carlen.
+\newblock Trace inequalities and quantum entropy: An introductory course.
+\newblock In Robert Sims and Daniel Ueltschi, editors, \emph{Entropy and the
+  Quantum}, volume 529 of \emph{Contemporary Mathematics}. American
+  Mathematical Society, Providence, RI, 2010.
+\newblock \doi{10.1090/conm/529}.
+\newblock URL \url{https://www.ams.org/books/conm/529/}.
+\newblock MR 2681769.
+
+\bibitem[Carlen and Lieb(2008)]{carlen2008minkowski}
+Eric~A. Carlen and Elliott~H. Lieb.
+\newblock A {M}inkowski type trace inequality and strong subadditivity of
+  quantum entropy {II}: Convexity and concavity.
+\newblock \emph{Letters in Mathematical Physics}, 83\penalty0 (2):\penalty0
+  107--126, 2008.
+\newblock \doi{10.1007/s11005-008-0223-1}.
+\newblock URL \url{https://arxiv.org/abs/0710.4167}.
+
+\bibitem[Chen et~al.(2018)Chen, Rubanova, Bettencourt, and
+  Duvenaud]{chen2018neural}
+Ricky T.~Q. Chen, Yulia Rubanova, Jesse Bettencourt, and David Duvenaud.
+\newblock Neural ordinary differential equations.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~31, pages 6571--6583, 2018.
+\newblock URL \url{https://arxiv.org/abs/1806.07366}.
+
+\bibitem[Chi et~al.(2026)Chi, Dao, Nguyen, Van, Le, and Nguyen]{chi2026mta}
+Pham~Khanh Chi, Quoc~Phong Dao, Thuat Nguyen, Linh~Ngo Van, Trung Le, and
+  Thanh~Hong Nguyen.
+\newblock {MTA}: Multi-granular trajectory alignment for large language model
+  distillation.
+\newblock In \emph{Proceedings of the 64th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 32669--32684,
+  San Diego, California, United States, 2026. Association for Computational
+  Linguistics.
+\newblock \doi{10.18653/v1/2026.acl-long.1507}.
+\newblock URL \url{https://aclanthology.org/2026.acl-long.1507/}.
+
+\bibitem[Clark(2026{\natexlab{a}})]{clark2026linear}
+David~G. Clark.
+\newblock Linear equivalence of nonlinear recurrent neural networks,
+  2026{\natexlab{a}}.
+\newblock URL \url{https://arxiv.org/abs/2604.23489}.
+
+\bibitem[Clark(2026{\natexlab{b}})]{clark2026lyapunov}
+David~G. Clark.
+\newblock Lyapunov spectrum of random neural networks, 2026{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2610.12426}.
+
+\bibitem[E(2017)]{e2017proposal}
+Weinan E.
+\newblock A proposal on machine learning via dynamical systems.
+\newblock \emph{Communications in Mathematics and Statistics}, 5\penalty0
+  (1):\penalty0 1--11, 2017.
+\newblock \doi{10.1007/s40304-017-0103-z}.
+\newblock URL \url{https://doi.org/10.1007/s40304-017-0103-z}.
+
+\bibitem[E and Vanden-Eijnden(2006)]{e2006towards}
+Weinan E and Eric Vanden-Eijnden.
+\newblock Towards a theory of transition paths.
+\newblock \emph{Journal of Statistical Physics}, 123\penalty0 (3):\penalty0
+  503--523, 2006.
+\newblock \doi{10.1007/s10955-005-9003-9}.
+\newblock URL \url{https://doi.org/10.1007/s10955-005-9003-9}.
+
+\bibitem[E and Vanden-Eijnden(2010)]{e2010transitionpath}
+Weinan E and Eric Vanden-Eijnden.
+\newblock Transition-path theory and path-finding algorithms for the study of
+  rare events.
+\newblock \emph{Annual Review of Physical Chemistry}, 61:\penalty0 391--420,
+  2010.
+\newblock \doi{10.1146/annurev.physchem.040808.090412}.
+\newblock URL \url{https://doi.org/10.1146/annurev.physchem.040808.090412}.
+
+\bibitem[Falck et~al.(2025)Falck, Pandeva, Zahirnia, Lawrence, Turner, Meeds,
+  Zazo, and Karmalkar]{falck2025fourier}
+Fabian Falck, Teodora Pandeva, Kiarash Zahirnia, Rachel Lawrence, Richard
+  Turner, Edward Meeds, Javier Zazo, and Sushrut Karmalkar.
+\newblock A fourier space perspective on diffusion models.
+\newblock \emph{arXiv preprint arXiv:2505.11278}, 2025.
+
+\bibitem[Gan et~al.(2025)Gan, Zhao, Tu, Chen, Qin, Chen, Harandi, and
+  Lin]{gan2025massive}
+Chaofan Gan, Zicheng Zhao, Yuanpeng Tu, Xi~Chen, Ziran Qin, Tieyuan Chen,
+  Mehrtash Harandi, and Weiyao Lin.
+\newblock Massive activations are the key to local detail synthesis in
+  diffusion transformers, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.11538}.
+
+\bibitem[Gao et~al.(2017)Gao, Trautmann, Yu, Santhanam, Ryu, Shenoy, and
+  Ganguli]{gao2017theory}
+Peiran Gao, Eric Trautmann, Byron Yu, Gopal Santhanam, Stephen Ryu, Krishna
+  Shenoy, and Surya Ganguli.
+\newblock A theory of multineuronal dimensionality, dynamics and measurement.
+\newblock bioRxiv preprint 214262, 2017.
+\newblock URL \url{https://www.biorxiv.org/content/10.1101/214262v2}.
+
+\bibitem[Geshkovski et~al.(2025)Geshkovski, Letrouit, Polyanskiy, and
+  Rigollet]{geshkovski2025mathematical}
+Borjan Geshkovski, Cyril Letrouit, Yury Polyanskiy, and Philippe Rigollet.
+\newblock A mathematical perspective on transformers.
+\newblock \emph{Bulletin of the American Mathematical Society}, 62\penalty0
+  (3):\penalty0 427--479, 2025.
+\newblock URL \url{https://arxiv.org/abs/2312.10794}.
+
+\bibitem[Gong et~al.(2026)Gong, Song, Zhao, Wang, Xu, Guo, and
+  Yang]{gong2026acestep15}
+Junmin Gong, Yulin Song, Wenxiao Zhao, Sen Wang, Shengyuan Xu, Jing Guo, and
+  Xuerui Yang.
+\newblock {ACE-Step 1.5}: Pushing the boundaries of open-source music
+  generation.
+\newblock arXiv:2602.00744, 2026.
+
+\bibitem[Granger and Newbold(1974)]{granger1974spurious}
+Clive W.~J. Granger and Paul Newbold.
+\newblock Spurious regressions in econometrics.
+\newblock \emph{Journal of Econometrics}, 2\penalty0 (2):\penalty0 111--120,
+  1974.
+\newblock \doi{10.1016/0304-4076(74)90034-7}.
+\newblock URL \url{https://doi.org/10.1016/0304-4076(74)90034-7}.
+
+\bibitem[Guillot and Rousset(2013)]{guillot2013dismantling}
+Gilles Guillot and Fran{\c{c}}ois Rousset.
+\newblock Dismantling the {M}antel tests.
+\newblock \emph{Methods in Ecology and Evolution}, 4\penalty0 (4):\penalty0
+  336--344, 2013.
+\newblock \doi{10.1111/2041-210x.12018}.
+\newblock URL \url{https://arxiv.org/abs/1112.0651}.
+
+\bibitem[Handke et~al.(2026)Handke, Stan{\v{c}}evi{\'c}, Koulischer, Demeester,
+  and Ambrogioni]{handke2026entropic}
+Florian Handke, Dejan Stan{\v{c}}evi{\'c}, Felix Koulischer, Thomas Demeester,
+  and Luca Ambrogioni.
+\newblock The entropic signature of class speciation in diffusion models.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2602.09651}.
+
+\bibitem[Harris(2020)]{harris2020nonsense}
+K.~D. Harris.
+\newblock Nonsense correlations in neuroscience.
+\newblock bioRxiv preprint, 2020.
+\newblock URL
+  \url{https://www.biorxiv.org/content/10.1101/2020.11.29.402719v1}.
+
+\bibitem[Ho and Salimans(2022)]{ho2022classifierfree}
+Jonathan Ho and Tim Salimans.
+\newblock Classifier-free diffusion guidance, 2022.
+\newblock URL \url{https://arxiv.org/abs/2207.12598}.
+
+\bibitem[Katok and Hasselblatt(1995)]{katok1995introduction}
+Anatole Katok and Boris Hasselblatt.
+\newblock \emph{Introduction to the Modern Theory of Dynamical Systems},
+  volume~54 of \emph{Encyclopedia of Mathematics and its Applications}.
+\newblock Cambridge University Press, Cambridge, 1995.
+
+\bibitem[Kim et~al.(1991)Kim, Nelson, and Startz]{kim1991mean}
+Myung~Jig Kim, Charles~R. Nelson, and Richard Startz.
+\newblock Mean reversion in stock prices? {A} reappraisal of the empirical
+  evidence.
+\newblock \emph{The Review of Economic Studies}, 58:\penalty0 515--528, 1991.
+\newblock URL \url{https://www.nber.org/papers/w2795}.
+\newblock Also NBER Working Paper 2795 (1988), doi:10.3386/w2795.
+
+\bibitem[Kloeden and Rasmussen(2011)]{kloeden2011nonautonomous}
+Peter~E. Kloeden and Martin Rasmussen.
+\newblock \emph{Nonautonomous Dynamical Systems}, volume 176 of
+  \emph{Mathematical Surveys and Monographs}.
+\newblock American Mathematical Society, Providence, RI, 2011.
+\newblock ISBN 978-0-8218-6871-3.
+\newblock URL \url{https://bookstore.ams.org/SURV/176}.
+
+\bibitem[Kriegeskorte et~al.(2008)Kriegeskorte, Mur, and
+  Bandettini]{kriegeskorte2008representational}
+Nikolaus Kriegeskorte, Marieke Mur, and Peter Bandettini.
+\newblock Representational similarity analysis -- connecting the branches of
+  systems neuroscience.
+\newblock \emph{Frontiers in Systems Neuroscience}, 2:\penalty0 4, 2008.
+\newblock \doi{10.3389/neuro.06.004.2008}.
+\newblock URL
+  \url{https://www.frontiersin.org/articles/10.3389/neuro.06.004.2008/full}.
+
+\bibitem[Kutz et~al.(2016)Kutz, Brunton, Brunton, and Proctor]{kutz2016dynamic}
+J.~Nathan Kutz, Steven~L. Brunton, Bingni~W. Brunton, and Joshua~L. Proctor.
+\newblock \emph{Dynamic Mode Decomposition: Data-Driven Modeling of Complex
+  Systems}.
+\newblock Society for Industrial and Applied Mathematics, Philadelphia, PA,
+  2016.
+\newblock \doi{10.1137/1.9781611974508}.
+\newblock URL \url{https://doi.org/10.1137/1.9781611974508}.
+
+\bibitem[Lancaster et~al.(2018)Lancaster, Iatsenko, Pidde, Ticcinelli, and
+  Stefanovska]{lancaster2018surrogate}
+Gemma Lancaster, Dima Iatsenko, Aleksandra Pidde, Valentina Ticcinelli, and
+  Aneta Stefanovska.
+\newblock Surrogate data for hypothesis testing of physical systems.
+\newblock \emph{Physics Reports}, 748:\penalty0 1--60, 2018.
+\newblock \doi{10.1016/j.physrep.2018.06.001}.
+\newblock URL \url{https://doi.org/10.1016/j.physrep.2018.06.001}.
+
+\bibitem[Legendre and Fortin(2010)]{legendre2010comparison}
+Pierre Legendre and Marie-Jos{\'e}e Fortin.
+\newblock Comparison of the {M}antel test and alternative approaches for
+  detecting complex multivariate relationships in the spatial analysis of
+  genetic data.
+\newblock \emph{Molecular Ecology Resources}, 10\penalty0 (5):\penalty0
+  831--844, 2010.
+\newblock \doi{10.1111/j.1755-0998.2010.02866.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1755-0998.2010.02866.x}.
+
+\bibitem[Liu et~al.(2025)Liu, Gao, Liu, Du, Li, Wu, Jin, Cao, Zhang, Li, and
+  Hoi]{liu2025decoupled}
+Dongyang Liu, Peng Gao, David Liu, Ruoyi Du, Zhen Li, Qilong Wu, Xin Jin, Sihan
+  Cao, Shifeng Zhang, Hongsheng Li, and Steven Hoi.
+\newblock Decoupled {DMD}: {CFG} augmentation as the spear, distribution
+  matching as the shield, 2025.
+\newblock URL \url{https://arxiv.org/abs/2511.22677}.
+
+\bibitem[Lo and MacKinlay(1988)]{lo1988stock}
+Andrew~W. Lo and A.~Craig MacKinlay.
+\newblock Stock market prices do not follow random walks: Evidence from a
+  simple specification test.
+\newblock \emph{The Review of Financial Studies}, 1\penalty0 (1):\penalty0
+  41--66, 1988.
+\newblock \doi{10.1093/rfs/1.1.41}.
+\newblock URL \url{https://doi.org/10.1093/rfs/1.1.41}.
+
+\bibitem[Lo and MacKinlay(1989)]{lo1989size}
+Andrew~W. Lo and A.~Craig MacKinlay.
+\newblock The size and power of the variance ratio test in finite samples: A
+  {M}onte {C}arlo investigation.
+\newblock \emph{Journal of Econometrics}, 40\penalty0 (2):\penalty0 203--238,
+  1989.
+\newblock \doi{10.1016/0304-4076(89)90083-3}.
+\newblock URL \url{https://doi.org/10.1016/0304-4076(89)90083-3}.
+
+\bibitem[Lu et~al.(2018)Lu, Zhong, Li, and Dong]{lu2018beyond}
+Yiping Lu, Aoxiao Zhong, Quanzheng Li, and Bin Dong.
+\newblock Beyond finite layer neural networks: Bridging deep architectures and
+  numerical differential equations.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine
+  Learning}, volume~80 of \emph{Proceedings of Machine Learning Research},
+  pages 3276--3285. PMLR, 2018.
+\newblock URL \url{https://proceedings.mlr.press/v80/lu18d.html}.
+
+\bibitem[Lu et~al.(2019)Lu, Li, He, Sun, Dong, Qin, Wang, and
+  Liu]{lu2019understanding}
+Yiping Lu, Zhuohan Li, Di~He, Zhiqing Sun, Bin Dong, Tao Qin, Liwei Wang, and
+  Tie-Yan Liu.
+\newblock Understanding and improving transformer from a multi-particle dynamic
+  system point of view, 2019.
+\newblock URL \url{https://arxiv.org/abs/1906.02762}.
+
+\bibitem[Mantel(1967)]{mantel1967detection}
+Nathan Mantel.
+\newblock The detection of disease clustering and a generalized regression
+  approach.
+\newblock \emph{Cancer Research}, 27\penalty0 (2):\penalty0 209--220, 1967.
+\newblock URL
+  \url{https://aacrjournals.org/cancerres/article/27/2_Part_1/209/476508/The-Detection-of-Disease-Clustering-and-a}.
+
+\bibitem[Matejka and Fitzmaurice(2017)]{matejka2017same}
+Justin Matejka and George Fitzmaurice.
+\newblock Same stats, different graphs: Generating datasets with varied
+  appearance and identical statistics through simulated annealing.
+\newblock In \emph{Proceedings of the 2017 CHI Conference on Human Factors in
+  Computing Systems}, 2017.
+\newblock URL
+  \url{https://www.research.autodesk.com/publications/same-stats-different-graphs/}.
+
+\bibitem[Meshram and Chandrasekaran(2026)]{meshram2026diffusion}
+Pragati~Shuddhodhan Meshram and Varun Chandrasekaran.
+\newblock Diffusion model attribution via spectral coupling of denoiser
+  responses.
+\newblock arXiv:2606.28092, 2026.
+
+\bibitem[Nakamura and Small(2005)]{nakamura2005small}
+T.~Nakamura and M.~Small.
+\newblock Small-shuffle surrogate data: Testing for dynamics in fluctuating
+  data with trends.
+\newblock \emph{Physical Review E}, 72\penalty0 (5):\penalty0 056216, 2005.
+\newblock \doi{10.1103/PhysRevE.72.056216}.
+\newblock URL \url{https://doi.org/10.1103/PhysRevE.72.056216}.
+
+\bibitem[Peebles and Xie(2023)]{peebles2023scalable}
+William Peebles and Saining Xie.
+\newblock Scalable diffusion models with transformers.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV)}, pages 4195--4205, 2023.
+\newblock \doi{10.1109/ICCV51070.2023.00387}.
+\newblock URL \url{https://arxiv.org/abs/2212.09748}.
+
+\bibitem[Raya and Ambrogioni(2023)]{raya2023spontaneous}
+Gabriel Raya and Luca Ambrogioni.
+\newblock Spontaneous symmetry breaking in generative diffusion models.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~36, 2023.
+\newblock URL \url{https://arxiv.org/abs/2305.19693}.
+
+\bibitem[Recanatesi et~al.(2022)Recanatesi, Bradde, Balasubramanian, Steinmetz,
+  and Shea-Brown]{recanatesi2022scaledependent}
+Stefano Recanatesi, Serena Bradde, Vijay Balasubramanian, Nicholas~A.
+  Steinmetz, and Eric Shea-Brown.
+\newblock A scale-dependent measure of system dimensionality.
+\newblock \emph{Patterns}, 3\penalty0 (8):\penalty0 100555, 2022.
+\newblock \doi{10.1016/j.patter.2022.100555}.
+\newblock URL \url{https://doi.org/10.1016/j.patter.2022.100555}.
+
+\bibitem[Roy and Vetterli(2007)]{roy2007effective}
+Olivier Roy and Martin Vetterli.
+\newblock The effective rank: A measure of effective dimensionality.
+\newblock In \emph{Proceedings of the 15th European Signal Processing
+  Conference (EUSIPCO)}, Pozna{\'n}, Poland, 2007.
+\newblock \doi{10.5281/zenodo.40328}.
+\newblock URL \url{https://infoscience.epfl.ch/record/110188}.
+
+\bibitem[Rudelson and Vershynin(2013)]{rudelson2013hanson}
+Mark Rudelson and Roman Vershynin.
+\newblock {Hanson--Wright} inequality and sub-gaussian concentration.
+\newblock \emph{Electronic Communications in Probability}, 18:\penalty0 1--9,
+  2013.
+
+\bibitem[Schmid(2010)]{schmid2010dynamic}
+Peter~J. Schmid.
+\newblock Dynamic mode decomposition of numerical and experimental data.
+\newblock \emph{Journal of Fluid Mechanics}, 656:\penalty0 5--28, 2010.
+\newblock \doi{10.1017/S0022112010001217}.
+\newblock URL \url{https://doi.org/10.1017/S0022112010001217}.
+
+\bibitem[Schreiber and Schmitz(2000)]{schreiber2000surrogate}
+Thomas Schreiber and Andreas Schmitz.
+\newblock Surrogate time series.
+\newblock \emph{Physica D: Nonlinear Phenomena}, 142\penalty0 (3--4):\penalty0
+  346--382, 2000.
+\newblock \doi{10.1016/S0167-2789(00)00043-9}.
+\newblock URL \url{https://doi.org/10.1016/S0167-2789(00)00043-9}.
+
+\bibitem[Sclocchi et~al.(2025)Sclocchi, Favero, and Wyart]{sclocchi2025phase}
+Antonio Sclocchi, Alessandro Favero, and Matthieu Wyart.
+\newblock A phase transition in diffusion models reveals the hierarchical
+  nature of data.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 122\penalty0
+  (1):\penalty0 e2408799121, 2025.
+\newblock \doi{10.1073/pnas.2408799121}.
+\newblock URL \url{https://arxiv.org/abs/2402.16991}.
+
+\bibitem[Shen and Hu(2025)]{shen2025covariance}
+Xuanyu Shen and Yu~Hu.
+\newblock Covariance spectrum in nonlinear recurrent neural networks: A
+  near-critical effective connection strength throughout chaos, 2025.
+\newblock URL \url{https://arxiv.org/abs/2508.05288}.
+
+\bibitem[Sun et~al.(2024)Sun, Chen, Kolter, and Liu]{sun2024massive}
+Mingjie Sun, Xinlei Chen, J.~Zico Kolter, and Zhuang Liu.
+\newblock Massive activations in large language models.
+\newblock In \emph{First Conference on Language Modeling (COLM)}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2402.17762}.
+
+\bibitem[Sun et~al.(2026)Sun, Canziani, LeCun, and Zhu]{sun2026anatomy}
+Shangwen Sun, Alfredo Canziani, Yann LeCun, and Jiachen Zhu.
+\newblock Anatomy of massive activations and attention sinks.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2026.
+\newblock URL \url{https://icml.cc/virtual/2026/poster/63610}.
+\newblock arXiv title: ``The Spike, the Sparse and the Sink: Anatomy of Massive
+  Activations and Attention Sinks''.
+
+\bibitem[Sussillo and Barak(2013)]{sussillo2013opening}
+David Sussillo and Omri Barak.
+\newblock Opening the black box: Low-dimensional dynamics in high-dimensional
+  recurrent neural networks.
+\newblock \emph{Neural Computation}, 25\penalty0 (3):\penalty0 626--649, 2013.
+\newblock \doi{10.1162/NECO_a_00409}.
+\newblock URL \url{https://doi.org/10.1162/NECO_a_00409}.
+
+\bibitem[Theiler et~al.(1992)Theiler, Eubank, Longtin, Galdrikian, and
+  Farmer]{theiler1992testing}
+James Theiler, Stephen Eubank, Andr{\'e} Longtin, Bryan Galdrikian, and
+  J.~Doyne Farmer.
+\newblock Testing for nonlinearity in time series: The method of surrogate
+  data.
+\newblock \emph{Physica D: Nonlinear Phenomena}, 58\penalty0 (1--4):\penalty0
+  77--94, 1992.
+\newblock \doi{10.1016/0167-2789(92)90102-S}.
+\newblock URL \url{https://doi.org/10.1016/0167-2789(92)90102-S}.
+
+\bibitem[{Tongyi-MAI}(2026)]{tongyi2026zimage}
+{Tongyi-MAI}.
+\newblock {Z-Image}: model card (undistilled base model).
+\newblock Hugging Face model repository, 2026.
+\newblock URL \url{https://huggingface.co/Tongyi-MAI/Z-Image}.
+\newblock Released 2026-01-27 per the Tongyi-MAI/Z-Image GitHub README.
+  Accessed 2026-10-08.
+
+\bibitem[Turri et~al.(2026)Turri, Bucciarelli, Sarto, Baraldi, and
+  Cornia]{turri2026few}
+Evelyn Turri, Davide Bucciarelli, Sara Sarto, Lorenzo Baraldi, and Marcella
+  Cornia.
+\newblock Few channels draw the whole picture: Revealing massive activations in
+  diffusion transformers, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.13974}.
+
+\bibitem[Williams et~al.(2015)Williams, Kevrekidis, and
+  Rowley]{williams2015datadriven}
+Matthew~O. Williams, Ioannis~G. Kevrekidis, and Clarence~W. Rowley.
+\newblock A data-driven approximation of the {K}oopman operator: Extending
+  dynamic mode decomposition.
+\newblock \emph{Journal of Nonlinear Science}, 25\penalty0 (6):\penalty0
+  1307--1346, 2015.
+\newblock \doi{10.1007/s00332-015-9258-5}.
+\newblock URL \url{https://doi.org/10.1007/s00332-015-9258-5}.
+
+\bibitem[Yule(1926)]{yule1926why}
+G.~Udny Yule.
+\newblock Why do we sometimes get nonsense-correlations between time-series? --
+  {A} study in sampling and the nature of time-series.
+\newblock \emph{Journal of the Royal Statistical Society}, 89\penalty0
+  (1):\penalty0 1--63, 1926.
+\newblock \doi{10.2307/2341482}.
+\newblock URL \url{https://doi.org/10.2307/2341482}.
+
+\bibitem[{Z-Image Team} et~al.(2025){Z-Image Team}, Cai, Cao, Du, Gao, Hao,
+  Hoi, Hou, Huang, Jiang, Jiang, Jin, Li, Li, Li, Liu, Liu, Wu, Yu, Zhan,
+  Zhang, Zhang, Zhou, and Zhou]{zimageteam2025zimage}
+{Z-Image Team}, Huanqia Cai, Sihan Cao, Ruoyi Du, Peng Gao, Aiming Hao, Steven
+  Hoi, Zhaohui Hou, Shijie Huang, Dengyang Jiang, Yuming Jiang, Xin Jin,
+  Liangchen Li, Zhen Li, Zhong-Yu Li, David Liu, Dongyang Liu, Qilong Wu, Feng
+  Yu, Zechao Zhan, Chi Zhang, Shifeng Zhang, Ruikai Zhou, and Shilin Zhou.
+\newblock {Z-Image}: An efficient image generation foundation model with
+  single-stream diffusion transformer, 2025.
+\newblock URL \url{https://arxiv.org/abs/2511.22699}.
+\newblock Technical report, Tongyi Lab, Alibaba.
+
+\end{thebibliography}

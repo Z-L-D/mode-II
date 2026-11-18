@@ -1,0 +1,32 @@
+{
+  "round7_prereg_sha256": "9012d20fb0cb5388321f1309a6aee9217eb37be07da0b1bc063cd08a4e8a864b",
+  "round6_scorecard": {
+    "CONFIRMED": 17,
+    "REFUTED": 5
+  },
+  "round7_scorecard": {
+    "CONFIRMED": 8
+  },
+  "observable_margins": {
+    "L0_D1": -0.04898424210663799,
+    "L0_D2": 0.04708220394782847,
+    "L1_field": 0.13087119388133361,
+    "L2_shape": 0.1521280941370583,
+    "L3_tangent": 0.702693697500999
+  },
+  "content_tangent_spearman": {
+    "rho": 0.29696969696969694,
+    "p": 0.40470167127015705,
+    "n": 10
+  },
+  "estimator": {
+    "sigma50_range": 0.5006425095838547,
+    "relative_onset_range": 0.2771076333662087,
+    "relative_interval_narrower": 7
+  },
+  "sync": {
+    "trend_ge_observed": 7,
+    "warp_p_lt_05": 3
+  },
+  "release_capture_required": false
+}

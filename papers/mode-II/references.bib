@@ -1,0 +1,1375 @@
+%% mode-II/references.bib (subset for the mathematical paper)
+%% CoS-PAFS Mode-I / Mode-II bibliography (mode:LIMINAL, Zac Doyle).
+%% Generated 2026-10-08. Every entry was checked against a primary or index page
+%% (arXiv abstract, proceedings/publisher page, Crossref/OpenAlex DOI record,
+%% official model card or repository). The verification URL for each key is in
+%% papers/CITATION_KEYS.md. Fields that could not be verified were left out.
+%% Key scheme: <firstauthorlastname><year><firstsignificanttitleword>, lowercase ASCII;
+%% hyphenated title words are joined (classifierfree, transitionpath).
+%% 107 entries.
+
+% ===== 1. Models, samplers and generative formulations =====
+@misc{zimageteam2025zimage,
+  author        = {{Z-Image Team} and Cai, Huanqia and Cao, Sihan and Du, Ruoyi and Gao, Peng and Hao, Aiming and Hoi, Steven and Hou, Zhaohui and Huang, Shijie and Jiang, Dengyang and Jiang, Yuming and Jin, Xin and Li, Liangchen and Li, Zhen and Li, Zhong-Yu and Liu, David and Liu, Dongyang and Wu, Qilong and Yu, Feng and Zhan, Zechao and Zhang, Chi and Zhang, Shifeng and Zhou, Ruikai and Zhou, Shilin},
+  title         = {{Z-Image}: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer},
+  year          = {2025},
+  eprint        = {2511.22699},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2511.22699},
+  note          = {Technical report, Tongyi Lab, Alibaba}
+}
+
+@misc{tongyi2025zimageturbo,
+  author       = {{Tongyi-MAI}},
+  title        = {{Z-Image-Turbo}: model card},
+  year         = {2025},
+  howpublished = {Hugging Face model repository},
+  url          = {https://huggingface.co/Tongyi-MAI/Z-Image-Turbo},
+  note         = {Distilled 8-NFE model, guidance scale 0. Accessed 2026-10-08}
+}
+
+@misc{tongyi2026zimage,
+  author       = {{Tongyi-MAI}},
+  title        = {{Z-Image}: model card (undistilled base model)},
+  year         = {2026},
+  howpublished = {Hugging Face model repository},
+  url          = {https://huggingface.co/Tongyi-MAI/Z-Image},
+  note         = {Released 2026-01-27 per the Tongyi-MAI/Z-Image GitHub README. Accessed 2026-10-08}
+}
+
+@misc{liu2025decoupled,
+  author        = {Liu, Dongyang and Gao, Peng and Liu, David and Du, Ruoyi and Li, Zhen and Wu, Qilong and Jin, Xin and Cao, Sihan and Zhang, Shifeng and Li, Hongsheng and Hoi, Steven},
+  title         = {Decoupled {DMD}: {CFG} Augmentation as the Spear, Distribution Matching as the Shield},
+  year          = {2025},
+  eprint        = {2511.22677},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2511.22677}
+}
+
+@misc{jiang2025distribution,
+  author        = {Jiang, Dengyang and Liu, Dongyang and Wang, Zanyi and Wu, Qilong and Li, Liuzhuozheng and Li, Hengzhuang and Jin, Xin and Liu, David and Lu, Changsheng and Li, Zhen and Zhang, Bo and Wang, Mengmeng and Hoi, Steven and Gao, Peng and Yang, Harry},
+  title         = {Distribution Matching Distillation Meets Reinforcement Learning},
+  year          = {2025},
+  eprint        = {2511.13649},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2511.13649}
+}
+
+@misc{genmo2024mochi,
+  author       = {{Genmo Team}},
+  title        = {{Mochi 1}},
+  year         = {2024},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/genmoai/models}},
+  url          = {https://huggingface.co/genmo/mochi-1-preview},
+  note         = {Model card and code; Asymmetric Diffusion Transformer (AsymmDiT), T5-XXL text encoder. Accessed 2026-10-08}
+}
+
+@inproceedings{esser2024scaling,
+  author    = {Esser, Patrick and Kulal, Sumith and Blattmann, Andreas and Entezari, Rahim and M{\"u}ller, Jonas and Saini, Harry and Levi, Yam and Lorenz, Dominik and Sauer, Axel and Boesel, Frederic and Podell, Dustin and Dockhorn, Tim and English, Zion and Rombach, Robin},
+  title     = {Scaling Rectified Flow Transformers for High-Resolution Image Synthesis},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {235},
+  pages     = {12606--12633},
+  publisher = {PMLR},
+  year      = {2024},
+  eprint        = {2403.03206},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v235/esser24a.html}
+}
+
+@inproceedings{peebles2023scalable,
+  author    = {Peebles, William and Xie, Saining},
+  title     = {Scalable Diffusion Models with Transformers},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages     = {4195--4205},
+  year      = {2023},
+  doi       = {10.1109/ICCV51070.2023.00387},
+  eprint        = {2212.09748},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2212.09748}
+}
+
+@inproceedings{vaswani2017attention,
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  title     = {Attention Is All You Need},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {30},
+  pages     = {5998--6008},
+  year      = {2017},
+  eprint        = {1706.03762},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1706.03762}
+}
+
+@inproceedings{ho2020denoising,
+  author    = {Ho, Jonathan and Jain, Ajay and Abbeel, Pieter},
+  title     = {Denoising Diffusion Probabilistic Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {33},
+  year      = {2020},
+  eprint        = {2006.11239},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2006.11239}
+}
+
+@inproceedings{song2021scorebased,
+  author    = {Song, Yang and Sohl-Dickstein, Jascha and Kingma, Diederik P. and Kumar, Abhishek and Ermon, Stefano and Poole, Ben},
+  title     = {Score-Based Generative Modeling through Stochastic Differential Equations},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2021},
+  eprint        = {2011.13456},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2011.13456}
+}
+
+@inproceedings{karras2022elucidating,
+  author    = {Karras, Tero and Aittala, Miika and Aila, Timo and Laine, Samuli},
+  title     = {Elucidating the Design Space of Diffusion-Based Generative Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {35},
+  year      = {2022},
+  eprint        = {2206.00364},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2206.00364}
+}
+
+@inproceedings{lipman2023flow,
+  author    = {Lipman, Yaron and Chen, Ricky T. Q. and Ben-Hamu, Heli and Nickel, Maximilian and Le, Matthew},
+  title     = {Flow Matching for Generative Modeling},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  eprint        = {2210.02747},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2210.02747}
+}
+
+@inproceedings{liu2023flow,
+  author    = {Liu, Xingchao and Gong, Chengyue and Liu, Qiang},
+  title     = {Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  eprint        = {2209.03003},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2209.03003}
+}
+
+@misc{ho2022classifierfree,
+  author        = {Ho, Jonathan and Salimans, Tim},
+  title         = {Classifier-Free Diffusion Guidance},
+  year          = {2022},
+  eprint        = {2207.12598},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2207.12598}
+}
+
+% ===== 2. Distillation and representation preservation =====
+@misc{hinton2015distilling,
+  author        = {Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+  title         = {Distilling the Knowledge in a Neural Network},
+  year          = {2015},
+  eprint        = {1503.02531},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ML},
+  url           = {https://arxiv.org/abs/1503.02531}
+}
+
+@inproceedings{salimans2022progressive,
+  author    = {Salimans, Tim and Ho, Jonathan},
+  title     = {Progressive Distillation for Fast Sampling of Diffusion Models},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2022},
+  eprint        = {2202.00512},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2202.00512}
+}
+
+@inproceedings{song2023consistency,
+  author    = {Song, Yang and Dhariwal, Prafulla and Chen, Mark and Sutskever, Ilya},
+  title     = {Consistency Models},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  pages     = {32211--32252},
+  publisher = {PMLR},
+  year      = {2023},
+  eprint        = {2303.01469},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v202/song23a.html}
+}
+
+@inproceedings{yin2024onestep,
+  author    = {Yin, Tianwei and Gharbi, Micha{\"e}l and Zhang, Richard and Shechtman, Eli and Durand, Fr{\'e}do and Freeman, William T. and Park, Taesung},
+  title     = {One-Step Diffusion with Distribution Matching Distillation},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {6613--6623},
+  year      = {2024},
+  doi       = {10.1109/CVPR52733.2024.00632},
+  eprint        = {2311.18828},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2311.18828}
+}
+
+@inproceedings{yin2024improved,
+  author    = {Yin, Tianwei and Gharbi, Micha{\"e}l and Park, Taesung and Zhang, Richard and Shechtman, Eli and Durand, Fr{\'e}do and Freeman, William T.},
+  title     = {Improved Distribution Matching Distillation for Fast Image Synthesis},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  year      = {2024},
+  doi       = {10.52202/079017-1505},
+  eprint        = {2405.14867},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2405.14867}
+}
+
+@inproceedings{sauer2024adversarial,
+  author    = {Sauer, Axel and Lorenz, Dominik and Blattmann, Andreas and Rombach, Robin},
+  title     = {Adversarial Diffusion Distillation},
+  booktitle = {Computer Vision -- ECCV 2024},
+  year      = {2024},
+  doi       = {10.1007/978-3-031-73016-0_6},
+  eprint        = {2311.17042},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2311.17042}
+}
+
+@misc{sauer2024fast,
+  author        = {Sauer, Axel and Boesel, Frederic and Dockhorn, Tim and Blattmann, Andreas and Esser, Patrick and Rombach, Robin},
+  title         = {Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation},
+  year          = {2024},
+  eprint        = {2403.12015},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2403.12015}
+}
+
+@inproceedings{gandikota2026distilling,
+  author    = {Gandikota, Rohit and Bau, David},
+  title     = {Distilling Diversity and Control in Diffusion Models},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages     = {1304--1313},
+  year      = {2026},
+  eprint        = {2503.10637},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2503.10637}
+}
+
+@inproceedings{surkov2025onestep,
+  author    = {Surkov, Viacheslav and Wendler, Chris and Mari, Antonio and Terekhov, Mikhail and Deschenaux, Justin and West, Robert and Gulcehre, Caglar and Bau, David},
+  title     = {One-Step is Enough: Sparse Autoencoders for Text-to-Image Diffusion Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {38},
+  year      = {2025},
+  eprint        = {2410.22366},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2410.22366}
+}
+
+@misc{li2026why,
+  author       = {Li, Shucheng and Jones, Iolo and Tong, Alexander and Bronstein, Michael},
+  title        = {Why Are Distribution-Matching Distilled Students Lazy? {U}nderstanding the Copying Behavior in Few-Step Distillation},
+  year         = {2026},
+  howpublished = {ICML 2026 Workshop on Foundations of Deep Generative Models (non-archival poster)},
+  url          = {https://icml.cc/virtual/2026/70197}
+}
+
+@misc{haskins2025distilled,
+  author        = {Haskins, Reilly and Adams, Benjamin},
+  title         = {Distilled Circuits: A Mechanistic Study of Internal Restructuring in Knowledge Distillation},
+  year          = {2025},
+  eprint        = {2505.10822},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2505.10822}
+}
+
+@inproceedings{chi2026mta,
+  author    = {Chi, Pham Khanh and Dao, Quoc Phong and Nguyen, Thuat and Van, Linh Ngo and Le, Trung and Nguyen, Thanh Hong},
+  title     = {{MTA}: Multi-Granular Trajectory Alignment for Large Language Model Distillation},
+  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {32669--32684},
+  address   = {San Diego, California, United States},
+  publisher = {Association for Computational Linguistics},
+  year      = {2026},
+  doi       = {10.18653/v1/2026.acl-long.1507},
+  eprint        = {2605.01374},
+  archivePrefix = {arXiv},
+  url       = {https://aclanthology.org/2026.acl-long.1507/}
+}
+
+% ===== 3. Language-model controls =====
+@misc{qwen2024qwen25,
+  author        = {{Qwen} and Yang, An and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Li, Chengyuan and Liu, Dayiheng and others},
+  title         = {{Qwen2.5} Technical Report},
+  year          = {2024},
+  eprint        = {2412.15115},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2412.15115}
+}
+
+% ===== 4. Spectral observables and dimensionality =====
+@inproceedings{roy2007effective,
+  author    = {Roy, Olivier and Vetterli, Martin},
+  title     = {The Effective Rank: A Measure of Effective Dimensionality},
+  booktitle = {Proceedings of the 15th European Signal Processing Conference (EUSIPCO)},
+  address   = {Pozna{\'n}, Poland},
+  year      = {2007},
+  doi       = {10.5281/zenodo.40328},
+  url       = {https://infoscience.epfl.ch/record/110188}
+}
+
+@article{shannon1948mathematical,
+  author  = {Shannon, Claude E.},
+  title   = {A Mathematical Theory of Communication},
+  journal = {Bell System Technical Journal},
+  volume  = {27},
+  number  = {3},
+  pages   = {379--423},
+  year    = {1948},
+  doi     = {10.1002/j.1538-7305.1948.tb01338.x},
+  url     = {https://doi.org/10.1002/j.1538-7305.1948.tb01338.x}
+}
+
+@misc{gao2017theory,
+  author       = {Gao, Peiran and Trautmann, Eric and Yu, Byron and Santhanam, Gopal and Ryu, Stephen and Shenoy, Krishna and Ganguli, Surya},
+  title        = {A Theory of Multineuronal Dimensionality, Dynamics and Measurement},
+  year         = {2017},
+  howpublished = {bioRxiv preprint 214262},
+  doi          = {10.1101/214262},
+  url          = {https://www.biorxiv.org/content/10.1101/214262v2}
+}
+
+@article{recanatesi2022scaledependent,
+  author  = {Recanatesi, Stefano and Bradde, Serena and Balasubramanian, Vijay and Steinmetz, Nicholas A. and Shea-Brown, Eric},
+  title   = {A Scale-Dependent Measure of System Dimensionality},
+  journal = {Patterns},
+  volume  = {3},
+  number  = {8},
+  pages   = {100555},
+  year    = {2022},
+  doi     = {10.1016/j.patter.2022.100555},
+  url     = {https://doi.org/10.1016/j.patter.2022.100555}
+}
+
+@misc{recanatesi2019dimensionality,
+  author        = {Recanatesi, Stefano and Farrell, Matthew and Advani, Madhu and Moore, Timothy and Lajoie, Guillaume and Shea-Brown, Eric},
+  title         = {Dimensionality Compression and Expansion in Deep Neural Networks},
+  year          = {2019},
+  eprint        = {1906.00443},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/1906.00443}
+}
+
+@article{litwinkumar2017optimal,
+  author  = {Litwin-Kumar, Ashok and Harris, Kameron Decker and Axel, Richard and Sompolinsky, Haim and Abbott, L. F.},
+  title   = {Optimal Degrees of Synaptic Connectivity},
+  journal = {Neuron},
+  volume  = {93},
+  number  = {5},
+  pages   = {1153--1164.e7},
+  year    = {2017},
+  doi     = {10.1016/j.neuron.2017.01.030},
+  url     = {https://doi.org/10.1016/j.neuron.2017.01.030}
+}
+
+@inproceedings{ansuini2019intrinsic,
+  author    = {Ansuini, Alessio and Laio, Alessandro and Macke, Jakob H. and Zoccolan, Davide},
+  title     = {Intrinsic Dimension of Data Representations in Deep Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {32},
+  pages     = {6111--6122},
+  year      = {2019},
+  eprint        = {1905.12784},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1905.12784}
+}
+
+@inproceedings{valeriani2023geometry,
+  author    = {Valeriani, Lucrezia and Doimo, Diego and Cuturello, Francesca and Laio, Alessandro and Ansuini, Alessio and Cazzaniga, Alberto},
+  title     = {The Geometry of Hidden Representations of Large Transformer Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  eprint        = {2302.00294},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2302.00294}
+}
+
+@inproceedings{cheng2025emergence,
+  author    = {Cheng, Emily and Doimo, Diego and Kervadec, Corentin and Macocco, Iuri and Yu, Lei and Laio, Alessandro and Baroni, Marco},
+  title     = {Emergence of a High-Dimensional Abstraction Phase in Language Transformers},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  eprint        = {2405.15471},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2405.15471}
+}
+
+@inproceedings{chun2026estimating,
+  author    = {Chun, Chanwoo and Canatar, Abdulkadir and Chung, SueYeon and Lee, Daniel},
+  title     = {Estimating Dimensionality of Neural Representations from Finite Samples},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  eprint        = {2509.26560},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2509.26560}
+}
+
+@inproceedings{garrido2023rankme,
+  author    = {Garrido, Quentin and Balestriero, Randall and Najman, Laurent and LeCun, Yann},
+  title     = {{RankMe}: Assessing the Downstream Performance of Pretrained Self-Supervised Representations by Their Rank},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  pages     = {10929--10974},
+  publisher = {PMLR},
+  year      = {2023},
+  url       = {https://proceedings.mlr.press/v202/garrido23a.html}
+}
+
+% ===== 5. Massive activations and attention sinks (caveat for uncentred statistics) =====
+@inproceedings{sun2024massive,
+  author    = {Sun, Mingjie and Chen, Xinlei and Kolter, J. Zico and Liu, Zhuang},
+  title     = {Massive Activations in Large Language Models},
+  booktitle = {First Conference on Language Modeling (COLM)},
+  year      = {2024},
+  eprint        = {2402.17762},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2402.17762}
+}
+
+@inproceedings{xiao2024efficient,
+  author    = {Xiao, Guangxuan and Tian, Yuandong and Chen, Beidi and Han, Song and Lewis, Mike},
+  title     = {Efficient Streaming Language Models with Attention Sinks},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  eprint        = {2309.17453},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2309.17453}
+}
+
+@inproceedings{darcet2024vision,
+  author    = {Darcet, Timoth{\'e}e and Oquab, Maxime and Mairal, Julien and Bojanowski, Piotr},
+  title     = {Vision Transformers Need Registers},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  eprint        = {2309.16588},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2309.16588}
+}
+
+@inproceedings{gan2025unleashing,
+  author    = {Gan, Chaofan and Tu, Yuanpeng and Chen, Xi and Chen, Tieyuan and Li, Yuxi and Harandi, Mehrtash and Lin, Weiyao},
+  title     = {Unleashing Diffusion Transformers for Visual Correspondence by Modulating Massive Activations},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {38},
+  year      = {2025},
+  eprint        = {2505.18584},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2505.18584}
+}
+
+@misc{gan2025massive,
+  author        = {Gan, Chaofan and Zhao, Zicheng and Tu, Yuanpeng and Chen, Xi and Qin, Ziran and Chen, Tieyuan and Harandi, Mehrtash and Lin, Weiyao},
+  title         = {Massive Activations are the Key to Local Detail Synthesis in Diffusion Transformers},
+  year          = {2025},
+  eprint        = {2510.11538},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2510.11538}
+}
+
+@inproceedings{sun2026anatomy,
+  author    = {Sun, Shangwen and Canziani, Alfredo and LeCun, Yann and Zhu, Jiachen},
+  title     = {Anatomy of Massive Activations and Attention Sinks},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2026},
+  eprint        = {2603.05498},
+  archivePrefix = {arXiv},
+  url       = {https://icml.cc/virtual/2026/poster/63610},
+  note      = {arXiv title: ``The Spike, the Sparse and the Sink: Anatomy of Massive Activations and Attention Sinks''}
+}
+
+@misc{turri2026few,
+  author        = {Turri, Evelyn and Bucciarelli, Davide and Sarto, Sara and Baraldi, Lorenzo and Cornia, Marcella},
+  title         = {Few Channels Draw The Whole Picture: Revealing Massive Activations in Diffusion Transformers},
+  year          = {2026},
+  eprint        = {2605.13974},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2605.13974}
+}
+
+% ===== 6. Representational similarity =====
+@article{kriegeskorte2008representational,
+  author  = {Kriegeskorte, Nikolaus and Mur, Marieke and Bandettini, Peter},
+  title   = {Representational Similarity Analysis -- Connecting the Branches of Systems Neuroscience},
+  journal = {Frontiers in Systems Neuroscience},
+  volume  = {2},
+  pages   = {4},
+  year    = {2008},
+  doi     = {10.3389/neuro.06.004.2008},
+  url     = {https://www.frontiersin.org/articles/10.3389/neuro.06.004.2008/full}
+}
+
+@article{mantel1967detection,
+  author  = {Mantel, Nathan},
+  title   = {The Detection of Disease Clustering and a Generalized Regression Approach},
+  journal = {Cancer Research},
+  volume  = {27},
+  number  = {2},
+  pages   = {209--220},
+  year    = {1967},
+  url     = {https://aacrjournals.org/cancerres/article/27/2_Part_1/209/476508/The-Detection-of-Disease-Clustering-and-a}
+}
+
+@article{guillot2013dismantling,
+  author  = {Guillot, Gilles and Rousset, Fran{\c{c}}ois},
+  title   = {Dismantling the {M}antel Tests},
+  journal = {Methods in Ecology and Evolution},
+  volume  = {4},
+  number  = {4},
+  pages   = {336--344},
+  year    = {2013},
+  doi     = {10.1111/2041-210x.12018},
+  eprint        = {1112.0651},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/1112.0651}
+}
+
+@inproceedings{kornblith2019similarity,
+  author    = {Kornblith, Simon and Norouzi, Mohammad and Lee, Honglak and Hinton, Geoffrey},
+  title     = {Similarity of Neural Network Representations Revisited},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {97},
+  pages     = {3519--3529},
+  publisher = {PMLR},
+  year      = {2019},
+  eprint        = {1905.00414},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v97/kornblith19a.html}
+}
+
+@inproceedings{raghu2017svcca,
+  author    = {Raghu, Maithra and Gilmer, Justin and Yosinski, Jason and Sohl-Dickstein, Jascha},
+  title     = {{SVCCA}: Singular Vector Canonical Correlation Analysis for Deep Learning Dynamics and Interpretability},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {30},
+  pages     = {6076--6085},
+  year      = {2017},
+  eprint        = {1706.05806},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1706.05806}
+}
+
+@inproceedings{morcos2018insights,
+  author    = {Morcos, Ari and Raghu, Maithra and Bengio, Samy},
+  title     = {Insights on Representational Similarity in Neural Networks with Canonical Correlation},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {31},
+  pages     = {5727--5736},
+  year      = {2018},
+  eprint        = {1806.05759},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1806.05759}
+}
+
+@inproceedings{williams2021generalized,
+  author    = {Williams, Alex H. and Kunz, Erin and Kornblith, Simon and Linderman, Scott},
+  title     = {Generalized Shape Metrics on Neural Representations},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {34},
+  year      = {2021},
+  eprint        = {2110.14739},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2110.14739}
+}
+
+@inproceedings{huh2024platonic,
+  author    = {Huh, Minyoung and Cheung, Brian and Wang, Tongzhou and Isola, Phillip},
+  title     = {Position: The {P}latonic Representation Hypothesis},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {235},
+  pages     = {20617--20642},
+  publisher = {PMLR},
+  year      = {2024},
+  eprint        = {2405.07987},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v235/huh24a.html}
+}
+
+@misc{groger2026revisiting,
+  author        = {Gr{\"o}ger, Fabian and Wen, Shuo and Brbi{\'c}, Maria},
+  title         = {Revisiting the {P}latonic Representation Hypothesis: An {A}ristotelian View},
+  year          = {2026},
+  eprint        = {2602.14486},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2602.14486}
+}
+
+@inproceedings{cui2022deconfounded,
+  author    = {Cui, Tianyu and Kumar, Yogesh and Marttinen, Pekka and Kaski, Samuel},
+  title     = {Deconfounded Representation Similarity for Comparison of Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {35},
+  year      = {2022},
+  eprint        = {2202.00095},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2202.00095}
+}
+
+@article{klabunde2025similarity,
+  author  = {Klabunde, Max and Schumacher, Tobias and Strohmaier, Markus and Lemmerich, Florian},
+  title   = {Similarity of Neural Network Models: A Survey of Functional and Representational Measures},
+  journal = {ACM Computing Surveys},
+  year    = {2025},
+  doi     = {10.1145/3728458},
+  eprint        = {2305.06329},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/2305.06329}
+}
+
+@inproceedings{matejka2017same,
+  author    = {Matejka, Justin and Fitzmaurice, George},
+  title     = {Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing},
+  booktitle = {Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems},
+  year      = {2017},
+  url       = {https://www.research.autodesk.com/publications/same-stats-different-graphs/}
+}
+
+% ===== 7. Diffusion phases, commitment and sampling dynamics =====
+@article{biroli2023generative,
+  author  = {Biroli, Giulio and M{\'e}zard, Marc},
+  title   = {Generative Diffusion in Very Large Dimensions},
+  journal = {Journal of Statistical Mechanics: Theory and Experiment},
+  volume  = {2023},
+  pages   = {093402},
+  year    = {2023},
+  doi     = {10.1088/1742-5468/acf8ba},
+  eprint        = {2306.03518},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/2306.03518}
+}
+
+@article{biroli2024dynamical,
+  author  = {Biroli, Giulio and Bonnaire, Tony and de Bortoli, Valentin and M{\'e}zard, Marc},
+  title   = {Dynamical Regimes of Diffusion Models},
+  journal = {Nature Communications},
+  volume  = {15},
+  pages   = {9957},
+  year    = {2024},
+  doi     = {10.1038/s41467-024-54281-3},
+  eprint        = {2402.18491},
+  archivePrefix = {arXiv},
+  url     = {https://www.nature.com/articles/s41467-024-54281-3}
+}
+
+@inproceedings{raya2023spontaneous,
+  author    = {Raya, Gabriel and Ambrogioni, Luca},
+  title     = {Spontaneous Symmetry Breaking in Generative Diffusion Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  eprint        = {2305.19693},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2305.19693}
+}
+
+@article{sclocchi2025phase,
+  author  = {Sclocchi, Antonio and Favero, Alessandro and Wyart, Matthieu},
+  title   = {A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {122},
+  number  = {1},
+  pages   = {e2408799121},
+  year    = {2025},
+  doi     = {10.1073/pnas.2408799121},
+  eprint        = {2402.16991},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/2402.16991}
+}
+
+@inproceedings{sclocchi2025probing,
+  author    = {Sclocchi, Antonio and Favero, Alessandro and Levi, Noam Itzhak and Wyart, Matthieu},
+  title     = {Probing the Latent Hierarchical Structure of Data via Diffusion Models},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  eprint        = {2410.13770},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.iclr.cc/paper_files/paper/2025/hash/b503810343f1c7e80fab37b400dbc7a8-Abstract-Conference.html}
+}
+
+@inproceedings{li2024critical,
+  author    = {Li, Marvin and Chen, Sitan},
+  title     = {Critical Windows: Non-Asymptotic Theory for Feature Emergence in Diffusion Models},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {235},
+  pages     = {27474--27498},
+  publisher = {PMLR},
+  year      = {2024},
+  eprint        = {2403.01633},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v235/li24g.html}
+}
+
+@inproceedings{handke2026entropic,
+  author    = {Handke, Florian and Stan{\v{c}}evi{\'c}, Dejan and Koulischer, Felix and Demeester, Thomas and Ambrogioni, Luca},
+  title     = {The Entropic Signature of Class Speciation in Diffusion Models},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2026},
+  eprint        = {2602.09651},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2602.09651}
+}
+
+@misc{li2025understanding,
+  author        = {Li, Xiao and Zhang, Zekai and Li, Xiang and Chen, Siyi and Zhu, Zhihui and Wang, Peng and Qu, Qing},
+  title         = {Understanding Representation Dynamics of Diffusion Models via Low-Dimensional Modeling},
+  year          = {2025},
+  eprint        = {2502.05743},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2502.05743}
+}
+
+@inproceedings{chen2024trajectory,
+  author    = {Chen, Defang and Zhou, Zhenyu and Wang, Can and Shen, Chunhua and Lyu, Siwei},
+  title     = {On the Trajectory Regularity of {ODE}-based Diffusion Sampling},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {235},
+  pages     = {7905--7934},
+  publisher = {PMLR},
+  year      = {2024},
+  eprint        = {2405.11326},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v235/chen24bm.html}
+}
+
+% ===== 8. Committor and transition path theory (open gate G3 only) =====
+@article{e2006towards,
+  author  = {E, Weinan and Vanden-Eijnden, Eric},
+  title   = {Towards a Theory of Transition Paths},
+  journal = {Journal of Statistical Physics},
+  volume  = {123},
+  number  = {3},
+  pages   = {503--523},
+  year    = {2006},
+  doi     = {10.1007/s10955-005-9003-9},
+  url     = {https://doi.org/10.1007/s10955-005-9003-9}
+}
+
+@article{e2010transitionpath,
+  author  = {E, Weinan and Vanden-Eijnden, Eric},
+  title   = {Transition-Path Theory and Path-Finding Algorithms for the Study of Rare Events},
+  journal = {Annual Review of Physical Chemistry},
+  volume  = {61},
+  pages   = {391--420},
+  year    = {2010},
+  doi     = {10.1146/annurev.physchem.040808.090412},
+  url     = {https://doi.org/10.1146/annurev.physchem.040808.090412}
+}
+
+@article{bolhuis2002transition,
+  author  = {Bolhuis, Peter G. and Chandler, David and Dellago, Christoph and Geissler, Phillip L.},
+  title   = {Transition Path Sampling: Throwing Ropes Over Rough Mountain Passes, in the Dark},
+  journal = {Annual Review of Physical Chemistry},
+  volume  = {53},
+  pages   = {291--318},
+  year    = {2002},
+  doi     = {10.1146/annurev.physchem.53.082301.113146},
+  url     = {https://doi.org/10.1146/annurev.physchem.53.082301.113146}
+}
+
+% ===== 9. Dynamical systems, Koopman/DMD and depth-as-time =====
+@book{kloeden2011nonautonomous,
+  author    = {Kloeden, Peter E. and Rasmussen, Martin},
+  title     = {Nonautonomous Dynamical Systems},
+  series    = {Mathematical Surveys and Monographs},
+  volume    = {176},
+  publisher = {American Mathematical Society},
+  address   = {Providence, RI},
+  year      = {2011},
+  isbn      = {978-0-8218-6871-3},
+  url       = {https://bookstore.ams.org/SURV/176}
+}
+
+@book{katok1995introduction,
+  author    = {Katok, Anatole and Hasselblatt, Boris},
+  title     = {Introduction to the Modern Theory of Dynamical Systems},
+  series    = {Encyclopedia of Mathematics and its Applications},
+  volume    = {54},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {1995}
+}
+
+@article{schmid2010dynamic,
+  author  = {Schmid, Peter J.},
+  title   = {Dynamic Mode Decomposition of Numerical and Experimental Data},
+  journal = {Journal of Fluid Mechanics},
+  volume  = {656},
+  pages   = {5--28},
+  year    = {2010},
+  doi     = {10.1017/S0022112010001217},
+  url     = {https://doi.org/10.1017/S0022112010001217}
+}
+
+@article{williams2015datadriven,
+  author  = {Williams, Matthew O. and Kevrekidis, Ioannis G. and Rowley, Clarence W.},
+  title   = {A Data-Driven Approximation of the {K}oopman Operator: Extending Dynamic Mode Decomposition},
+  journal = {Journal of Nonlinear Science},
+  volume  = {25},
+  number  = {6},
+  pages   = {1307--1346},
+  year    = {2015},
+  doi     = {10.1007/s00332-015-9258-5},
+  eprint        = {1408.4408},
+  archivePrefix = {arXiv},
+  url     = {https://doi.org/10.1007/s00332-015-9258-5}
+}
+
+@book{kutz2016dynamic,
+  author    = {Kutz, J. Nathan and Brunton, Steven L. and Brunton, Bingni W. and Proctor, Joshua L.},
+  title     = {Dynamic Mode Decomposition: Data-Driven Modeling of Complex Systems},
+  publisher = {Society for Industrial and Applied Mathematics},
+  address   = {Philadelphia, PA},
+  year      = {2016},
+  doi       = {10.1137/1.9781611974508},
+  url       = {https://doi.org/10.1137/1.9781611974508}
+}
+
+@article{sussillo2013opening,
+  author  = {Sussillo, David and Barak, Omri},
+  title   = {Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks},
+  journal = {Neural Computation},
+  volume  = {25},
+  number  = {3},
+  pages   = {626--649},
+  year    = {2013},
+  doi     = {10.1162/NECO_a_00409},
+  url     = {https://doi.org/10.1162/NECO_a_00409}
+}
+
+@article{e2017proposal,
+  author  = {E, Weinan},
+  title   = {A Proposal on Machine Learning via Dynamical Systems},
+  journal = {Communications in Mathematics and Statistics},
+  volume  = {5},
+  number  = {1},
+  pages   = {1--11},
+  year    = {2017},
+  doi     = {10.1007/s40304-017-0103-z},
+  url     = {https://doi.org/10.1007/s40304-017-0103-z}
+}
+
+@inproceedings{lu2018beyond,
+  author    = {Lu, Yiping and Zhong, Aoxiao and Li, Quanzheng and Dong, Bin},
+  title     = {Beyond Finite Layer Neural Networks: Bridging Deep Architectures and Numerical Differential Equations},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {80},
+  pages     = {3276--3285},
+  publisher = {PMLR},
+  year      = {2018},
+  url       = {https://proceedings.mlr.press/v80/lu18d.html}
+}
+
+@misc{lu2019understanding,
+  author        = {Lu, Yiping and Li, Zhuohan and He, Di and Sun, Zhiqing and Dong, Bin and Qin, Tao and Wang, Liwei and Liu, Tie-Yan},
+  title         = {Understanding and Improving Transformer From a Multi-Particle Dynamic System Point of View},
+  year          = {2019},
+  eprint        = {1906.02762},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/1906.02762}
+}
+
+@inproceedings{chen2018neural,
+  author    = {Chen, Ricky T. Q. and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David},
+  title     = {Neural Ordinary Differential Equations},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {31},
+  pages     = {6571--6583},
+  year      = {2018},
+  eprint        = {1806.07366},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1806.07366}
+}
+
+@article{geshkovski2025mathematical,
+  author  = {Geshkovski, Borjan and Letrouit, Cyril and Polyanskiy, Yury and Rigollet, Philippe},
+  title   = {A Mathematical Perspective on Transformers},
+  journal = {Bulletin of the American Mathematical Society},
+  volume  = {62},
+  number  = {3},
+  pages   = {427--479},
+  year    = {2025},
+  eprint        = {2312.10794},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/2312.10794}
+}
+
+@misc{belrose2023eliciting,
+  author        = {Belrose, Nora and Ostrovsky, Igor and McKinney, Lev and Furman, Zach and Smith, Logan and Halawi, Danny and Biderman, Stella and Steinhardt, Jacob},
+  title         = {Eliciting Latent Predictions from Transformers with the Tuned Lens},
+  year          = {2023},
+  eprint        = {2303.08112},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2303.08112}
+}
+
+@misc{nostalgebraist2020interpreting,
+  author       = {{nostalgebraist}},
+  title        = {interpreting {GPT}: the logit lens},
+  year         = {2020},
+  howpublished = {LessWrong blog post, 31 August 2020},
+  url          = {https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens}
+}
+
+% ===== 10. Matrix analysis for the pooling theorem =====
+@book{bhatia1997matrix,
+  author    = {Bhatia, Rajendra},
+  title     = {Matrix Analysis},
+  series    = {Graduate Texts in Mathematics},
+  volume    = {169},
+  publisher = {Springer},
+  address   = {New York},
+  year      = {1997},
+  doi       = {10.1007/978-1-4612-0653-8},
+  url       = {https://link.springer.com/book/10.1007/978-1-4612-0653-8}
+}
+
+@incollection{carlen2010trace,
+  author    = {Carlen, Eric A.},
+  title     = {Trace Inequalities and Quantum Entropy: An Introductory Course},
+  booktitle = {Entropy and the Quantum},
+  editor    = {Sims, Robert and Ueltschi, Daniel},
+  series    = {Contemporary Mathematics},
+  volume    = {529},
+  publisher = {American Mathematical Society},
+  address   = {Providence, RI},
+  year      = {2010},
+  doi       = {10.1090/conm/529},
+  url       = {https://www.ams.org/books/conm/529/},
+  note      = {MR 2681769}
+}
+
+@article{carlen2008minkowski,
+  author  = {Carlen, Eric A. and Lieb, Elliott H.},
+  title   = {A {M}inkowski Type Trace Inequality and Strong Subadditivity of Quantum Entropy {II}: Convexity and Concavity},
+  journal = {Letters in Mathematical Physics},
+  volume  = {83},
+  number  = {2},
+  pages   = {107--126},
+  year    = {2008},
+  doi     = {10.1007/s11005-008-0223-1},
+  eprint        = {0710.4167},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/0710.4167}
+}
+
+@article{lieb1973convex,
+  author  = {Lieb, Elliott H.},
+  title   = {Convex Trace Functions and the {W}igner--{Y}anase--{D}yson Conjecture},
+  journal = {Advances in Mathematics},
+  volume  = {11},
+  number  = {3},
+  pages   = {267--288},
+  year    = {1973},
+  doi     = {10.1016/0001-8708(73)90011-X},
+  url     = {https://doi.org/10.1016/0001-8708(73)90011-X}
+}
+
+@article{ando1979concavity,
+  author  = {Ando, T.},
+  title   = {Concavity of Certain Maps on Positive Definite Matrices and Applications to {H}adamard Products},
+  journal = {Linear Algebra and its Applications},
+  volume  = {26},
+  pages   = {203--241},
+  year    = {1979},
+  doi     = {10.1016/0024-3795(79)90179-4},
+  url     = {https://doi.org/10.1016/0024-3795(79)90179-4}
+}
+
+@book{boyd2004convex,
+  author    = {Boyd, Stephen and Vandenberghe, Lieven},
+  title     = {Convex Optimization},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge, UK},
+  year      = {2004},
+  url       = {https://web.stanford.edu/~boyd/cvxbook/}
+}
+
+% ===== 11. Statistics: surrogates, trends, variance ratio, resampling, preregistration =====
+@article{theiler1992testing,
+  author  = {Theiler, James and Eubank, Stephen and Longtin, Andr{\'e} and Galdrikian, Bryan and Farmer, J. Doyne},
+  title   = {Testing for Nonlinearity in Time Series: The Method of Surrogate Data},
+  journal = {Physica D: Nonlinear Phenomena},
+  volume  = {58},
+  number  = {1--4},
+  pages   = {77--94},
+  year    = {1992},
+  doi     = {10.1016/0167-2789(92)90102-S},
+  url     = {https://doi.org/10.1016/0167-2789(92)90102-S}
+}
+
+@article{schreiber1996improved,
+  author  = {Schreiber, Thomas and Schmitz, Andreas},
+  title   = {Improved Surrogate Data for Nonlinearity Tests},
+  journal = {Physical Review Letters},
+  volume  = {77},
+  number  = {4},
+  pages   = {635--638},
+  year    = {1996},
+  doi     = {10.1103/PhysRevLett.77.635},
+  url     = {https://doi.org/10.1103/PhysRevLett.77.635}
+}
+
+@article{schreiber2000surrogate,
+  author  = {Schreiber, Thomas and Schmitz, Andreas},
+  title   = {Surrogate Time Series},
+  journal = {Physica D: Nonlinear Phenomena},
+  volume  = {142},
+  number  = {3--4},
+  pages   = {346--382},
+  year    = {2000},
+  doi     = {10.1016/S0167-2789(00)00043-9},
+  eprint        = {chao-dyn/9909037},
+  archivePrefix = {arXiv},
+  url     = {https://doi.org/10.1016/S0167-2789(00)00043-9}
+}
+
+@article{nakamura2005small,
+  author  = {Nakamura, T. and Small, M.},
+  title   = {Small-Shuffle Surrogate Data: Testing for Dynamics in Fluctuating Data with Trends},
+  journal = {Physical Review E},
+  volume  = {72},
+  number  = {5},
+  pages   = {056216},
+  year    = {2005},
+  doi     = {10.1103/PhysRevE.72.056216},
+  url     = {https://doi.org/10.1103/PhysRevE.72.056216}
+}
+
+@article{lancaster2018surrogate,
+  author  = {Lancaster, Gemma and Iatsenko, Dima and Pidde, Aleksandra and Ticcinelli, Valentina and Stefanovska, Aneta},
+  title   = {Surrogate Data for Hypothesis Testing of Physical Systems},
+  journal = {Physics Reports},
+  volume  = {748},
+  pages   = {1--60},
+  year    = {2018},
+  doi     = {10.1016/j.physrep.2018.06.001},
+  url     = {https://doi.org/10.1016/j.physrep.2018.06.001}
+}
+
+@article{yule1926why,
+  author  = {Yule, G. Udny},
+  title   = {Why Do We Sometimes Get Nonsense-Correlations between Time-Series? -- {A} Study in Sampling and the Nature of Time-Series},
+  journal = {Journal of the Royal Statistical Society},
+  volume  = {89},
+  number  = {1},
+  pages   = {1--63},
+  year    = {1926},
+  doi     = {10.2307/2341482},
+  url     = {https://doi.org/10.2307/2341482}
+}
+
+@article{granger1974spurious,
+  author  = {Granger, Clive W. J. and Newbold, Paul},
+  title   = {Spurious Regressions in Econometrics},
+  journal = {Journal of Econometrics},
+  volume  = {2},
+  number  = {2},
+  pages   = {111--120},
+  year    = {1974},
+  doi     = {10.1016/0304-4076(74)90034-7},
+  url     = {https://doi.org/10.1016/0304-4076(74)90034-7}
+}
+
+@misc{harris2020nonsense,
+  author       = {Harris, K. D.},
+  title        = {Nonsense Correlations in Neuroscience},
+  year         = {2020},
+  howpublished = {bioRxiv preprint},
+  doi          = {10.1101/2020.11.29.402719},
+  url          = {https://www.biorxiv.org/content/10.1101/2020.11.29.402719v1}
+}
+
+@article{lo1988stock,
+  author  = {Lo, Andrew W. and MacKinlay, A. Craig},
+  title   = {Stock Market Prices Do Not Follow Random Walks: Evidence from a Simple Specification Test},
+  journal = {The Review of Financial Studies},
+  volume  = {1},
+  number  = {1},
+  pages   = {41--66},
+  year    = {1988},
+  doi     = {10.1093/rfs/1.1.41},
+  url     = {https://doi.org/10.1093/rfs/1.1.41}
+}
+
+@article{lo1989size,
+  author  = {Lo, Andrew W. and MacKinlay, A. Craig},
+  title   = {The Size and Power of the Variance Ratio Test in Finite Samples: A {M}onte {C}arlo Investigation},
+  journal = {Journal of Econometrics},
+  volume  = {40},
+  number  = {2},
+  pages   = {203--238},
+  year    = {1989},
+  doi     = {10.1016/0304-4076(89)90083-3},
+  url     = {https://doi.org/10.1016/0304-4076(89)90083-3}
+}
+
+@article{kim1991mean,
+  author  = {Kim, Myung Jig and Nelson, Charles R. and Startz, Richard},
+  title   = {Mean Reversion in Stock Prices? {A} Reappraisal of the Empirical Evidence},
+  journal = {The Review of Economic Studies},
+  volume  = {58},
+  pages   = {515--528},
+  year    = {1991},
+  note    = {Also NBER Working Paper 2795 (1988), doi:10.3386/w2795},
+  url     = {https://www.nber.org/papers/w2795}
+}
+
+@article{wright2000alternative,
+  author  = {Wright, Jonathan H.},
+  title   = {Alternative Variance-Ratio Tests Using Ranks and Signs},
+  journal = {Journal of Business \& Economic Statistics},
+  volume  = {18},
+  number  = {1},
+  pages   = {1--9},
+  year    = {2000},
+  url     = {https://ideas.repec.org/a/bes/jnlbes/v18y2000i1p1-9.html}
+}
+
+@article{efron1979bootstrap,
+  author  = {Efron, Bradley},
+  title   = {Bootstrap Methods: Another Look at the Jackknife},
+  journal = {The Annals of Statistics},
+  volume  = {7},
+  number  = {1},
+  year    = {1979},
+  doi     = {10.1214/aos/1176344552},
+  url     = {https://doi.org/10.1214/aos/1176344552}
+}
+
+@article{muggeo2003estimating,
+  author  = {Muggeo, Vito M. R.},
+  title   = {Estimating Regression Models with Unknown Break-Points},
+  journal = {Statistics in Medicine},
+  volume  = {22},
+  number  = {19},
+  pages   = {3055--3071},
+  year    = {2003},
+  doi     = {10.1002/sim.1545},
+  url     = {https://doi.org/10.1002/sim.1545}
+}
+
+@article{kendall1938new,
+  author  = {Kendall, M. G.},
+  title   = {A New Measure of Rank Correlation},
+  journal = {Biometrika},
+  volume  = {30},
+  number  = {1--2},
+  pages   = {81--93},
+  year    = {1938},
+  doi     = {10.1093/biomet/30.1-2.81},
+  url     = {https://doi.org/10.1093/biomet/30.1-2.81}
+}
+
+@article{spearman1904proof,
+  author  = {Spearman, C.},
+  title   = {The Proof and Measurement of Association between Two Things},
+  journal = {The American Journal of Psychology},
+  volume  = {15},
+  number  = {1},
+  year    = {1904},
+  doi     = {10.2307/1412159},
+  url     = {https://doi.org/10.2307/1412159}
+}
+
+@article{nosek2018preregistration,
+  author  = {Nosek, Brian A. and Ebersole, Charles R. and DeHaven, Alexander C. and Mellor, David T.},
+  title   = {The Preregistration Revolution},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {115},
+  number  = {11},
+  pages   = {2600--2606},
+  year    = {2018},
+  doi     = {10.1073/pnas.1708274114},
+  url     = {https://doi.org/10.1073/pnas.1708274114}
+}
+
+@article{varoquaux2018cross,
+  author  = {Varoquaux, Ga{\"e}l},
+  title   = {Cross-Validation Failure: Small Sample Sizes Lead to Large Error Bars},
+  journal = {NeuroImage},
+  volume  = {180},
+  pages   = {68--77},
+  year    = {2018},
+  doi     = {10.1016/j.neuroimage.2017.06.061},
+  eprint        = {1706.07581},
+  archivePrefix = {arXiv},
+  url     = {https://doi.org/10.1016/j.neuroimage.2017.06.061}
+}
+
+
+@article{legendre2010comparison,
+  author  = {Legendre, Pierre and Fortin, Marie-Jos{\'e}e},
+  title   = {Comparison of the {M}antel Test and Alternative Approaches for Detecting Complex Multivariate Relationships in the Spatial Analysis of Genetic Data},
+  journal = {Molecular Ecology Resources},
+  volume  = {10},
+  number  = {5},
+  pages   = {831--844},
+  year    = {2010},
+  doi     = {10.1111/j.1755-0998.2010.02866.x},
+  url     = {https://doi.org/10.1111/j.1755-0998.2010.02866.x}
+}
+
+@article{falck2025fourier,
+  title   = {A Fourier Space Perspective on Diffusion Models},
+  author  = {Falck, Fabian and Pandeva, Teodora and Zahirnia, Kiarash and Lawrence, Rachel and Turner, Richard and Meeds, Edward and Zazo, Javier and Karmalkar, Sushrut},
+  journal = {arXiv preprint arXiv:2505.11278},
+  year    = {2025}
+}
+
+@inproceedings{kang2025videophysics,
+  title     = {How Far is Video Generation from World Model: A Physical Law Perspective},
+  author    = {Kang, Bingyi and Yue, Yang and Lu, Rui and Lin, Zhijie and Zhao, Yang and Wang, Kaixin and Huang, Gao and Feng, Jiashi},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  note      = {arXiv:2411.02385}
+}
+
+@inproceedings{rombach2022high,
+  author    = {Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj{\"o}rn},
+  title     = {High-Resolution Image Synthesis with Latent Diffusion Models},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {10684--10695},
+  year      = {2022},
+  eprint        = {2112.10752},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2112.10752}
+}
+
+@inproceedings{ronneberger2015unet,
+  author    = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  title     = {{U-Net}: Convolutional Networks for Biomedical Image Segmentation},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9351},
+  pages     = {234--241},
+  year      = {2015},
+  eprint        = {1505.04597},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1505.04597}
+}
+
+@article{marchenko1967distribution,
+  author    = {Mar{\v{c}}enko, Vladimir A. and Pastur, Leonid A.},
+  title     = {Distribution of Eigenvalues for Some Sets of Random Matrices},
+  journal   = {Mathematics of the USSR-Sbornik},
+  volume    = {1},
+  number    = {4},
+  pages     = {457--483},
+  year      = {1967},
+  doi       = {10.1070/SM1967v001n04ABEH001994}
+}
+
+@inproceedings{ashkboos2024slicegpt,
+  author    = {Ashkboos, Saleh and Croci, Maximilian L. and do Nascimento, Marcelo Gennari and Hoefler, Torsten and Hensman, James},
+  title     = {{SliceGPT}: Compress Large Language Models by Deleting Rows and Columns},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  eprint        = {2401.15024},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2401.15024}
+}
+
+@misc{clark2026lyapunov,
+  author        = {Clark, David G.},
+  title         = {Lyapunov Spectrum of Random Neural Networks},
+  year          = {2026},
+  eprint        = {2610.12426},
+  archivePrefix = {arXiv},
+  primaryClass  = {cond-mat.dis-nn},
+  url           = {https://arxiv.org/abs/2610.12426}
+}
+
+@misc{clark2026linear,
+  author        = {Clark, David G.},
+  title         = {Linear Equivalence of Nonlinear Recurrent Neural Networks},
+  year          = {2026},
+  eprint        = {2604.23489},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2604.23489}
+}
+
+@misc{shen2025covariance,
+  author        = {Shen, Xuanyu and Hu, Yu},
+  title         = {Covariance Spectrum in Nonlinear Recurrent Neural Networks: A Near-Critical Effective Connection Strength Throughout Chaos},
+  year          = {2025},
+  eprint        = {2508.05288},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2508.05288}
+}
+
+% ===== Added 2026-11-05 (deep-dive survey; verified on arXiv abstract pages) =====
+@misc{skean2025layer,
+  title = {Layer by Layer: Uncovering Hidden Representations in Language Models},
+  author = {Skean, Oscar and Arefin, Md Rifat and Zhao, Dan and Patel, Niket and Naghiyev, Jalal and LeCun, Yann and Shwartz-Ziv, Ravid},
+  year = {2025}, eprint = {2502.02013}, archivePrefix = {arXiv}, primaryClass = {cs.LG},
+  howpublished = {arXiv:2502.02013}
+}@misc{zhang2024reef,
+  title = {{REEF}: Representation Encoding Fingerprints for Large Language Models},
+  author = {Zhang, Jie and Liu, Dongrui and Qian, Chen and Zhang, Linfeng and Liu, Yong and Qiao, Yu and Shao, Jing},
+  year = {2024}, eprint = {2410.14273}, archivePrefix = {arXiv}, primaryClass = {cs.CL},
+  howpublished = {arXiv:2410.14273}
+}@misc{zhu2025independence,
+  title = {Independence Tests for Language Models},
+  author = {Zhu, Sally and Ahmed, Ahmed and Kuditipudi, Rohith and Liang, Percy},
+  year = {2025}, eprint = {2502.12292}, archivePrefix = {arXiv}, primaryClass = {cs.LG},
+  howpublished = {arXiv:2502.12292}
+}@misc{shi2025knowledge,
+  title = {Knowledge Distillation Detection for Open-weights Models},
+  author = {Shi, Qin and Zheng, Amber Yijia and Song, Qifan and Yeh, Raymond A.},
+  year = {2025}, eprint = {2510.02302}, archivePrefix = {arXiv}, primaryClass = {cs.LG},
+  howpublished = {arXiv:2510.02302}
+}@misc{meshram2026diffusion,
+  title = {Diffusion Model Attribution via Spectral Coupling of Denoiser Responses},
+  author = {Meshram, Pragati Shuddhodhan and Chandrasekaran, Varun},
+  year = {2026}, eprint = {2606.28092}, archivePrefix = {arXiv}, primaryClass = {cs.CV},
+  howpublished = {arXiv:2606.28092}
+}@misc{tang2026representations,
+  title = {From Representations to Computational Trajectories: Intrinsic Fingerprinting for Large Language Model Provenance Verification},
+  author = {Tang, Haiyong and Wu, Hanzhou and Zhang, Xinpeng and Vasilakos, Athanasios V.},
+  year = {2026}, eprint = {2610.34675}, archivePrefix = {arXiv}, primaryClass = {cs.CR},
+  howpublished = {arXiv:2610.34675}
+}
+@misc{gong2026acestep15,
+  title = {{ACE-Step 1.5}: Pushing the Boundaries of Open-Source Music Generation},
+  author = {Gong, Junmin and Song, Yulin and Zhao, Wenxiao and Wang, Sen and Xu, Shengyuan and Guo, Jing and Yang, Xuerui},
+  year = {2026}, eprint = {2602.00744}, archivePrefix = {arXiv}, primaryClass = {cs.SD},
+  howpublished = {arXiv:2602.00744}
+}
+
+@article{rudelson2013hanson,
+  author  = {Rudelson, Mark and Vershynin, Roman},
+  title   = {{Hanson--Wright} inequality and sub-gaussian concentration},
+  journal = {Electronic Communications in Probability},
+  volume  = {18},
+  pages   = {1--9},
+  year    = {2013}
+}

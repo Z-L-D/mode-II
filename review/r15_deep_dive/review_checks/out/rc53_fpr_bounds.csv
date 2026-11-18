@@ -1,0 +1,13 @@
+unit,k,criterion,false_pos,ub95_if_zero
+pair types (families),2,above_perm95_24,1,0.7763932022500211
+pair types (families),2,rule_24,0,0.7763932022500211
+pair types (families),2,above_perm95_native,0,0.7763932022500211
+pair types (families),2,rule_native,0,0.7763932022500211
+distinct model pairs,5,above_perm95_24,1,0.4507197283469412
+distinct model pairs,5,rule_24,0,0.4507197283469412
+distinct model pairs,5,above_perm95_native,0,0.4507197283469412
+distinct model pairs,5,rule_native,0,0.4507197283469412
+capture pair-directions,10,above_perm95_24,1,0.2588655508930523
+capture pair-directions,10,rule_24,0,0.2588655508930523
+capture pair-directions,10,above_perm95_native,0,0.2588655508930523
+capture pair-directions,10,rule_native,0,0.2588655508930523

@@ -1,0 +1,153 @@
+{
+  "CFG1_100_design": {
+    "n_prompts": 1,
+    "n_seeds": 15,
+    "n_steps": 100,
+    "branches": [
+      "cond"
+    ],
+    "hook_modes": [
+      "passive-branch"
+    ],
+    "layer_min": 24,
+    "layer_max": 24
+  },
+  "CFG1_40_design": {
+    "n_prompts": 1,
+    "n_seeds": 15,
+    "n_steps": 40,
+    "branches": [
+      "cond"
+    ],
+    "hook_modes": [
+      "passive-branch"
+    ],
+    "layer_min": 24,
+    "layer_max": 24
+  },
+  "CFG45_100_design": {
+    "n_prompts": 1,
+    "n_seeds": 13,
+    "n_steps": 100,
+    "branches": [
+      "cond",
+      "uncond"
+    ],
+    "hook_modes": [
+      "passive-branch"
+    ],
+    "layer_min": 24,
+    "layer_max": 24
+  },
+  "CFG45_40_design": {
+    "n_prompts": 1,
+    "n_seeds": 17,
+    "n_steps": 40,
+    "branches": [
+      "cond",
+      "uncond"
+    ],
+    "hook_modes": [
+      "passive-branch"
+    ],
+    "layer_min": 24,
+    "layer_max": 24
+  },
+  "R2_formal_status": "NOT SCORABLE: CFG1 100-step capture has 15 seeds, below preregistered >=30",
+  "CFG1_100_topology": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "crossings": [
+      0.05928974235888734
+    ]
+  },
+  "CFG1_40_topology": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "crossings": [
+      0.05847569577783608
+    ]
+  },
+  "CFG45_100_cond_topology": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "crossings": [
+      0.05955944109943958
+    ]
+  },
+  "CFG45_40_cond_topology": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "crossings": [
+      0.05957610664274796
+    ]
+  },
+  "CFG45_100_uncond_topology": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "crossings": [
+      0.06134528594253352
+    ]
+  },
+  "CFG45_40_uncond_topology": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "crossings": [
+      0.061338589958448174
+    ]
+  },
+  "R2a_posthoc": {
+    "sign_sequence": "+-",
+    "n_crossings": 1,
+    "prereg_condition_satisfied": true,
+    "formal_verdict": "NOT SCORABLE (n=15 seeds < preregistered 30)"
+  },
+  "R2a_bootstrap_topology": [
+    {
+      "sequence": "+-",
+      "fraction": 1.0
+    }
+  ],
+  "R2b_same_prompt_posthoc": {
+    "median_abs_log_ratio": 0.03261618987814803,
+    "q95": 0.09710830741239507,
+    "max": 0.19478437758407158,
+    "condition_le_005": true,
+    "formal_verdict": "NOT SCORABLE (n=15 seeds < preregistered 30), but same-prompt 40/100 comparison is stronger than frozen prompt-mismatched control"
+  },
+  "R2a_individual_seeds": {
+    "first_plus_fraction": 1.0,
+    "legacy_four_cross_fraction": 0.0,
+    "modal_sequence": "+-"
+  },
+  "posthoc_factorial": [
+    {
+      "pair": "CFG1_40 vs CFG1_100",
+      "mean_shape_r": 0.99894925968454,
+      "min_shape_r": 0.9970502475452647,
+      "median_abs_log_g": 0.033820031376131904,
+      "max_abs_log_g": 0.10548455843409235
+    },
+    {
+      "pair": "CFG45_40 vs CFG45_100",
+      "mean_shape_r": 0.9992676062824213,
+      "min_shape_r": 0.9835787854121282,
+      "median_abs_log_g": 0.0041707010848309614,
+      "max_abs_log_g": 0.03626280150250037
+    },
+    {
+      "pair": "CFG1_40 vs CFG45_40",
+      "mean_shape_r": 0.9935287469746996,
+      "min_shape_r": 0.9742879811783104,
+      "median_abs_log_g": 0.06102062720613395,
+      "max_abs_log_g": 0.08593552398791661
+    },
+    {
+      "pair": "CFG1_100 vs CFG45_100",
+      "mean_shape_r": 0.9951802039642438,
+      "min_shape_r": 0.9905590056173658,
+      "median_abs_log_g": 0.03268453206283993,
+      "max_abs_log_g": 0.0891049508312475
+    }
+  ]
+}

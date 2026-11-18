@@ -1,0 +1,13 @@
+pair,truth,tangent,called,correct
+ACE lineage attn,lineage,0.8497466241577937,lineage-or-closer,True
+ACE lineage mlp,lineage,0.5718576678845185,lineage-or-closer,True
+ACET_attn-ZIT_attn,unrelated,0.2095378954229614,unrelated,True
+ACET_mlp-ZIT_mlp,unrelated,-0.0338334711697963,unrelated,True
+ACEB_attn-Z1_attn,unrelated,-0.016229035508551,unrelated,True
+ACEB_mlp-Z1_mlp,unrelated,0.2004142457669273,unrelated,True
+LLM Q35-Q25 attn,unrelated,-0.2156650904947569,unrelated,True
+LLM Q35-G3 attn,unrelated,-0.2246272275037124,unrelated,True
+LLM Q25-G3 attn,unrelated,-0.1202030487055028,unrelated,True
+LLM Q35-Q25 mlp,unrelated,0.6560152644258018,lineage-or-closer,False
+LLM Q35-G3 mlp,unrelated,-0.0748824833414743,unrelated,True
+LLM Q25-G3 mlp,unrelated,-0.3626517837493097,unrelated,True

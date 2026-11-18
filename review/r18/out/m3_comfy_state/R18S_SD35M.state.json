@@ -1,0 +1,517 @@
+{
+ "jobs": {
+  "p000_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3e922999-e65c-487f-85d3-dbcbc919d054",
+   "outputs": [
+    "R18S_SD35M/p000_s1001_00001_.png"
+   ]
+  },
+  "p001_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "60614850-36bd-432d-909c-9a69c52fcef4",
+   "outputs": [
+    "R18S_SD35M/p001_s1001_00001_.png"
+   ]
+  },
+  "p002_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8216909c-9267-4d65-9618-ce8983eac00c",
+   "outputs": [
+    "R18S_SD35M/p002_s1001_00001_.png"
+   ]
+  },
+  "p003_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "78bd4141-3349-458d-bb62-b8fe64c6deab",
+   "outputs": [
+    "R18S_SD35M/p003_s1001_00001_.png"
+   ]
+  },
+  "p004_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3d6d5a96-962b-4fa1-b02a-9cf23264db82",
+   "outputs": [
+    "R18S_SD35M/p004_s1001_00001_.png"
+   ]
+  },
+  "p005_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "13258fee-e3ef-448f-beca-33ee0b9d2f5d",
+   "outputs": [
+    "R18S_SD35M/p005_s1001_00001_.png"
+   ]
+  },
+  "p006_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "17cca52a-b503-4953-923d-672b27c517b8",
+   "outputs": [
+    "R18S_SD35M/p006_s1001_00001_.png"
+   ]
+  },
+  "p007_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b446da87-e377-499b-87e1-b6ded99d4c92",
+   "outputs": [
+    "R18S_SD35M/p007_s1001_00001_.png"
+   ]
+  },
+  "p008_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5156f281-7a60-4126-b5d3-a19245874737",
+   "outputs": [
+    "R18S_SD35M/p008_s1001_00001_.png"
+   ]
+  },
+  "p009_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "76b4e38a-837d-4d09-8d16-cf4801f21871",
+   "outputs": [
+    "R18S_SD35M/p009_s1001_00001_.png"
+   ]
+  },
+  "p010_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "370d5e43-0b97-4edd-8813-7aa5310fe87d",
+   "outputs": [
+    "R18S_SD35M/p010_s1001_00001_.png"
+   ]
+  },
+  "p011_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d43aabfe-24e7-4fa2-a63a-37538ade31ca",
+   "outputs": [
+    "R18S_SD35M/p011_s1001_00001_.png"
+   ]
+  },
+  "p012_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f688664c-258b-488d-acf1-07ef088f2099",
+   "outputs": [
+    "R18S_SD35M/p012_s1001_00001_.png"
+   ]
+  },
+  "p013_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1ce8b1e7-119b-4234-8974-523ca7eef07c",
+   "outputs": [
+    "R18S_SD35M/p013_s1001_00001_.png"
+   ]
+  },
+  "p014_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "af55430c-b211-461c-8f3f-e51a3647c8a7",
+   "outputs": [
+    "R18S_SD35M/p014_s1001_00001_.png"
+   ]
+  },
+  "p015_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d9af73ad-4868-436f-bbe5-cf6a23677f3f",
+   "outputs": [
+    "R18S_SD35M/p015_s1001_00001_.png"
+   ]
+  },
+  "p016_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f9af222e-f2a9-4585-9946-e34efb55bf08",
+   "outputs": [
+    "R18S_SD35M/p016_s1001_00001_.png"
+   ]
+  },
+  "p017_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1940836c-3a07-44c7-bdf4-2982415ba807",
+   "outputs": [
+    "R18S_SD35M/p017_s1001_00001_.png"
+   ]
+  },
+  "p018_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f8b761d1-2168-45c0-8182-d891c20346e1",
+   "outputs": [
+    "R18S_SD35M/p018_s1001_00001_.png"
+   ]
+  },
+  "p019_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "55a1cd60-ede9-4e53-8aad-0f125fd21b9e",
+   "outputs": [
+    "R18S_SD35M/p019_s1001_00001_.png"
+   ]
+  },
+  "p020_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "23a8026f-5638-4c86-8672-82dc298933ac",
+   "outputs": [
+    "R18S_SD35M/p020_s1001_00001_.png"
+   ]
+  },
+  "p021_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "674e316b-c80f-4271-ae97-45398b232c8f",
+   "outputs": [
+    "R18S_SD35M/p021_s1001_00001_.png"
+   ]
+  },
+  "p022_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "9e545029-342f-47a6-bc16-a60b9a4953b6",
+   "outputs": [
+    "R18S_SD35M/p022_s1001_00001_.png"
+   ]
+  },
+  "p023_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3271dab9-f021-4c4a-9edb-a581c4544bc3",
+   "outputs": [
+    "R18S_SD35M/p023_s1001_00001_.png"
+   ]
+  },
+  "p024_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d6fd2eb8-339e-48d6-a25b-7ecf2e8eb09a",
+   "outputs": [
+    "R18S_SD35M/p024_s1001_00001_.png"
+   ]
+  },
+  "p025_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "79b76684-f60e-4153-b6e4-38d8a56e09b3",
+   "outputs": [
+    "R18S_SD35M/p025_s1001_00001_.png"
+   ]
+  },
+  "p026_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "87b01655-b1c9-4006-bea3-e84d427f0515",
+   "outputs": [
+    "R18S_SD35M/p026_s1001_00001_.png"
+   ]
+  },
+  "p027_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "70cd0898-728c-4063-a352-a5fec8ba1e8e",
+   "outputs": [
+    "R18S_SD35M/p027_s1001_00001_.png"
+   ]
+  },
+  "p028_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5eb5eacb-7004-4e23-96c5-d13bd492adcc",
+   "outputs": [
+    "R18S_SD35M/p028_s1001_00001_.png"
+   ]
+  },
+  "p029_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "703e94b3-fc74-4def-8787-82dd1c37522b",
+   "outputs": [
+    "R18S_SD35M/p029_s1001_00001_.png"
+   ]
+  },
+  "p030_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d304273f-820a-44b2-a7e2-cc2eec2c7a57",
+   "outputs": [
+    "R18S_SD35M/p030_s1001_00001_.png"
+   ]
+  },
+  "p031_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "79a831e1-05c0-4cbf-9a38-804cb23d71a8",
+   "outputs": [
+    "R18S_SD35M/p031_s1001_00001_.png"
+   ]
+  },
+  "p032_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "14190ffe-d42e-44b9-9426-627525774a5d",
+   "outputs": [
+    "R18S_SD35M/p032_s1001_00001_.png"
+   ]
+  },
+  "p033_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "801de940-57e9-413d-b032-8e02550fbf93",
+   "outputs": [
+    "R18S_SD35M/p033_s1001_00001_.png"
+   ]
+  },
+  "p034_s1001": {
+   "status": "done",
+   "attempts": 2,
+   "prompt_id": "56ee9663-4328-486e-963e-ea1980a43794",
+   "last_error": "lost",
+   "outputs": [
+    "R18S_SD35M/p034_s1001_00001_.png"
+   ]
+  },
+  "p035_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e80882bb-d839-4700-8d34-0076e4c946d8",
+   "outputs": [
+    "R18S_SD35M/p035_s1001_00001_.png"
+   ]
+  },
+  "p036_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "87aada36-49f9-402d-8640-d56972861c87",
+   "outputs": [
+    "R18S_SD35M/p036_s1001_00001_.png"
+   ]
+  },
+  "p037_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "59e40450-c7a5-471f-bbf8-90b2fa27e889",
+   "outputs": [
+    "R18S_SD35M/p037_s1001_00001_.png"
+   ]
+  },
+  "p038_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a147e84d-30b2-49e0-b382-52a8359fb02b",
+   "outputs": [
+    "R18S_SD35M/p038_s1001_00001_.png"
+   ]
+  },
+  "p039_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "de7713c9-85c3-433c-a00e-cd972e4c8045",
+   "outputs": [
+    "R18S_SD35M/p039_s1001_00001_.png"
+   ]
+  },
+  "p040_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5cf25328-c318-4d9c-8987-9d23cd626adb",
+   "outputs": [
+    "R18S_SD35M/p040_s1001_00001_.png"
+   ]
+  },
+  "p041_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1a1f1ae5-4692-454b-9923-d63a74c91a7a",
+   "outputs": [
+    "R18S_SD35M/p041_s1001_00001_.png"
+   ]
+  },
+  "p042_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e0cdc438-e62e-4b10-8939-facb5ba8c5d1",
+   "outputs": [
+    "R18S_SD35M/p042_s1001_00001_.png"
+   ]
+  },
+  "p043_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "0ba9b4fa-c238-420a-85ee-656f00d39b74",
+   "outputs": [
+    "R18S_SD35M/p043_s1001_00001_.png"
+   ]
+  },
+  "p044_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3745ff91-3768-4b25-9639-88b3a44a7c59",
+   "outputs": [
+    "R18S_SD35M/p044_s1001_00001_.png"
+   ]
+  },
+  "p045_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1de0c30a-6e9d-408f-abe6-af112ebe3bb2",
+   "outputs": [
+    "R18S_SD35M/p045_s1001_00001_.png"
+   ]
+  },
+  "p046_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e7eee62c-b1b7-461f-b69e-e9eb1b0d5a99",
+   "outputs": [
+    "R18S_SD35M/p046_s1001_00001_.png"
+   ]
+  },
+  "p047_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "47f877b4-e422-4377-81c5-dec4c5d7541f",
+   "outputs": [
+    "R18S_SD35M/p047_s1001_00001_.png"
+   ]
+  },
+  "p048_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e5a48409-a1d5-4683-a499-c9c99b8925ed",
+   "outputs": [
+    "R18S_SD35M/p048_s1001_00001_.png"
+   ]
+  },
+  "p049_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e62454ca-2310-4b72-8269-ea9ef3241ffc",
+   "outputs": [
+    "R18S_SD35M/p049_s1001_00001_.png"
+   ]
+  },
+  "p050_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8a33e9f7-bdde-4f6b-8680-58291cfc5d64",
+   "outputs": [
+    "R18S_SD35M/p050_s1001_00001_.png"
+   ]
+  },
+  "p051_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1e2b3484-d097-4cb8-9805-b7d8dfc1adec",
+   "outputs": [
+    "R18S_SD35M/p051_s1001_00001_.png"
+   ]
+  },
+  "p052_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1306aea1-e4fe-4062-98e2-f4ed416a85ff",
+   "outputs": [
+    "R18S_SD35M/p052_s1001_00001_.png"
+   ]
+  },
+  "p053_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "84588a75-7556-4e4d-bdd9-e15477c9926c",
+   "outputs": [
+    "R18S_SD35M/p053_s1001_00001_.png"
+   ]
+  },
+  "p054_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "00ca87cf-e985-4b2e-b46b-374648c85a72",
+   "outputs": [
+    "R18S_SD35M/p054_s1001_00001_.png"
+   ]
+  },
+  "p055_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1fe26d1e-9429-4a98-ac7f-8cfcb5fe9d63",
+   "outputs": [
+    "R18S_SD35M/p055_s1001_00001_.png"
+   ]
+  },
+  "p056_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "15e99cb0-dd1b-4b09-afbd-99041ac71844",
+   "outputs": [
+    "R18S_SD35M/p056_s1001_00001_.png"
+   ]
+  },
+  "p057_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "182c0770-d796-4522-b950-04c1471b3739",
+   "outputs": [
+    "R18S_SD35M/p057_s1001_00001_.png"
+   ]
+  },
+  "p058_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6ff43c8a-7dde-4874-8fa5-1f78da247547",
+   "outputs": [
+    "R18S_SD35M/p058_s1001_00001_.png"
+   ]
+  },
+  "p059_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "879ca16f-92f0-413e-8272-57e6afc7ad16",
+   "outputs": [
+    "R18S_SD35M/p059_s1001_00001_.png"
+   ]
+  }
+ },
+ "meta": {
+  "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\sd35_medium_api.json",
+  "args": {
+   "mode": "capture",
+   "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\sd35_medium_api.json",
+   "session": "R18S_SD35M",
+   "tsv": "prompts_r3_cond60.tsv",
+   "only": "",
+   "prompt_mode": "normal",
+   "fixed_text": "A photograph of a wooden chair in an empty room",
+   "n_seeds": 1,
+   "seed0": 1001,
+   "ignore_tsv_seed": false,
+   "guider": [],
+   "sketch_only": "",
+   "swap_guider": "none",
+   "res": 0,
+   "steps": 0,
+   "clip_subset": "lgt",
+   "unet": "",
+   "text_node": "",
+   "clones": 16,
+   "k_points": "",
+   "clone_sampler": "euler_ancestral",
+   "server": "http://127.0.0.1:8189",
+   "state_dir": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\m3_comfy_state",
+   "max_attempts": 2,
+   "timeout": 0,
+   "dry_run": false,
+   "write_first": ""
+  }
+ }
+}

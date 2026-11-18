@@ -1,0 +1,11 @@
+id,prediction,status,result,audit_note
+R1a,Instrument preflight,CONFIRMED,passive-branch; cond/uncond present; 24 layers; finite CFG4.5 prompt_influence,Instrument gate itself passed.
+R1b,CFG4.5 cond = CFG1 at step 0,CRITERION MET / PROTOCOL DEVIATION,median |log ratio|=0.000453185 <=1e-3,Prompt set differs 4/30 from frozen set; seed reuse does not invalidate this identity check.
+R1c,Seed identity no longer decodable,NOT SCORABLE,only 2 global seeds reused over 30 prompts,Frozen design required a unique seed pair per prompt.
+R1d,"Unique-seed fate sigma50 in [0.85,0.96]",NOT SCORABLE,unique-seed design not executed,"Post-hoc in-fold seed-centred values are reported separately, not scored."
+R1e,Unique-seed CFG1 VR4 <=1,NOT SCORABLE,unique-seed design not executed,Post-hoc current CFG1 cond VR4 remains ~1.79 after seed centering.
+R1f,Guidance contracts cond-branch spread <0.7,CRITERION MET / PROTOCOL DEVIATION,median=0.575; bootstrap CI 0.401-0.771,"Within-prompt ratio is calculable despite global seed reuse; prompt set differs 4/30. CI crosses 0.7, so treat effect as supported, not precision-closed."
+R1g,Cond/uncond distinguishable,CRITERION MET / PROTOCOL DEVIATION,min prompt_influence for sigma<=0.9 = 0.727,Prompt set differs 4/30; instrument signal is clear.
+R1h,Branch-mean vs cond,REPORTED,median delta log g=0.000770,No preregistered sign threshold.
+R2a,100-step passive pyramid avoids legacy -+-+-,NOT SCORABLE / STRONG POST-HOC SUPPORT,n=15<30; pooled sequence +-; 2000 bootstrap resamples all +-,Formal seed-count gate missed; 15/15 individual passive runs begin '+' and 0/15 are -+-+-.
+R2b,100 vs 40 passive matched-sigma level <=0.05,NOT SCORABLE / STRONG POST-HOC SUPPORT,n=15<30; same-prompt median |log ratio|=0.0326,"Same-prompt 40/100 comparison is stronger than frozen prompt-mismatched control, but seed-count gate missed."

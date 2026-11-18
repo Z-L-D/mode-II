@@ -1,0 +1,157 @@
+{
+ "margin": {
+  "L0_D1": -0.0489842421066381,
+  "L0_D2": 0.04708220394782825,
+  "L1_field": 0.1308711938813335,
+  "L2_shape": 0.1521280941370583,
+  "L3_tangent": 0.7026936975009989
+ },
+ "unrelated_max": {
+  "L0_D1": 0.9814999651365041,
+  "L0_D2": 0.9260519747275905,
+  "L1_field": 0.8532825921393488,
+  "L2_shape": 0.8285144073523099,
+  "L3_tangent": 0.23956137960326504
+ },
+ "lineage": {
+  "L0_D1": 0.932515723029866,
+  "L0_D2": 0.9731341786754187,
+  "L1_field": 0.9841537860206823,
+  "L2_shape": 0.9806425014893682,
+  "L3_tangent": 0.9422550771042639
+ },
+ "reproduction": [
+  {
+   "pair": "ZIB-MOCHI",
+   "historical": 0.9405,
+   "D1_env_g": 0.9405184267601563,
+   "D2_env_logg": 0.8599560996082911,
+   "prompt_median_g": 0.9199858181931589,
+   "prompt_median_logg": 0.8500735927200013,
+   "cell_field_g": 0.7686995237629802
+  },
+  {
+   "pair": "ZIT-ZIB",
+   "historical": 0.9325,
+   "D1_env_g": 0.932515723029866,
+   "D2_env_logg": 0.9731341786754187,
+   "prompt_median_g": 0.9239923669432727,
+   "prompt_median_logg": 0.9674531532502832,
+   "cell_field_g": 0.9321295100598952
+  },
+  {
+   "pair": "ZIT-MOCHI",
+   "historical": 0.822,
+   "D1_env_g": 0.8217312192592217,
+   "D2_env_logg": 0.8251214294672077,
+   "prompt_median_g": 0.8012209825255665,
+   "prompt_median_logg": 0.8244443365945968,
+   "cell_field_g": 0.5772539114351586
+  }
+ ],
+ "S1d": {
+  "archive ZIB (pooled, CFG4, 117 prompts) | D1": {
+   "r_ZIT": 0.932515723029866,
+   "r_MOCHI": 0.9405184267601563,
+   "delta": -0.008002703730290328,
+   "n": 476
+  },
+  "archive ZIB (pooled, CFG4, 117 prompts) | D2": {
+   "r_ZIT": 0.9731341786754187,
+   "r_MOCHI": 0.8599560996082911,
+   "delta": 0.11317807906712762,
+   "n": 476
+  },
+  "R4 ZIB CFG4 cond (explicit, 19 prompts) | D1": {
+   "r_ZIT": 0.9885771301617168,
+   "r_MOCHI": 0.8311693825360816,
+   "delta": 0.15740774762563514,
+   "n": 19
+  },
+  "R4 ZIB CFG4 cond (explicit, 19 prompts) | D2": {
+   "r_ZIT": 0.9956282180067256,
+   "r_MOCHI": 0.7874400738008744,
+   "delta": 0.2081881442058512,
+   "n": 19
+  },
+  "R4 ZIB CFG4 uncond (explicit, 19 prompts) | D1": {
+   "r_ZIT": 0.964058797591716,
+   "r_MOCHI": 0.9043208054656824,
+   "delta": 0.05973799212603359,
+   "n": 19
+  },
+  "R4 ZIB CFG4 uncond (explicit, 19 prompts) | D2": {
+   "r_ZIT": 0.9756474087297906,
+   "r_MOCHI": 0.8257169369684388,
+   "delta": 0.14993047176135177,
+   "n": 19
+  },
+  "R4 ZIB CFG4 branch-mean (synthetic, 19 prompts) | D1": {
+   "r_ZIT": 0.9807986685307751,
+   "r_MOCHI": 0.8743404252282799,
+   "delta": 0.1064582433024952,
+   "n": 19
+  },
+  "R4 ZIB CFG4 branch-mean (synthetic, 19 prompts) | D2": {
+   "r_ZIT": 0.9875815998074423,
+   "r_MOCHI": 0.8124980366337413,
+   "delta": 0.175083563173701,
+   "n": 19
+  },
+  "R4 ZIB CFG1 cond (20 prompts) | D1": {
+   "r_ZIT": 0.9996001150528964,
+   "r_MOCHI": 0.7580437552055911,
+   "delta": 0.24155635984730528,
+   "n": 20
+  },
+  "R4 ZIB CFG1 cond (20 prompts) | D2": {
+   "r_ZIT": 0.9997324681213134,
+   "r_MOCHI": 0.7336680781583959,
+   "delta": 0.2660643899629176,
+   "n": 20
+  },
+  "R3 ZIB CFG1 cond-only (60 prompts) | D1": {
+   "r_ZIT": 0.9998182422684514,
+   "r_MOCHI": 0.7700008644169876,
+   "delta": 0.22981737785146383,
+   "n": 60
+  },
+  "R3 ZIB CFG1 cond-only (60 prompts) | D2": {
+   "r_ZIT": 0.9997725087046488,
+   "r_MOCHI": 0.7318640426227505,
+   "delta": 0.26790846608189833,
+   "n": 60
+  },
+  "archive ZIB restricted to the R4 CFG4 prompts (pooled) | D1": {
+   "r_ZIT": 0.9364088615265432,
+   "r_MOCHI": 0.9280454347626712,
+   "delta": 0.008363426763872028,
+   "n": 72
+  },
+  "archive ZIB restricted to the R4 CFG4 prompts (pooled) | D2": {
+   "r_ZIT": 0.9747811219776898,
+   "r_MOCHI": 0.850204937153921,
+   "delta": 0.12457618482376887,
+   "n": 72
+  }
+ },
+ "S1d_change": 0.16541045135592547,
+ "score": {
+  "S1a": [
+   "CONFIRMED",
+   "margin L0 D1 -0.049, D2 0.047"
+  ],
+  "S1b": [
+   "CONFIRMED",
+   "8/8 unrelated pairs with L0 D1 r >= 0.6; values ZIT-MOCHI 0.822, ZIT-SD35M 0.926, ZIT-SD35L 0.981, ZIB-MOCHI 0.941, ZIB-SD35M 0.785, ZIB-SD35L 0.959, MOCHI-SD35M 0.733, MOCHI-SD35L 0.858"
+  ],
+  "S1c": [
+   "CONFIRMED",
+   "margins L0_D1 -0.049, L0_D2 +0.047, L1_field +0.131, L2_shape +0.152, L3_tangent +0.703"
+  ],
+  "S1d": [
+   "CONFIRMED",
+   "delta archive -0.0080 -> R4 cond +0.1574 (change +0.1654)"
+  ]
+ }
+}

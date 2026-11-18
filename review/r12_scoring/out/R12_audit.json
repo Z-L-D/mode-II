@@ -1,0 +1,327 @@
+{
+ "Z1_ZIB_CFG4_primary": {
+  "files": 10,
+  "rows": 1454400,
+  "gens_total": 485,
+  "gens_complete": 484,
+  "incomplete": [
+   [
+    "ZIB-attn.mlp-TE1-CFG4.0-R1024-S[RAND]-STUDY[PRIMARY]-G480-cinematic_dramatic-1.csv",
+    "31",
+    "621012656306662",
+    "2400",
+    "20",
+    "25"
+   ]
+  ],
+  "steps": [
+   25
+  ],
+  "sigma_schedule_first_gen": [
+   1.0,
+   0.9863,
+   0.9718,
+   0.9565,
+   "\u2026",
+   0.2903,
+   0.2069,
+   0.1111
+  ],
+  "layers": "0\u201329 (30)",
+  "submodules": [
+   "attn",
+   "mlp"
+  ],
+  "branches": [
+   "cond",
+   "uncond"
+  ],
+  "hidden_dim": [
+   3840
+  ],
+  "seq_len": [
+   4128,
+   4160
+  ],
+  "hook_mode": [
+   "passive-branch"
+  ],
+  "prompts_unique": 120,
+  "prompts_in_spec": 118,
+  "spec_prompts": 120,
+  "prompts_not_in_spec": [
+   "\nA sea otter floating on its back in kelp, cracking a sea urchin on a rock balanced on its chest, with whiskers detailed and the kelp forest visible in the clear water below",
+   "\nRusted chain links half-buried in wet sand at low tide, with each link showing different stages of oxidation from bright orange to deep brown to flaking black"
+  ],
+  "spec_prompts_missing": 2,
+  "gens_per_prompt": {
+   "4": 119,
+   "8": 1
+  },
+  "seeds_unique": 482,
+  "dup_seed_prompt": 1
+ },
+ "Z2_ZIB_CFG1_variants": {
+  "files": 10,
+  "rows": 90000,
+  "gens_total": 60,
+  "gens_complete": 60,
+  "incomplete": [],
+  "steps": [
+   25
+  ],
+  "sigma_schedule_first_gen": [
+   1.0,
+   0.9863,
+   0.9718,
+   0.9565,
+   "\u2026",
+   0.2903,
+   0.2069,
+   0.1111
+  ],
+  "layers": "0\u201329 (30)",
+  "submodules": [
+   "attn",
+   "mlp"
+  ],
+  "branches": [
+   "cond"
+  ],
+  "hidden_dim": [
+   3840
+  ],
+  "seq_len": [
+   4160
+  ],
+  "hook_mode": [
+   "passive-branch"
+  ],
+  "prompts_unique": 60,
+  "prompts_in_spec": 60,
+  "spec_prompts": 60,
+  "prompts_not_in_spec": [],
+  "spec_prompts_missing": 0,
+  "gens_per_prompt": {
+   "1": 60
+  },
+  "seeds_unique": 1,
+  "dup_seed_prompt": 0,
+  "variant_nonnull_frac": {
+   "g_img": 1.0,
+   "g_txt": 1.0,
+   "g_ctr": 1.0,
+   "g_topk": 1.0
+  }
+ },
+ "Z3_ZIT_CFG4_matched": {
+  "files": 10,
+  "rows": 360000,
+  "gens_total": 120,
+  "gens_complete": 120,
+  "incomplete": [],
+  "steps": [
+   25
+  ],
+  "sigma_schedule_first_gen": [
+   1.0,
+   0.9863,
+   0.9718,
+   0.9565,
+   "\u2026",
+   0.2903,
+   0.2069,
+   0.1111
+  ],
+  "layers": "0\u201329 (30)",
+  "submodules": [
+   "attn",
+   "mlp"
+  ],
+  "branches": [
+   "cond",
+   "uncond"
+  ],
+  "hidden_dim": [
+   3840
+  ],
+  "seq_len": [
+   4128,
+   4160
+  ],
+  "hook_mode": [
+   "passive-branch"
+  ],
+  "prompts_unique": 120,
+  "prompts_in_spec": 118,
+  "spec_prompts": 120,
+  "prompts_not_in_spec": [
+   "\nA sea otter floating on its back in kelp, cracking a sea urchin on a rock balanced on its chest, with whiskers detailed and the kelp forest visible in the clear water below",
+   "\nRusted chain links half-buried in wet sand at low tide, with each link showing different stages of oxidation from bright orange to deep brown to flaking black"
+  ],
+  "spec_prompts_missing": 2,
+  "gens_per_prompt": {
+   "1": 120
+  },
+  "seeds_unique": 119,
+  "dup_seed_prompt": 0
+ },
+ "R11_ZIT_CFG1_variants": {
+  "files": 10,
+  "rows": 27840,
+  "gens_total": 58,
+  "gens_complete": 58,
+  "incomplete": [],
+  "steps": [
+   8
+  ],
+  "sigma_schedule_first_gen": [
+   1.0,
+   0.9545,
+   0.9,
+   0.8333,
+   "\u2026",
+   0.6429,
+   0.5,
+   0.3
+  ],
+  "layers": "0\u201329 (30)",
+  "submodules": [
+   "attn",
+   "mlp"
+  ],
+  "branches": [
+   "cond"
+  ],
+  "hidden_dim": [
+   3840
+  ],
+  "seq_len": [
+   4160
+  ],
+  "hook_mode": [
+   "passive-branch"
+  ],
+  "prompts_unique": 58,
+  "prompts_in_spec": 58,
+  "spec_prompts": 60,
+  "prompts_not_in_spec": [],
+  "spec_prompts_missing": 2,
+  "gens_per_prompt": {
+   "1": 58
+  },
+  "seeds_unique": 1,
+  "dup_seed_prompt": 0,
+  "variant_nonnull_frac": {
+   "g_img": 1.0,
+   "g_txt": 1.0,
+   "g_ctr": 1.0,
+   "g_topk": 1.0
+  }
+ },
+ "R11_SD35M_CFG1_variants": {
+  "files": 10,
+  "rows": 57600,
+  "gens_total": 60,
+  "gens_complete": 60,
+  "incomplete": [],
+  "steps": [
+   40
+  ],
+  "sigma_schedule_first_gen": [
+   1.0,
+   0.9915,
+   0.9828,
+   0.9737,
+   "\u2026",
+   0.1957,
+   0.1364,
+   0.0714
+  ],
+  "layers": "0\u201323 (24)",
+  "submodules": [
+   "attn"
+  ],
+  "branches": [
+   "cond"
+  ],
+  "hidden_dim": [
+   1536
+  ],
+  "seq_len": [
+   4096
+  ],
+  "hook_mode": [
+   "passive-branch"
+  ],
+  "prompts_unique": 60,
+  "prompts_in_spec": 59,
+  "spec_prompts": 60,
+  "prompts_not_in_spec": [
+   "A futuristic vertical farm with translucent floors showing hydroponic root systems, warm grow-light glow on green leaves, and clean geometric steel framing"
+  ],
+  "spec_prompts_missing": 1,
+  "gens_per_prompt": {
+   "1": 60
+  },
+  "seeds_unique": 1,
+  "dup_seed_prompt": 0,
+  "variant_nonnull_frac": {
+   "g_img": 1.0,
+   "g_txt": 0.0,
+   "g_ctr": 1.0,
+   "g_topk": 1.0
+  }
+ },
+ "ACE_turbo_matched": {
+  "files": 10,
+  "rows": 37728,
+  "gens_total": 131,
+  "gens_complete": 131,
+  "incomplete": [],
+  "steps": [
+   6
+  ],
+  "sigma_schedule_first_gen": [
+   1.0,
+   0.9378,
+   0.8573,
+   0.75,
+   "\u2026",
+   0.75,
+   0.6007,
+   0.3756
+  ],
+  "layers": "0\u201323 (24)",
+  "submodules": [
+   "attn",
+   "mlp"
+  ],
+  "branches": [
+   "cond"
+  ],
+  "hidden_dim": [
+   2048
+  ],
+  "seq_len": [
+   2250
+  ],
+  "hook_mode": [
+   "passive-branch"
+  ],
+  "prompts_unique": 120,
+  "prompts_in_spec": 118,
+  "spec_prompts": 120,
+  "prompts_not_in_spec": [
+   "\nA sea otter floating on its back in kelp, cracking a sea urchin on a rock balanced on its chest, with whiskers detailed and the kelp forest visible in the clear water below",
+   "\nRusted chain links half-buried in wet sand at low tide, with each link showing different stages of oxidation from bright orange to deep brown to flaking black"
+  ],
+  "spec_prompts_missing": 2,
+  "gens_per_prompt": {
+   "1": 109,
+   "2": 11
+  },
+  "seeds_unique": 131,
+  "dup_seed_prompt": 0
+ }
+}

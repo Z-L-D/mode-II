@@ -1,0 +1,20 @@
+panel,series,pair,x,y,perm_null_p95,source
+a,lineage,ZIT-attn|ZIB-attn,0.98103133185535,0.943144390178308,0.2437537317711678,review/round2/out/E10_tangent.csv
+a,lineage,ZIT-mlp|ZIB-mlp,0.9829948878271492,0.967675055947168,0.2007816467571643,review/round2/out/E10_tangent.csv
+a,same-model CFG,MOCHI-attn|MOCHI1-attn,0.9962763474936016,0.99183087276203,0.3884950590264423,review/round2/out/E10_tangent.csv
+a,family size,SD35M-attn|SD35L-attn,0.3182012083356723,-0.2519453503917949,0.3132696925671566,review/round2/out/E10_tangent.csv
+a,attn-vs-mlp,ZIT-attn|ZIT-mlp,-0.0622202697762561,0.1986435751126719,0.2839005251406271,review/round2/out/E10_tangent.csv
+a,unrelated,ZIT-attn|MOCHI-attn,0.7929481154768692,0.2105928668985322,0.285594586587044,review/round2/out/E10_tangent.csv
+a,unrelated,ZIT-attn|SD35M-attn,-0.0600646579601187,-0.0719261222276325,0.2644002938595958,review/round2/out/E10_tangent.csv
+a,unrelated,ZIT-attn|SD35L-attn,0.4559731536165636,-0.0200347258620226,0.3017173752356898,review/round2/out/E10_tangent.csv
+a,unrelated,ZIB-attn|MOCHI-attn,0.829181128479824,0.24068409231478,0.2758883039211102,review/round2/out/E10_tangent.csv
+a,unrelated,ZIB-attn|SD35M-attn,-0.0350780880087691,-0.0076712760459706,0.2709924572957954,review/round2/out/E10_tangent.csv
+a,unrelated,ZIB-attn|SD35L-attn,0.4799405815611341,-0.0223498333535985,0.2887505440559115,review/round2/out/E10_tangent.csv
+a,unrelated,MOCHI-attn|SD35M-attn,0.1390755881990827,0.15222012467694,0.3209309311720836,review/round2/out/E10_tangent.csv
+a,unrelated,MOCHI-attn|SD35L-attn,0.539473269945406,0.1592981968196063,0.2987672853203936,review/round2/out/E10_tangent.csv
+a,lineage (clean branch),ZIT-25 CFG4 cond↔ZIT attn,0.9953500586862468,0.9917789256208934,,review/round5/out/Q_results.json: Q2a_shape/tangent_ZIB4cond_ZIT_attn
+a,lineage (clean branch),ZIT-25 CFG4 cond↔ZIT mlp,0.9917386970704025,0.9922718527663642,,review/round5/out/Q_results.json: Q2a_shape/tangent_ZIB4cond_ZIT_mlp
+a,same-model CFG (clean branch),ZIT-25 CFG1↔CFG4 cond attn,0.995227720789099,0.9914031677359573,,review/round5/out/Q_results.json: Q2c_shape/tangent_ZIB1_ZIB4cond_attn
+a,same-model CFG (clean branch),ZIT-25 CFG1↔CFG4 cond mlp,0.9932684409144682,0.9930997993679996,,review/round5/out/Q_results.json: Q2c_shape/tangent_ZIB1_ZIB4cond_mlp
+b,Base<->Turbo mean over mappings/channels,,,0.937,,"ledger D10: ""State-only Procrustes, linear and CCA maps can visibly improve alignment between unrelated population fields, but their matched depth derivatives remain near zero or anti-aligned. Base↔Turbo is exceptional: matched derivative correlation averages about 0.937 across mappings/channels, while the best mapping for each unrelated pair averages only about 0.007."""
+b,"best mapping per unrelated pair, mean",,,0.007,,"ledger D10: ""State-only Procrustes, linear and CCA maps can visibly improve alignment between unrelated population fields, but their matched depth derivatives remain near zero or anti-aligned. Base↔Turbo is exceptional: matched derivative correlation averages about 0.937 across mappings/channels, while the best mapping for each unrelated pair averages only about 0.007."""

@@ -1,0 +1,7 @@
+model,obs,signs,n_cross,cross_values,cross_quantiles
+qwen25_1_5b,g_micro,+-,1,0.03196,0.364
+qwen25_1_5b,gtil,+-,1,0.3727,0.416
+qwen25_3b,g_micro,+-,1,0.03742,0.653
+qwen25_3b,gtil,+-,1,0.4193,0.486
+qwen25_7b,g_micro,+-+-,3,0.00868;0.01461;0.0244,0.051;0.299;0.765
+qwen25_7b,gtil,-+-,2,0.2545;0.4,0.027;0.488

@@ -1,0 +1,8 @@
+channel,observed,steps,per_step_frac_3cross,per_step_modal,surrA_frac_obs,surrA_frac_3,surrA_modal,surrB_frac_obs,surrB_frac_3,surrB_modal,qualification
+SD35M archive attn,+- -+ +-,40,0.325,+-,0.0,0.0,+-,0.0,0.0,+-,beats both nulls
+SD35L archive attn,+- -+ +-,28,0.8571428571428571,+- -+ +-,1.0,1.0,+- -+ +-,1.0,1.0,+- -+ +-,null-generic under tested nulls
+ZIT archive mlp,+- -+ +-,8,0.375,+-,0.0,0.0,+-,1.0,1.0,+- -+ +-,beats surrogate A only
+ZIB archive (pooled CFG4) mlp,+- -+ +-,25,0.36,+-,0.0,0.0,+-,0.0,0.0,+-,beats both nulls
+ZIB archive (pooled CFG4) attn,+- -+ +-,25,0.32,+-,0.0,0.0,+-,0.0,0.0,+-,beats both nulls
+ZIT archive attn,+-,8,0.25,+-,1.0,0.0,+-,1.0,0.0,+-,one-crossing / not three-crossing aggregate
+MOCHI archive CFG4.5 attn,+-,30,0.6,+- -+ +-,1.0,0.0,+-,0.2333333333333333,0.7666666666666667,+- -+ +-,one-crossing / not three-crossing aggregate

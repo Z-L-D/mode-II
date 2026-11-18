@@ -1,22 +1,25 @@
-# Build artifacts
-*.o
-class_qnm/class
-class_qnm/.deps/
-class_qnm/build/
-
-# Bulk outputs (regenerable)
-class_qnm/output/*.dat
-!class_qnm/output/.gitkeep
-
-# Python
+# Telemetry and derived caches live on Hugging Face (see DATA.md)
+/cache/*
+!/cache/README.md
+/data/*
+!/data/README.md
+review/r3_unet/data/
+review/r3_ace/data/
+*.npz
+*.pkl
+*.parquet
+*.zip
 __pycache__/
 *.pyc
-
-# LaTeX
+# LaTeX build files
 *.aux
 *.log
 *.out
-*.bbl
+*.toc
 *.blg
+review/ace_base_r14/data/*.csv
+review/ace_base_r14/data/*.json
+*.bbl.bak
 *.synctex.gz
-class_qnm/
+*.fls
+*.fdb_latexmk

@@ -1,0 +1,23 @@
+gate,status,paper_scope,release_rule,when
+Estimator calibration,DONE,Mode-I methods/results,Use matched-n relative onset and calibrated VR; do not compare raw sigma50 across campaigns.,now / paper
+Scalar-lineage reporting,DONE / METHODS RULE,Mode-I + Mode-II,Use tangent statistic for lineage; scalar envelopes are projection-degenerate. Name capture regime.,paper
+Synchronization R peak,CLOSED NEGATIVE,Mode-I,"Do not call it a pulse, pinch, or phase boundary. Optional supplement: three channels beat warp null.",paper
+Sigma-axis E→C→C,SCOPED,Mode-I,Publish as Z-Image MLP expand→contract→re-expand only; attention follows ++−.,paper
+Layer-axis +−+− topology,SCOPED / NULL-QUALIFIED,Mode-I + Mode-II,Cross-architecture recurrence is publishable only with per-channel bootstrap and surrogate qualification; no universal crossing ratios.,paper
+Capture preflight,PERMANENT,future captures,Run preflight on every future capture.,all future capture
+Prompt protocol lock,PENDING,future matched capture,Use frozen prompt file; not a release blocker.,next matched capture
+Seed design,PENDING,future seed-fate capture,"Unique seeds, >=60 prompts; not a release blocker.",next seed-fate capture
+Regime map / G0 / G0b,RESOLVED,Mode-I methods,State pooled/cond/branch-mean regime for each campaign.,paper
+Legacy instrument A/B,CONDITIONAL,post-paper,Needed only for causal attribution of legacy EMAG rebound differences.,post-paper
+Guidance interval rider,MODE-III,Mode-III,No Mode-I timing claim.,Mode-III
+Z-Image sampling shift,RESOLVED,Mode-I methods,Record Base shift=3.0 and Turbo 8-step no-CFG configuration.,paper
+G1 paired-noise finite perturbation,PENDING FOR RESPONSE/JACOBIAN,Mode-II limitations / Mode-III experiment,Current geometry is enough for release; response/susceptibility claims require perturbations.,post-paper / Mode-III
+G3 committor / clones,REQUIRED BEFORE SEPARATRIX,outside Mode-I/II claims,Clone continuations around candidate sigma points and score final image fate.,before any commitment/separatrix paper claim
+G4 context-invariant AR,PENDING,Mode-III,v1 AR is a nested running statistic; no per-token phase claim in Mode-I/II.,Mode-III
+G2 distillation ladder,PENDING,Mode-III,Needed for geometry→quality/compute relationship.,Mode-III
+G5 targeted Mistral,PENDING,Mode-III,Teacher-forced/greedy targeted prompts.,Mode-III
+G6 / Llama Base↔Instruct,DATA PENDING,Mode-III,Recapture matched hooks and text.,with G4
+Massive-activation control,NEW OPTIONAL,Mode-II caveat / Mode-III,Recompute spectral statistics with dominant channels removed/mean-centred; requires channel-norm capture.,Mode-III
+MLP hooks on Mochi/SD3.5,NEW OPTIONAL,future universality test,Needed only for cross-architecture sigma-axis MLP universality claim.,Mode-III / future paper
+D14 output-quality linkage,BLOCKED,outside Mode-I/II claims,Need stable output identifier plus quality/correctness label.,before geometry→quality claim
+PSTF multi-arm,PENDING,Mode-III,Keep out of Mode-I/II.,Mode-III

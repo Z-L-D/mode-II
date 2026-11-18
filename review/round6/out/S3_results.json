@@ -1,0 +1,20 @@
+{
+ "score": {
+  "S3a": [
+   "CONFIRMED",
+   "6/7 channels in [0.80, 0.97]: ZIT-attn 0.841, ZIT-mlp 0.673, ZIB-attn 0.934, ZIB-mlp 0.887, MOCHI-attn 0.902, SD35M-attn 0.950, SD35L-attn 0.930"
+  ],
+  "S3b": [
+   "CONFIRMED",
+   "range relative onset 0.277 vs sigma50 0.501"
+  ],
+  "S3c": [
+   "CONFIRMED",
+   "7/7 channels with narrower relative-onset spread"
+  ],
+  "S3d": [
+   "REFUTED",
+   "1/7 channels VR4/walk >= 1: ZIT-attn 1.13, ZIT-mlp 0.65, ZIB-attn 0.54, ZIB-mlp 0.49, MOCHI-attn 0.85, SD35M-attn 0.61, SD35L-attn 0.87"
+  ]
+ }
+}

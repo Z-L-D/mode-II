@@ -1,0 +1,1121 @@
+a,b,kind,sub,state,stat,summary,value,La,Lb,n_prompts,nonfinite_a,nonfinite_b
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,token,best,0.9999844978253046,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,token,matched,0.9999844978253046,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,prompt,best,0.9999860301613808,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,prompt,matched,0.9999860301613808,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,prompt_debiased,best,0.9999834174911181,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,prompt_debiased,matched,0.9999834174911181,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,procrustes,best,0.9999926916365564,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,first,procrustes,matched,0.9999926916365564,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,token,best,0.5210762154310942,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,token,matched,0.5080527986089388,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,prompt,best,0.7525652498006821,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,prompt,matched,0.7463573465744654,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,prompt_debiased,best,0.687402827044328,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,prompt_debiased,matched,0.6776143486301104,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,procrustes,best,0.8796024214054852,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.75,procrustes,matched,0.8784882085918926,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,token,best,0.47654521341125167,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,token,matched,0.46042406807343167,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,prompt,best,0.7342267632484436,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,prompt,matched,0.722580316166083,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,prompt_debiased,best,0.6727923167248567,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,prompt_debiased,matched,0.6555839255452156,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,procrustes,best,0.8654682679085836,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.5,procrustes,matched,0.8628057843599514,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,token,best,0.45075940899550915,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,token,matched,0.4416724964976311,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,prompt,best,0.7102003358304501,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,prompt,matched,0.6940766076246897,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,prompt_debiased,best,0.6488636862486601,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,prompt_debiased,matched,0.6274887571732203,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,procrustes,best,0.851065789585028,24,24,60,0,0
+R18S_SD35M,R18S_SD35M1,same weights (CFG 4.5 vs 1),attn,t0.25,procrustes,matched,0.8467215306879052,24,24,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,token,best,0.8087903201874149,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,token,matched,0.7985858148895204,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,prompt,best,0.8797082659837447,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,prompt,matched,0.8553246856716118,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,prompt_debiased,best,0.8429532483416169,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,prompt_debiased,matched,0.8172172006023558,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,procrustes,best,0.9473695033181029,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,first,procrustes,matched,0.9367172425566023,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,token,best,0.6158313368888277,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,token,matched,0.6150438426748702,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,prompt,best,0.7754887146385092,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,prompt,matched,0.7657876351946279,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,prompt_debiased,best,0.7195270545780659,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,prompt_debiased,matched,0.7089162825753814,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,procrustes,best,0.8896023487266669,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.75,procrustes,matched,0.8861134154889388,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,token,best,0.5486171564675475,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,token,matched,0.5460872718280083,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,prompt,best,0.7297350307436365,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,prompt,matched,0.7150277911048186,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,prompt_debiased,best,0.6637717407981032,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,prompt_debiased,matched,0.6488457575048271,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,procrustes,best,0.8643020475340096,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.5,procrustes,matched,0.8594175620469238,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,token,best,0.5253099756511419,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,token,matched,0.5216595541783854,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,prompt,best,0.722459259590036,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,prompt,matched,0.694150088845115,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,prompt_debiased,best,0.6592255934680763,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,prompt_debiased,matched,0.624565073828164,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,procrustes,best,0.855346842974501,38,38,60,0,0
+R18_SD35L,R18_SD35LT,"distillation, documented teacher-student",attn,t0.25,procrustes,matched,0.8445979644448885,38,38,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,token,best,0.6434895663211744,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,token,matched,0.6192807666957378,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,prompt,best,0.7448505144566298,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,prompt,matched,0.7088482727607092,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,prompt_debiased,best,0.668234882876277,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,prompt_debiased,matched,0.6323703291515509,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,procrustes,best,0.9024989045777809,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,first,procrustes,matched,0.8882693228071709,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,token,best,0.4361395128071308,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,token,matched,0.4228965292374293,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,prompt,best,0.7130459348360697,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,prompt,matched,0.7038602530956268,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,prompt_debiased,best,0.6498470219473045,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,prompt_debiased,matched,0.642122191687425,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,procrustes,best,0.8643356081518021,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.75,procrustes,matched,0.8614483060483451,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,token,best,0.3927659820765257,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,token,matched,0.3819272890686989,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,prompt,best,0.6810313115517299,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,prompt,matched,0.6667829876144727,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,prompt_debiased,best,0.6211912569900353,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,prompt_debiased,matched,0.6088948796192805,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,procrustes,best,0.8492860423587196,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.5,procrustes,matched,0.8443441625463818,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,token,best,0.37555438900987304,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,token,matched,0.3653806000947952,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,prompt,best,0.6629619871576626,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,prompt,matched,0.6464353700478872,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,prompt_debiased,best,0.6055003156264622,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,prompt_debiased,matched,0.5880240723490715,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,procrustes,best,0.8362256026546647,24,24,60,0,0
+R18S_SD3M,R18S_SD35M,successor lineage,attn,t0.25,procrustes,matched,0.8304944236550629,24,24,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,token,best,0.43126144756873447,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,token,matched,0.41147574451234603,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,prompt,best,0.7676801863643858,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,prompt,matched,0.7809408704439799,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,prompt_debiased,best,0.6973340589139196,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,prompt_debiased,matched,0.7039954745107226,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,procrustes,best,0.902967801188312,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,first,procrustes,matched,0.9171172312257898,30,30,60,12,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,token,best,0.3585195103039344,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,token,matched,0.3422313875385693,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,prompt,best,0.7619184383324215,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,prompt,matched,0.7452352153403419,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,prompt_debiased,best,0.7219313667998428,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,prompt_debiased,matched,0.6999032305819648,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,procrustes,best,0.8751838670753591,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.75,procrustes,matched,0.8715448048223827,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,token,best,0.30145343570482164,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,token,matched,0.28117192909121513,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,prompt,best,0.7137429259717465,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,prompt,matched,0.6874148068683488,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,prompt_debiased,best,0.673866440142904,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,prompt_debiased,matched,0.6362992078065872,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,procrustes,best,0.8521584168503018,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.5,procrustes,matched,0.8460883715508069,30,30,60,2,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,token,best,0.28528298387924833,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,token,matched,0.2688046917319298,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,prompt,best,0.6887993603944779,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,prompt,matched,0.6626787801583608,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,prompt_debiased,best,0.6457809706528982,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,prompt_debiased,matched,0.6126855939626694,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,procrustes,best,0.8386493409429557,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,attn,t0.25,procrustes,matched,0.8313088012594406,30,30,60,0,0
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,token,best,0.2786488587584206,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,token,matched,0.18130738181727274,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,prompt,best,0.7066480506131998,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,prompt,matched,0.6668077494416919,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,prompt_debiased,best,0.6590933235628265,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,prompt_debiased,matched,0.6118396847021013,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,procrustes,best,0.8593494521011584,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,first,procrustes,matched,0.8667839530057668,30,30,60,9,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,token,best,0.21206329324869094,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,token,matched,0.18542989095052084,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,prompt,best,0.6987734081016647,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,prompt,matched,0.6709103518062167,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,prompt_debiased,best,0.6596511933538649,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,prompt_debiased,matched,0.630465703981894,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,procrustes,best,0.8494757986301035,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.75,procrustes,matched,0.8410848805315718,30,30,60,3,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,token,best,0.22945266988660606,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,token,matched,0.2050016075372696,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,prompt,best,0.6694071069359779,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,prompt,matched,0.6277545605387006,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,prompt_debiased,best,0.6281607113778591,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,prompt_debiased,matched,0.581663188125406,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,procrustes,best,0.8327906292854375,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.5,procrustes,matched,0.8217123502867633,30,30,60,2,2
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,token,best,0.2371374687244152,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,token,matched,0.2059024775830599,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,prompt,best,0.6242746974017955,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,prompt,matched,0.6010926388777219,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,prompt_debiased,best,0.581706675930586,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,prompt_debiased,matched,0.5545831276820257,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,procrustes,best,0.8067502623729753,30,30,60,4,1
+R18_ZB6,R18_ZIT2,sibling lineage,mlp,t0.25,procrustes,matched,0.8038083317004657,30,30,60,4,1
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,token,best,0.5730180637747573,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,token,matched,0.4372824424583661,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt,best,0.6694566334940886,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt,matched,0.5551394839820109,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt_debiased,best,0.5858163940801955,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt_debiased,matched,0.4568350771932225,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,procrustes,best,0.8619487025616062,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,first,procrustes,matched,0.806716487768479,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,token,best,0.38014809230113766,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,token,matched,0.2865471596780576,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt,best,0.6708443618395872,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt,matched,0.5896981601652346,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,best,0.5821902084638153,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,matched,0.4976048522481793,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,procrustes,best,0.8364594733348509,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,procrustes,matched,0.7884021789447029,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,token,best,0.3387107587533823,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,token,matched,0.259922342080819,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt,best,0.6413580330840328,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt,matched,0.5605572379733387,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,best,0.5536993290052602,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,matched,0.4693566972487851,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,procrustes,best,0.8193736717011594,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,procrustes,matched,0.7728050113095953,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,token,best,0.3177994456501645,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,token,matched,0.24788426715684564,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt,best,0.6161323292997846,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt,matched,0.5428184776713973,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,best,0.5375023697290504,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,matched,0.4556110567952457,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,procrustes,best,0.80265892737776,38,24,60,0,0
+R18_SD35L,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,procrustes,matched,0.7578216392422346,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,token,best,0.6171963220102745,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,token,matched,0.4764398354056634,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt,best,0.7350938917513479,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt,matched,0.6463632989478739,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt_debiased,best,0.6431162988015434,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt_debiased,matched,0.5395377527334189,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,procrustes,best,0.8892145473673567,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,first,procrustes,matched,0.8434443059631827,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,token,best,0.4291328990570547,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,token,matched,0.32616379523747846,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt,best,0.7221428815994346,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt,matched,0.6415819984517599,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,best,0.6484283778097546,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,matched,0.5533681655988881,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,procrustes,best,0.8603707508207465,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,procrustes,matched,0.8130588213618287,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,token,best,0.39317778225073163,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,token,matched,0.30458022707975224,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt,best,0.7090465623820037,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt,matched,0.6248491745638219,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,best,0.6399964741186092,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,matched,0.5411800338249457,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,procrustes,best,0.848921904488865,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,procrustes,matched,0.8010549839090632,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,token,best,0.3761250361996262,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,token,matched,0.2977028618517675,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt,best,0.6979232562477129,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt,matched,0.6146278495067045,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,best,0.636292353272438,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,matched,0.5371842854901364,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,procrustes,best,0.8375531218211469,38,24,60,0,0
+R18_SD35L,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,procrustes,matched,0.7895359433501026,38,24,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,token,best,0.4337085355857485,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,token,matched,0.3192687418900038,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,prompt,best,0.6523716107533689,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,prompt,matched,0.5511572443340954,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,prompt_debiased,best,0.5475715351470729,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,prompt_debiased,matched,0.4307175189452736,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,procrustes,best,0.8533393180932771,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,first,procrustes,matched,0.8022073774032616,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,token,best,0.28539678796537615,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,token,matched,0.21172913234974994,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,prompt,best,0.630890520034652,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,prompt,matched,0.5496295145467708,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,best,0.5552324399156006,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,matched,0.46023019756141464,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,procrustes,best,0.8224356236594842,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.75,procrustes,matched,0.7803051829147701,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,token,best,0.2452673872115842,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,token,matched,0.17378586101786872,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,prompt,best,0.6045686573182282,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,prompt,matched,0.5242082907965309,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,best,0.5379273942034495,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,matched,0.44311499321147013,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,procrustes,best,0.8001720379267179,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.5,procrustes,matched,0.752951081554017,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,token,best,0.2298910265690402,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,token,matched,0.15515440354417814,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,prompt,best,0.5809071449334162,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,prompt,matched,0.5032499440406498,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,best,0.5225583193594949,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,matched,0.43230006451669495,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,procrustes,best,0.7811445194544573,38,30,60,0,0
+R18_SD35L,R18_ZIT2,unrelated,attn,t0.25,procrustes,matched,0.7323106273940957,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,first,token,best,0.3536340314677061,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,token,matched,0.3100506067276001,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,prompt,best,0.679622628230449,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,prompt,matched,0.642702500457349,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,prompt_debiased,best,0.5650649172150426,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,prompt_debiased,matched,0.5140684506167537,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,procrustes,best,0.8672758848427837,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,first,procrustes,matched,0.8495840560940138,38,30,60,0,12
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,token,best,0.25378954285909805,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,token,matched,0.1776477980826582,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,prompt,best,0.5930877523426723,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,prompt,matched,0.5131594864385468,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,best,0.5098486074099415,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,matched,0.4210991144978574,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,procrustes,best,0.8030487033151557,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.75,procrustes,matched,0.7595735320442988,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,token,best,0.215597077332353,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,token,matched,0.15287217471216405,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,prompt,best,0.5528977370743913,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,prompt,matched,0.47336868196725845,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,best,0.47195364509646154,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,matched,0.38287491766469817,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,procrustes,best,0.7818886865373693,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.5,procrustes,matched,0.7323499914019349,38,30,60,0,2
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,token,best,0.20962148485868648,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,token,matched,0.1388365703291799,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,prompt,best,0.5289709355747491,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,prompt,matched,0.4626936312568815,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,best,0.44782961878860206,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,matched,0.3755187392234802,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,procrustes,best,0.7661034532990512,38,30,60,0,0
+R18_SD35L,R18_ZB6,unrelated,attn,t0.25,procrustes,matched,0.7169340764269387,38,30,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,token,best,0.49134870040181433,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,token,matched,0.3531099051531208,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,prompt,best,0.6494062706014798,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,prompt,matched,0.5231817537868345,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,prompt_debiased,best,0.5492023833348114,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,prompt_debiased,matched,0.4098753431125691,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,procrustes,best,0.845352981334532,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,first,procrustes,matched,0.7834093097259783,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,token,best,0.34740656174551277,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,token,matched,0.24467590544372797,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,prompt,best,0.6207018473878838,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,prompt,matched,0.5476409683102056,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,best,0.5037930784396883,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,matched,0.4239307812562114,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,procrustes,best,0.8230277610108516,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.75,procrustes,matched,0.7818499135469233,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,token,best,0.3010224241315198,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,token,matched,0.21413783273218492,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,prompt,best,0.5985079246356075,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,prompt,matched,0.5243927834457472,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,best,0.48936385524116066,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,matched,0.40634135450971753,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,procrustes,best,0.8029074576179215,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.5,procrustes,matched,0.7616978484576958,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,token,best,0.2718795336418806,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,token,matched,0.19273668914837272,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,prompt,best,0.5772269128688744,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,prompt,matched,0.5089762355936202,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,best,0.48204760421487625,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,matched,0.40085881124985845,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,procrustes,best,0.7834314650318763,38,28,60,0,0
+R18_SD35L,R18S_PIXART,unrelated,attn,t0.25,procrustes,matched,0.7442678310872848,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,token,best,0.4622089806874108,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.32461266964673996,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.6630280957889487,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.5600670725107193,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.5435588945375573,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.42864536435196277,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.853224470758243,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.7979303115230755,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.27365290470197234,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.1945952852501681,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6268030313172734,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.5587372250462833,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.5334057773750527,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.45907500298007536,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.8221025091216836,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.7800165483846012,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.23704061563357823,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.16274192284694627,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.5962522203536859,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.527702777597465,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.5096824695741324,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.43136123548212807,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.8046468964686334,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.7606199932193967,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.2135296451852174,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.1410603027202581,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.5677792802453041,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.49955037393068014,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.4887174351659036,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.4106761613174489,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.7849955579776129,38,28,60,0,0
+R18_SD35L,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.7406412153512071,38,28,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,token,best,0.5351627668071735,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,token,matched,0.3983998705485934,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt,best,0.6459153879826006,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt,matched,0.5299053143121695,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt_debiased,best,0.5523446911063634,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,prompt_debiased,matched,0.41795690999807494,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,procrustes,best,0.8545291263199928,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,first,procrustes,matched,0.8001634462554384,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,token,best,0.35269649629072664,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,token,matched,0.2646401741688973,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt,best,0.6427828052587676,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt,matched,0.5589791165762826,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,best,0.5326821987043346,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,matched,0.4435614905271091,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,procrustes,best,0.8219395844054399,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.75,procrustes,matched,0.7697264177615599,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,token,best,0.29829524612675107,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,token,matched,0.22987871911180646,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt,best,0.5950667005881929,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt,matched,0.5173109854130369,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,best,0.4792179725083866,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,matched,0.3935071274785227,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,procrustes,best,0.7982817162423325,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.5,procrustes,matched,0.7500018234234068,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,token,best,0.2834019393643789,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,token,matched,0.22124239630801112,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt,best,0.5780031743148963,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt,matched,0.49349798320939664,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,best,0.4627219459466767,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,matched,0.36494211896665785,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,procrustes,best,0.7861175533144562,38,24,60,0,0
+R18_SD35LT,R18S_SD3M,"same vendor, relation undocumented",attn,t0.25,procrustes,matched,0.735134470790522,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,token,best,0.5923591224117237,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,token,matched,0.4537685826224716,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt,best,0.7410940360277891,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt,matched,0.6552436759597376,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt_debiased,best,0.6498595498861712,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,prompt_debiased,matched,0.5488277378639108,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,procrustes,best,0.8904467232401688,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,first,procrustes,matched,0.8461851435472213,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,token,best,0.3982568496446076,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,token,matched,0.30188254188550145,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt,best,0.6578512223143327,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt,matched,0.5815795089461302,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,best,0.5663319644763282,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,prompt_debiased,matched,0.48054723402387217,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,procrustes,best,0.8363674366066245,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.75,procrustes,matched,0.7872984594194475,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,token,best,0.34826955731892795,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,token,matched,0.2691850812223397,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt,best,0.6109414481018719,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt,matched,0.5386447432009798,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,best,0.5189435970561024,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,prompt_debiased,matched,0.43552301413269323,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,procrustes,best,0.8145198004357581,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.5,procrustes,matched,0.7698127481458034,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,token,best,0.333836678105096,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,token,matched,0.265016426185244,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt,best,0.604663980373165,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt,matched,0.5295643161394095,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,best,0.5170177628465912,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,prompt_debiased,matched,0.42858116910812033,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,procrustes,best,0.8082375720177899,38,24,60,0,0
+R18_SD35LT,R18S_SD35M,"same vendor, relation undocumented",attn,t0.25,procrustes,matched,0.7611825396419868,38,24,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,token,best,0.42683306503060614,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,token,matched,0.3217609689914082,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,prompt,best,0.6663951168196243,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,prompt,matched,0.5679435782918805,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,prompt_debiased,best,0.561411898903418,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,prompt_debiased,matched,0.45134526172554806,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,procrustes,best,0.8578486497685023,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,first,procrustes,matched,0.8081571074302112,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,token,best,0.2635114012710881,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,token,matched,0.1999105639559658,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,prompt,best,0.5929601060716729,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,prompt,matched,0.5339576790207311,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,best,0.5130579003247253,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,matched,0.44128345933399704,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,procrustes,best,0.8082080763091337,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.75,procrustes,matched,0.7690052806464156,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,token,best,0.22377072250503197,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,token,matched,0.1625049021830292,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,prompt,best,0.571709090562766,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,prompt,matched,0.5127776055351684,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,best,0.5043465078465248,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,matched,0.43251310249692515,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,procrustes,best,0.7850914911374409,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.5,procrustes,matched,0.7438871379479339,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,token,best,0.21515307294760355,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,token,matched,0.15138700310336917,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,prompt,best,0.5713483230978773,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,prompt,matched,0.5104849673807621,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,best,0.5128213347834454,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,matched,0.4388735935484108,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,procrustes,best,0.7744082370767524,38,30,60,0,0
+R18_SD35LT,R18_ZIT2,unrelated,attn,t0.25,procrustes,matched,0.7329149972195385,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,first,token,best,0.3539988279549612,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,token,matched,0.30564551719504857,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,prompt,best,0.6915004897143757,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,prompt,matched,0.6620047649611598,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,prompt_debiased,best,0.5798035641663779,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,prompt_debiased,matched,0.5395133317974599,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,procrustes,best,0.8715353454058625,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,first,procrustes,matched,0.8543817161435088,38,30,60,0,12
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,token,best,0.22198672496706695,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,token,matched,0.15916323454252312,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,prompt,best,0.541812157300406,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,prompt,matched,0.48528206305844446,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,best,0.4472300923408422,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,matched,0.388655532683645,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,procrustes,best,0.788134542330717,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.75,procrustes,matched,0.7468221704118861,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,token,best,0.17926985466558681,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,token,matched,0.13107923569955995,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,prompt,best,0.4891558839918527,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,prompt,matched,0.43386329476322444,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,best,0.3948516871051905,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,matched,0.3396602774305003,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,procrustes,best,0.7626658615877657,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.5,procrustes,matched,0.7182715582801394,38,30,60,0,2
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,token,best,0.1834795430433332,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,token,matched,0.12507257970834249,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,prompt,best,0.49996549782522937,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,prompt,matched,0.44325023850328044,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,best,0.4087290411586302,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,matched,0.3527291221053977,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,procrustes,best,0.7567186318434684,38,30,60,0,0
+R18_SD35LT,R18_ZB6,unrelated,attn,t0.25,procrustes,matched,0.7081960708168881,38,30,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,token,best,0.4863030200726107,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,token,matched,0.35015732819508566,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,prompt,best,0.6675843164963796,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,prompt,matched,0.5613486909785786,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,prompt_debiased,best,0.5719697127552857,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,prompt_debiased,matched,0.4539327631263356,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,procrustes,best,0.8499743424832302,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,first,procrustes,matched,0.7958303219946584,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,token,best,0.3394178558715192,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,token,matched,0.23581589550073995,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,prompt,best,0.5947470739483833,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,prompt,matched,0.5292224636987636,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,best,0.48167934845712845,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,matched,0.4126698405138756,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,procrustes,best,0.8083335604947244,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.75,procrustes,matched,0.766933874451171,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,token,best,0.27850743538623013,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,token,matched,0.1935850828886032,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,prompt,best,0.5515867963265207,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,prompt,matched,0.48492463482053655,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,best,0.4350538859073829,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,matched,0.36949958068955885,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,procrustes,best,0.782494559322772,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.5,procrustes,matched,0.7417389781865606,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,token,best,0.2581236898002768,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,token,matched,0.17916067366145158,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,prompt,best,0.5399542830156204,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,prompt,matched,0.46825600415468216,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,best,0.42870072268397735,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,matched,0.3571090637461135,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,procrustes,best,0.771832269550639,38,28,60,0,0
+R18_SD35LT,R18S_PIXART,unrelated,attn,t0.25,procrustes,matched,0.7276126161075779,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,token,best,0.4504532346473937,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.3298576353607993,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.6859085203727551,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.5932262392865645,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.5714911931663528,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.46885124495939207,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.8615076977596523,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.8098338378725687,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.25866607700551586,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.18992359276958987,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6113645644732435,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.527882905578927,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.5209762831603675,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.4278211158847338,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.8093360525482716,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.7591338912590379,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.2139677018193262,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.15201268031408913,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.5531373002419346,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.4730859074349466,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.46276058503111506,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.3733686359452182,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.7830982333166754,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.7351292695703612,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.20073434244841337,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.13761428924963662,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.5461035887605714,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.4600914408893962,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.46277341063141375,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.3675860525108874,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.7746581373241533,38,28,60,0,0
+R18_SD35LT,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.7210992430364831,38,28,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,token,best,0.4433983771130443,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,token,matched,0.341249951471885,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,prompt,best,0.5908606267223755,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,prompt,matched,0.4700846988707781,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,prompt_debiased,best,0.48813417560110495,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,prompt_debiased,matched,0.3520696343233188,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,procrustes,best,0.8322647058635423,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,first,procrustes,matched,0.7805160686440091,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,token,best,0.27626377089569965,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,token,matched,0.20435449543098608,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,prompt,best,0.6303547995785872,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,prompt,matched,0.5242355652153492,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,best,0.5761886842548847,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,matched,0.45721979811787605,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,procrustes,best,0.8253577246277138,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.75,procrustes,matched,0.7703314653706288,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,token,best,0.23763187670459351,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,token,matched,0.17267963321258625,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,prompt,best,0.5895233616232871,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,prompt,matched,0.4929499340554078,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,best,0.541846455509464,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,matched,0.436903224637111,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,procrustes,best,0.8010198361822459,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.5,procrustes,matched,0.7466718725298676,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,token,best,0.22056726651887099,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,token,matched,0.15845727982620397,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,prompt,best,0.5469635676592588,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,prompt,matched,0.4589034269253413,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,best,0.5081187133987745,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,matched,0.40153712468842667,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,procrustes,best,0.7759014053316716,24,30,60,0,0
+R18S_SD3M,R18_ZIT2,unrelated,attn,t0.25,procrustes,matched,0.7235904869596711,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,first,token,best,0.3762140644507276,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,token,matched,0.2877424678632191,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,prompt,best,0.6206984237457316,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,prompt,matched,0.49873101072652,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,prompt_debiased,best,0.5168909539158145,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,prompt_debiased,matched,0.36623463141066687,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,procrustes,best,0.8469549136354891,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,first,procrustes,matched,0.8078467551775506,24,30,60,0,12
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,token,best,0.24117193650454283,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,token,matched,0.17601957560881323,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,prompt,best,0.5775899366431293,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,prompt,matched,0.45055129346640216,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,best,0.5099170816441377,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,matched,0.37804550191630487,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,procrustes,best,0.7969356140110879,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.75,procrustes,matched,0.7300234363654146,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,token,best,0.20978987349995545,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,token,matched,0.15714601135772208,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,prompt,best,0.5378950208957707,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,prompt,matched,0.42378080927807354,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,best,0.47237045725896243,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,matched,0.3582531213760376,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,procrustes,best,0.777072302056214,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.5,procrustes,matched,0.7106778915250225,24,30,60,0,2
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,token,best,0.20166555990775425,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,token,matched,0.14394533882538477,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,prompt,best,0.5067916420598825,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,prompt,matched,0.42085281138618785,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,best,0.44538891861836116,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,matched,0.34921317485471565,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,procrustes,best,0.7596201077023654,24,30,60,0,0
+R18S_SD3M,R18_ZB6,unrelated,attn,t0.25,procrustes,matched,0.7021449210163694,24,30,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,token,best,0.5262674954498098,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,token,matched,0.4084807615727186,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,prompt,best,0.5954660688768383,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,prompt,matched,0.45829513798589294,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,prompt_debiased,best,0.49052690120325204,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,prompt_debiased,matched,0.337635596593221,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,procrustes,best,0.8298079691633686,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,first,procrustes,matched,0.7674537687656727,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,token,best,0.3272504262803566,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,token,matched,0.25776314331839484,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,prompt,best,0.5904553449224859,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,prompt,matched,0.5376458143194517,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,best,0.501759448753936,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,matched,0.4498959059516589,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,procrustes,best,0.8084022845841229,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.75,procrustes,matched,0.7772373993937424,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,token,best,0.2702774678667387,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,token,matched,0.21578616835176945,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,prompt,best,0.557688228874689,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,prompt,matched,0.5034204622109731,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,best,0.4880917580532176,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,matched,0.4338897255559762,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,procrustes,best,0.7873419412313583,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.5,procrustes,matched,0.7533965435963106,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,token,best,0.24021365302836611,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,token,matched,0.1910478612408042,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,prompt,best,0.522361933031962,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,prompt,matched,0.47108296553293866,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,best,0.4592523143759796,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,matched,0.4033830625315507,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,procrustes,best,0.7632134028065318,24,28,60,0,0
+R18S_SD3M,R18S_PIXART,unrelated,attn,t0.25,procrustes,matched,0.729013903646471,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,token,best,0.48504970586370855,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.40056575493266183,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.6108617100312754,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.5351222364798837,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.49787891869034084,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.4007635960976283,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.8352624032727367,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.7990979177877854,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.28108666579992997,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.22692630626261234,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6224094517529011,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.5692519620060921,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.5439924907294058,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.48367097104589146,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.827918541064972,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.801265397755726,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.2440949003433897,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.1917221510472397,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.5861613546453771,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.5267861261963844,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.5209796528908468,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.4519212419788043,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.8093785125301153,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.7792970620289399,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.21870757320097514,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.16916380124166608,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.5542082077867928,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.4948284178972244,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.49476308863432633,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.4258464239537716,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.7876514856301127,24,28,60,0,0
+R18S_SD3M,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.7554146881600033,24,28,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,token,best,0.48066894002258775,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,token,matched,0.3920364857961734,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,prompt,best,0.6776479438568155,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,prompt,matched,0.5826914546390375,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,prompt_debiased,best,0.5738962532331546,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,prompt_debiased,matched,0.4586928493032853,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,procrustes,best,0.8653056941495391,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,first,procrustes,matched,0.8255857278568396,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,token,best,0.2607640780508518,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,token,matched,0.20079544248680273,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,prompt,best,0.6515623045464357,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,prompt,matched,0.5667439612249533,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,best,0.5843500929574171,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,prompt_debiased,matched,0.48654914895693463,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,procrustes,best,0.8302898759006847,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.75,procrustes,matched,0.7796279454922809,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,token,best,0.22393497663239637,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,token,matched,0.16748511449744305,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,prompt,best,0.6261815023918946,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,prompt,matched,0.5423966348171234,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,best,0.562636390949289,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,prompt_debiased,matched,0.4686024884382884,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,procrustes,best,0.8095329788554411,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.5,procrustes,matched,0.7562845416897699,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,token,best,0.21018432111789784,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,token,matched,0.15404394827783108,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,prompt,best,0.5945682470997175,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,prompt,matched,0.5153609775006771,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,best,0.5346947940687339,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,prompt_debiased,matched,0.44647849909961224,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,procrustes,best,0.7886346068961543,24,30,60,0,0
+R18S_SD35M,R18_ZIT2,unrelated,attn,t0.25,procrustes,matched,0.7369944520055706,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,first,token,best,0.4152701045903895,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,token,matched,0.3255090607064111,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,prompt,best,0.6987631258865197,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,prompt,matched,0.6413576241050448,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,prompt_debiased,best,0.5863947215386562,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,prompt_debiased,matched,0.5033452638557979,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,procrustes,best,0.8803667164804303,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,first,procrustes,matched,0.8611299877208641,24,30,60,0,12
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,token,best,0.22918409588081495,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,token,matched,0.1688042568123859,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,prompt,best,0.5955306759902409,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,prompt,matched,0.49344967888749164,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,best,0.5140878501392546,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,prompt_debiased,matched,0.40809378027915955,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,procrustes,best,0.8030470223153069,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.75,procrustes,matched,0.7414025141478693,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,token,best,0.19395990128673257,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,token,matched,0.1467892190684443,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,prompt,best,0.5580443265360027,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,prompt,matched,0.46209848056668823,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,best,0.47757993248246966,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,prompt_debiased,matched,0.37756372340347455,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,procrustes,best,0.7833988155440377,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.5,procrustes,matched,0.7194311455985188,24,30,60,0,2
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,token,best,0.18880426846444606,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,token,matched,0.13261352820942798,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,prompt,best,0.5214649262527624,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,prompt,matched,0.4423037792245547,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,best,0.43749873054524263,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,prompt_debiased,matched,0.35294899344444275,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,procrustes,best,0.7623378301637627,24,30,60,0,0
+R18S_SD35M,R18_ZB6,unrelated,attn,t0.25,procrustes,matched,0.7050371507757621,24,30,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,token,best,0.5596092801008905,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,token,matched,0.42713519744575024,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,prompt,best,0.6712934902903658,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,prompt,matched,0.5908476036527882,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,prompt_debiased,best,0.5716751488812623,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,prompt_debiased,matched,0.47566512413322926,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,procrustes,best,0.8572651632158745,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,first,procrustes,matched,0.8197364928509587,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,token,best,0.34735529510570423,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,token,matched,0.2652956936508417,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,prompt,best,0.6383107916585037,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,prompt,matched,0.592123826344808,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,best,0.5426072670767705,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,matched,0.49077677478392917,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,procrustes,best,0.829692018335423,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.75,procrustes,matched,0.801694456979492,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,token,best,0.28960278568168485,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,token,matched,0.22785686701536179,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,prompt,best,0.6265252172237351,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,prompt,matched,0.5780020654201508,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,best,0.5443188514383066,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,matched,0.48829125240445137,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,procrustes,best,0.8169242090373026,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.5,procrustes,matched,0.7880876168252108,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,token,best,0.2581064748533425,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,token,matched,0.20335312001407146,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,prompt,best,0.6039376430036056,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,prompt,matched,0.5535597999890646,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,best,0.5262989902070591,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,matched,0.46771327033638954,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,procrustes,best,0.8011877654625124,24,28,60,0,0
+R18S_SD35M,R18S_PIXART,unrelated,attn,t0.25,procrustes,matched,0.7714341929249157,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,token,best,0.5201415954423803,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.427815150624762,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.7001113409383429,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.648395114618799,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.5781816268073661,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.5109868397315344,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.8712200367111517,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.843826371433719,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.27542516633513425,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.21585229986036816,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6362014054542496,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.592823188751936,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.5527436121233872,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.5001595728099346,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.8299278041211684,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.804634736168152,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.23552529438443126,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.18134997257341942,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.6152221055790073,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.5646424144506454,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.5385483144117253,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.47878824671109516,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.8152071369777578,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.7869775458154429,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.21075164806097746,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.15731063236792883,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.5903517655318692,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.5349322247008482,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.5195748281798193,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.4551946222782135,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.7990225870227354,24,28,60,0,0
+R18S_SD35M,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.7663026237706702,24,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,token,best,0.48599211541669707,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,token,matched,0.35759522939721744,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,prompt,best,0.6755008244955981,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,prompt,matched,0.586960075230434,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,prompt_debiased,best,0.5856425881385803,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,prompt_debiased,matched,0.4884717027346293,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,procrustes,best,0.8496337400695257,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,first,procrustes,matched,0.8093253498931708,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,token,best,0.27280710735136554,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,token,matched,0.19160868550340335,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,prompt,best,0.5951223327645234,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,prompt,matched,0.5131103177865346,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,best,0.5011909296470028,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,matched,0.41667638818422953,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,procrustes,best,0.8129174861772264,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.75,procrustes,matched,0.7677346443833416,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,token,best,0.2233645547713552,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,token,matched,0.1564323864877224,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,prompt,best,0.5711105409477438,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,prompt,matched,0.4827207307020823,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,best,0.4846695892158009,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,matched,0.391978590687116,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,procrustes,best,0.7910316740751694,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.5,procrustes,matched,0.7413851826803791,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,token,best,0.20030115777183147,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,token,matched,0.13609777813156446,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,prompt,best,0.5237154452218895,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,prompt,matched,0.44532627761363985,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,best,0.4433811391038554,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,matched,0.3602664485573769,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,procrustes,best,0.7619613490693565,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,attn,t0.25,procrustes,matched,0.7148709915367505,30,28,60,0,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,token,best,0.3759103903060623,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,token,matched,0.21864267933214532,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,prompt,best,0.6191208079787605,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,prompt,matched,0.49092159445943506,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,prompt_debiased,best,0.5568469858136524,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,prompt_debiased,matched,0.4252589285887521,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,procrustes,best,0.803508758168073,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,first,procrustes,matched,0.7280010170899661,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,token,best,0.2258046332613698,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,token,matched,0.15718229141618525,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,prompt,best,0.5671281375523125,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,prompt,matched,0.4627186416515282,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,prompt_debiased,best,0.48900739130164894,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,prompt_debiased,matched,0.38251681200095583,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,procrustes,best,0.7899977598968666,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.75,procrustes,matched,0.7272015475581244,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,token,best,0.23228769709489178,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,token,matched,0.1581191041373781,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,prompt,best,0.5347351173737219,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,prompt,matched,0.43600413482636213,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,prompt_debiased,best,0.4648203986829945,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,prompt_debiased,matched,0.36172937049663495,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,procrustes,best,0.7631932720350549,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.5,procrustes,matched,0.7014084629747465,30,28,60,2,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,token,best,0.22634235221268656,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,token,matched,0.1472896748575671,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,prompt,best,0.48949125308194774,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,prompt,matched,0.4053440908419675,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,prompt_debiased,best,0.4329208175885707,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,prompt_debiased,matched,0.33874273865387355,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,procrustes,best,0.7303103518389651,30,28,60,1,0
+R18_ZIT2,R18S_PIXART,unrelated,mlp,t0.25,procrustes,matched,0.6736645013747546,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,token,best,0.43472739255854065,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.3459604576230049,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.693583680247819,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.6034015622632257,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.5934751185987677,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.48175526211659114,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.8626920077080102,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.8286807280612524,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.25757323342951993,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.19501083493232726,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6647728859668687,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.5920679728190105,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.6057147623882407,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.5141866644223531,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.8396749983312156,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.8002905270997115,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.21557059864557926,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.15634553531805676,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.6526703671685288,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.5723080724477768,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.5951913169097334,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.49972760627667107,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.8259305626820648,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.7829254856871032,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.19510580594873145,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.13681540737549464,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.6310141636856965,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.545723898212115,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.57923733027918,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.4808465212583542,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.8071282823795536,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.7597662211044628,30,28,60,0,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,token,best,0.30516258905655497,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,token,matched,0.19329838942864846,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,prompt,best,0.5984230910615969,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,prompt,matched,0.44059398217961704,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,prompt_debiased,best,0.5266065218215212,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,prompt_debiased,matched,0.3653203876496389,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,procrustes,best,0.8120893042521047,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,first,procrustes,matched,0.7279574796571272,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,token,best,0.20168667341515956,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,token,matched,0.12713682982471905,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt,best,0.6613357476890087,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt,matched,0.515032240322658,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt_debiased,best,0.6171035127980369,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt_debiased,matched,0.46393061322825296,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,procrustes,best,0.8254460003426306,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.75,procrustes,matched,0.7604148963671136,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,token,best,0.19758664311042856,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,token,matched,0.11553404089396022,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt,best,0.6456952095031738,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt,matched,0.5230634734034538,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt_debiased,best,0.605465511658362,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt_debiased,matched,0.47793598047324587,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,procrustes,best,0.8103425869121433,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.5,procrustes,matched,0.7496673506988477,30,28,60,2,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,token,best,0.16736903175106044,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,token,matched,0.10949848529657927,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt,best,0.6297032327524253,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt,matched,0.5361306795786167,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt_debiased,best,0.5981701399782315,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt_debiased,matched,0.4996944773813774,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,procrustes,best,0.7878561973307698,30,28,60,1,0
+R18_ZIT2,R18S_COSMOS2B,unrelated,mlp,t0.25,procrustes,matched,0.7342684093463668,30,28,60,1,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,token,best,0.39857163927739575,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,token,matched,0.3148058317601681,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,prompt,best,0.6784704506949142,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,prompt,matched,0.5650283098220825,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,prompt_debiased,best,0.5817327227384326,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,prompt_debiased,matched,0.471289712521765,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,procrustes,best,0.8562894689559754,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,first,procrustes,matched,0.8102072163365095,30,28,60,12,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,token,best,0.24532600811549593,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,token,matched,0.16298587966178144,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,prompt,best,0.580203496984073,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,prompt,matched,0.4844844618013927,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,best,0.48360903773988995,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,prompt_debiased,matched,0.3917336219123432,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,procrustes,best,0.8028063539142707,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.75,procrustes,matched,0.748366026319496,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,token,best,0.19323389418423176,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,token,matched,0.13732786316956794,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,prompt,best,0.5531912073493004,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,prompt,matched,0.45616315305233,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,best,0.4657105936535767,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,prompt_debiased,matched,0.3664687036403588,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,procrustes,best,0.7841904005178232,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.5,procrustes,matched,0.7285952925408479,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,token,best,0.18326584375685168,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,token,matched,0.12390600269039471,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,prompt,best,0.5166197384397189,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,prompt,matched,0.43842597007751466,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,best,0.4289154483803681,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,prompt_debiased,matched,0.3492372567454974,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,procrustes,best,0.7629124824535951,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,attn,t0.25,procrustes,matched,0.7130020269275165,30,28,60,0,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,token,best,0.28988255161259857,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,token,matched,0.1661825180053711,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,prompt,best,0.616937676710742,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,prompt,matched,0.4913132233279092,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,prompt_debiased,best,0.5456541493712437,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,prompt_debiased,matched,0.41012626318704515,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,procrustes,best,0.8160035693749672,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,first,procrustes,matched,0.7647665341131427,30,28,60,9,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,token,best,0.26889720290071434,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,token,matched,0.1316903970307774,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,prompt,best,0.5413443165382854,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,prompt,matched,0.4322796698521685,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,prompt_debiased,best,0.4632005739030699,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,prompt_debiased,matched,0.3564992560832589,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,procrustes,best,0.7758365442934897,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.75,procrustes,matched,0.7101652518175077,30,28,60,3,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,token,best,0.23158351285383105,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,token,matched,0.12516933792669857,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,prompt,best,0.5004939500774656,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,prompt,matched,0.4046814731721367,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,prompt_debiased,best,0.4309462234377861,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,prompt_debiased,matched,0.33262277767062187,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,procrustes,best,0.7526681182865934,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.5,procrustes,matched,0.6916800182581374,30,28,60,2,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,token,best,0.22082479318583403,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,token,matched,0.12481450475752354,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,prompt,best,0.47221865124263607,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,prompt,matched,0.4017572420147749,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,prompt_debiased,best,0.4066126860555384,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,prompt_debiased,matched,0.32790122209833217,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,procrustes,best,0.7396654191316234,30,28,60,4,0
+R18_ZB6,R18S_PIXART,unrelated,mlp,t0.25,procrustes,matched,0.6928668510070509,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,token,best,0.3775645610506809,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.2775309056871467,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.7060689755060054,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.650049454636044,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.5971890849963066,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.5279129279984368,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.8753364142281779,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.8601639235817791,30,28,60,12,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.2148698809157525,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.16329695577067987,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6283565956567014,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.551182430769716,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.5634545614676816,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.47420296392270495,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.8204567302423376,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.7727796097824058,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.17795113420912198,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.13376402548913444,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.60459196886846,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.5221292206219265,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.5412317791155407,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.4464803449809551,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.8053043099474413,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.7541309429886621,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.1601511795738978,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.10537339076399803,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.5787139264600618,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.500949842731158,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.5161020545022829,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.42677256812651954,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.7891330407279391,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.736002186302946,30,28,60,0,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,token,best,0.2385934877120668,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,token,matched,0.10720939402069364,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,prompt,best,0.6086048137928759,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,prompt,matched,0.4621829560824803,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,prompt_debiased,best,0.5270363294652529,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,prompt_debiased,matched,0.3719882404520398,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,procrustes,best,0.8235922583390474,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,first,procrustes,matched,0.7742416039265094,30,28,60,9,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,token,best,0.19572451371741456,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,token,matched,0.08959823374257044,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt,best,0.6059619788691479,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt,matched,0.47441882888476056,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt_debiased,best,0.5562343470870503,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt_debiased,matched,0.4193076756265428,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,procrustes,best,0.7994405217221847,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.75,procrustes,matched,0.7366540633742642,30,28,60,3,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,token,best,0.17325908130234374,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,token,matched,0.08322616952604481,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt,best,0.5645591951906681,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt,matched,0.4583404702799661,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt_debiased,best,0.5133209968251842,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt_debiased,matched,0.4051714411803654,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,procrustes,best,0.7791159102397684,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.5,procrustes,matched,0.7187419530734241,30,28,60,2,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,token,best,0.13361567473499575,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,token,matched,0.07353002808164232,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt,best,0.5506728689421665,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt,matched,0.473507196857379,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt_debiased,best,0.5000757753930904,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt_debiased,matched,0.4254505393596796,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,procrustes,best,0.7675480464915659,30,28,60,4,0
+R18_ZB6,R18S_COSMOS2B,unrelated,mlp,t0.25,procrustes,matched,0.716868205884066,30,28,60,4,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,token,best,0.5333403652267796,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,token,matched,0.3914182633161545,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,prompt,best,0.7153213564996366,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,prompt,matched,0.6556663380728828,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,best,0.6264895482787065,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,prompt_debiased,matched,0.5641877470271928,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,procrustes,best,0.8632585547787399,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,first,procrustes,matched,0.8344150390430932,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,token,best,0.3137052252090403,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,token,matched,0.22649125342390367,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,best,0.6818163639732769,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,prompt,matched,0.6337396268333707,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,best,0.6034417508968285,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,prompt_debiased,matched,0.5462443892444883,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,best,0.857382265103793,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.75,procrustes,matched,0.8367575396219387,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,token,best,0.26636018856827703,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,token,matched,0.18907177993761642,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,best,0.6738646551966667,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,prompt,matched,0.6159041566508157,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,best,0.6085136117679733,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,prompt_debiased,matched,0.538266795022147,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,best,0.847866821279677,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.5,procrustes,matched,0.8248543441028084,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,token,best,0.23859471162515028,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,token,matched,0.16306759975850582,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,best,0.6606261762125152,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,prompt,matched,0.5996796914509365,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,best,0.6033301161868232,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,prompt_debiased,matched,0.5321023815444538,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,best,0.8360469962424377,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,attn,t0.25,procrustes,matched,0.8105138964473317,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,token,best,0.4404748130057539,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,token,matched,0.23808174753295525,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,prompt,best,0.6611326235745634,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,prompt,matched,0.5503659461225782,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,prompt_debiased,best,0.6023867191480738,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,prompt_debiased,matched,0.4855011376951422,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,procrustes,best,0.8300580041963588,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,first,procrustes,matched,0.781620406718195,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,token,best,0.3138221557185586,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,token,matched,0.18899472174234688,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt,best,0.6243225926799434,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt,matched,0.5281141001198973,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt_debiased,best,0.5641584332500185,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,prompt_debiased,matched,0.4700302311352321,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,procrustes,best,0.8245798490875806,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.75,procrustes,matched,0.7880158262800239,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,token,best,0.2698995083171342,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,token,matched,0.16317005561930792,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt,best,0.6028546605791365,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt,matched,0.49029636063746046,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt_debiased,best,0.5494961674724306,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,prompt_debiased,matched,0.43617405023958,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,procrustes,best,0.8097602084443589,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.5,procrustes,matched,0.7681654080601851,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,token,best,0.18394997463162455,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,token,matched,0.1281229181082121,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt,best,0.5751494360821587,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt,matched,0.483241363295487,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt_debiased,best,0.5322548842855862,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,prompt_debiased,matched,0.43628546382699696,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,procrustes,best,0.791965303281833,28,28,60,0,0
+R18S_PIXART,R18S_COSMOS2B,unrelated,mlp,t0.25,procrustes,matched,0.7570958630557865,28,28,60,0,0

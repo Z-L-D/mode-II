@@ -1,0 +1,127 @@
+channel,step,sigma,observed,obs_3cross,surr_frac_3cross,surr_frac_obs,n_draws
+SD35M archive attn,0,1.0,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,1,0.9915,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,2,0.9828,+- -+ +- -+ +-,False,0.0,1.0,20
+SD35M archive attn,3,0.9737,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,4,0.9643,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,5,0.9545,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,6,0.9444,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,7,0.934,+- -+ +-,True,1.0,1.0,20
+SD35M archive attn,8,0.9231,+- -+ +-,True,0.0,0.0,20
+SD35M archive attn,9,0.9118,+- -+ +-,True,0.0,0.0,20
+SD35M archive attn,10,0.9,+- -+ +-,True,0.0,0.0,20
+SD35M archive attn,11,0.8878,+- -+ +-,True,0.0,0.0,20
+SD35M archive attn,12,0.875,+- -+ +-,True,0.0,0.0,20
+SD35M archive attn,13,0.8617,+- -+ +-,True,0.0,0.0,20
+SD35M archive attn,14,0.8478,+-,False,0.0,1.0,20
+SD35M archive attn,15,0.8333,+-,False,0.0,1.0,20
+SD35M archive attn,16,0.8182,+-,False,0.0,1.0,20
+SD35M archive attn,17,0.8023,+-,False,0.0,1.0,20
+SD35M archive attn,18,0.7857,+-,False,0.0,1.0,20
+SD35M archive attn,19,0.7683,+-,False,0.0,1.0,20
+SD35M archive attn,20,0.75,+-,False,0.0,1.0,20
+SD35M archive attn,21,0.7308,+-,False,0.0,1.0,20
+SD35M archive attn,22,0.7105,+-,False,0.0,1.0,20
+SD35M archive attn,23,0.6892,+-,False,0.0,1.0,20
+SD35M archive attn,24,0.6667,+-,False,0.0,1.0,20
+SD35M archive attn,25,0.6429,+-,False,0.0,1.0,20
+SD35M archive attn,26,0.6176,+-,False,0.0,1.0,20
+SD35M archive attn,27,0.5909,+-,False,0.0,1.0,20
+SD35M archive attn,28,0.5625,+-,False,0.0,1.0,20
+SD35M archive attn,29,0.5323,+-,False,0.0,1.0,20
+SD35M archive attn,30,0.5,+-,False,0.0,1.0,20
+SD35M archive attn,31,0.4655,+-,False,0.0,1.0,20
+SD35M archive attn,32,0.4286,+-,False,0.0,1.0,20
+SD35M archive attn,33,0.3889,+-,False,0.0,1.0,20
+SD35M archive attn,34,0.3462,+-,False,0.0,1.0,20
+SD35M archive attn,35,0.3,+-,False,0.0,1.0,20
+SD35M archive attn,36,0.25,+-,False,0.0,1.0,20
+SD35M archive attn,37,0.1957,+-,False,0.0,1.0,20
+SD35M archive attn,38,0.1364,+-,False,0.0,1.0,20
+SD35M archive attn,39,0.0714,+-,False,0.0,1.0,20
+SD35L archive attn,0,1.0,+- -+ +- -+ +- -+ +-,False,0.0,0.0,20
+SD35L archive attn,1,0.9881,+- -+ +- -+ +- -+ +-,False,0.35,0.05,20
+SD35L archive attn,2,0.9752,+- -+ +- -+ +- -+ +-,False,0.0,0.0,20
+SD35L archive attn,3,0.9616,+- -+ +-,True,1.0,1.0,20
+SD35L archive attn,4,0.9477,+- -+ +-,True,1.0,1.0,20
+SD35L archive attn,5,0.9327,+- -+ +-,True,0.6,0.6,20
+SD35L archive attn,6,0.9168,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,7,0.9,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,8,0.8827,+- -+ +-,True,0.35,0.35,20
+SD35L archive attn,9,0.8639,+- -+ +-,True,0.55,0.55,20
+SD35L archive attn,10,0.8438,+- -+ +-,True,0.55,0.55,20
+SD35L archive attn,11,0.8231,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,12,0.8004,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,13,0.7761,+- -+ +-,True,0.05,0.05,20
+SD35L archive attn,14,0.75,+- -+ +-,True,1.0,1.0,20
+SD35L archive attn,15,0.7228,+- -+ +-,True,0.9,0.9,20
+SD35L archive attn,16,0.6927,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,17,0.6601,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,18,0.6259,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,19,0.5876,+- -+ +-,True,0.2,0.2,20
+SD35L archive attn,20,0.5458,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,21,0.5,+- -+ +-,True,0.25,0.25,20
+SD35L archive attn,22,0.451,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,23,0.3954,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,24,0.3336,+- -+ +-,True,1.0,1.0,20
+SD35L archive attn,25,0.2664,+- -+ +-,True,1.0,1.0,20
+SD35L archive attn,26,0.1888,+- -+ +-,True,0.0,0.0,20
+SD35L archive attn,27,0.1007,+-,False,0.0,1.0,20
+ZIT archive mlp,0,1.0,+- -+ +-,True,1.0,1.0,20
+ZIT archive mlp,1,0.9551,+- -+ +-,True,0.05,0.05,20
+ZIT archive mlp,2,0.9012,+- -+ +-,True,0.8,0.8,20
+ZIT archive mlp,3,0.8353,+- -+ +- -+,False,0.55,0.0,20
+ZIT archive mlp,4,0.7529,+- -+,False,0.0,0.0,20
+ZIT archive mlp,5,0.6471,+-,False,0.0,1.0,20
+ZIT archive mlp,6,0.5049,+-,False,0.0,1.0,20
+ZIT archive mlp,7,0.307,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,0,1.0,+- -+ +- -+ +-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,1,0.9863,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,2,0.9718,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,3,0.9565,+- -+ +- -+ +-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,4,0.9403,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,5,0.9231,,False,0.0,0.0,20
+ZIB archive (pooled CFG4) mlp,6,0.9048,+-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) mlp,7,0.8852,+- -+ +-,True,0.95,0.95,20
+ZIB archive (pooled CFG4) mlp,8,0.8644,+- -+ +-,True,0.9,0.9,20
+ZIB archive (pooled CFG4) mlp,9,0.8421,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,10,0.8182,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,11,0.7925,+- -+ +-,True,0.95,0.95,20
+ZIB archive (pooled CFG4) mlp,12,0.7647,+- -+,False,0.95,0.0,20
+ZIB archive (pooled CFG4) mlp,13,0.7347,+- -+,False,0.7,0.0,20
+ZIB archive (pooled CFG4) mlp,14,0.7021,+- -+,False,0.15,0.0,20
+ZIB archive (pooled CFG4) mlp,15,0.6667,+- -+ +- -+,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,16,0.6279,+-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,17,0.5854,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,18,0.5385,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,19,0.4865,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,20,0.4286,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,21,0.3636,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,22,0.2903,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,23,0.2069,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,24,0.1111,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,0,1.0,+- -+ +-,True,0.55,0.55,20
+ZIB archive (pooled CFG4) attn,1,0.9863,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,2,0.9718,+-,False,0.1,0.9,20
+ZIB archive (pooled CFG4) attn,3,0.9565,+- -+ +-,True,0.1,0.1,20
+ZIB archive (pooled CFG4) attn,4,0.9403,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,5,0.9231,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,6,0.9048,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,7,0.8852,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,8,0.8644,+-,False,0.85,0.15,20
+ZIB archive (pooled CFG4) attn,9,0.8421,+-,False,0.95,0.0,20
+ZIB archive (pooled CFG4) attn,10,0.8182,+-,False,0.95,0.05,20
+ZIB archive (pooled CFG4) attn,11,0.7925,+- -+ +-,True,0.85,0.85,20
+ZIB archive (pooled CFG4) attn,12,0.7647,+- -+ +-,True,0.45,0.45,20
+ZIB archive (pooled CFG4) attn,13,0.7347,+- -+ +- -+ +-,False,0.75,0.0,20
+ZIB archive (pooled CFG4) attn,14,0.7021,+- -+ +-,True,0.1,0.1,20
+ZIB archive (pooled CFG4) attn,15,0.6667,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,16,0.6279,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,17,0.5854,+- -+ +- -+ +-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,18,0.5385,+- -+ +- -+ +-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,19,0.4865,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,20,0.4286,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,21,0.3636,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,22,0.2903,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,23,0.2069,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,24,0.1111,+-,False,0.0,1.0,20

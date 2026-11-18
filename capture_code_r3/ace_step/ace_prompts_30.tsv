@@ -1,0 +1,31 @@
+idx	domain	tags	lyrics	bpm	keyscale	timesignature	language	duration_s	seed_a	seed_b
+0	orchestral_cinematic	Epic orchestral film score, full string section with soaring violins, French horns and timpani building to a powerful brass climax, deep choir pads, wide concert-hall reverb	[Instrumental]	92	D minor	4	en	180	1000	1001
+1	orchestral_cinematic	Gentle pastoral orchestral piece, solo oboe melody over warm divisi strings and harp arpeggios, light flutes, slow and hopeful, soft dynamics	[Instrumental]	72	F major	3	en	180	1002	1003
+2	orchestral_cinematic	Tense suspense underscore, low pulsing cellos and contrabass ostinato, staccato strings, dissonant brass swells and distant metallic percussion	[Instrumental]	110	C minor	4	en	180	1004	1005
+3	jazz	Late-night cool jazz trio, brushed snare and ride cymbal, walking upright bass, mellow piano comping with extended chords, relaxed swing feel	[Instrumental]	128	Bb major	4	en	180	1006	1007
+4	jazz	Up-tempo bebop quintet, fast alto saxophone and trumpet unison head, driving ride cymbal, walking bass, bright piano solo	[Instrumental]	220	F major	4	en	180	1008	1009
+5	jazz	Smoky jazz ballad, breathy tenor saxophone lead, soft piano voicings, brushed drums and slow bowed bass, intimate small-club sound	[Instrumental]	64	Eb major	4	en	180	1010	1011
+6	electronic_dance	Driving four-on-the-floor techno, punchy kick drum, rolling sub bass, hypnotic analog synth arpeggio, crisp hi-hats and evolving filter sweeps	[Instrumental]	128	A minor	4	en	180	1012	1013
+7	electronic_dance	Euphoric progressive house, bright supersaw chord stabs, plucked synth melody, side-chained pads, big build-up and drop	[Instrumental]	124	G major	4	en	180	1014	1015
+8	electronic_dance	Fast drum and bass, chopped breakbeats, deep reese bass, atmospheric pads and sharp snare rolls, dark and energetic	[Instrumental]	174	F minor	4	en	180	1016	1017
+9	ambient_drone	Slow ambient soundscape, long evolving synthesizer drones, soft granular textures, distant shimmering bells, no percussion, very spacious reverb	[Instrumental]	60	C major	4	en	180	1018	1019
+10	ambient_drone	Dark ambient drone, low rumbling bowed metal, sub-bass swells, airy noise layers and slow filter movement, cold and vast	[Instrumental]	50	D minor	4	en	180	1020	1021
+11	ambient_drone	Warm ambient piano and tape loops, sparse felt-piano notes, gentle hiss and wow, soft analog pad underneath, calm and nostalgic	[Instrumental]	70	E major	4	en	180	1022	1023
+12	rock_metal	Energetic garage rock, distorted electric guitar riffs, punchy live drums, driving bass guitar, raw and loud mix	[Instrumental]	150	E minor	4	en	180	1024	1025
+13	rock_metal	Heavy metal, down-tuned palm-muted guitar chugs, double-kick drums, aggressive lead guitar solo, thick bass	[Instrumental]	180	D minor	4	en	180	1026	1027
+14	rock_metal	Melancholic post-rock, clean reverb-drenched guitars with delay, slowly building drums, layered guitars swelling into a loud crescendo	[Instrumental]	96	B minor	4	en	180	1028	1029
+15	folk_acoustic	Fingerpicked acoustic guitar folk, warm steel-string guitar, light hand percussion, soft harmonica, intimate and close	[Instrumental]	100	G major	4	en	180	1030	1031
+16	folk_acoustic	Lively Celtic folk tune, fiddle and tin whistle melody, bodhran drum, strummed bouzouki, dancing jig rhythm	[Instrumental]	116	D major	6	en	180	1032	1033
+17	folk_acoustic	Americana with banjo and slide guitar, upright bass, simple brushed drums, dusty and relaxed	[Instrumental]	88	A major	4	en	180	1034	1035
+18	hip_hop_instrumental	Boom-bap hip hop beat, dusty sampled drums with hard snare, warm jazzy Rhodes loop, deep bass line, vinyl crackle	[Instrumental]	90	C minor	4	en	180	1036	1037
+19	hip_hop_instrumental	Trap instrumental, booming 808 bass, rapid hi-hat rolls, crisp claps, dark bell melody and eerie pads	[Instrumental]	140	F# minor	4	en	180	1038	1039
+20	hip_hop_instrumental	Lo-fi chill hop beat, mellow detuned piano chords, soft swung drums, muffled bass, rain and tape saturation	[Instrumental]	78	Eb major	4	en	180	1040	1041
+21	classical_chamber	Solo classical piano, expressive romantic-era nocturne, flowing left-hand arpeggios and singing right-hand melody, natural concert grand	[Instrumental]	66	Db major	4	en	180	1042	1043
+22	classical_chamber	String quartet in a baroque style, contrapuntal violins, viola and cello, bright and lively allegro, dry chamber acoustics	[Instrumental]	120	G major	4	en	180	1044	1045
+23	classical_chamber	Solo cello suite, unaccompanied bowed cello, resonant low register, slow and reflective, close-miked in a small hall	[Instrumental]	60	C minor	3	en	180	1046	1047
+24	world_traditional	West African percussion ensemble, interlocking djembe and dunun rhythms, kora melody, shakers and call-like flute	[Instrumental]	112	F major	4	en	180	1048	1049
+25	world_traditional	Indian classical raga, sitar melody with sympathetic strings, tabla accompaniment, tanpura drone, gradually accelerating	[Instrumental]	84	D major	4	en	180	1050	1051
+26	world_traditional	Japanese traditional music, koto plucked melody, shakuhachi flute, sparse taiko accents, calm and spacious	[Instrumental]	72	A minor	4	en	180	1052	1053
+27	experimental_textural	Glitch electronic music, stuttering digital clicks and cuts, granular vocal-free textures, irregular rhythms, bit-crushed bass	[Instrumental]	100	C# minor	4	en	180	1054	1055
+28	experimental_textural	Industrial noise piece, harsh metallic clangs, distorted machine rhythms, dense static and low drones	[Instrumental]	120	E minor	4	en	180	1056	1057
+29	experimental_textural	Minimalist phase music, two interlocking marimba patterns slowly shifting out of phase, steady pulse, bright and repetitive	[Instrumental]	132	E major	4	en	180	1058	1059

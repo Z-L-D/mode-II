@@ -1,0 +1,5 @@
+id,verdict,detail
+A1,SUPPORTED,"tangent vs image models: attn -0.097 to +0.285 (Mochi), mlp -0.119 to -0.098; all < 0.40"
+A2,SUPPORTED,"per-prompt level |r| attn 0.125-0.170, mlp 0.076-0.095; all < 0.30"
+A3,SUPPORTED,"ACE image prompts vs ACE audio prompts: attn 0.946, mlp 0.767 (< attn)"
+A4,SUPPORTED,"domain eta^2 attn 0.157, mlp 0.132 (chance about 0.15 for 10 domains x 6 prompts)"

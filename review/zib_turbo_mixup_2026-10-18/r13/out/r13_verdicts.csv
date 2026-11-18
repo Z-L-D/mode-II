@@ -1,0 +1,7 @@
+id,verdict,detail
+H1,SUPPORTED,"layers with Base > Turbo mean share: attn 30/30, mlp 29/30"
+H2,SUPPORTED,attn V1 0.542 vs V3 0.126 (ratio 4.28); mlp V1 0.702 vs V3 0.251 (ratio 2.80)
+H3,SUPPORTED,(a) V1 layers Base<Turbo attn 30/30 mlp 30/30; (b) Z1<Z3 steps attn 25/25 mlp 25/25
+H4,SUPPORTED,attn mid 0.157 early 0.601 late 1.055; mlp mid 0.106 early 1.087 late 0.934
+H5,SUPPORTED,"L0-2 0.043, L25-29 0.101, L6-21 -0.073; steps 2-15 negative: 14/14"
+H6,SUPPORTED,"step-0 prompt share 0.937 over 60 prompts, 240 gens"

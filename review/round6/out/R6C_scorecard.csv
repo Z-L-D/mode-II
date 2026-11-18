@@ -1,0 +1,23 @@
+id,verdict,result
+S1a,CONFIRMED,"margin L0 D1 -0.049, D2 0.047"
+S1b,CONFIRMED,"8/8 unrelated pairs with L0 D1 r >= 0.6; values ZIT-MOCHI 0.822, ZIT-SD35M 0.926, ZIT-SD35L 0.981, ZIB-MOCHI 0.941, ZIB-SD35M 0.785, ZIB-SD35L 0.959, MOCHI-SD35M 0.733, MOCHI-SD35L 0.858"
+S1c,CONFIRMED,"margins L0_D1 -0.049, L0_D2 +0.047, L1_field +0.131, L2_shape +0.152, L3_tangent +0.703"
+S1d,CONFIRMED,delta archive -0.0080 -> R4 cond +0.1574 (change +0.1654)
+S2a,CONFIRMED,"lineage theme r first 0.678, middle 0.750, last 0.626"
+S2b,REFUTED,4/8 unrelated pairs with theme r <= 0.20 at >= 2 tau; max 0.517
+S2c,CONFIRMED,"lineage RSA first 0.564 (p 0.0005), middle 0.616 (p 0.0005), last 0.619 (p 0.0005)"
+S2d,CONFIRMED,SD35M-SD35L first-step RSA 0.308
+S2e,REFUTED,tiers 0.564 > 0.308 > 0.285 > 0.390
+S2f,CONFIRMED,"5/5 models; ZIT 0.104 (p 0.0005), ZIB 0.104 (p 0.0005), MOCHI 0.148 (p 0.0005), SD35M 0.082 (p 0.0005), SD35L 0.107 (p 0.0005)"
+S2g,CONFIRMED,"Spearman(first-step RSA, tangent) over 10 pairs = 0.297"
+S3a,CONFIRMED,"6/7 channels in [0.80, 0.97]: ZIT-attn 0.841, ZIT-mlp 0.673, ZIB-attn 0.934, ZIB-mlp 0.887, MOCHI-attn 0.902, SD35M-attn 0.950, SD35L-attn 0.930"
+S3b,CONFIRMED,range relative onset 0.277 vs sigma50 0.501
+S3c,CONFIRMED,7/7 channels with narrower relative-onset spread
+S3d,REFUTED,"1/7 channels VR4/walk >= 1: ZIT-attn 1.13, ZIT-mlp 0.65, ZIB-attn 0.54, ZIB-mlp 0.49, MOCHI-attn 0.85, SD35M-attn 0.61, SD35L-attn 0.87"
+S4a,CONFIRMED,+-+ in 1.000 (ZIT mlp) and 1.000 (ZIB mlp) of bootstraps
+S4b,CONFIRMED,+-+ in 1.000 (R4 CFG4 cond mlp) and 1.000 (R3 CFG1 cond-only mlp)
+S4c,CONFIRMED,breakpoints archive 0.972/0.818 vs clean 0.986/0.818
+S4d,CONFIRMED,contraction archive -49.7% vs clean -50.5% (diff 0.8 points)
+S4e,REFUTED,"0/5 attn channels: ZIT ++- 0.000, ZIB ++- 0.000, MOCHI ++- 0.000, SD35M ++- 0.000, SD35L ++- 0.000"
+S5a,REFUTED,3/7 channels with R_peak above the warp-null p95
+S5b,CONFIRMED,7/7 channels with R_peak <= linear-trend surrogate

@@ -1,0 +1,9 @@
+# Tested versions in parentheses (Python 3.11).
+numpy>=1.26        # (2.4.6)
+pandas>=2.1        # (3.0.6)
+scipy>=1.11        # (1.17.1)
+scikit-learn>=1.4  # (1.9.1)
+matplotlib>=3.8    # (3.11.2)
+pyarrow>=14        # (25.0.1)  parquet archive
+joblib>=1.3        # (1.6.0)
+plotly>=5          # (7.1.0)  imported by the CoS-PAFS Live Analyzer

@@ -1,0 +1,10 @@
+kind,a,b,segment,tangent,perm95
+successor,SD3M,SD35M17,all 23 intervals,0.9262964653119145,0.27438868779297976
+successor,SD3M,SD35M17,"intervals 0-11 (blocks 0-12, MMDiT-X self-attention in SD3.5 M)",0.939721541085281,0.39556420302177286
+successor,SD3M,SD35M17,intervals 12-22 (blocks 12-23),0.9117717172432676,0.37430317564577814
+"same weights, 2 sessions",SD35M17,SD3SV,all 23 intervals,0.9803609798764945,0.2656936510817607
+"same weights, 2 sessions",SD35M17,SD3SV,"intervals 0-11 (blocks 0-12, MMDiT-X self-attention in SD3.5 M)",0.9897236077682863,0.40132322690426053
+"same weights, 2 sessions",SD35M17,SD3SV,intervals 12-22 (blocks 12-23),0.9707645797588931,0.38017109132390864
+same run,SD3M,SD3MU,all 23 intervals,0.9949601640799788,0.27567444642758815
+same run,SD3M,SD3MU,"intervals 0-11 (blocks 0-12, MMDiT-X self-attention in SD3.5 M)",0.9949821849079373,0.4060561484264765
+same run,SD3M,SD3MU,intervals 12-22 (blocks 12-23),0.995667096192806,0.3754887145589434

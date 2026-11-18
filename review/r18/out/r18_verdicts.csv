@@ -1,0 +1,11 @@
+id,test,verdict,detail
+R18-0a,complete arms,PASS,"SD35L18 attn: 60 gens (needs 58), 38/38 blocks, 28 steps; SD35LT attn: 60 gens (needs 58), 38/38 blocks, 4 steps; ZIT2 attn: 60 gens (needs 58), 30/30 blocks, 8 steps; ZIT2 mlp: 60 gens (needs 58), 30/30 blocks, 8 steps; ZB6 attn: 120 gens (needs 116), 30/30 blocks, 25 steps; ZB6 mlp: 120 gens (needs 116), 30/30 blocks, 25 steps"
+R18-0b,every block hooked; ZIT2 row counts,PASS,"blocks as R18-0a; ZIT2 n_img_rows [np.int64(4096)], n_txt_rows [np.int64(64)]"
+R18-0c,right checkpoints (step-0 r; hashes),PASS (step-0 part only),"ZIT2 vs ZITSV attn 1.0000, mlp 1.0000; ZB6 vs Z1 attn 0.9999 (mlp 1.0000); ZB6 vs ZIT attn 0.6481; R18 SD35L vs archive 0.9943; descriptive SD35L vs SD35LT 0.9860, ZB6 vs ZIT2 0.6521; r18_weight_hashes.json not in the upload, hash part not checked"
+R18-0d,schedules,PASS,"ZB6 max |sigma - shift6(Z1)| 7.58e-07; ZIT2 vs ZITSV max diff 0.00e+00; SD35L18 sigma [1.     0.9878 0.9751 0.9617]..., SD35LT sigma [1.     0.9004 0.7511 0.503 ]"
+R18-1,SD3.5 L <-> L Turbo (attn): lineage rule and <= 0.95,SUPPORTED (middle tier),0.818 (p95 0.301; needs >= 0.601 and <= 0.95); 90% interval 0.795-0.837; native 0.904 (surrogate p95 0.345)
+R18-2,same weights: R18 SD35L <-> archive >= 0.95; cond <-> uncond >= 0.90,SUPPORTED,0.994; 0.994
+R18-3a,"ZIT2 <-> ZITSV: image rows >= 0.97, all rows >= 0.98 (attn and MLP)",SUPPORTED,"attn: image 1.000, all 1.000; mlp: image 1.000, all 1.000"
+R18-3b,"Z2 <-> ZIT2 image rows: attn in [0.90, 0.95], MLP in [0.70, 0.80]",SUPPORTED,"attn 0.928; MLP 0.754 (on file vs ZITSV: 0.928, 0.754)"
+R18-3c,session band minus lineage on image rows (attn) >= 0.03,SUPPORTED,1.000 - 0.928 = 0.072; MLP 0.246
+R18-4,ZB6 <-> ZIT within 0.10 of Z1 <-> ZIT and lineage rule; ZB6 <-> Z1 >= 0.90,SUPPORTED,"attn: ZB6-ZIT 0.649 (ref 0.707, p95 0.277), ZB6-Z1 1.000; mlp: ZB6-ZIT 0.682 (ref 0.719, p95 0.201), ZB6-Z1 1.000"

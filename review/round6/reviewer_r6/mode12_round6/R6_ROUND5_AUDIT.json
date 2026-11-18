@@ -1,0 +1,10 @@
+{
+  "prereg_sha_actual": "78b250a2b3e22047cb6fa3bf113b6900e6340648f0c3ac200f3050a7d7367018",
+  "prereg_sha_shipped": "78b250a2b3e22047cb6fa3bf113b6900e6340648f0c3ac200f3050a7d7367018",
+  "sha_match": true,
+  "q_count": 22,
+  "q_verdict_counts": {
+    "CONFIRMED": 13,
+    "REFUTED": 9
+  }
+}

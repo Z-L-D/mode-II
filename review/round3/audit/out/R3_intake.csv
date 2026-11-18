@@ -1,0 +1,9 @@
+arm,gens,complete,dropped,steps,layers,subs,prompts,seq,hook_mode,branch,seed
+S10_1024_s1001,60,60,,40,24,1,60,4096,passive,all,1001
+S10_1024_s1002,60,60,,40,24,1,60,4096,passive,all,1002
+S45_1024_s1001,60,60,,40,24,1,60,8192,passive,all,1001
+S45_1024_s1002,60,60,,40,24,1,60,8192,passive,all,1002
+S45_512_s1001,60,59,S45_512_s1001:SD3.5M-attn-TE3-CFG4.5-R512-S1001-STUDY[CFG-RES-SEED]-G60-animals_wildlife-0.csv:3,40,24,1,59,2048,passive,all,1001
+S45_768_s1001,60,60,,40,24,1,60,"2304,4608",passive,all,1001
+Z10_1024_s1001,60,60,,25,30,2,60,4160,passive,all,1001
+Z40_1024_s1001,60,60,,25,30,2,60,"4128,4160",passive,all,1001

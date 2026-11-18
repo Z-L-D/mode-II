@@ -1,0 +1,58 @@
+{
+ "_cache": {
+  "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_large.safetensors|16460379262|1729649963": "ffef7a279d9134626e6ce0d494fba84fc1c7e720b3c7df2d19a09dc3796d8f93",
+  "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_large_turbo.safetensors|152|1794242642": "c2767e2fdcb09a38effe4030519d32ae156f7cbc60efaf84d523c2e9a4af25b0",
+  "G:\\Models\\diffusion_models\\--z-image--\\z_image_turbo_bf16.safetensors|12309866400|1764263162": "2407613050b809ffdff18a4ac99af83ea6b95443ecebdf80e064a79c825574a6",
+  "G:\\Models\\diffusion_models\\--z-image--\\z_image_bf16.safetensors|12309866400|1769560810": "996a67d3ff666946b1c25cbc16d1b1918b6cc0ac166309e23fe3b3d830263dee",
+  "G:\\Models\\diffusion_models\\--pixart--\\PixArt-Sigma-XL-2-1024-MS.pth|2467384245|1794141440": "e63941ddc11c9e0bba27e9a0e454d5d959361119849ecfc8981f0488f0d96ff3",
+  "G:\\Models\\diffusion_models\\--cosmos--\\cosmos_predict2_2B_t2i.safetensors|3912894213|1794141646": "76a8b3c6c45289b9c11f74e3067a597a3832a2977fef0d6ea46f2ff7f0895173",
+  "G:\\Models\\Stable-diffusion\\--sd3--\\sd3_medium.safetensors|4337667306|1794145358": "cc236278d28c8c3eccb8e21ee0a67ebed7dd6e9ce40aa9de914fa34e8282f191",
+  "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_medium.safetensors|5107104286|1730274507": "11fe06e22364b823dfeedc275912336b932b32a293a0b2f35ffac071990cc4de",
+  "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_large_turbo.safetensors|16460374454|1794243993": "fb64610bf8d73eb064b8d528eef85d062bf2b4b1204ff7bc73e57ad28b24489c"
+ },
+ "R18_SD35L": {
+  "file": "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_large.safetensors",
+  "sha256": "ffef7a279d9134626e6ce0d494fba84fc1c7e720b3c7df2d19a09dc3796d8f93",
+  "bytes": 16460379262
+ },
+ "R18_SD35LT": {
+  "file": "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_large_turbo.safetensors",
+  "sha256": "fb64610bf8d73eb064b8d528eef85d062bf2b4b1204ff7bc73e57ad28b24489c",
+  "bytes": 16460374454
+ },
+ "R18_ZIT2": {
+  "file": "G:\\Models\\diffusion_models\\--z-image--\\z_image_turbo_bf16.safetensors",
+  "sha256": "2407613050b809ffdff18a4ac99af83ea6b95443ecebdf80e064a79c825574a6",
+  "bytes": 12309866400
+ },
+ "R18_ZB6": {
+  "file": "G:\\Models\\diffusion_models\\--z-image--\\z_image_bf16.safetensors",
+  "sha256": "996a67d3ff666946b1c25cbc16d1b1918b6cc0ac166309e23fe3b3d830263dee",
+  "bytes": 12309866400
+ },
+ "R18S_PIXART": {
+  "file": "G:\\Models\\diffusion_models\\--pixart--\\PixArt-Sigma-XL-2-1024-MS.pth",
+  "sha256": "e63941ddc11c9e0bba27e9a0e454d5d959361119849ecfc8981f0488f0d96ff3",
+  "bytes": 2467384245
+ },
+ "R18S_COSMOS2B": {
+  "file": "G:\\Models\\diffusion_models\\--cosmos--\\cosmos_predict2_2B_t2i.safetensors",
+  "sha256": "76a8b3c6c45289b9c11f74e3067a597a3832a2977fef0d6ea46f2ff7f0895173",
+  "bytes": 3912894213
+ },
+ "R18S_SD3M": {
+  "file": "G:\\Models\\Stable-diffusion\\--sd3--\\sd3_medium.safetensors",
+  "sha256": "cc236278d28c8c3eccb8e21ee0a67ebed7dd6e9ce40aa9de914fa34e8282f191",
+  "bytes": 4337667306
+ },
+ "R18S_SD35M": {
+  "file": "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_medium.safetensors",
+  "sha256": "11fe06e22364b823dfeedc275912336b932b32a293a0b2f35ffac071990cc4de",
+  "bytes": 5107104286
+ },
+ "R18S_SD35M1": {
+  "file": "G:\\Models\\Stable-diffusion\\--sd3--\\sd3.5_medium.safetensors",
+  "sha256": "11fe06e22364b823dfeedc275912336b932b32a293a0b2f35ffac071990cc4de",
+  "bytes": 5107104286
+ }
+}

@@ -1,0 +1,215 @@
+sub,prompt,r_eq,r_opt,loss,path,max_dev_steps
+attn,"
+A sea otter floating on its back in kelp, cracking a sea ur",0.9792182790903727,0.9814671843494108,0.002248905259038092,2 4 7 9 12 17 17 20,2
+attn,"
+Rusted chain links half-buried in wet sand at low tide, wit",0.9781862382283002,0.9794019230152866,0.0012156847869864151,0 4 7 11 14 17 19 20,2
+attn,"A 1920s jazz club interior with a band on stage, cigarette s",0.978854150140622,0.9831777772796977,0.0043236271390756364,3 4 8 11 14 17 18 19,3
+attn,A Cambrian ocean rendered in vivid detail showing Anomalocar,0.9670754189170121,0.9723298647045211,0.005254445787508999,0 6 9 14 14 18 18 20,5
+attn,A Carboniferous swamp with giant dragonflies hovering over s,0.9801751714634563,0.9811051939529364,0.0009300224894800424,0 5 7 10 12 17 19 20,2
+attn,"A Cretaceous coastal forest with towering araucaria trees, a",0.9807496320127678,0.9825658171626217,0.0018161851498539328,2 4 7 11 13 17 19 21,2
+attn,"A Devonian reef teeming with trilobites, crinoids, nautiloid",0.9778710357254247,0.9795928947527117,0.0017218590272870538,0 5 8 10 14 18 18 20,2
+attn,A Japanese temple garden in autumn with a curved wooden brid,0.9804432217278574,0.9824336286010416,0.0019904068731841917,0 4 8 10 14 16 18 20,2
+attn,A Jurassic shoreline where a long-necked plesiosaur surfaces,0.9794043582215486,0.980120369358508,0.0007160111369594047,0 4 7 10 12 16 18 21,1
+attn,A Late Permian landscape showing the transition from lush lo,0.980536785612174,0.9826088212048533,0.002072035592679322,0 5 8 13 14 18 19 21,4
+attn,"A Moroccan riad courtyard with intricate zellige tilework, a",0.9809052559616493,0.9836252682980209,0.0027200123363715356,0 4 8 11 14 17 18 20,2
+attn,"A Polynesian voyaging canoe on open ocean at night, with a n",0.9719186738082723,0.9766632504700636,0.004744576661791289,2 6 10 12 14 18 18 20,4
+attn,A Scandinavian wooden stave church in a snow-covered forest ,0.9784884687645532,0.9812910397752304,0.0028025710106771573,0 4 8 11 13 15 18 20,2
+attn,"A Silk Road caravanserai at dusk, with camels being unloaded",0.978440250788331,0.9818748834316589,0.003434632643327884,2 4 7 11 14 18 18 20,2
+attn,"A Song Dynasty landscape painting come to life, with misty m",0.9721413026108006,0.9731135449702217,0.0009722423594211715,0 5 6 9 11 17 19 21,2
+attn,"A Viking longship beached on a foggy northern shore at dawn,",0.9683007538272471,0.9714941555964929,0.003193401769245763,0 4 8 11 14 17 18 21,2
+attn,"A Wright Brothers-era aircraft in flight over sand dunes, fa",0.9749050225601721,0.9785277709505358,0.0036227483903636948,0 4 8 11 12 14 18 18,4
+attn,"A bioluminescent tide washing onto black sand at night, with",0.9628501182399198,0.9669604719175806,0.004110353677660772,3 4 9 10 14 16 18 19,3
+attn,"A bowl of ripe stone fruit with visible water droplets, cut ",0.9786537903841688,0.9816677428924898,0.0030139525083210383,0 4 8 11 14 17 18 20,2
+attn,A breaching great white shark at the moment of maximum heigh,0.973681356721708,0.9753642303068961,0.0016828735851881493,0 4 8 12 14 17 18 20,3
+attn,A chameleon on a branch reaching for an insect with its tong,0.9764900764392945,0.9783424592609058,0.0018523828216112648,2 4 6 10 12 15 18 20,2
+attn,A chess game between two robed figures on a rooftop overlook,0.9739051368883722,0.9782285429085853,0.004323406020213083,3 4 8 10 12 14 18 20,3
+attn,"A child standing at the edge of an enormous tide pool, bendi",0.9658199379053293,0.9693339414464502,0.003514003541120969,0 4 8 10 11 14 18 18,4
+attn,"A coastal cliff face battered by enormous storm waves, with ",0.9747127296925892,0.9766411690150778,0.001928439322488651,0 5 9 10 14 18 20 22,3
+attn,A colony of flamingos on a soda lake with reflections creati,0.9736581972883664,0.977576826824463,0.003918629536096563,0 4 9 12 15 18 18 20,3
+attn,"A crumbling Victorian greenhouse with broken panes, wild pla",0.9726625088584683,0.975447436448356,0.002784927589887687,0 4 9 10 12 15 18 20,3
+attn,A deep-sea diver in a vintage brass helmet standing on the o,0.9638760379861611,0.970762173667655,0.006886135681493988,0 7 10 14 15 18 18 19,5
+attn,"A destroyed library with books scattered across rubble, a si",0.9738807764605444,0.9763580422561844,0.0024772657956400046,0 4 7 11 14 15 18 19,3
+attn,A double rainbow arching over a dark rain-soaked mountain va,0.9705945207407396,0.9746045689171086,0.004010048176368963,0 5 9 11 14 16 18 20,3
+attn,"A firefighter silhouetted against a wall of flame, axe raise",0.9719480629225579,0.9750503623424431,0.0031022994198852683,0 4 9 11 14 17 18 21,3
+attn,"A flooded cathedral with water up to the pew tops, stained g",0.9802364641141879,0.9833144246443487,0.0030779605301608504,3 4 9 12 14 17 18 20,3
+attn,"A frozen waterfall in a narrow canyon, with ice formations c",0.9728455625207392,0.9746610402148705,0.0018154776941313733,0 4 8 10 12 19 20 21,3
+attn,A futuristic vertical farm with translucent floors showing h,0.9763067361520783,0.978854356096157,0.002547619944078705,3 4 9 10 14 17 18 20,3
+attn,"A geologist examining a cliff face with a hand lens, wind-bl",0.9774412996199463,0.9805690558022565,0.003127756182310204,3 5 8 11 12 15 18 20,3
+attn,A geothermal field with dozens of fumaroles venting steam ac,0.9695567806773482,0.9720322711436202,0.0024754904662720456,0 4 8 12 14 18 18 20,3
+attn,A glacial river braiding through gravel outwash plains seen ,0.9693319970987659,0.9705071099739241,0.0011751128751581463,0 4 10 10 14 17 17 22,4
+attn,A glassblower shaping molten orange glass at the end of a lo,0.9726720181178996,0.9772916563707198,0.004619638252820191,3 5 10 12 14 16 18 19,4
+attn,A great gray owl in silent flight through a snowy birch fore,0.9792651162224597,0.9816099200521792,0.002344803829719466,2 4 8 11 14 17 18 20,2
+attn,"A haboob wall of red dust advancing across a desert highway,",0.9681130194739147,0.9732134582967504,0.005100438822835729,0 6 9 12 14 16 17 19,3
+attn,A herd of woolly mammoths crossing a frozen river at sunset ,0.9759729450559553,0.9787850797138427,0.002812134657887322,3 4 9 11 14 18 18 20,3
+attn,A high-altitude desert plateau scattered with enormous balan,0.9600992638665079,0.964677126471877,0.004577862605369076,4 6 9 11 15 19 19 20,4
+attn,A hot air balloon floating through a gap in towering canyon ,0.9757325523037581,0.9772431857335913,0.0015106334298331525,0 4 8 9 14 18 18 21,2
+attn,A jumping spider on a dewdrop-covered leaf at extreme macro ,0.9780387515978484,0.9798422551151682,0.0018035035173198377,0 4 7 11 14 17 18 19,3
+attn,A lone figure standing at the bow of a wooden ship entering ,0.9744051946892276,0.9771784483920722,0.002773253702844647,0 5 9 10 14 18 18 20,3
+attn,A mangrove forest at low tide revealing twisted root systems,0.9780204109049582,0.9793174329124982,0.0012970220075400052,2 4 8 10 12 17 19 21,2
+attn,"A marine biologist in waist-deep mangrove water at dawn, car",0.9783845593722964,0.9805620060332146,0.0021774466609182364,0 4 7 11 14 15 18 20,2
+attn,A massive Gothic cathedral interior with stained glass windo,0.981221693858017,0.9838122194006198,0.0025905255426027507,3 4 9 11 14 17 18 21,3
+attn,"A massive clockwork mechanism exposed inside a tower, with h",0.9801628095823716,0.9829592519025749,0.002796442320203374,2 4 8 11 12 14 18 18,4
+attn,"A massive shelf cloud advancing over a lake at sunset, with ",0.9694534265971265,0.9739537833921404,0.004500356795013927,0 5 9 15 15 18 20 21,6
+attn,"A massive telescope dome open to a star-filled sky, with the",0.9753059745101913,0.9793219522981254,0.004015977787934055,3 4 8 12 14 17 18 20,3
+attn,"A master calligrapher at a low table, brush suspended above ",0.9720251267008109,0.9774493803040577,0.005424253603246831,0 4 8 10 12 14 18 18,4
+attn,A medieval alchemist's laboratory with glass retorts over fl,0.9770747842429732,0.9806207718173243,0.003545987574351095,3 4 8 11 13 17 18 19,3
+attn,"A medieval scriptorium with monks at writing desks, gold lea",0.9770980640711828,0.9804802348683878,0.003382170797204931,0 4 8 10 12 14 18 20,2
+attn,A moss-covered temperate rainforest with massive fallen logs,0.9742514094758771,0.9754115559197297,0.0011601464438526499,2 5 6 10 11 15 19 21,2
+attn,A murmuration of starlings at dusk forming a dense shifting ,0.960334357669169,0.9639552144271233,0.003620856757954316,0 5 9 12 18 18 18 20,6
+attn,A narrow medieval alley in a hilltop Italian village at gold,0.9809527924204814,0.9825157840781249,0.0015629916576435088,3 4 8 11 12 17 19 21,3
+attn,"A nesting colony of hadrosaurs on a Cretaceous river delta, ",0.978320951407441,0.9806708880851904,0.002349936677749409,0 5 9 11 13 18 18 20,3
+attn,A pack of dromaeosaurs hunting in a Late Cretaceous floodpla,0.9796786342141686,0.9810516380581602,0.001373003843991638,0 4 8 11 12 17 19 21,2
+attn,"A pod of humpback whales bubble-net feeding from above, with",0.9765978519858407,0.9800311604224381,0.003433308436597393,2 6 10 12 14 18 18 19,4
+attn,"A red fox hunting in deep snow, mid-pounce with body arced a",0.9677845683802901,0.9723403533605446,0.00455578498025444,0 5 8 9 11 16 18 20,2
+attn,A room where all the furniture is floating six inches off th,0.9794443079322466,0.9817359524113876,0.0022916444791409862,0 5 8 11 12 14 18 20,2
+attn,A sandstone slot canyon with undulating walls of layered red,0.9720531717943158,0.9746132801890566,0.0025601083947407455,3 4 8 11 14 17 18 21,3
+attn,"A single drop of water falling into a pool of ink, captured ",0.9453606478867834,0.9560132082175603,0.010652560330776883,0 6 8 9 11 14 15 18,4
+attn,"A sprawling favela on a steep hillside at blue hour, with hu",0.9752728883591255,0.9770542986064126,0.001781410247287063,0 5 7 10 14 17 19 20,2
+attn,A stack of hand-bound leather journals with visible thread s,0.9800472186599741,0.9830968097308896,0.003049591070915514,3 4 9 11 15 17 18 20,3
+attn,A stone bridge arching over a river of clouds in a mountain ,0.9732398320576778,0.9761302738266175,0.002890441768939711,0 4 10 11 14 18 18 21,4
+attn,A street musician playing cello in the rain on an empty cobb,0.9825877893786716,0.9846044941919984,0.0020167048133267196,0 4 8 11 14 17 18 20,2
+attn,A supercell thunderstorm with a clearly defined mesocyclone ,0.9690515478729365,0.9731834037511082,0.004131855878171775,0 6 9 12 17 18 20 21,5
+attn,A suspension bridge disappearing into dense fog with only th,0.97393473119378,0.9788340615342854,0.004899330340505381,0 4 9 12 15 15 18 18,4
+attn,A swarm of monarch butterflies covering the trunk and branch,0.9756048417818525,0.9762502601869075,0.0006454184050550538,0 5 6 10 12 17 19 21,2
+attn,A tar seep in Pleistocene California with a saber-toothed ca,0.9810258810526505,0.9827142880460944,0.0016884069934438584,0 4 8 11 13 15 18 21,2
+attn,A temperature inversion trapping a layer of fog in a valley ,0.9651394916749105,0.9709830177711766,0.0058435260962660385,0 6 11 14 14 18 20 21,5
+attn,"A tornado at a distance crossing open prairie, with the funn",0.9701947827931087,0.9740635144804173,0.003868731687308613,0 6 10 12 15 18 18 21,4
+attn,A train crossing a massive stone viaduct over a misty valley,0.9720105689763447,0.9762657224387605,0.004255153462415784,3 6 8 11 15 17 18 20,3
+attn,A vast prairie of tallgrass rippling in wind under towering ,0.9706149324042423,0.9739869157171348,0.003371983312892457,0 5 8 11 14 16 18 21,2
+attn,A volcanic caldera lake at dawn with mist rising from emeral,0.975867805115179,0.9793639937609777,0.0034961886457987035,3 4 9 11 15 18 18 20,3
+attn,A waterspout over tropical ocean water with the characterist,0.974435748714917,0.9778213376338908,0.003385588918973781,0 5 9 11 14 17 18 20,3
+attn,"A weathered wooden table with a half-peeled orange, a cerami",0.9789626708568214,0.9816625375084825,0.002699866651661109,0 4 7 11 14 18 18 20,2
+attn,"A wolf pack crossing a frozen river in single file at dawn, ",0.978034571820684,0.9804982699836515,0.0024636981629675425,0 5 9 12 14 17 18 20,3
+attn,"A young dancer mid-leap in an empty warehouse, dust particle",0.976280309630922,0.9797411438047924,0.0034608341738703308,0 4 9 12 14 15 18 20,3
+attn,An Edo-period woodblock printing workshop with the carver at,0.9776506530211765,0.9809185920344811,0.003267939013304577,0 4 8 11 14 17 18 20,2
+attn,An Eocene tropical forest with early horses the size of dogs,0.9791602099817673,0.9811688960233278,0.002008686041560459,3 4 8 10 12 17 19 21,3
+attn,"An Ordovician seafloor seen from the perspective of a diver,",0.9736557268363326,0.9775102908782193,0.0038545640418866656,2 4 9 13 15 18 20 20,4
+attn,"An Ottoman bazaar at midday, with shafts of light penetratin",0.980982412395065,0.9835867823683752,0.00260436997331015,0 4 8 12 14 17 18 20,3
+attn,An abandoned Soviet-era swimming pool with cracked turquoise,0.9825037059392516,0.9848066992086388,0.00230299326938721,2 4 9 11 14 17 18 19,3
+attn,An ancient Egyptian workshop where artisans are painting a t,0.9808325574258863,0.9827014343719702,0.0018688769460839527,3 4 8 11 14 17 18 20,3
+attn,"An ancient Roman bathhouse in full operation, with steam ris",0.9800145972823592,0.9826379500736613,0.0026233527913021026,3 4 8 11 14 17 19 20,3
+attn,An arrangement of blown glass vessels in different states of,0.9677059558026251,0.9719640805533238,0.004258124750698755,0 4 9 10 12 15 18 20,3
+attn,"An astronaut floating in the cupola of a space station, Eart",0.9593595074400098,0.963710945995601,0.0043514385555912805,0 4 7 9 11 14 18 18,4
+attn,"An elderly blacksmith at the forge, face lit by orange coals",0.9792375827867913,0.9821874764545998,0.002949893667808512,3 4 8 11 14 18 18 20,3
+attn,"An enormous ancient tree with a door carved into its trunk, ",0.9749868690541699,0.9774757709558838,0.0024889019017139136,3 4 6 10 12 18 19 21,3
+attn,An octopus changing color and texture while moving across a ,0.9726650036514111,0.9741673205365214,0.0015023168851103774,0 5 7 10 14 16 18 20,2
+attn,"An old woman reading by candlelight in a stone cottage, wear",0.9786928764257586,0.9821463597541712,0.0034534833284125543,2 4 8 11 14 15 18 20,2
+attn,"An old wooden boat hull overturned on a beach, with peeling ",0.9756982605193081,0.9778757989851306,0.0021775384658224706,0 4 7 9 11 17 17 19,3
+attn,An underwater view looking up through clear water at a perso,0.9763768581711488,0.9792064524360059,0.0028295942648570716,3 5 9 11 14 18 20 20,3
+attn,Cross-section of a geode revealing concentric bands of purpl,0.974012208619969,0.9787748190708169,0.004762610450847915,0 5 9 14 15 17 18 20,5
+attn,Dense morning fog in a river valley with only the tops of ta,0.9679546072057125,0.9728418041829844,0.004887196977271913,0 5 9 13 15 17 18 21,4
+attn,Endless salt flats stretching to the horizon under a sky spl,0.9776908085181092,0.980304968108043,0.002614159589933829,0 5 9 10 14 18 18 21,3
+attn,"Fossilized ammonite embedded in limestone matrix, spiral cha",0.9755119882716403,0.9767597814900828,0.0012477932184424834,0 4 8 10 12 16 18 21,2
+attn,Macro photograph of frost crystals forming on a single blade,0.976275439154158,0.9790775588715297,0.002802119717371654,3 4 9 12 15 18 18 20,3
+attn,"Mammatus clouds at sunset, dozens of rounded pouches hanging",0.9632896912852817,0.9700149461196533,0.006725254834371586,0 7 10 15 16 18 18 20,6
+attn,"Molten steel being poured from a crucible in a foundry, with",0.9719218631799385,0.9763722612528972,0.004450398072958772,0 4 7 11 14 15 18 18,4
+attn,Rime ice coating every surface of a mountain weather station,0.9736128129982689,0.9766663227897471,0.003053509791478226,0 5 10 12 15 17 18 21,4
+attn,Sun pillars and sundogs in an ice-crystal-filled sky over a ,0.9711046861607446,0.976019058927914,0.004914372767169328,3 6 11 14 18 18 20 20,6
+attn,The aurora borealis reflected in a perfectly still arctic la,0.9742296386838223,0.9770532679762322,0.0028236292924098683,0 5 9 11 15 17 18 20,3
+mlp,"
+A sea otter floating on its back in kelp, cracking a sea ur",0.9813339632834093,0.982846294511928,0.0015123312285186818,0 4 7 11 13 15 18 21,2
+mlp,"
+Rusted chain links half-buried in wet sand at low tide, wit",0.9780705779821526,0.9807171060861432,0.0026465281039905753,0 4 8 11 12 15 18 20,2
+mlp,"A 1920s jazz club interior with a band on stage, cigarette s",0.9810459734365427,0.9824147442826617,0.0013687708461190828,0 4 7 10 12 15 18 21,1
+mlp,A Cambrian ocean rendered in vivid detail showing Anomalocar,0.9803877345767269,0.9819853592854451,0.0015976247087181594,0 4 7 10 12 15 18 21,1
+mlp,A Carboniferous swamp with giant dragonflies hovering over s,0.9806103004711821,0.9823132032724562,0.0017029028012740532,0 4 7 10 12 14 18 21,2
+mlp,"A Cretaceous coastal forest with towering araucaria trees, a",0.9806861681573535,0.9823757388472578,0.001689570689904274,0 4 8 11 12 15 18 21,2
+mlp,"A Devonian reef teeming with trilobites, crinoids, nautiloid",0.9802024013824676,0.9818857751609017,0.001683373778434083,0 4 7 9 11 15 18 21,1
+mlp,A Japanese temple garden in autumn with a curved wooden brid,0.9823458998281853,0.9836944295874636,0.0013485297592782386,0 4 7 10 12 15 18 21,1
+mlp,A Jurassic shoreline where a long-necked plesiosaur surfaces,0.9807058067201394,0.9824465527088737,0.0017407459887343046,0 4 7 11 12 14 18 21,2
+mlp,A Late Permian landscape showing the transition from lush lo,0.9802618687666456,0.9821543012357357,0.0018924324690900995,0 4 8 11 12 14 19 21,2
+mlp,"A Moroccan riad courtyard with intricate zellige tilework, a",0.9832248813926845,0.9844761582645583,0.0012512768718737632,0 4 7 10 12 14 18 21,2
+mlp,"A Polynesian voyaging canoe on open ocean at night, with a n",0.9837919195492173,0.9854759408962916,0.0016840213470743493,0 4 7 10 13 15 18 21,1
+mlp,A Scandinavian wooden stave church in a snow-covered forest ,0.9832873446058341,0.9843056757116582,0.0010183311058240552,0 4 7 10 12 14 18 22,2
+mlp,"A Silk Road caravanserai at dusk, with camels being unloaded",0.9816426080545076,0.9826277976758113,0.0009851896213036726,0 4 7 9 12 15 18 21,1
+mlp,"A Song Dynasty landscape painting come to life, with misty m",0.9800534574231712,0.9815735859834667,0.0015201285602954862,0 4 7 10 12 15 18 21,1
+mlp,"A Viking longship beached on a foggy northern shore at dawn,",0.9853927557092309,0.9859442247504675,0.0005514690412365963,0 4 7 10 12 17 19 22,1
+mlp,"A Wright Brothers-era aircraft in flight over sand dunes, fa",0.9821431347700771,0.9832116432496338,0.0010685084795567512,0 4 7 10 13 15 19 22,1
+mlp,"A bioluminescent tide washing onto black sand at night, with",0.9762391241468943,0.9791729712726536,0.0029338471257592813,2 4 8 11 12 14 18 19,3
+mlp,"A bowl of ripe stone fruit with visible water droplets, cut ",0.9820056619575755,0.9837065366809011,0.001700874723325585,0 4 7 10 12 15 18 21,1
+mlp,A breaching great white shark at the moment of maximum heigh,0.9790692535393895,0.981422533744257,0.0023532802048675805,0 4 7 10 12 15 18 20,2
+mlp,A chameleon on a branch reaching for an insect with its tong,0.9798966632226614,0.9814731661523518,0.0015765029296903599,0 4 8 11 13 15 18 21,2
+mlp,A chess game between two robed figures on a rooftop overlook,0.9819342151443244,0.9831137571734396,0.0011795420291151881,0 4 7 10 12 15 18 21,1
+mlp,"A child standing at the edge of an enormous tide pool, bendi",0.9665673885866028,0.9708134926496048,0.004246104063001965,0 4 8 11 12 15 18 20,2
+mlp,"A coastal cliff face battered by enormous storm waves, with ",0.9813382411502392,0.982934008289395,0.0015957671391558792,0 4 7 11 12 15 18 21,2
+mlp,A colony of flamingos on a soda lake with reflections creati,0.9830446602055853,0.9844373071344648,0.0013926469288794152,0 4 7 10 13 15 19 22,1
+mlp,"A crumbling Victorian greenhouse with broken panes, wild pla",0.9827997472518761,0.9845802246188053,0.0017804773669292118,0 4 7 10 12 15 18 20,2
+mlp,A deep-sea diver in a vintage brass helmet standing on the o,0.9778833567842278,0.9801376146151648,0.002254257830937023,0 4 7 10 12 15 18 21,1
+mlp,"A destroyed library with books scattered across rubble, a si",0.981601896232046,0.9827591911957662,0.0011572949637201901,0 4 7 10 12 15 18 21,1
+mlp,A double rainbow arching over a dark rain-soaked mountain va,0.9785485094108208,0.9809138171712749,0.0023653077604540718,0 4 8 10 12 15 19 21,2
+mlp,"A firefighter silhouetted against a wall of flame, axe raise",0.980824728922475,0.9827727738128089,0.0019480448903339553,0 4 7 11 13 15 18 21,2
+mlp,"A flooded cathedral with water up to the pew tops, stained g",0.981949938637288,0.9831955951008777,0.0012456564635897616,0 4 7 10 12 15 18 21,1
+mlp,"A frozen waterfall in a narrow canyon, with ice formations c",0.9801694225470972,0.9821471518575986,0.0019777293105014415,0 4 7 10 12 15 18 21,1
+mlp,A futuristic vertical farm with translucent floors showing h,0.9834732567957237,0.9847099008817242,0.001236644086000438,0 4 7 10 12 15 18 21,1
+mlp,"A geologist examining a cliff face with a hand lens, wind-bl",0.9799207724962635,0.9820261784058222,0.0021054059095586553,0 4 8 10 12 15 19 21,2
+mlp,A geothermal field with dozens of fumaroles venting steam ac,0.9805946227816822,0.9833870031225406,0.0027923803408583803,0 4 8 11 13 15 19 21,2
+mlp,A glacial river braiding through gravel outwash plains seen ,0.981537258854597,0.9839483630039587,0.0024111041493617424,0 4 7 11 12 15 18 20,2
+mlp,A glassblower shaping molten orange glass at the end of a lo,0.9787243172123363,0.9809234342561622,0.0021991170438259156,0 4 7 10 12 15 18 21,1
+mlp,A great gray owl in silent flight through a snowy birch fore,0.9814363938325412,0.982739806454162,0.0013034126216208142,0 4 8 10 12 15 18 21,2
+mlp,"A haboob wall of red dust advancing across a desert highway,",0.9756609545971823,0.9782332372426019,0.0025722826454196435,0 4 8 11 13 15 18 21,2
+mlp,A herd of woolly mammoths crossing a frozen river at sunset ,0.9832695879615563,0.9844282679969266,0.0011586800353703408,0 4 7 10 12 15 19 21,1
+mlp,A high-altitude desert plateau scattered with enormous balan,0.97473084853133,0.9776433954929005,0.0029125469615705057,0 4 8 10 12 14 18 21,2
+mlp,A hot air balloon floating through a gap in towering canyon ,0.9810936783837206,0.9830430484463187,0.0019493700625980992,0 4 7 10 12 15 18 21,1
+mlp,A jumping spider on a dewdrop-covered leaf at extreme macro ,0.9842785664029632,0.9853124665607849,0.0010339001578216767,0 4 7 10 13 15 18 21,1
+mlp,A lone figure standing at the bow of a wooden ship entering ,0.9803900803371814,0.9823510626042906,0.001960982267109168,0 4 7 10 13 15 18 21,1
+mlp,A mangrove forest at low tide revealing twisted root systems,0.9793959397603464,0.981494242160371,0.00209830240002451,0 4 8 10 12 14 18 21,2
+mlp,"A marine biologist in waist-deep mangrove water at dawn, car",0.982027804131492,0.9835432308382762,0.0015154267067841731,0 4 7 10 12 14 18 21,2
+mlp,A massive Gothic cathedral interior with stained glass windo,0.9849562791487665,0.9854777126636549,0.0005214335148884253,0 4 7 9 12 15 19 22,1
+mlp,"A massive clockwork mechanism exposed inside a tower, with h",0.9831007323925038,0.9842769725698338,0.001176240177329979,0 4 7 10 12 15 18 21,1
+mlp,"A massive shelf cloud advancing over a lake at sunset, with ",0.9806925211124391,0.9835851129641964,0.0028925918517572757,0 4 8 11 13 15 18 20,2
+mlp,"A massive telescope dome open to a star-filled sky, with the",0.9788075969310653,0.980637019094817,0.0018294221637517039,0 4 7 10 12 15 18 20,2
+mlp,"A master calligrapher at a low table, brush suspended above ",0.9816702232047632,0.9832100906323288,0.0015398674275656221,0 4 7 10 12 15 18 21,1
+mlp,A medieval alchemist's laboratory with glass retorts over fl,0.9818754643518388,0.9828911811712503,0.001015716819411483,0 4 7 10 12 15 18 21,1
+mlp,"A medieval scriptorium with monks at writing desks, gold lea",0.9823093650529076,0.9834959025639933,0.0011865375110857723,0 4 7 10 12 15 18 21,1
+mlp,A moss-covered temperate rainforest with massive fallen logs,0.9796869637281962,0.9810895933273256,0.0014026295991294013,2 4 7 11 11 15 18 21,2
+mlp,A murmuration of starlings at dusk forming a dense shifting ,0.9811177878438919,0.9840936699303362,0.0029758820864442814,0 4 8 11 12 15 19 21,2
+mlp,A narrow medieval alley in a hilltop Italian village at gold,0.9814104369482365,0.9827473516157382,0.001336914667501743,0 4 7 10 12 15 18 21,1
+mlp,"A nesting colony of hadrosaurs on a Cretaceous river delta, ",0.9836593106649985,0.9849981454561823,0.0013388347911837961,0 4 7 10 12 14 18 21,2
+mlp,A pack of dromaeosaurs hunting in a Late Cretaceous floodpla,0.9824025620193286,0.9836998294311669,0.001297267411838221,0 4 7 10 12 14 18 21,2
+mlp,"A pod of humpback whales bubble-net feeding from above, with",0.9829835692305056,0.9847515732594263,0.0017680040289207444,0 4 8 11 12 14 18 21,2
+mlp,"A red fox hunting in deep snow, mid-pounce with body arced a",0.9791153789257927,0.9815634592809744,0.0024480803551817365,0 4 7 10 12 15 18 21,1
+mlp,A room where all the furniture is floating six inches off th,0.9835404649032855,0.9848613947028868,0.0013209297996013003,0 4 7 10 12 15 19 21,1
+mlp,A sandstone slot canyon with undulating walls of layered red,0.9798133422827168,0.9818682125415931,0.0020548702588762957,0 4 7 10 12 14 18 21,2
+mlp,"A single drop of water falling into a pool of ink, captured ",0.9729326475926052,0.9761033580059943,0.0031707104133891217,0 4 7 10 12 14 18 21,2
+mlp,"A sprawling favela on a steep hillside at blue hour, with hu",0.9798246498082357,0.9815609956549618,0.0017363458467261061,0 4 8 10 12 15 18 21,2
+mlp,A stack of hand-bound leather journals with visible thread s,0.9831120213122609,0.9842209500512451,0.0011089287389841607,0 4 7 10 12 15 18 21,1
+mlp,A stone bridge arching over a river of clouds in a mountain ,0.9822195218744494,0.9836886457008078,0.0014691238263584427,0 4 7 10 12 15 19 21,1
+mlp,A street musician playing cello in the rain on an empty cobb,0.9826461571664187,0.984217144141494,0.0015709869750752947,0 4 7 10 12 15 18 21,1
+mlp,A supercell thunderstorm with a clearly defined mesocyclone ,0.97984191904822,0.982557675406531,0.0027157563583110056,0 4 7 11 13 15 18 21,2
+mlp,A suspension bridge disappearing into dense fog with only th,0.984156681429982,0.9853708214990655,0.0012141400690834914,0 4 7 10 13 15 18 21,1
+mlp,A swarm of monarch butterflies covering the trunk and branch,0.9805844764566867,0.9824332997625984,0.0018488233059117398,0 4 8 9 12 15 18 21,2
+mlp,A tar seep in Pleistocene California with a saber-toothed ca,0.980627654611314,0.9819407941164512,0.0013131395051372285,0 4 7 10 12 15 18 21,1
+mlp,A temperature inversion trapping a layer of fog in a valley ,0.9831893090304888,0.9853111660144118,0.002121856983922976,0 4 7 10 13 15 19 21,1
+mlp,"A tornado at a distance crossing open prairie, with the funn",0.9707740579302901,0.9741597928450939,0.003385734914803762,0 4 8 11 12 14 18 21,2
+mlp,A train crossing a massive stone viaduct over a misty valley,0.9816049469954757,0.9828481793720137,0.001243232376538006,0 4 7 10 12 15 18 21,1
+mlp,A vast prairie of tallgrass rippling in wind under towering ,0.97976873934175,0.9824054328435161,0.0026366935017660964,0 4 8 11 12 15 19 21,2
+mlp,A volcanic caldera lake at dawn with mist rising from emeral,0.9823046930819601,0.9842034391183173,0.0018987460363572017,0 4 7 10 12 15 18 21,1
+mlp,A waterspout over tropical ocean water with the characterist,0.9797789929601848,0.9819086090652805,0.0021296161050957663,0 4 7 10 12 14 19 21,2
+mlp,"A weathered wooden table with a half-peeled orange, a cerami",0.9819388724320921,0.9832739734920051,0.0013351010599129687,0 4 7 10 12 15 19 21,1
+mlp,"A wolf pack crossing a frozen river in single file at dawn, ",0.9829635550579073,0.9840084705534882,0.0010449154955808337,0 4 7 9 12 15 19 22,1
+mlp,"A young dancer mid-leap in an empty warehouse, dust particle",0.9825634617510025,0.9842275792424194,0.0016641174914169277,0 4 7 10 14 17 19 21,2
+mlp,An Edo-period woodblock printing workshop with the carver at,0.9828572563785465,0.9842258843101461,0.001368627931599642,0 4 7 10 13 15 19 21,1
+mlp,An Eocene tropical forest with early horses the size of dogs,0.9798992386956047,0.9814540592291066,0.0015548205335018661,0 4 7 10 11 14 18 21,2
+mlp,"An Ordovician seafloor seen from the perspective of a diver,",0.9823008410799556,0.9837477198848846,0.0014468788049289971,0 4 7 10 12 15 18 21,1
+mlp,"An Ottoman bazaar at midday, with shafts of light penetratin",0.9816860106769756,0.982757211231383,0.0010712005544074588,0 4 7 10 12 15 18 22,1
+mlp,An abandoned Soviet-era swimming pool with cracked turquoise,0.98119723181108,0.98266157870079,0.0014643468897099776,0 4 8 11 13 15 19 21,2
+mlp,An ancient Egyptian workshop where artisans are painting a t,0.9822992294565731,0.9834636140380556,0.0011643845814824916,0 4 7 10 12 15 18 21,1
+mlp,"An ancient Roman bathhouse in full operation, with steam ris",0.9831822268767185,0.9842810199480315,0.0010987930713129979,0 4 7 10 12 15 18 21,1
+mlp,An arrangement of blown glass vessels in different states of,0.9845528514631774,0.9861144533067837,0.0015616018436063195,0 4 7 10 12 15 18 21,1
+mlp,"An astronaut floating in the cupola of a space station, Eart",0.9701485242227337,0.9721650668207287,0.002016542597994997,0 4 8 10 12 14 18 20,2
+mlp,"An elderly blacksmith at the forge, face lit by orange coals",0.982467025785553,0.9836642111695306,0.001197185383977617,0 4 7 10 12 15 18 21,1
+mlp,"An enormous ancient tree with a door carved into its trunk, ",0.9791854981653014,0.9808904442373092,0.0017049460720077736,0 4 7 10 12 15 18 21,1
+mlp,An octopus changing color and texture while moving across a ,0.9760973860220492,0.9784008309712804,0.0023034449492311815,0 4 8 11 12 15 18 20,2
+mlp,"An old woman reading by candlelight in a stone cottage, wear",0.979430822113687,0.9807687614625125,0.0013379393488254232,0 4 7 10 12 15 18 20,2
+mlp,"An old wooden boat hull overturned on a beach, with peeling ",0.982900904006756,0.9843190120802201,0.0014181080734640972,0 4 7 11 12 15 18 21,2
+mlp,An underwater view looking up through clear water at a perso,0.980105405196665,0.9821144687260353,0.0020090635293702475,0 4 7 11 12 15 18 21,2
+mlp,Cross-section of a geode revealing concentric bands of purpl,0.9780987269056349,0.9805677298591059,0.0024690029534709668,0 4 8 11 12 14 18 21,2
+mlp,Dense morning fog in a river valley with only the tops of ta,0.9843036490661254,0.9859904921759344,0.0016868431098089331,0 4 7 10 12 15 19 21,1
+mlp,Endless salt flats stretching to the horizon under a sky spl,0.9832733034654932,0.9850765839743205,0.0018032805088272763,0 4 7 10 13 15 19 21,1
+mlp,"Fossilized ammonite embedded in limestone matrix, spiral cha",0.972533312998829,0.9765062971315215,0.003972984132692536,0 4 8 11 12 15 18 20,2
+mlp,Macro photograph of frost crystals forming on a single blade,0.9829736824617457,0.9853676852471738,0.0023940027854281176,0 4 8 11 13 15 18 21,2
+mlp,"Mammatus clouds at sunset, dozens of rounded pouches hanging",0.9812616243820793,0.9844159492913427,0.003154324909263373,0 4 7 10 12 15 18 20,2
+mlp,"Molten steel being poured from a crucible in a foundry, with",0.9815001726480708,0.9829743030422138,0.001474130394143014,0 4 7 10 12 15 18 21,1
+mlp,Rime ice coating every surface of a mountain weather station,0.9822942176911043,0.9836187157493377,0.0013244980582334254,0 4 7 10 12 15 19 22,1
+mlp,Sun pillars and sundogs in an ice-crystal-filled sky over a ,0.982781673050059,0.9849300645527773,0.002148391502718283,0 4 8 11 13 15 18 21,2
+mlp,The aurora borealis reflected in a perfectly still arctic la,0.9837404427438607,0.9852705326263224,0.001530089882461616,0 4 7 10 12 15 18 22,1

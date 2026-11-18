@@ -1,0 +1,165 @@
+channel,step,sigma,pattern,n
+SD35M archive attn,0.0,1.0,+- -+ +-,3
+SD35M archive attn,1.0,0.9915,+- -+ +-,3
+SD35M archive attn,2.0,0.9828,+- -+ +- -+ +-,5
+SD35M archive attn,3.0,0.9737,+- -+ +-,3
+SD35M archive attn,4.0,0.9643,+- -+ +-,3
+SD35M archive attn,5.0,0.9545,+- -+ +-,3
+SD35M archive attn,6.0,0.9444,+- -+ +-,3
+SD35M archive attn,7.0,0.934,+- -+ +-,3
+SD35M archive attn,8.0,0.9231,+- -+ +-,3
+SD35M archive attn,9.0,0.9118,+- -+ +-,3
+SD35M archive attn,10.0,0.9,+- -+ +-,3
+SD35M archive attn,11.0,0.8878,+- -+ +-,3
+SD35M archive attn,12.0,0.875,+- -+ +-,3
+SD35M archive attn,13.0,0.8617,+- -+ +-,3
+SD35M archive attn,14.0,0.8478,+-,1
+SD35M archive attn,15.0,0.8333,+-,1
+SD35M archive attn,16.0,0.8182,+-,1
+SD35M archive attn,17.0,0.8023,+-,1
+SD35M archive attn,18.0,0.7857,+-,1
+SD35M archive attn,19.0,0.7683,+-,1
+SD35M archive attn,20.0,0.75,+-,1
+SD35M archive attn,21.0,0.7308,+-,1
+SD35M archive attn,22.0,0.7105,+-,1
+SD35M archive attn,23.0,0.6892,+-,1
+SD35M archive attn,24.0,0.6667,+-,1
+SD35M archive attn,25.0,0.6429,+-,1
+SD35M archive attn,26.0,0.6176,+-,1
+SD35M archive attn,27.0,0.5909,+-,1
+SD35M archive attn,28.0,0.5625,+-,1
+SD35M archive attn,29.0,0.5323,+-,1
+SD35M archive attn,30.0,0.5,+-,1
+SD35M archive attn,31.0,0.4655,+-,1
+SD35M archive attn,32.0,0.4286,+-,1
+SD35M archive attn,33.0,0.3889,+-,1
+SD35M archive attn,34.0,0.3462,+-,1
+SD35M archive attn,35.0,0.3,+-,1
+SD35M archive attn,36.0,0.25,+-,1
+SD35M archive attn,37.0,0.1957,+-,1
+SD35M archive attn,38.0,0.1364,+-,1
+SD35M archive attn,39.0,0.0714,+-,1
+SD35L archive attn,0.0,1.0,+- -+ +- -+ +- -+ +-,7
+SD35L archive attn,1.0,0.9881,+- -+ +- -+ +- -+ +-,7
+SD35L archive attn,2.0,0.9752,+- -+ +- -+ +- -+ +-,7
+SD35L archive attn,3.0,0.9616,+- -+ +-,3
+SD35L archive attn,4.0,0.9477,+- -+ +-,3
+SD35L archive attn,5.0,0.9327,+- -+ +-,3
+SD35L archive attn,6.0,0.9168,+- -+ +-,3
+SD35L archive attn,7.0,0.9,+- -+ +-,3
+SD35L archive attn,8.0,0.8827,+- -+ +-,3
+SD35L archive attn,9.0,0.8639,+- -+ +-,3
+SD35L archive attn,10.0,0.8438,+- -+ +-,3
+SD35L archive attn,11.0,0.8231,+- -+ +-,3
+SD35L archive attn,12.0,0.8004,+- -+ +-,3
+SD35L archive attn,13.0,0.7761,+- -+ +-,3
+SD35L archive attn,14.0,0.75,+- -+ +-,3
+SD35L archive attn,15.0,0.7228,+- -+ +-,3
+SD35L archive attn,16.0,0.6927,+- -+ +-,3
+SD35L archive attn,17.0,0.6601,+- -+ +-,3
+SD35L archive attn,18.0,0.6259,+- -+ +-,3
+SD35L archive attn,19.0,0.5876,+- -+ +-,3
+SD35L archive attn,20.0,0.5458,+- -+ +-,3
+SD35L archive attn,21.0,0.5,+- -+ +-,3
+SD35L archive attn,22.0,0.451,+- -+ +-,3
+SD35L archive attn,23.0,0.3954,+- -+ +-,3
+SD35L archive attn,24.0,0.3336,+- -+ +-,3
+SD35L archive attn,25.0,0.2664,+- -+ +-,3
+SD35L archive attn,26.0,0.1888,+- -+ +-,3
+SD35L archive attn,27.0,0.1007,+-,1
+ZIT archive mlp,0.0,1.0,+- -+ +-,3
+ZIT archive mlp,1.0,0.9551,+- -+ +-,3
+ZIT archive mlp,2.0,0.9012,+- -+ +-,3
+ZIT archive mlp,3.0,0.8353,+- -+ +- -+,4
+ZIT archive mlp,4.0,0.7529,+- -+,2
+ZIT archive mlp,5.0,0.6471,+-,1
+ZIT archive mlp,6.0,0.5049,+-,1
+ZIT archive mlp,7.0,0.307,+-,1
+ZIB archive (pooled CFG4) mlp,0.0,1.0,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) mlp,1.0,0.9863,+-,1
+ZIB archive (pooled CFG4) mlp,2.0,0.9718,+-,1
+ZIB archive (pooled CFG4) mlp,3.0,0.9565,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) mlp,4.0,0.9403,+-,1
+ZIB archive (pooled CFG4) mlp,5.0,0.9231,,0
+ZIB archive (pooled CFG4) mlp,6.0,0.9048,+-,1
+ZIB archive (pooled CFG4) mlp,7.0,0.8852,+-,1
+ZIB archive (pooled CFG4) mlp,8.0,0.8644,+-,1
+ZIB archive (pooled CFG4) mlp,9.0,0.8421,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,10.0,0.8182,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,11.0,0.7925,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,12.0,0.7647,+- -+,2
+ZIB archive (pooled CFG4) mlp,13.0,0.7347,+- -+,2
+ZIB archive (pooled CFG4) mlp,14.0,0.7021,+- -+,2
+ZIB archive (pooled CFG4) mlp,15.0,0.6667,+- -+ +- -+,4
+ZIB archive (pooled CFG4) mlp,16.0,0.6279,+-,1
+ZIB archive (pooled CFG4) mlp,17.0,0.5854,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,18.0,0.5385,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,19.0,0.4865,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,20.0,0.4286,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,21.0,0.3636,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,22.0,0.2903,+- -+ +-,3
+ZIB archive (pooled CFG4) mlp,23.0,0.2069,+-,1
+ZIB archive (pooled CFG4) mlp,24.0,0.1111,+-,1
+ZIB archive (pooled CFG4) attn,0.0,1.0,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,1.0,0.9863,+-,1
+ZIB archive (pooled CFG4) attn,2.0,0.9718,+-,1
+ZIB archive (pooled CFG4) attn,3.0,0.9565,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,4.0,0.9403,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,5.0,0.9231,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,6.0,0.9048,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,7.0,0.8852,+-,1
+ZIB archive (pooled CFG4) attn,8.0,0.8644,+-,1
+ZIB archive (pooled CFG4) attn,9.0,0.8421,+-,1
+ZIB archive (pooled CFG4) attn,10.0,0.8182,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,11.0,0.7925,+-,1
+ZIB archive (pooled CFG4) attn,12.0,0.7647,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,13.0,0.7347,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) attn,14.0,0.7021,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) attn,15.0,0.6667,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) attn,16.0,0.6279,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) attn,17.0,0.5854,+- -+ +- -+ +-,5
+ZIB archive (pooled CFG4) attn,18.0,0.5385,+- -+ +-,3
+ZIB archive (pooled CFG4) attn,19.0,0.4865,+-,1
+ZIB archive (pooled CFG4) attn,20.0,0.4286,+-,1
+ZIB archive (pooled CFG4) attn,21.0,0.3636,+-,1
+ZIB archive (pooled CFG4) attn,22.0,0.2903,+-,1
+ZIB archive (pooled CFG4) attn,23.0,0.2069,+-,1
+ZIB archive (pooled CFG4) attn,24.0,0.1111,+-,1
+ZIT archive attn,0.0,1.0,+- -+ +- -+ +- -+ +-,7
+ZIT archive attn,1.0,0.9551,+- -+ +- -+ +-,5
+ZIT archive attn,2.0,0.9012,+- -+ +-,3
+ZIT archive attn,3.0,0.8353,+-,1
+ZIT archive attn,4.0,0.7529,+-,1
+ZIT archive attn,5.0,0.6471,+- -+ +-,3
+ZIT archive attn,6.0,0.5049,+-,1
+ZIT archive attn,7.0,0.307,+-,1
+MOCHI archive CFG4.5 attn,0.0,1.0,+- -+ +-,3
+MOCHI archive CFG4.5 attn,1.0,0.9943,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,2.0,0.9884,+- -+ +-,3
+MOCHI archive CFG4.5 attn,3.0,0.9818,+- -+ +-,3
+MOCHI archive CFG4.5 attn,4.0,0.9751,+- -+ +-,3
+MOCHI archive CFG4.5 attn,5.0,0.9679,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,6.0,0.96,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,7.0,0.9518,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,8.0,0.943,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,9.0,0.9333,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,10.0,0.9232,+- -+ +-,3
+MOCHI archive CFG4.5 attn,11.0,0.9122,+- -+ +- -+ +-,5
+MOCHI archive CFG4.5 attn,12.0,0.9,+- -+ +-,3
+MOCHI archive CFG4.5 attn,13.0,0.8871,+- -+ +-,3
+MOCHI archive CFG4.5 attn,14.0,0.873,+- -+ +-,3
+MOCHI archive CFG4.5 attn,15.0,0.8571,+- -+ +-,3
+MOCHI archive CFG4.5 attn,16.0,0.8402,+- -+ +-,3
+MOCHI archive CFG4.5 attn,17.0,0.8215,+- -+ +-,3
+MOCHI archive CFG4.5 attn,18.0,0.8,+- -+ +-,3
+MOCHI archive CFG4.5 attn,19.0,0.7767,+- -+ +-,3
+MOCHI archive CFG4.5 attn,20.0,0.7506,+- -+ +-,3
+MOCHI archive CFG4.5 attn,21.0,0.72,+- -+ +-,3
+MOCHI archive CFG4.5 attn,22.0,0.6861,+-,1
+MOCHI archive CFG4.5 attn,23.0,0.647,+-,1
+MOCHI archive CFG4.5 attn,24.0,0.6,+-,1
+MOCHI archive CFG4.5 attn,25.0,0.546,+-,1
+MOCHI archive CFG4.5 attn,26.0,0.4814,+-,1
+MOCHI archive CFG4.5 attn,27.0,0.4,+- -+ +-,3
+MOCHI archive CFG4.5 attn,28.0,0.3011,+- -+ +-,3
+MOCHI archive CFG4.5 attn,29.0,0.1744,+- -+ +-,3

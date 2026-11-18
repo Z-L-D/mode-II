@@ -1,0 +1,13 @@
+channel,step,sigma,pattern,n
+ACE attn,0,1.0,+-,1
+ACE attn,1,0.9378,+-,1
+ACE attn,2,0.8573,+-,1
+ACE attn,3,0.75,+-,1
+ACE attn,4,0.6007,+-,1
+ACE attn,5,0.3756,+-,1
+ACE mlp,0,1.0,+-,1
+ACE mlp,1,0.9378,+- -+ +- -+ +- -+ +-,7
+ACE mlp,2,0.8573,+- -+ +-,3
+ACE mlp,3,0.75,+- -+ +-,3
+ACE mlp,4,0.6007,+-,1
+ACE mlp,5,0.3756,+- -+ +- -+ +-,5

@@ -1,0 +1,24 @@
+{
+ "score": {
+  "S4a": [
+   "CONFIRMED",
+   "+-+ in 1.000 (ZIT mlp) and 1.000 (ZIB mlp) of bootstraps"
+  ],
+  "S4b": [
+   "CONFIRMED",
+   "+-+ in 1.000 (R4 CFG4 cond mlp) and 1.000 (R3 CFG1 cond-only mlp)"
+  ],
+  "S4c": [
+   "CONFIRMED",
+   "breakpoints archive 0.972/0.818 vs clean 0.986/0.818"
+  ],
+  "S4d": [
+   "CONFIRMED",
+   "contraction archive -49.7% vs clean -50.5% (diff 0.8 points)"
+  ],
+  "S4e": [
+   "REFUTED",
+   "0/5 attn channels: ZIT ++- 0.000, ZIB ++- 0.000, MOCHI ++- 0.000, SD35M ++- 0.000, SD35L ++- 0.000"
+  ]
+ }
+}

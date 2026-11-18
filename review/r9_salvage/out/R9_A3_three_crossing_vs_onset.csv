@@ -1,0 +1,7 @@
+channel,onset,n_below,n_above,share3_below,share3_above,below_gt_above
+SD35M archive attn,0.8102535,23,17,0.0,0.7647058823529411,False
+SD35L archive attn,0.873292,19,9,0.9473684210526315,0.6666666666666666,True
+ZIT archive attn,0.7916665,4,4,0.25,0.25,False
+ZIT archive mlp,0.7916665,4,4,0.0,0.75,False
+ZIB archive (pooled CFG4) attn,0.8301434999999999,15,10,0.2,0.5,False
+MOCHI archive CFG4.5 attn,0.78836,11,19,0.5454545454545454,0.631578947368421,False

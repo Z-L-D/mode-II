@@ -1,0 +1,366 @@
+{
+ "P1_attention_topology": {
+  "ZIT": {
+   "topology": "++-",
+   "modal": "++-",
+   "modal_frac": 0.922,
+   "break1": 0.954545,
+   "break2": 0.5,
+   "g_first": 0.013686353569444447,
+   "g_max": 0.024250124087962954,
+   "sigma_max": 0.3,
+   "g_last": 0.024250124087962954,
+   "late_drop": 0.0
+  },
+  "ZIB": {
+   "topology": "++-",
+   "modal": "++-",
+   "modal_frac": 1.0,
+   "break1": 0.940299,
+   "break2": 0.585366,
+   "g_first": 0.018468481360398855,
+   "g_max": 0.03496077637701806,
+   "sigma_max": 0.627907,
+   "g_last": 0.02989827780626781,
+   "late_drop": -0.14480509574947978
+  },
+  "MOCHI": {
+   "topology": "++-",
+   "modal": "++-",
+   "modal_frac": 1.0,
+   "break1": 0.943041,
+   "break2": 0.77672,
+   "g_first": 0.007656126851851852,
+   "g_max": 0.03477291608217593,
+   "sigma_max": 0.72,
+   "g_last": 0.028933917395833328,
+   "late_drop": -0.1679180047064152
+  },
+  "SD35M": {
+   "topology": "++-",
+   "modal": "++-",
+   "modal_frac": 1.0,
+   "break1": 0.833333,
+   "break2": 0.346154,
+   "g_first": 0.05199793151041666,
+   "g_max": 0.0867897366319444,
+   "sigma_max": 0.195652,
+   "g_last": 0.08185880633680556,
+   "late_drop": -0.05681467056467519
+  },
+  "SD35L": {
+   "topology": "++-",
+   "modal": "++-",
+   "modal_frac": 1.0,
+   "break1": 0.916796,
+   "break2": 0.5,
+   "g_first": 0.040019485877192965,
+   "g_max": 0.051885353996710536,
+   "sigma_max": 0.451049,
+   "g_last": 0.04748978040021929,
+   "late_drop": -0.08471703974053871
+  }
+ },
+ "P2": [
+  {
+   "a": "ZIT",
+   "b": "ZIB",
+   "kind": "lineage",
+   "tau": "first",
+   "within_theme_rsa": 0.4679447446499959,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.5592909648114786,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "ZIB",
+   "kind": "lineage",
+   "tau": "middle",
+   "within_theme_rsa": 0.6295647877355988,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.6151931692148039,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "ZIB",
+   "kind": "lineage",
+   "tau": "last",
+   "within_theme_rsa": 0.5600884173974825,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.6180269918938553,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "MOCHI",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.4060111407432502,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.38080693908665786,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "MOCHI",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.14357545772820565,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.29166840212838696,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "MOCHI",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.10607611847973898,
+   "within_p": 0.013972055888223553,
+   "partial_text_rsa": 0.227773567781565,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.18352879546703374,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.29702966839785794,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.2632977245388754,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.43261136653995347,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.22344671547014233,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.3736536565901359,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.17009287634990145,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.3098356444256974,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.35417488618963644,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.411944907747952,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIT",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.29250839305856957,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.3372407357321648,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "MOCHI",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.2702086889541288,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.29524836013696276,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "MOCHI",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.11440117596572802,
+   "within_p": 0.007984031936127744,
+   "partial_text_rsa": 0.22661783680141273,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "MOCHI",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.08348687075196115,
+   "within_p": 0.04590818363273453,
+   "partial_text_rsa": 0.17597153657291334,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.1482077680930001,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.22655322720131205,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.2777241289792807,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.36765215326443385,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.17702961673697806,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.263058889205597,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.05673490047688939,
+   "within_p": 0.09780439121756487,
+   "partial_text_rsa": 0.24747834397774515,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.30944112315018035,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.3278183255735221,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "ZIB",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.2438920515866346,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.20549179521912433,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "MOCHI",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.23548569319703785,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.2769393089969195,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "MOCHI",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.09903932662308558,
+   "within_p": 0.023952095808383235,
+   "partial_text_rsa": 0.1305877291488589,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "MOCHI",
+   "b": "SD35M",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.0770196697313102,
+   "within_p": 0.0499001996007984,
+   "partial_text_rsa": 0.13207171692396213,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "MOCHI",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "first",
+   "within_theme_rsa": 0.1993695836846238,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.24308157428465552,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "MOCHI",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "middle",
+   "within_theme_rsa": 0.11939430148497214,
+   "within_p": 0.00998003992015968,
+   "partial_text_rsa": 0.17772387364767334,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "MOCHI",
+   "b": "SD35L",
+   "kind": "unrelated",
+   "tau": "last",
+   "within_theme_rsa": 0.1266505282596466,
+   "within_p": 0.003992015968063872,
+   "partial_text_rsa": 0.17631326868492858,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "SD35M",
+   "b": "SD35L",
+   "kind": "same family",
+   "tau": "first",
+   "within_theme_rsa": 0.22928419787089505,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.30174475815029117,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "SD35M",
+   "b": "SD35L",
+   "kind": "same family",
+   "tau": "middle",
+   "within_theme_rsa": 0.4254157962229189,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.43343923308519866,
+   "partial_p": 0.001996007984031936
+  },
+  {
+   "a": "SD35M",
+   "b": "SD35L",
+   "kind": "same family",
+   "tau": "last",
+   "within_theme_rsa": 0.42190759924584936,
+   "within_p": 0.001996007984031936,
+   "partial_text_rsa": 0.3766221021537195,
+   "partial_p": 0.001996007984031936
+  }
+ ]
+}

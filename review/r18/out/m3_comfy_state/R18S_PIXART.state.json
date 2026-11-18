@@ -1,0 +1,516 @@
+{
+ "jobs": {
+  "p000_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e04447b8-7ace-485c-b219-72d9d49e330f",
+   "outputs": [
+    "R18S_PIXART/p000_s1001_00001_.png"
+   ]
+  },
+  "p001_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b98593d7-fa10-4c18-9217-a3dec9ac4cfc",
+   "outputs": [
+    "R18S_PIXART/p001_s1001_00001_.png"
+   ]
+  },
+  "p002_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a895d29d-980d-4cef-8a31-242dae359cca",
+   "outputs": [
+    "R18S_PIXART/p002_s1001_00001_.png"
+   ]
+  },
+  "p003_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c50025a5-3e25-4295-ae3d-6490cee6a139",
+   "outputs": [
+    "R18S_PIXART/p003_s1001_00001_.png"
+   ]
+  },
+  "p004_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f550dec7-2510-4cd8-b35b-2d4cde24d336",
+   "outputs": [
+    "R18S_PIXART/p004_s1001_00001_.png"
+   ]
+  },
+  "p005_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2a401413-0497-4345-82bf-e016af7e6fb8",
+   "outputs": [
+    "R18S_PIXART/p005_s1001_00001_.png"
+   ]
+  },
+  "p006_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ea1bddfc-7422-40c5-bac5-429654ada882",
+   "outputs": [
+    "R18S_PIXART/p006_s1001_00001_.png"
+   ]
+  },
+  "p007_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a46e95de-05f8-458c-a760-95626c6c57d1",
+   "outputs": [
+    "R18S_PIXART/p007_s1001_00001_.png"
+   ]
+  },
+  "p008_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "25d931ff-7111-47ee-b0ee-8f63b9cec5e9",
+   "outputs": [
+    "R18S_PIXART/p008_s1001_00001_.png"
+   ]
+  },
+  "p009_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "881728a5-d8ec-4663-af35-08ebe5f8b45a",
+   "outputs": [
+    "R18S_PIXART/p009_s1001_00001_.png"
+   ]
+  },
+  "p010_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ec7c89bf-ffd1-447c-b2ca-9f6d9dd07b0c",
+   "outputs": [
+    "R18S_PIXART/p010_s1001_00001_.png"
+   ]
+  },
+  "p011_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "9303cd75-43db-4360-b51a-88b1dffa39ad",
+   "outputs": [
+    "R18S_PIXART/p011_s1001_00001_.png"
+   ]
+  },
+  "p012_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "531a465c-aad5-4c75-bdaf-3efbc3e55878",
+   "outputs": [
+    "R18S_PIXART/p012_s1001_00001_.png"
+   ]
+  },
+  "p013_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "bc4c75dc-31ff-40ed-b9ec-5e15e9b6bbba",
+   "outputs": [
+    "R18S_PIXART/p013_s1001_00001_.png"
+   ]
+  },
+  "p014_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "cc7c404a-4d26-4b77-9757-6cef57a9afc7",
+   "outputs": [
+    "R18S_PIXART/p014_s1001_00001_.png"
+   ]
+  },
+  "p015_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ddb0b2bd-9a3d-4480-8fb8-02c38896cb3b",
+   "outputs": [
+    "R18S_PIXART/p015_s1001_00001_.png"
+   ]
+  },
+  "p016_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1b42464d-a620-4ff2-afc3-7788559f95a6",
+   "outputs": [
+    "R18S_PIXART/p016_s1001_00001_.png"
+   ]
+  },
+  "p017_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "82a18bd5-dd07-4498-bb69-eb0f0be7dfd5",
+   "outputs": [
+    "R18S_PIXART/p017_s1001_00001_.png"
+   ]
+  },
+  "p018_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e8f53a00-ec45-4261-9078-8aa8d5357722",
+   "outputs": [
+    "R18S_PIXART/p018_s1001_00001_.png"
+   ]
+  },
+  "p019_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "9003e8b3-07c6-45da-8e64-ded248e37535",
+   "outputs": [
+    "R18S_PIXART/p019_s1001_00001_.png"
+   ]
+  },
+  "p020_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2bc83c84-0019-472b-bc22-7db2f592babd",
+   "outputs": [
+    "R18S_PIXART/p020_s1001_00001_.png"
+   ]
+  },
+  "p021_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b2cc5b30-0a65-40b2-be45-37da333bd86b",
+   "outputs": [
+    "R18S_PIXART/p021_s1001_00001_.png"
+   ]
+  },
+  "p022_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d3064f1e-f980-461d-bfdb-da4f1a521c26",
+   "outputs": [
+    "R18S_PIXART/p022_s1001_00001_.png"
+   ]
+  },
+  "p023_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b9a10eca-30b5-4d69-8bfb-fdd9c33231c4",
+   "outputs": [
+    "R18S_PIXART/p023_s1001_00001_.png"
+   ]
+  },
+  "p024_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a597a65b-651f-4345-8969-f475244976de",
+   "outputs": [
+    "R18S_PIXART/p024_s1001_00001_.png"
+   ]
+  },
+  "p025_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "10add4c0-a4c7-4a75-95c0-ef772d443634",
+   "outputs": [
+    "R18S_PIXART/p025_s1001_00001_.png"
+   ]
+  },
+  "p026_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ea466a43-cf21-47e0-8206-919e4d235cb9",
+   "outputs": [
+    "R18S_PIXART/p026_s1001_00001_.png"
+   ]
+  },
+  "p027_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "68827fcb-2c25-4f49-a70a-81c34fdb12b5",
+   "outputs": [
+    "R18S_PIXART/p027_s1001_00001_.png"
+   ]
+  },
+  "p028_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c44990c4-9b26-41c7-8b3d-9f34d95127ae",
+   "outputs": [
+    "R18S_PIXART/p028_s1001_00001_.png"
+   ]
+  },
+  "p029_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5d93b3b1-c27a-4ba0-a4ca-3d717001196e",
+   "outputs": [
+    "R18S_PIXART/p029_s1001_00001_.png"
+   ]
+  },
+  "p030_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a5bfe53f-d8cc-4108-b630-f91bdbaf1a44",
+   "outputs": [
+    "R18S_PIXART/p030_s1001_00001_.png"
+   ]
+  },
+  "p031_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a5a28f58-c3a3-487e-be44-46252840edfd",
+   "outputs": [
+    "R18S_PIXART/p031_s1001_00001_.png"
+   ]
+  },
+  "p032_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2db95b04-e937-4628-8650-2bc0f1b38544",
+   "outputs": [
+    "R18S_PIXART/p032_s1001_00001_.png"
+   ]
+  },
+  "p033_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a7c20737-ff7d-4c42-8f95-02d3369b26da",
+   "outputs": [
+    "R18S_PIXART/p033_s1001_00001_.png"
+   ]
+  },
+  "p034_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6b060114-78c8-48d5-8b84-fad2df223ba3",
+   "outputs": [
+    "R18S_PIXART/p034_s1001_00001_.png"
+   ]
+  },
+  "p035_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "320c34aa-1442-40a3-b171-80faee648993",
+   "outputs": [
+    "R18S_PIXART/p035_s1001_00001_.png"
+   ]
+  },
+  "p036_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "878f2aae-3d68-496c-b0a5-7d940e2bf800",
+   "outputs": [
+    "R18S_PIXART/p036_s1001_00001_.png"
+   ]
+  },
+  "p037_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a08e0b6e-2e2c-44c0-b5e1-7350bc3aecd9",
+   "outputs": [
+    "R18S_PIXART/p037_s1001_00001_.png"
+   ]
+  },
+  "p038_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "70a3eae1-db1e-4d74-90f8-28a7ea000828",
+   "outputs": [
+    "R18S_PIXART/p038_s1001_00001_.png"
+   ]
+  },
+  "p039_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f9859996-9c9a-4126-809e-5c3bb3a8335f",
+   "outputs": [
+    "R18S_PIXART/p039_s1001_00001_.png"
+   ]
+  },
+  "p040_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "cf9397ae-422b-42ea-a245-15ec1fdc4fc0",
+   "outputs": [
+    "R18S_PIXART/p040_s1001_00001_.png"
+   ]
+  },
+  "p041_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d6abc989-876f-48f5-afca-d6df0f532617",
+   "outputs": [
+    "R18S_PIXART/p041_s1001_00001_.png"
+   ]
+  },
+  "p042_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "529c836c-8883-46d8-aee0-1c07adf44fb2",
+   "outputs": [
+    "R18S_PIXART/p042_s1001_00001_.png"
+   ]
+  },
+  "p043_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4e5d8ad3-5e91-4c5e-898a-f7a927b6c4ff",
+   "outputs": [
+    "R18S_PIXART/p043_s1001_00001_.png"
+   ]
+  },
+  "p044_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c57238a4-72c0-438a-b5e6-c486329ab28b",
+   "outputs": [
+    "R18S_PIXART/p044_s1001_00001_.png"
+   ]
+  },
+  "p045_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "aceef6da-3622-407d-a100-49ef5b4fab24",
+   "outputs": [
+    "R18S_PIXART/p045_s1001_00001_.png"
+   ]
+  },
+  "p046_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "bce71ac8-182a-4148-8c6c-d67a2e3f8ce7",
+   "outputs": [
+    "R18S_PIXART/p046_s1001_00001_.png"
+   ]
+  },
+  "p047_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ee6fa4fd-fb34-4762-8f7e-cac18d0b9a3f",
+   "outputs": [
+    "R18S_PIXART/p047_s1001_00001_.png"
+   ]
+  },
+  "p048_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "889c53fb-9951-410a-95d0-6648ef432a62",
+   "outputs": [
+    "R18S_PIXART/p048_s1001_00001_.png"
+   ]
+  },
+  "p049_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2a66f1d0-aec8-4655-a211-1c8b6da5aa23",
+   "outputs": [
+    "R18S_PIXART/p049_s1001_00001_.png"
+   ]
+  },
+  "p050_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "05ef5193-0cc9-4e67-93d6-e5fe1c89809a",
+   "outputs": [
+    "R18S_PIXART/p050_s1001_00001_.png"
+   ]
+  },
+  "p051_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a89dd6ce-0be6-49f2-9a72-c82b8d762d81",
+   "outputs": [
+    "R18S_PIXART/p051_s1001_00001_.png"
+   ]
+  },
+  "p052_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5a7170b3-6c70-498c-886b-c7c1a0e3bad4",
+   "outputs": [
+    "R18S_PIXART/p052_s1001_00001_.png"
+   ]
+  },
+  "p053_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c9a4eb46-3657-4f73-92ae-a895fd9b2282",
+   "outputs": [
+    "R18S_PIXART/p053_s1001_00001_.png"
+   ]
+  },
+  "p054_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "73242782-8bf3-41c2-bd86-1d79d1a52363",
+   "outputs": [
+    "R18S_PIXART/p054_s1001_00001_.png"
+   ]
+  },
+  "p055_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d4e491e6-2b91-4b4a-a5fe-914144a4ecc1",
+   "outputs": [
+    "R18S_PIXART/p055_s1001_00001_.png"
+   ]
+  },
+  "p056_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ae9f3bb3-3041-468d-bc7e-81ecda45ff1c",
+   "outputs": [
+    "R18S_PIXART/p056_s1001_00001_.png"
+   ]
+  },
+  "p057_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4f12eb51-f2f8-434f-a394-d42d3114a8a9",
+   "outputs": [
+    "R18S_PIXART/p057_s1001_00001_.png"
+   ]
+  },
+  "p058_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3024d942-845d-4b39-8215-7cce913b8754",
+   "outputs": [
+    "R18S_PIXART/p058_s1001_00001_.png"
+   ]
+  },
+  "p059_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "39b0c529-c882-41e4-8b19-922ce6fbcb8d",
+   "outputs": [
+    "R18S_PIXART/p059_s1001_00001_.png"
+   ]
+  }
+ },
+ "meta": {
+  "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\pixart_sigma_api.json",
+  "args": {
+   "mode": "capture",
+   "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\pixart_sigma_api.json",
+   "session": "R18S_PIXART",
+   "tsv": "prompts_r3_cond60.tsv",
+   "only": "",
+   "prompt_mode": "normal",
+   "fixed_text": "A photograph of a wooden chair in an empty room",
+   "n_seeds": 1,
+   "seed0": 1001,
+   "ignore_tsv_seed": false,
+   "guider": [],
+   "sketch_only": "",
+   "swap_guider": "none",
+   "res": 0,
+   "steps": 0,
+   "clip_subset": "lgt",
+   "unet": "",
+   "text_node": "",
+   "clones": 16,
+   "k_points": "",
+   "clone_sampler": "euler_ancestral",
+   "server": "http://127.0.0.1:8188",
+   "state_dir": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\m3_comfy_state",
+   "max_attempts": 2,
+   "timeout": 0,
+   "dry_run": false,
+   "write_first": ""
+  }
+ }
+}

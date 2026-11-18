@@ -1,0 +1,996 @@
+{
+ "jobs": {
+  "p000_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "bf1c0eb7-15dc-4363-863b-d1a43919286d",
+   "outputs": [
+    "R18_ZB6/p000_s1001_00001_.png"
+   ]
+  },
+  "p001_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4393ac6a-d894-4b33-9223-42ee493a2b26",
+   "outputs": [
+    "R18_ZB6/p001_s1001_00001_.png"
+   ]
+  },
+  "p002_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b8890aab-9469-4bd0-84b0-4752b849b7c0",
+   "outputs": [
+    "R18_ZB6/p002_s1001_00001_.png"
+   ]
+  },
+  "p003_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1165cab7-bb35-4e07-9ed9-a3d90b3c61ab",
+   "outputs": [
+    "R18_ZB6/p003_s1001_00001_.png"
+   ]
+  },
+  "p004_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "035ea2fa-c5a9-4f36-b6bb-c8c68f4300fc",
+   "outputs": [
+    "R18_ZB6/p004_s1001_00001_.png"
+   ]
+  },
+  "p005_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6ee36d22-5e46-435e-8fca-22f4fc72f36c",
+   "outputs": [
+    "R18_ZB6/p005_s1001_00001_.png"
+   ]
+  },
+  "p006_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "943ae432-aec9-4e0f-a1c7-44ad5d2ce30e",
+   "outputs": [
+    "R18_ZB6/p006_s1001_00001_.png"
+   ]
+  },
+  "p007_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7f4b7b02-7bbf-444d-9558-8cd06a0b782f",
+   "outputs": [
+    "R18_ZB6/p007_s1001_00001_.png"
+   ]
+  },
+  "p008_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2bb4293d-1c6c-4ba5-af46-6210b4a7cab9",
+   "outputs": [
+    "R18_ZB6/p008_s1001_00001_.png"
+   ]
+  },
+  "p009_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e7e110a7-535b-43a6-9ff7-5d81431c86f4",
+   "outputs": [
+    "R18_ZB6/p009_s1001_00001_.png"
+   ]
+  },
+  "p010_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "91a5887c-8675-4eaf-8de5-367fa87fbe3d",
+   "outputs": [
+    "R18_ZB6/p010_s1001_00001_.png"
+   ]
+  },
+  "p011_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6429a42f-5957-4ece-a718-ed3e02803432",
+   "outputs": [
+    "R18_ZB6/p011_s1001_00001_.png"
+   ]
+  },
+  "p012_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f043df36-9c7d-404d-abca-bec5f861a32f",
+   "outputs": [
+    "R18_ZB6/p012_s1001_00001_.png"
+   ]
+  },
+  "p013_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2844e454-f88f-42aa-9744-ca967ba7b6e0",
+   "outputs": [
+    "R18_ZB6/p013_s1001_00001_.png"
+   ]
+  },
+  "p014_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1c20dd3c-825c-4830-b353-0cc58be4452c",
+   "outputs": [
+    "R18_ZB6/p014_s1001_00001_.png"
+   ]
+  },
+  "p015_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "06548641-914f-4d53-859d-f4f3936fbd1c",
+   "outputs": [
+    "R18_ZB6/p015_s1001_00001_.png"
+   ]
+  },
+  "p016_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3b3cca27-f5b5-4d65-aba0-eb3891976eb9",
+   "outputs": [
+    "R18_ZB6/p016_s1001_00001_.png"
+   ]
+  },
+  "p017_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b02215f0-f5e8-46ed-83d7-ffbac8fcf405",
+   "outputs": [
+    "R18_ZB6/p017_s1001_00001_.png"
+   ]
+  },
+  "p018_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6a8a3257-632b-4100-8a26-b688985c6bc7",
+   "outputs": [
+    "R18_ZB6/p018_s1001_00001_.png"
+   ]
+  },
+  "p019_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5c9dfe0f-bb4c-4ade-9699-18e9cdb83bcc",
+   "outputs": [
+    "R18_ZB6/p019_s1001_00001_.png"
+   ]
+  },
+  "p020_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "581a6f56-81da-4dd6-a45c-87729e109d4a",
+   "outputs": [
+    "R18_ZB6/p020_s1001_00001_.png"
+   ]
+  },
+  "p021_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f4eb141e-23c3-4138-8155-17dca23f526c",
+   "outputs": [
+    "R18_ZB6/p021_s1001_00001_.png"
+   ]
+  },
+  "p022_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "16641d0e-e808-495f-98d9-7f35e21ee848",
+   "outputs": [
+    "R18_ZB6/p022_s1001_00001_.png"
+   ]
+  },
+  "p023_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "41597cb7-95c0-434b-9e95-c4e33d04dfe9",
+   "outputs": [
+    "R18_ZB6/p023_s1001_00001_.png"
+   ]
+  },
+  "p024_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "72b51850-9e88-42b3-9fd3-7f16b466bb94",
+   "outputs": [
+    "R18_ZB6/p024_s1001_00001_.png"
+   ]
+  },
+  "p025_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7b79db38-a395-4c1a-889e-9f165288a244",
+   "outputs": [
+    "R18_ZB6/p025_s1001_00001_.png"
+   ]
+  },
+  "p026_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "06d81f3c-8856-4768-99c3-12a4c1b06c68",
+   "outputs": [
+    "R18_ZB6/p026_s1001_00001_.png"
+   ]
+  },
+  "p027_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "47f9c968-1928-4d5e-96c6-759ace2ec794",
+   "outputs": [
+    "R18_ZB6/p027_s1001_00001_.png"
+   ]
+  },
+  "p028_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "cb683990-2a4e-4b6b-b279-6b63c5165b56",
+   "outputs": [
+    "R18_ZB6/p028_s1001_00001_.png"
+   ]
+  },
+  "p029_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8071ee97-916e-488e-b3d9-1b96c793d442",
+   "outputs": [
+    "R18_ZB6/p029_s1001_00001_.png"
+   ]
+  },
+  "p030_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "14a95425-8732-497a-b876-ad0f95d752cd",
+   "outputs": [
+    "R18_ZB6/p030_s1001_00001_.png"
+   ]
+  },
+  "p031_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "07c2c262-3670-417d-a93b-99977b54fd5a",
+   "outputs": [
+    "R18_ZB6/p031_s1001_00001_.png"
+   ]
+  },
+  "p032_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "fe154281-6c7e-493f-9621-c8bdc0a256df",
+   "outputs": [
+    "R18_ZB6/p032_s1001_00001_.png"
+   ]
+  },
+  "p033_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "90dc90c7-851f-40d2-8ee9-65f8be05857b",
+   "outputs": [
+    "R18_ZB6/p033_s1001_00001_.png"
+   ]
+  },
+  "p034_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "74ff43ac-652b-4bea-a18a-1af3e9c554b5",
+   "outputs": [
+    "R18_ZB6/p034_s1001_00001_.png"
+   ]
+  },
+  "p035_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "77400bb2-7f0d-48f3-a300-d89205d3ae2c",
+   "outputs": [
+    "R18_ZB6/p035_s1001_00001_.png"
+   ]
+  },
+  "p036_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4be06e86-408d-49bc-978b-ece509cab927",
+   "outputs": [
+    "R18_ZB6/p036_s1001_00001_.png"
+   ]
+  },
+  "p037_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "76aad96a-1a55-4e00-8203-9277e92276ea",
+   "outputs": [
+    "R18_ZB6/p037_s1001_00001_.png"
+   ]
+  },
+  "p038_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b1f069e4-0c37-49a7-a52b-aff10b655878",
+   "outputs": [
+    "R18_ZB6/p038_s1001_00001_.png"
+   ]
+  },
+  "p039_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "607cbe96-a525-4c7f-a33b-409a4c276d3b",
+   "outputs": [
+    "R18_ZB6/p039_s1001_00001_.png"
+   ]
+  },
+  "p040_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e1905091-5aa2-4f04-8b3f-58e06ba8cfe6",
+   "outputs": [
+    "R18_ZB6/p040_s1001_00001_.png"
+   ]
+  },
+  "p041_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "40e9ecce-d2b9-4c12-945a-771838498258",
+   "outputs": [
+    "R18_ZB6/p041_s1001_00001_.png"
+   ]
+  },
+  "p042_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5eb8dcee-b637-422a-86fa-fc370dad4ee1",
+   "outputs": [
+    "R18_ZB6/p042_s1001_00001_.png"
+   ]
+  },
+  "p043_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "40784369-283d-4f41-91f2-36b8c6b24e36",
+   "outputs": [
+    "R18_ZB6/p043_s1001_00001_.png"
+   ]
+  },
+  "p044_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8d05be21-7f0c-4c91-b90a-e31883adc048",
+   "outputs": [
+    "R18_ZB6/p044_s1001_00001_.png"
+   ]
+  },
+  "p045_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3481e8ef-7cfd-4536-929f-ab1574cc6fbb",
+   "outputs": [
+    "R18_ZB6/p045_s1001_00001_.png"
+   ]
+  },
+  "p046_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f4f63076-a7eb-4057-a744-66f69e89b9dd",
+   "outputs": [
+    "R18_ZB6/p046_s1001_00001_.png"
+   ]
+  },
+  "p047_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f0d9eb62-2299-4a5a-a97c-a8acaa94db9d",
+   "outputs": [
+    "R18_ZB6/p047_s1001_00001_.png"
+   ]
+  },
+  "p048_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7c68ec68-143a-4e2a-b77b-6400f95db372",
+   "outputs": [
+    "R18_ZB6/p048_s1001_00001_.png"
+   ]
+  },
+  "p049_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "0403b161-f19c-475c-a2d8-f53195719f79",
+   "outputs": [
+    "R18_ZB6/p049_s1001_00001_.png"
+   ]
+  },
+  "p050_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d36e5df0-d75c-4b30-b7d0-8dc4597f3dd9",
+   "outputs": [
+    "R18_ZB6/p050_s1001_00001_.png"
+   ]
+  },
+  "p051_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7cac6f13-5477-4bf3-b1fa-ac3e0b3f63fb",
+   "outputs": [
+    "R18_ZB6/p051_s1001_00001_.png"
+   ]
+  },
+  "p052_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3c614ee5-6c2a-4e67-9a7f-1220dec4b2dc",
+   "outputs": [
+    "R18_ZB6/p052_s1001_00001_.png"
+   ]
+  },
+  "p053_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f3feaf37-1633-486f-8ce6-c2911a762cb7",
+   "outputs": [
+    "R18_ZB6/p053_s1001_00001_.png"
+   ]
+  },
+  "p054_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5b36126c-0347-4333-8e48-531bf36f167d",
+   "outputs": [
+    "R18_ZB6/p054_s1001_00001_.png"
+   ]
+  },
+  "p055_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "aeb7a2b1-a12b-4d66-8d4d-0d92cf61487c",
+   "outputs": [
+    "R18_ZB6/p055_s1001_00001_.png"
+   ]
+  },
+  "p056_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "086e55ac-42c0-402b-9491-df5654b17b5d",
+   "outputs": [
+    "R18_ZB6/p056_s1001_00001_.png"
+   ]
+  },
+  "p057_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2c02a450-3041-4d43-b03a-a54505058296",
+   "outputs": [
+    "R18_ZB6/p057_s1001_00001_.png"
+   ]
+  },
+  "p058_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6ab6572e-5157-4d6a-899c-e299b1aa45f0",
+   "outputs": [
+    "R18_ZB6/p058_s1001_00001_.png"
+   ]
+  },
+  "p059_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6bddd800-24ff-43e2-9922-d539fa873dde",
+   "outputs": [
+    "R18_ZB6/p059_s1001_00001_.png"
+   ]
+  },
+  "p060_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "18b2e1ab-4bb8-4a28-aa4c-1e23d4b7adc6",
+   "outputs": [
+    "R18_ZB6/p060_s1001_00001_.png"
+   ]
+  },
+  "p061_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ecf76a41-337e-4123-a89e-94f0e176dd5a",
+   "outputs": [
+    "R18_ZB6/p061_s1001_00001_.png"
+   ]
+  },
+  "p062_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "166a6be6-f467-4b27-8a16-de065b89ac8d",
+   "outputs": [
+    "R18_ZB6/p062_s1001_00001_.png"
+   ]
+  },
+  "p063_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a7502c54-f47c-4828-b75e-828ebd1d1422",
+   "outputs": [
+    "R18_ZB6/p063_s1001_00001_.png"
+   ]
+  },
+  "p064_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "bb257bc3-0e09-4fcb-831a-b1ce6d392671",
+   "outputs": [
+    "R18_ZB6/p064_s1001_00001_.png"
+   ]
+  },
+  "p065_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "936395b9-fe30-4c8b-a252-efaa5e11fc61",
+   "outputs": [
+    "R18_ZB6/p065_s1001_00001_.png"
+   ]
+  },
+  "p066_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "00cc8d68-b91c-4050-b77c-c8c357e0d854",
+   "outputs": [
+    "R18_ZB6/p066_s1001_00001_.png"
+   ]
+  },
+  "p067_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "636394df-4935-4313-aa70-44ec26989f57",
+   "outputs": [
+    "R18_ZB6/p067_s1001_00001_.png"
+   ]
+  },
+  "p068_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a213b036-e7df-4794-91f7-85b7c4a899c9",
+   "outputs": [
+    "R18_ZB6/p068_s1001_00001_.png"
+   ]
+  },
+  "p069_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "0ef606ce-cc78-4175-a3ef-3883d29b91bd",
+   "outputs": [
+    "R18_ZB6/p069_s1001_00001_.png"
+   ]
+  },
+  "p070_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e0303c4c-68e4-4338-bb6a-28d9395a388c",
+   "outputs": [
+    "R18_ZB6/p070_s1001_00001_.png"
+   ]
+  },
+  "p071_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6e35a688-e9cf-4982-ae28-42510c3df8ca",
+   "outputs": [
+    "R18_ZB6/p071_s1001_00001_.png"
+   ]
+  },
+  "p072_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8e1b06ac-a954-40b7-8795-601d4dce5a17",
+   "outputs": [
+    "R18_ZB6/p072_s1001_00001_.png"
+   ]
+  },
+  "p073_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7071e470-f06a-4c53-866c-53de9b0c9381",
+   "outputs": [
+    "R18_ZB6/p073_s1001_00001_.png"
+   ]
+  },
+  "p074_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c824ceb4-e3dd-418d-98e2-89d3b7b991f0",
+   "outputs": [
+    "R18_ZB6/p074_s1001_00001_.png"
+   ]
+  },
+  "p075_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "be5f823e-3132-4f3b-b405-8deaec334ab8",
+   "outputs": [
+    "R18_ZB6/p075_s1001_00001_.png"
+   ]
+  },
+  "p076_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7574f65b-681d-49df-8260-74473b0fdff1",
+   "outputs": [
+    "R18_ZB6/p076_s1001_00001_.png"
+   ]
+  },
+  "p077_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "fcca6c04-3cd1-480f-8781-74c1f04a38e9",
+   "outputs": [
+    "R18_ZB6/p077_s1001_00001_.png"
+   ]
+  },
+  "p078_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b09e3344-cfb8-4d50-8f54-9034f5a2bdbd",
+   "outputs": [
+    "R18_ZB6/p078_s1001_00001_.png"
+   ]
+  },
+  "p079_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a9ad6281-b068-429b-bd67-0fad49465b12",
+   "outputs": [
+    "R18_ZB6/p079_s1001_00001_.png"
+   ]
+  },
+  "p080_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b0c62f46-add1-4b68-ba58-e1a724cf0914",
+   "outputs": [
+    "R18_ZB6/p080_s1001_00001_.png"
+   ]
+  },
+  "p081_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5eed4b10-2941-473a-b48f-9b4d3bfa303c",
+   "outputs": [
+    "R18_ZB6/p081_s1001_00001_.png"
+   ]
+  },
+  "p082_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "26e9fa52-3796-4bab-a01a-cc3e36ad7559",
+   "outputs": [
+    "R18_ZB6/p082_s1001_00001_.png"
+   ]
+  },
+  "p083_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b2d3e400-2980-4c6a-a745-5387c180eef2",
+   "outputs": [
+    "R18_ZB6/p083_s1001_00001_.png"
+   ]
+  },
+  "p084_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "963335d3-b944-4f6a-8ad8-16a59da65285",
+   "outputs": [
+    "R18_ZB6/p084_s1001_00001_.png"
+   ]
+  },
+  "p085_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "58a631c4-f357-41c9-8502-296d3940ab8c",
+   "outputs": [
+    "R18_ZB6/p085_s1001_00001_.png"
+   ]
+  },
+  "p086_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f114dc21-9907-4710-8d9d-6e50bdad68a6",
+   "outputs": [
+    "R18_ZB6/p086_s1001_00001_.png"
+   ]
+  },
+  "p087_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "69768abe-1b14-4773-909d-206f290280c7",
+   "outputs": [
+    "R18_ZB6/p087_s1001_00001_.png"
+   ]
+  },
+  "p088_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4daf23fc-501e-48f4-a8a4-b29551e3d948",
+   "outputs": [
+    "R18_ZB6/p088_s1001_00001_.png"
+   ]
+  },
+  "p089_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b528b90f-09d7-4778-ac5c-99ad65d202a4",
+   "outputs": [
+    "R18_ZB6/p089_s1001_00001_.png"
+   ]
+  },
+  "p090_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "688c376b-859f-404c-951e-df4d6a55369a",
+   "outputs": [
+    "R18_ZB6/p090_s1001_00001_.png"
+   ]
+  },
+  "p091_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "311114b4-f506-42ce-b399-3d30d819b8da",
+   "outputs": [
+    "R18_ZB6/p091_s1001_00001_.png"
+   ]
+  },
+  "p092_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "440f96c5-2d0d-4035-8447-a1369adba6d0",
+   "outputs": [
+    "R18_ZB6/p092_s1001_00001_.png"
+   ]
+  },
+  "p093_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5a66f790-99ef-4638-b22d-2a4306e155f3",
+   "outputs": [
+    "R18_ZB6/p093_s1001_00001_.png"
+   ]
+  },
+  "p094_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "9447f165-5723-4b92-b6d0-6ec8513d2e70",
+   "outputs": [
+    "R18_ZB6/p094_s1001_00001_.png"
+   ]
+  },
+  "p095_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8ca9dbed-8842-4b0d-904d-4ac9aa1ae109",
+   "outputs": [
+    "R18_ZB6/p095_s1001_00001_.png"
+   ]
+  },
+  "p096_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ba2e32f8-37bb-4e82-b60e-222188073ff0",
+   "outputs": [
+    "R18_ZB6/p096_s1001_00001_.png"
+   ]
+  },
+  "p097_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "01fa0f43-9f24-4bd3-bda0-ff891b2158c5",
+   "outputs": [
+    "R18_ZB6/p097_s1001_00001_.png"
+   ]
+  },
+  "p098_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "07a989e5-354b-45a6-88b8-5a558c48a7c7",
+   "outputs": [
+    "R18_ZB6/p098_s1001_00001_.png"
+   ]
+  },
+  "p099_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d6f25b8c-f73a-43d8-ab8e-8ebcb9942667",
+   "outputs": [
+    "R18_ZB6/p099_s1001_00001_.png"
+   ]
+  },
+  "p100_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7a8f9bab-bd05-4f41-8c03-8e167d351767",
+   "outputs": [
+    "R18_ZB6/p100_s1001_00001_.png"
+   ]
+  },
+  "p101_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b354cc2f-594b-439e-a885-7306eb5c24f2",
+   "outputs": [
+    "R18_ZB6/p101_s1001_00001_.png"
+   ]
+  },
+  "p102_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d7e22de1-ae05-4851-be33-2021fe0b98fa",
+   "outputs": [
+    "R18_ZB6/p102_s1001_00001_.png"
+   ]
+  },
+  "p103_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3b75f044-0945-48c4-9434-fcc1d7133fb4",
+   "outputs": [
+    "R18_ZB6/p103_s1001_00001_.png"
+   ]
+  },
+  "p104_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c7073d06-ef79-4057-b3aa-ccc8ca512b17",
+   "outputs": [
+    "R18_ZB6/p104_s1001_00001_.png"
+   ]
+  },
+  "p105_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "547a5f38-052c-43d9-906c-b477410663e7",
+   "outputs": [
+    "R18_ZB6/p105_s1001_00001_.png"
+   ]
+  },
+  "p106_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "559a28e4-668b-47f9-9bf9-8f126fbf853f",
+   "outputs": [
+    "R18_ZB6/p106_s1001_00001_.png"
+   ]
+  },
+  "p107_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "0fce4a87-4333-401f-a058-2747f0a5a1b4",
+   "outputs": [
+    "R18_ZB6/p107_s1001_00001_.png"
+   ]
+  },
+  "p108_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "daaab055-14be-427e-b8f4-320369f4f85a",
+   "outputs": [
+    "R18_ZB6/p108_s1001_00001_.png"
+   ]
+  },
+  "p109_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3524b610-2041-48a3-beb1-515ff8b38984",
+   "outputs": [
+    "R18_ZB6/p109_s1001_00001_.png"
+   ]
+  },
+  "p110_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4e8312f3-68c5-4131-aee9-9d6408e32821",
+   "outputs": [
+    "R18_ZB6/p110_s1001_00001_.png"
+   ]
+  },
+  "p111_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "7d7eed29-0517-4d0a-b298-5c04d02f5388",
+   "outputs": [
+    "R18_ZB6/p111_s1001_00001_.png"
+   ]
+  },
+  "p112_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d8ff233d-7de1-4789-afc7-75b8fc52db5e",
+   "outputs": [
+    "R18_ZB6/p112_s1001_00001_.png"
+   ]
+  },
+  "p113_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f00ec684-4678-4550-9c1a-16c2ca0ce734",
+   "outputs": [
+    "R18_ZB6/p113_s1001_00001_.png"
+   ]
+  },
+  "p114_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "52419f9c-489f-45b3-97d1-40ca9d68db68",
+   "outputs": [
+    "R18_ZB6/p114_s1001_00001_.png"
+   ]
+  },
+  "p115_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "9c5d6d42-07cb-423a-a886-d69a6f45e43f",
+   "outputs": [
+    "R18_ZB6/p115_s1001_00001_.png"
+   ]
+  },
+  "p116_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "c7e0ce7a-db06-4206-a28b-83d3faba5b11",
+   "outputs": [
+    "R18_ZB6/p116_s1001_00001_.png"
+   ]
+  },
+  "p117_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6af8aea8-59eb-4146-b1a5-1f05d06000f5",
+   "outputs": [
+    "R18_ZB6/p117_s1001_00001_.png"
+   ]
+  },
+  "p118_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f5ebd399-c943-4409-a174-f38073f1b6f0",
+   "outputs": [
+    "R18_ZB6/p118_s1001_00001_.png"
+   ]
+  },
+  "p119_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "115c93ae-4705-4d32-8c00-5d76e9c442e3",
+   "outputs": [
+    "R18_ZB6/p119_s1001_00001_.png"
+   ]
+  }
+ },
+ "meta": {
+  "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\zib_base_api.json",
+  "args": {
+   "mode": "capture",
+   "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\zib_base_api.json",
+   "session": "R18_ZB6",
+   "tsv": "prompts_primary120.txt",
+   "only": "",
+   "prompt_mode": "normal",
+   "fixed_text": "A photograph of a wooden chair in an empty room",
+   "n_seeds": 1,
+   "seed0": 1001,
+   "ignore_tsv_seed": false,
+   "guider": [],
+   "sketch_only": "prompts_r3_cond60.tsv",
+   "swap_guider": "none",
+   "res": 0,
+   "steps": 0,
+   "clip_subset": "lgt",
+   "unet": "",
+   "text_node": "",
+   "clones": 16,
+   "k_points": "",
+   "clone_sampler": "euler_ancestral",
+   "server": "http://127.0.0.1:8189",
+   "state_dir": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\m3_comfy_state",
+   "max_attempts": 2,
+   "timeout": 0,
+   "dry_run": false,
+   "write_first": ""
+  }
+ }
+}

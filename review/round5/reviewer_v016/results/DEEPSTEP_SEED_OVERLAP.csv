@@ -1,0 +1,5 @@
+arm_a,arm_b,n_seed_a,n_seed_b,n_shared,shared_seeds
+CFG1_40,CFG1_100,15,15,0,
+CFG45_40,CFG45_100,17,13,0,
+CFG1_40,CFG45_40,15,17,0,
+CFG1_100,CFG45_100,15,13,0,

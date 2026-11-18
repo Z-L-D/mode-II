@@ -1,0 +1,55 @@
+rows,kind,a,b,step,sigma_a,sigma_b,prompts,rsa,p
+all rows,lineage,Z2_attn,ZITSV_attn,first,1.0,1.0,58,0.6513223777338861,0.0005
+all rows,lineage,Z2_attn,ZITSV_attn,middle,0.765,0.75,58,0.687842426467909,0.0005
+all rows,lineage,Z2_attn,ZITSV_attn,last,0.111,0.3,58,0.46782510779892134,0.0005
+all rows,unrelated,Z2_attn,SD3SV_attn,first,1.0,1.0,59,0.2784143240850916,0.0005
+all rows,unrelated,Z2_attn,SD3SV_attn,middle,0.765,0.768,59,0.2582582570712026,0.0005
+all rows,unrelated,Z2_attn,SD3SV_attn,last,0.111,0.136,59,0.2255131816360655,0.0005
+all rows,unrelated,ZITSV_attn,SD3SV_attn,first,1.0,1.0,57,0.3058233333090796,0.0005
+all rows,unrelated,ZITSV_attn,SD3SV_attn,middle,0.75,0.75,57,0.262968234553796,0.0005
+all rows,unrelated,ZITSV_attn,SD3SV_attn,last,0.3,0.3,57,0.2239967965012769,0.0005
+all rows,lineage,Z2_mlp,ZITSV_mlp,first,1.0,1.0,58,0.34761785488203245,0.0005
+all rows,lineage,Z2_mlp,ZITSV_mlp,middle,0.765,0.75,58,0.3219884666085611,0.0005
+all rows,lineage,Z2_mlp,ZITSV_mlp,last,0.111,0.3,58,0.2384180511108286,0.0005
+image rows,lineage,Z2_attn,ZITSV_attn,first,1.0,1.0,58,0.6177746379663676,0.0005
+image rows,lineage,Z2_attn,ZITSV_attn,middle,0.765,0.75,58,0.6130335375561597,0.0005
+image rows,lineage,Z2_attn,ZITSV_attn,last,0.111,0.3,58,0.4105435628304767,0.0005
+image rows,unrelated,Z2_attn,SD3SV_attn,first,1.0,1.0,59,0.320981486650857,0.0005
+image rows,unrelated,Z2_attn,SD3SV_attn,middle,0.765,0.768,59,0.18397308667650053,0.0005
+image rows,unrelated,Z2_attn,SD3SV_attn,last,0.111,0.136,59,0.11058823250383863,0.006
+image rows,unrelated,ZITSV_attn,SD3SV_attn,first,1.0,1.0,57,0.2965818558228101,0.0005
+image rows,unrelated,ZITSV_attn,SD3SV_attn,middle,0.75,0.75,57,0.2161386254682783,0.0005
+image rows,unrelated,ZITSV_attn,SD3SV_attn,last,0.3,0.3,57,0.20295018948824234,0.0005
+image rows,lineage,Z2_mlp,ZITSV_mlp,first,1.0,1.0,58,0.5296404969662227,0.0005
+image rows,lineage,Z2_mlp,ZITSV_mlp,middle,0.765,0.75,58,0.609682838350926,0.0005
+image rows,lineage,Z2_mlp,ZITSV_mlp,last,0.111,0.3,58,0.318681559839222,0.0005
+caption rows,lineage,Z2_attn,ZITSV_attn,first,1.0,1.0,58,0.8022943256485875,0.0005
+caption rows,lineage,Z2_attn,ZITSV_attn,middle,0.765,0.75,58,0.8353864226955161,0.0005
+caption rows,lineage,Z2_attn,ZITSV_attn,last,0.111,0.3,58,0.7893236134866589,0.0005
+caption rows,lineage,Z2_mlp,ZITSV_mlp,first,1.0,1.0,58,0.23412185188033102,0.0005
+caption rows,lineage,Z2_mlp,ZITSV_mlp,middle,0.765,0.75,58,0.35092353419851824,0.0005
+caption rows,lineage,Z2_mlp,ZITSV_mlp,last,0.111,0.3,58,0.4105860427951384,0.0005
+centred,lineage,Z2_attn,ZITSV_attn,first,1.0,1.0,58,0.4421906821864672,0.0005
+centred,lineage,Z2_attn,ZITSV_attn,middle,0.765,0.75,58,0.5067042412125308,0.0005
+centred,lineage,Z2_attn,ZITSV_attn,last,0.111,0.3,58,0.36296378396104995,0.0005
+centred,unrelated,Z2_attn,SD3SV_attn,first,1.0,1.0,59,0.43473319010915645,0.0005
+centred,unrelated,Z2_attn,SD3SV_attn,middle,0.765,0.768,59,0.2782380632863806,0.0005
+centred,unrelated,Z2_attn,SD3SV_attn,last,0.111,0.136,59,0.19663329752249772,0.0005
+centred,unrelated,ZITSV_attn,SD3SV_attn,first,1.0,1.0,57,0.3165830456819573,0.0005
+centred,unrelated,ZITSV_attn,SD3SV_attn,middle,0.75,0.75,57,0.31555000825831914,0.0005
+centred,unrelated,ZITSV_attn,SD3SV_attn,last,0.3,0.3,57,0.2685603009827083,0.0005
+centred,lineage,Z2_mlp,ZITSV_mlp,first,1.0,1.0,58,0.46633949663625046,0.0005
+centred,lineage,Z2_mlp,ZITSV_mlp,middle,0.765,0.75,58,0.4558808597277453,0.0005
+centred,lineage,Z2_mlp,ZITSV_mlp,last,0.111,0.3,58,0.30941565906027235,0.0005
+top-8 removed,lineage,Z2_attn,ZITSV_attn,first,1.0,1.0,58,0.6296166036134053,0.0005
+top-8 removed,lineage,Z2_attn,ZITSV_attn,middle,0.765,0.75,58,0.6083129318890501,0.0005
+top-8 removed,lineage,Z2_attn,ZITSV_attn,last,0.111,0.3,58,0.40702138421069795,0.0005
+top-8 removed,unrelated,Z2_attn,SD3SV_attn,first,1.0,1.0,59,0.3503796552289522,0.0005
+top-8 removed,unrelated,Z2_attn,SD3SV_attn,middle,0.765,0.768,59,0.2063819159017455,0.0005
+top-8 removed,unrelated,Z2_attn,SD3SV_attn,last,0.111,0.136,59,0.12397550057788934,0.003
+top-8 removed,unrelated,ZITSV_attn,SD3SV_attn,first,1.0,1.0,57,0.3198004265870853,0.0005
+top-8 removed,unrelated,ZITSV_attn,SD3SV_attn,middle,0.75,0.75,57,0.25977730447431463,0.0005
+top-8 removed,unrelated,ZITSV_attn,SD3SV_attn,last,0.3,0.3,57,0.23949252315506192,0.0005
+top-8 removed,lineage,Z2_mlp,ZITSV_mlp,first,1.0,1.0,58,0.5360894731512515,0.0005
+top-8 removed,lineage,Z2_mlp,ZITSV_mlp,middle,0.765,0.75,58,0.6096695329745405,0.0005
+top-8 removed,lineage,Z2_mlp,ZITSV_mlp,last,0.111,0.3,58,0.33334471694009965,0.0005

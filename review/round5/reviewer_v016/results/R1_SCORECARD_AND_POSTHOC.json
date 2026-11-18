@@ -1,0 +1,122 @@
+{
+  "R1a_CFG1": {
+    "cfg": 1.0,
+    "hook_modes": [
+      "passive-branch"
+    ],
+    "branches": [
+      "cond"
+    ],
+    "finite_prompt_influence": true,
+    "layer_min": 24,
+    "layer_max": 24,
+    "n_prompts": 30,
+    "n_seeds": 2,
+    "max_prompts_per_seed": 30,
+    "pass_preflight": true
+  },
+  "R1a_CFG45": {
+    "cfg": 4.5,
+    "hook_modes": [
+      "passive-branch"
+    ],
+    "branches": [
+      "cond",
+      "uncond"
+    ],
+    "finite_prompt_influence": true,
+    "layer_min": 24,
+    "layer_max": 24,
+    "n_prompts": 30,
+    "n_seeds": 2,
+    "max_prompts_per_seed": 30,
+    "pass_preflight": true
+  },
+  "seed_design": {
+    "unique_seed_design": false,
+    "n_unique_seeds": 2,
+    "max_prompts_per_seed": 30,
+    "formal_R1c_R1d_R1e": "NOT SCORABLE"
+  },
+  "R1b": {
+    "n_cells": 1440,
+    "median_abs_log_ratio": 0.00045318459436947543,
+    "q95_abs_log_ratio": 0.0015933769897304396,
+    "max_abs_log_ratio": 0.004313501510201595,
+    "verdict": "CONFIRMED"
+  },
+  "R1f": {
+    "last_three_quarters_median": 0.5746463186086345,
+    "CI95": [
+      0.4008228548971593,
+      0.7707057276418152
+    ],
+    "n_prompts": 30,
+    "verdict": "CONFIRMED",
+    "caveat": "global seeds 1001/1002 reused across prompts; ratio is paired within prompt and remains calculable"
+  },
+  "R1f_stages": [
+    {
+      "stage": 1,
+      "steps": "0-9",
+      "median": 1.0030092684136607,
+      "q25": 0.5399487330949386,
+      "q75": 2.055467373322691
+    },
+    {
+      "stage": 2,
+      "steps": "10-19",
+      "median": 0.7724229445727133,
+      "q25": 0.31218612805195955,
+      "q75": 1.5528866428944188
+    },
+    {
+      "stage": 3,
+      "steps": "20-29",
+      "median": 0.5454485386884176,
+      "q25": 0.26533468938251725,
+      "q75": 0.9506621175338033
+    },
+    {
+      "stage": 4,
+      "steps": "30-39",
+      "median": 0.4560321049310391,
+      "q25": 0.2663938926293554,
+      "q75": 0.8926167291448832
+    }
+  ],
+  "R1g": {
+    "min_prompt_influence_sigma_le_09": 0.727192,
+    "first_sigma_below_0999": 0.9,
+    "verdict": "CONFIRMED"
+  },
+  "R1h": [
+    {
+      "variable": "g_micro",
+      "median_BM_minus_cond": 0.0007703918288068763,
+      "q25": -0.007858651080793817,
+      "q75": 0.013961630116970854
+    },
+    {
+      "variable": "spectral_gap",
+      "median_BM_minus_cond": 0.0031308727685943364,
+      "q25": -0.002942702032970195,
+      "q75": 0.011379121026786433
+    },
+    {
+      "variable": "sv_entropy",
+      "median_BM_minus_cond": 0.0011499999999999844,
+      "q25": -0.003149999999999764,
+      "q75": 0.010200000000000209
+    }
+  ],
+  "posthoc_cond_uncond": {
+    "mean_shape_r": 0.9877173750043363,
+    "min_shape_r": 0.7762937405635344,
+    "early_shape_r": 0.9624746717681071,
+    "late_shape_r": 0.9993421356482695,
+    "median_abs_log_g_diff": 0.01444507981769997,
+    "median_abs_log_gap_diff": 0.010310865852825347,
+    "median_abs_H_diff": 0.009145833333333186
+  }
+}

@@ -1,0 +1,13 @@
+set,rows,signs,n_cross,crossings,TRI,boot_ncross_mode,boot_frac_ge3
+SD35M 120p all steps,19200,+-+-,3,0.01811;0.02010;0.07687,0.012580870481210192,3,1.0
+SD35M 120p steps>=2 (branch-mean only),18240,+-+-,3,0.01824;0.01966;0.07814,0.01911744378584962,3,0.99
+  domain abstract_conceptual steps>=2,1824,+-+-,3,0.01788;0.01952;0.08026,0.02296480804045018,3,0.85
+  domain animals_wildlife steps>=2,1824,+-+-,3,0.01785;0.01925;0.06519,0.10219722547375706,3,0.84
+  domain architecture_urban steps>=2,1824,+-+-,3,0.01850;0.02444;0.09417,0.2806444793169801,3,1.0
+  domain cinematic_dramatic steps>=2,1824,+-+-,3,0.01823;0.02046;0.08255,0.047585938524138484,3,0.98
+  domain historical_period steps>=2,1824,+-+-,3,0.01870;0.02207;0.09753,0.15448420633488608,3,1.0
+  domain natural_landscapes steps>=2,1824,+-+-,3,0.01758;0.01779;0.05807,0.11102198821309973,3,0.635
+  domain portraits_figures steps>=2,1824,+-+-,3,0.01829;0.02142;0.09116,0.05592661622164258,3,1.0
+  domain prehistoric_paleontological steps>=2,1824,+-+-,3,0.01830;0.02270;0.08284,0.1518508849558743,3,1.0
+  domain still_life_materials steps>=2,1824,+-+-,3,0.01792;0.02410;0.07755,0.048563632043113626,3,1.0
+  domain weather_atmosphere steps>=2,1824,+-+-,3,0.01698;0.01744;0.05666,0.03850497871679651,3,0.88

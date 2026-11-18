@@ -1,0 +1,12 @@
+model,file,sha256,source
+Z-Image Base,z_image_bf16.safetensors,996a67d3ff666946b1c25cbc16d1b1918b6cc0ac166309e23fe3b3d830263dee,recorded by Round 18; same hash on 2026-11-12
+Z-Image Turbo,z_image_turbo_bf16.safetensors,2407613050b809ffdff18a4ac99af83ea6b95443ecebdf80e064a79c825574a6,recorded by Round 18; same hash on 2026-11-12
+SD3.5 Large,sd3.5_large.safetensors,ffef7a279d9134626e6ce0d494fba84fc1c7e720b3c7df2d19a09dc3796d8f93,recorded by Round 18; same hash on 2026-11-12
+SD3.5 Large Turbo,sd3.5_large_turbo.safetensors,fb64610bf8d73eb064b8d528eef85d062bf2b4b1204ff7bc73e57ad28b24489c,recorded by Round 18
+SD3.5 Medium,sd3.5_medium.safetensors,11fe06e22364b823dfeedc275912336b932b32a293a0b2f35ffac071990cc4de,recorded by Round 18; same hash on 2026-11-12
+SD3 Medium,sd3_medium.safetensors,cc236278d28c8c3eccb8e21ee0a67ebed7dd6e9ce40aa9de914fa34e8282f191,recorded by Round 18; same hash on 2026-11-12
+PixArt-Sigma XL 2 1024,PixArt-Sigma-XL-2-1024-MS.pth,e63941ddc11c9e0bba27e9a0e454d5d959361119849ecfc8981f0488f0d96ff3,recorded by Round 18
+Cosmos-Predict2 2B,cosmos_predict2_2B_t2i.safetensors,76a8b3c6c45289b9c11f74e3067a597a3832a2977fef0d6ea46f2ff7f0895173,recorded by Round 18; same hash on 2026-11-12
+ACE-Step 1.5 Base,acestep_v1.5_base.safetensors,4177f600501a6d4bd81cadaa0abac557ffd15c54e5c8cb52053cdb24a0844d6b,file on the capture machine hashed 2026-11-12 (not recorded at capture)
+ACE-Step 1.5 turbo,acestep_v1.5_turbo.safetensors,3f6e0797fad420a39bd33979eb6e840e30989e34a3794e843d23b60ec6e422d7,file on the capture machine hashed 2026-11-12 (not recorded at capture)
+Mochi 1 preview,mochi_preview_bf16.safetensors,e445b9b393c70c431543b062cc16ee29b5dc4dc187487fa3e1f5a4b6162c8be1,file on the capture machine hashed 2026-11-12 (not recorded at capture)

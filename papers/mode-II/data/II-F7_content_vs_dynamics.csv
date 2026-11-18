@@ -1,0 +1,42 @@
+panel,series,pair,x,y,p,null_p95,source
+a,lineage,ZIT-ZIB,0.942255077104264,0.5640885416660444,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,ZIT-MOCHI,0.2105928668985322,0.3900237293671637,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,ZIT-SD35M,-0.0719261222276325,0.3029876135518161,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,ZIT-SD35L,-0.0200347258620226,0.3175414029566906,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,ZIB-MOCHI,0.239561379603265,0.3058730645331187,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,ZIB-SD35M,-0.0097265739583491,0.2331320293615936,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,ZIB-SD35L,-0.0243830799741066,0.2558789780035818,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,MOCHI-SD35M,0.15222012467694,0.2851509531824815,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,unrelated,MOCHI-SD35L,0.1592981968196063,0.2548967835118239,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,same family,SD35M-SD35L,-0.2519453503917949,0.3077952515164492,0.0004997501249375,,review/round6/out/S2_rsa.csv (tau=first) + review/round6/out/S1_hierarchy.csv (L3_tangent)
+a,spearman rho,,,0.29696969696969694,,,computed here; preregistered S2g reports 0.297 (S2_results.json)
+b,lineage,ZIT-ZIB,first,0.5640885416660444,0.0004997501249375,0.0237568053817278,review/round6/out/S2_rsa.csv
+b,lineage,ZIT-ZIB,middle,0.6162529783648132,0.0004997501249375,0.0211071263924825,review/round6/out/S2_rsa.csv
+b,lineage,ZIT-ZIB,last,0.6190102083636816,0.0004997501249375,0.0220161439052628,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-MOCHI,first,0.3900237293671637,0.0004997501249375,0.0233016367305553,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-MOCHI,middle,0.2947751209970649,0.0004997501249375,0.021678757630499,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-MOCHI,last,0.2296289415095504,0.0004997501249375,0.0219597171330938,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-SD35M,first,0.3029876135518161,0.0004997501249375,0.0226491157885076,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-SD35M,middle,0.4328175291706767,0.0004997501249375,0.0212669970433398,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-SD35M,last,0.3736732938963541,0.0004997501249375,0.0229851220325323,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-SD35L,first,0.3175414029566906,0.0004997501249375,0.0209374521783778,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-SD35L,middle,0.4133678596075862,0.0004997501249375,0.022512199762993,review/round6/out/S2_rsa.csv
+b,unrelated,ZIT-SD35L,last,0.3382044260388019,0.0004997501249375,0.0231108113304198,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-MOCHI,first,0.3058730645331187,0.0004997501249375,0.0207909666671385,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-MOCHI,middle,0.2292184856627026,0.0004997501249375,0.0215514098810856,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-MOCHI,last,0.1785045417355818,0.0004997501249375,0.0223035810304368,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-SD35M,first,0.2331320293615936,0.0004997501249375,0.0232329778703631,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-SD35M,middle,0.3680189641643303,0.0004997501249375,0.0227860264763182,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-SD35M,last,0.2631439678403739,0.0004997501249375,0.0225177344263926,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-SD35L,first,0.2558789780035818,0.0004997501249375,0.0224205380211576,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-SD35L,middle,0.3291521050056363,0.0004997501249375,0.0221991224215697,review/round6/out/S2_rsa.csv
+b,unrelated,ZIB-SD35L,last,0.2069442077634311,0.0004997501249375,0.0225037531247544,review/round6/out/S2_rsa.csv
+b,unrelated,MOCHI-SD35M,first,0.2851509531824815,0.0004997501249375,0.0220182038942153,review/round6/out/S2_rsa.csv
+b,unrelated,MOCHI-SD35M,middle,0.1315051922215088,0.0004997501249375,0.0229690740026103,review/round6/out/S2_rsa.csv
+b,unrelated,MOCHI-SD35M,last,0.1323761551435836,0.0004997501249375,0.0214139125027995,review/round6/out/S2_rsa.csv
+b,unrelated,MOCHI-SD35L,first,0.2548967835118239,0.0004997501249375,0.0216942705920717,review/round6/out/S2_rsa.csv
+b,unrelated,MOCHI-SD35L,middle,0.1801383568772791,0.0004997501249375,0.0229199864256541,review/round6/out/S2_rsa.csv
+b,unrelated,MOCHI-SD35L,last,0.1776839226555898,0.0004997501249375,0.0232071064048065,review/round6/out/S2_rsa.csv
+b,same family,SD35M-SD35L,first,0.3077952515164492,0.0004997501249375,0.0214827481062767,review/round6/out/S2_rsa.csv
+b,same family,SD35M-SD35L,middle,0.433731202019637,0.0004997501249375,0.0234990154161848,review/round6/out/S2_rsa.csv
+b,same family,SD35M-SD35L,last,0.376711352101818,0.0004997501249375,0.0237674476461228,review/round6/out/S2_rsa.csv

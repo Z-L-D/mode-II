@@ -1,0 +1,42 @@
+quantity,string,in_mode_I,in_mode_II,status
+"lineage tangent attn/MLP, pooled archive",0.94,True,True,both
+"lineage tangent attn/MLP, pooled archive",0.97,True,True,both
+capture ladder: unconditional,0.981,True,True,both
+capture ladder: unconditional,0.989,True,True,both
+capture ladder: branch mean,0.988,True,True,both
+capture ladder: branch mean,0.991,True,True,both
+capture ladder: conditional CFG 4,0.992,True,True,both
+capture ladder: Base CFG 1,0.999,True,True,both
+unrelated-pair tangent bound,0.24,True,True,both
+SD3.5 M-L tangent,-0.25,True,True,both
+hierarchy margins,-0.049,True,True,both
+hierarchy margins,+0.047,True,True,both
+hierarchy margins,+0.131,True,True,both
+hierarchy margins,+0.152,True,True,both
+hierarchy margins,+0.703,True,True,both
+Qwen derivative r,0.63,True,True,both
+Qwen derivative r,-0.12,True,False,mode-I only
+Qwen derivative r,-0.06,True,False,mode-I only
+Qwen 1.5-3B interval and null,0.61,True,True,both
+Qwen 1.5-3B interval and null,0.65,True,True,both
+Qwen 1.5-3B interval and null,0.38,True,True,both
+abliteration prefill tangent,0.9998,True,True,both
+D10 derivative correlations,0.937,True,True,both
+D10 derivative correlations,0.007,True,True,both
+LLM RSA ranges,0.44,True,True,both
+LLM RSA ranges,0.48,True,True,both
+LLM RSA ranges,0.72,True,True,both
+LLM RSA ranges,0.89,True,True,both
+pooling excess held-out R2,0.62,True,True,both
+pooling excess held-out R2,0.64,True,True,both
+ZIT VR4/walk,1.13,True,True,both
+n-stability of the lineage tangent,0.937,True,True,both
+n-stability of the lineage tangent,0.946,True,False,mode-I only
+n-stability of the lineage tangent,0.965,True,True,both
+n-stability of the lineage tangent,0.968,True,False,mode-I only
+divergence token median,token 7,True,False,mode-I only
+"prereg SHA prefixes R8, R9",acc578ac,True,True,both
+"prereg SHA prefixes R8, R9",09c1f170,True,True,both
+Round 6 confirmed/refuted,17,True,True,both
+Round 6 confirmed/refuted,5,True,True,both
+nested i.i.d. retirement (R9-B1),R9-B1,True,True,both

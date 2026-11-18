@@ -1,0 +1,283 @@
+panel,series,y,x,prompt_share_anova,lo,hi,source
+b,depth geometry: scaffold,96.16,,,,,"ledger D12: ""The order-robust coarse summary assigns 96.16% of normalized depth-geometry variance to the system×time scaffold and 3.84% to theme+prompt+seed. For absolute operating point the split is 95.55% versus 4.45%."""
+b,depth geometry: theme+prompt+seed,3.84,,,,,"ledger D12: ""The order-robust coarse summary assigns 96.16% of normalized depth-geometry variance to the system×time scaffold and 3.84% to theme+prompt+seed. For absolute operating point the split is 95.55% versus 4.45%."""
+b,operating point: scaffold,95.55,,,,,"ledger D12: ""The order-robust coarse summary assigns 96.16% of normalized depth-geometry variance to the system×time scaffold and 3.84% to theme+prompt+seed. For absolute operating point the split is 95.55% versus 4.45%."""
+b,operating point: theme+prompt+seed,4.45,,,,,"ledger D12: ""The order-robust coarse summary assigns 96.16% of normalized depth-geometry variance to the system×time scaffold and 3.84% to theme+prompt+seed. For absolute operating point the split is 95.55% versus 4.45%."""
+c,ZIT-attn,0.942244393456288,1.0,0.923600569760302,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.951227703701089,0.954545,0.9354886066541722,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.9577883697814326,0.9,0.9441695117758933,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.9616226233147978,0.833333,0.9492424550559606,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.9621441954204782,0.75,0.9499325004442832,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.9603039904938137,0.642857,0.9474978629999647,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.9558609635115728,0.5,0.9416193164129664,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-attn,0.9505281073163456,0.3,0.9345628622391962,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.8712901703215783,1.0,0.829640457982043,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9209774722596484,0.954545,0.8954499042739825,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9285477473261078,0.9,0.9054717022851086,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9338605624420752,0.833333,0.9125042341786328,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9394695265955112,0.75,0.9199280954592506,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9398402757640184,0.642857,0.9204187836050804,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9329126200203848,0.5,0.9112494961796076,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIT-mlp,0.9320213705405298,0.3,0.9100697812182648,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.585995993768092,1.0,0.4545566200280415,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.7904933905822012,0.986301,0.7245382541431875,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8404402503063066,0.971831,0.7903128242834785,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8645413547292564,0.956522,0.8220280643659602,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8834657894003597,0.940299,0.8469205815119428,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.899137794480045,0.923077,0.8675279059649956,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9055507395266674,0.904762,0.8759585267041425,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9089039616213568,0.885246,0.8803663313916373,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9105893887567288,0.864407,0.8825817119053345,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9124424915703472,0.842105,0.885017405446437,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9108054494095466,0.818182,0.8828657037406981,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.912812097738284,0.792453,0.885503200153245,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9123876609383564,0.764706,0.8849453380810255,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9081539859017744,0.734694,0.8793805150145435,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9096352999565064,0.702128,0.8813276354865521,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9058717230913564,0.666667,0.8763804717211029,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9064302024254935,0.627907,0.8771146075004747,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9030832250740332,0.585366,0.8727147961863513,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.9038313633314732,0.538462,0.8736982960897491,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8980919577820669,0.486486,0.8661529208491141,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8965607191577672,0.428571,0.8641397154718894,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8897912702526608,0.363636,0.8552388091283869,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8862430611693826,0.290323,0.8505729189903818,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8811593423883817,0.206897,0.8438872639835137,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-attn,0.8757897767537771,0.111111,0.8368249572509652,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.5120045678020002,1.0,0.3566011238794733,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.7815059314666174,0.986301,0.7126958328327012,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.821726467920701,0.971831,0.7656764427950076,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8360618953821132,0.956522,0.7845496122579312,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8541667993440393,0.940299,0.8083777871207947,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8727064369828769,0.923077,0.8327692632828955,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.88152433349774,0.904762,0.8443672902832524,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8847583736767882,0.885246,0.8486204596038069,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8878793626862581,0.864407,0.8527246940231689,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8933689461208393,0.842105,0.8599431159528008,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8958706573557812,0.818182,0.8632324325202956,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8981252061979248,0.792453,0.8661966337304484,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8996190206697952,0.764706,0.868160575330018,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8950268692977352,0.734694,0.8621230157267467,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8953196736317633,0.702128,0.8625079984428037,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8942129544202817,0.666667,0.8610528587688466,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8928928197785534,0.627907,0.8593170738890038,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8918057508023077,0.585366,0.8578877023473807,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8876832478033746,0.538462,0.8524668020127615,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8830668600278966,0.486486,0.8463959405451323,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8813698569060803,0.428571,0.8441641273290437,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8768259371940622,0.363636,0.8381878229885211,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8729853743632588,0.290323,0.8331361758416926,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8717583411932829,0.206897,0.8315221286001626,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,ZIB-mlp,0.8726662282252764,0.111111,0.8327163727568285,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7916923895819087,1.0,0.7237243754701396,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.6646044828711238,0.994344,0.5547751354290316,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7449321995262038,0.98836,0.6615729982767016,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7724223063253354,0.981818,0.6981174763426798,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7797195948969537,0.97507,0.7078265180165776,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.780124283096764,0.967892,0.708355964106365,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7751057641676098,0.96,0.701683869004744,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7693097265428623,0.95181,0.6939805652808213,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.765733839563026,0.943041,0.6892276062669116,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7616305494182938,0.933333,0.6837732845664981,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7574310546157342,0.923183,0.6782001193311106,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.754538071502539,0.91223,0.6743576197467409,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7540755193095734,0.9,0.6737297265562001,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.756716912392922,0.887093,0.6772413059991907,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.758954689232317,0.873025,0.6802161780666002,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7604390441980468,0.857143,0.6821893984884367,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7635619085673703,0.84018,0.6863406018818946,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7655586039107357,0.821451,0.6889946810289812,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7644625471645035,0.8,0.6875377741548928,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7644815525072054,0.77672,0.6876971502614084,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7620953973395796,0.750562,0.6844538314787274,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7607041727287651,0.72,0.6825687322197418,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7589527297732049,0.686081,0.680213573235893,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7566351800305181,0.647005,0.6771326499021935,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7528436114334456,0.6,0.6720919225191024,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7485304216189247,0.546049,0.6663573286163963,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7432407898804636,0.481437,0.6593707456589223,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7390467521621493,0.4,0.6537468593828848,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7370407217614605,0.301124,0.6510791740243177,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,MOCHI-attn,0.7387105932612423,0.174359,0.6532998305163072,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.6608854842796763,1.0,0.5503445456728345,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.619479129408532,0.991525,0.4952663347703644,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.7538706521878279,0.982759,0.6738934368174051,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.7775995883128586,0.973684,0.705391224160613,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8068531193301242,0.964286,0.7442051858049422,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8161402033450699,0.954545,0.7565234448402433,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8237688813872767,0.944444,0.7666405888058976,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8307744017847426,0.933962,0.7759301672084695,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8369504013972244,0.923077,0.7841188696392366,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8388900215071181,0.911765,0.786690420366742,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8414844536568223,0.9,0.7901299915652865,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8433511293705869,0.887755,0.7926046467689638,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8447533771317036,0.875,0.7944635583315409,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8442501580148155,0.861702,0.7937964630838271,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8458243378733712,0.847826,0.7958832648036795,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8462198429968778,0.833333,0.7964075550891241,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8475523609260351,0.818182,0.7981739446774448,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8494222295096238,0.802325,0.8006525816031536,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8493405308844477,0.785714,0.8005442861809138,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8496682429222854,0.768293,0.8009786832174007,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8495434349837206,0.75,0.8008132449649252,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8498227875728793,0.730769,0.8011835382740852,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8501426406982601,0.710526,0.8016075145846189,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8501014292492696,0.689189,0.801552887519614,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8510266390852895,0.666667,0.8027792730583171,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8510730807330203,0.642857,0.8028408319622623,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.85201618890329,0.617647,0.8040909216717992,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8523422133636221,0.590909,0.8045230624591025,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8526381137596267,0.5625,0.8049152721921748,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8533233551532213,0.532258,0.8058235377693577,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8535257153190136,0.5,0.8060917577183461,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8538273526275335,0.465517,0.8064915636928728,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8543152320855565,0.428571,0.8071382205610932,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8544978156392292,0.388889,0.8073802234710139,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8545897594178105,0.346154,0.807502088833764,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8544065972901813,0.3,0.8072593194320912,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8536722507008997,0.25,0.8062859836821717,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8522444998731677,0.195652,0.8043935448633545,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8496318015446038,0.136364,0.8009303786506748,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35M-attn,0.8461609612525077,0.071429,0.7963295003737292,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.66349460020232,1.0,0.5553596932785481,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.812451370305396,0.988055,0.7524948436415212,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8385716910502125,0.975157,0.7870124079179148,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8417721364221129,0.961594,0.7912406960626933,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8443078891328389,0.947717,0.7945906592209049,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.847648679775367,0.932678,0.7990039328461406,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8471489326301539,0.916796,0.7983437693542433,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8459027298587369,0.9,0.796697517438711,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.845954161145309,0.882716,0.7967654595984325,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8446002761347563,0.863868,0.7949769201928398,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8447538615947578,0.843832,0.795179815141625,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8441124098773226,0.823105,0.7943324181992112,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8428753514370457,0.800373,0.792698162447435,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8432284569528194,0.776062,0.793164647300728,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8416628344860834,0.75,0.7910962949028587,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8410850002554926,0.722798,0.7903329011333122,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8401578680256413,0.69268,0.7891080239628878,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8400741488025183,0.660134,0.7889974176904921,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8389022636049908,0.625874,0.787449156465876,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8383652965301379,0.587591,0.7867397206843331,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8380410233102311,0.545802,0.7863112908827221,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8386609070126206,0.5,0.7871302792319238,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8381511939516731,0.451049,0.7864568486051859,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8381106538935309,0.395434,0.7864032870121267,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.835357625226911,0.333593,0.7827658951452072,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8339417836341637,0.266447,0.7808951729257676,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8333247786212263,0.188811,0.7800799229734668,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,SD35L-attn,0.8247324984515033,0.100746,0.7687260435786557,,,review/round2/out/E6_varcomp_by_step.csv (prompt_share_naive; ANOVA seed-corrected share alongside)
+c,range naive,,,,0.5120045678020002,0.9621441954204782,derived from review/round2/out/E6_varcomp_by_step.csv
+c,range anova,,,,0.3566011238794733,0.9499325004442832,derived from review/round2/out/E6_varcomp_by_step.csv
+c,SD1.5-attn,0.6686223055371664,0.9359575413869584,0.5612730740932873,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6809269905068227,0.928399182576428,0.5772758372492184,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6860471039905355,0.9202727946059762,0.5838179791683871,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6884759295062117,0.9115779950168896,0.5870461398425132,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6906457410015474,0.9023191676264622,0.5899299321634315,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6904019314676055,0.8925055168856096,0.5896059018787626,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6895747555063021,0.8821508090170188,0.5885065499386555,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6914336360848667,0.8712730821845421,0.5909770595736124,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.693664054113283,0.8598941556388189,0.5939412516703828,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.694978902429823,0.8480392119617454,0.5956886130900886,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.6975149128457152,0.8357360495144112,0.5990587225842665,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7036052893200919,0.823014582005574,0.6071516475004083,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7099498499445721,0.8099060612783019,0.6155814493189332,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.718017017869424,0.7964423413771855,0.6262987178395294,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7243922141154748,0.7826554247358557,0.634767162723062,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7293189693807812,0.7685765350954842,0.6413109578758605,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7336822251199226,0.7542359281022123,0.6471058498657305,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7369296577105466,0.7396620448869495,0.6514185269873609,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7396560914430164,0.7248813963699751,0.6550391213059159,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7415016760294042,0.70991782261997,0.6574898888926536,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7426616275124465,0.6947928299510784,0.6590301593643724,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7434227105249372,0.6795246709920154,0.6600407660286229,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7443739579818097,0.6641288240612737,0.6613038649564089,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7460396171563891,0.6486175560507705,0.6635155354023506,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.747779679507442,0.6329997790658669,0.6658259323942486,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7493642646070602,0.6172814275096579,0.6679298328684089,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7503905490877976,0.6014651734363785,0.6692924311074883,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7512395756342959,0.5855504656547743,0.67041966610311,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7526465367524953,0.56953347329235,0.6722876237597969,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7532377548324624,0.5534071462002094,0.6730725436246033,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7537107793098767,0.5371608893546079,0.6737005402799717,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7533380530646511,0.5207810884882512,0.6732057019606587,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7529880656168911,0.5042500641996167,0.6727410492614716,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7525406512281015,0.4875460888236364,0.6721470459546238,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7519319633533554,0.4706431949859323,0.6713389230164443,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7513574279892736,0.453510104598166,0.6705761349629218,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7505634336404504,0.4361088806084611,0.669521967663124,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7503707897485349,0.4183950028498645,0.6692661968489932,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.749683340399347,0.4003138757174495,0.6683534724281646,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.749219329850527,0.3817986691361749,0.6677374010443975,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.748501683117712,0.3627671200578607,0.6667845649018598,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7475090516261351,0.343113929006381,0.6654666061353713,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7464271641044254,0.3227015538580951,0.6640301132363848,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7452280240011474,0.3013471424399473,0.6624379057800258,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7439339089779857,0.2787932769109273,0.6607195553483532,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7425473431026822,0.2546624589878017,0.6588784053022457,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7410330663648517,0.2283605284804412,0.6568676253299278,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7392779418759348,0.1988591754658634,0.6545369638381291,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7372021754086886,0.164091371500364,0.6517804270173856,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-attn,0.7341702424471153,0.1185163572512166,0.6477539649796799,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7234725641112413,0.9359575413869584,0.6335456086409765,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7318302174679968,0.928399182576428,0.6446462285099617,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7308659779535533,0.9202727946059762,0.6433656072159855,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7260030486044842,0.9115779950168896,0.6369067586980034,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7219180055088869,0.9023191676264622,0.6314806741237654,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7179665643240059,0.8925055168856096,0.6262316946122775,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7188520844377707,0.8821508090170188,0.6274080241897781,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7215233556467405,0.8712730821845421,0.6309564484562167,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7245279965223413,0.8598941556388189,0.6349475183758051,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7258121867971362,0.8480392119617454,0.6366532489385656,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7286013916876338,0.8357360495144112,0.6403578935420562,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7314044794741511,0.823014582005574,0.6440808019160899,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7311082832390193,0.8099060612783019,0.6436874185429134,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7328600272770199,0.7964423413771855,0.6460139117161758,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7334486850082462,0.7826554247358557,0.6467956932610647,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7338963619232407,0.7685765350954842,0.6473902365289329,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7335602599284778,0.7542359281022123,0.6469438722345778,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7323376935472584,0.7396620448869495,0.6453202069113531,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7321140088997576,0.7248813963699751,0.645023132297489,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7315674932504126,0.70991782261997,0.6442973025099751,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.732064326979382,0.6947928299510784,0.6449571498015705,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7326599545506177,0.6795246709920154,0.6457481983867879,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7333745213774121,0.6641288240612737,0.6466971988334497,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7344288057134287,0.6486175560507705,0.6480973497250326,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7354821909445204,0.6329997790658669,0.6494962816853107,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7369923975385286,0.6172814275096579,0.6515018448267396,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7382645869917711,0.6014651734363785,0.6531912801756607,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7394656163611635,0.5855504656547743,0.6547861834693668,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7412679830118629,0.56953347329235,0.6571795701506798,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7425094397636413,0.5534071462002094,0.6588280747885568,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.743226631518508,0.5371608893546079,0.6597804030942749,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7434500528208647,0.5207810884882512,0.6600770723477734,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7436352686842198,0.5042500641996167,0.6603230097851549,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.74344088229135,0.4875460888236364,0.6600648953118288,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7434827136558364,0.4706431949859323,0.6601204408381629,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7433056638215029,0.453510104598166,0.6598853460098999,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7425249512148275,0.4361088806084611,0.6588486719040999,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7427233592538128,0.4183950028498645,0.6591121305503617,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7423613110619076,0.4003138757174495,0.6586313795755325,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7424673907081727,0.3817986691361749,0.6587722392858699,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7422509722733673,0.3627671200578607,0.6584848640213525,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7412226322848083,0.343113929006381,0.6571193492085488,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7397817696555983,0.3227015538580951,0.655206012902044,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7382706819093244,0.3013471424399473,0.6531993739844317,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7366698620301452,0.2787932769109273,0.6510735200858804,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7349353232234054,0.2546624589878017,0.648770025570865,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7334122751023988,0.2283605284804412,0.6467473384050019,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7310504391371485,0.1988591754658634,0.6436105945554325,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7275455904192986,0.164091371500364,0.6389555902193818,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,SD1.5-mlp,0.7217951754432798,0.1185163572512166,0.6313175155072769,,,"review/r3_unet/out/P3_prompt_share_by_step_naive.csv (post hoc, cond; x = t = sigma/(1+sigma))"
+c,ACE-attn,0.9704398606693772,1.0,0.962365631311442,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-attn,0.9703268337407142,0.937781,0.9622215781022524,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-attn,0.9581538200350412,0.857326,0.9467001774919838,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-attn,0.917314878932369,0.75,0.8945284280376882,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-attn,0.8869057678664715,0.600719,0.8555810244042632,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-attn,0.9390549310974832,0.375562,0.9223204287405988,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-mlp,0.9553301105649408,1.0,0.9430978190830468,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-mlp,0.953136479880096,0.937781,0.9402987812584824,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-mlp,0.9448237732925254,0.857326,0.9296878916858768,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-mlp,0.9076704148284,0.75,0.8821852223106934,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-mlp,0.8558354453600111,0.600719,0.8156984729039479,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"
+c,ACE-mlp,0.9345676020160872,0.375562,0.9165874878726008,,,"review/r3_ace/out/P3_prompt_share_by_step.csv (post hoc, cond-only; x = flow-matching sigma)"

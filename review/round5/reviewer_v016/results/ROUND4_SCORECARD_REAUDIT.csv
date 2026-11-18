@@ -1,0 +1,17 @@
+id,prediction_confirmed,decision_rule,verdict
+P1a,True,> .03,CONFIRMED
+P1b,True,both > .03,CONFIRMED
+P1c,False,all <0,REFUTED
+P1d,True,abs <= .03,CONFIRMED
+P2a,True,>=.98 attn,CONFIRMED
+P2b,True,all tangent/shape >=.98,CONFIRMED
+P2c,True,both <=.5,CONFIRMED
+P3a,False,"[.85,.96]",REFUTED
+P3b,True,<.20,CONFIRMED
+P3c,False,<1,REFUTED
+P3d,False,>1,REFUTED
+P4a,True,"ratio<=-1, rho signs",CONFIRMED
+P4b,True,>=.05,CONFIRMED
+P4c,True,>=.9 both,CONFIRMED
+P4d,False,-+-+- & 4,REFUTED
+P5,True,"all [.75,.90]",CONFIRMED

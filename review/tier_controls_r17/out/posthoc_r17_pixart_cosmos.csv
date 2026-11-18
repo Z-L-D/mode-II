@@ -1,0 +1,23 @@
+sub,test,value,value2
+attn,primary (t clock),0.302802324214745,
+attn,raw sigma clock,0.3027898904304156,
+attn,per step min..max,0.17883899426544045,0.4488983975848419
+attn,first half of steps / second half,0.23528769848673292,0.3703169499427571
+attn,statistic log g only,0.473350742241977,
+attn,statistic log gap only,0.06901322760076081,
+attn,statistic H only,0.5839240843045592,
+attn,drop first depth interval,0.15238683862410243,
+attn,drop last depth interval,0.38007013547928,
+attn,drop first 2 and last 2 intervals,0.29255526731655734,
+attn,energy share of end intervals (2+2) PixArt / Cosmos,0.22737693767969683,0.659941211532607
+mlp,primary (t clock),0.6869472496794956,
+mlp,raw sigma clock,0.6870112454811387,
+mlp,per step min..max,0.4491374958804141,0.7799737173805444
+mlp,first half of steps / second half,0.654908290371661,0.71898620898733
+mlp,statistic log g only,0.6524897338231213,
+mlp,statistic log gap only,0.4323364664882983,
+mlp,statistic H only,0.9024718743335234,
+mlp,drop first depth interval,0.7044064082608221,
+mlp,drop last depth interval,0.3888479610228363,
+mlp,drop first 2 and last 2 intervals,0.395120426838616,
+mlp,energy share of end intervals (2+2) PixArt / Cosmos,0.7738062000370334,0.4993130314784172

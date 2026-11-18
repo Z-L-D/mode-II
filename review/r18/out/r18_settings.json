@@ -1,0 +1,112 @@
+{
+ "R18_SD35L": {
+  "scheduler": "sgm_uniform",
+  "sampler": "CoS-PAFS (phase_mode=hybrid, exploration_noise=0.0, consolidation_momentum=0.84, exploration_end=0.45, convergence_end=0.85)",
+  "steps": 28,
+  "cfg": 3.5,
+  "shift": 3.0,
+  "spectral_variants": false,
+  "source": "workflows\\sd35_large_api.json",
+  "source_kind": "r18",
+  "model": "--sd3--\\sd3.5_large.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18_SD35LT": {
+  "scheduler": "sgm_uniform",
+  "sampler": "CoS-PAFS (phase_mode=hybrid, exploration_noise=0.0, consolidation_momentum=0.84, exploration_end=0.45, convergence_end=0.85)",
+  "steps": 4,
+  "cfg": 1.0,
+  "shift": 3.0,
+  "spectral_variants": false,
+  "source": "workflows\\sd35_large_turbo_api.json",
+  "source_kind": "r18",
+  "model": "--sd3--\\sd3.5_large_turbo.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18_ZIT2": {
+  "scheduler": "simple",
+  "sampler": "CoS-PAFS (phase_mode=hybrid, exploration_noise=0.0, consolidation_momentum=0.84, exploration_end=0.45, convergence_end=0.85)",
+  "steps": 8,
+  "cfg": 1.0,
+  "shift": 3.0,
+  "spectral_variants": true,
+  "source": "workflows\\zit_turbo_template_api.json",
+  "source_kind": "template",
+  "model": "--z-image--\\z_image_turbo_bf16.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18_ZB6": {
+  "scheduler": "simple",
+  "sampler": "CoS-PAFS (phase_mode=hybrid, exploration_noise=0.0, consolidation_momentum=0.84, exploration_end=0.45, convergence_end=0.85)",
+  "steps": 25,
+  "cfg": 4.0,
+  "shift": 6.0,
+  "spectral_variants": false,
+  "source": "workflows\\zib_base_template_api.json",
+  "source_kind": "template",
+  "model": "--z-image--\\z_image_bf16.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18S_PIXART": {
+  "scheduler": "normal",
+  "shift_note": "shift not set (model default, as in Round 17)",
+  "sampler": "dpmpp_2m",
+  "steps": 20,
+  "cfg": 4.5,
+  "shift": null,
+  "spectral_variants": true,
+  "source": "workflows\\pixart_sigma_api.json",
+  "source_kind": "r18",
+  "model": "--pixart--\\PixArt-Sigma-XL-2-1024-MS.pth",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18S_COSMOS2B": {
+  "scheduler": "simple",
+  "shift_note": "shift not set (model default, as in Round 17)",
+  "sampler": "euler",
+  "steps": 35,
+  "cfg": 7.0,
+  "shift": null,
+  "spectral_variants": true,
+  "source": "workflows\\cosmos2_2b_t2i_api.json",
+  "source_kind": "r18",
+  "model": "--cosmos--\\cosmos_predict2_2B_t2i.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18S_SD3M": {
+  "scheduler": "sgm_uniform",
+  "sampler": "dpmpp_2m",
+  "steps": 28,
+  "cfg": 7.0,
+  "shift": 3.0,
+  "spectral_variants": true,
+  "source": "workflows\\sd3_medium_api.json",
+  "source_kind": "r18",
+  "model": "--sd3--\\sd3_medium.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18S_SD35M": {
+  "scheduler": "sgm_uniform",
+  "sampler": "dpmpp_2m",
+  "steps": 40,
+  "cfg": 4.5,
+  "shift": 3.0,
+  "spectral_variants": true,
+  "source": "workflows\\sd35_medium_api.json",
+  "source_kind": "r18",
+  "model": "--sd3--\\sd3.5_medium.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ },
+ "R18S_SD35M1": {
+  "scheduler": "sgm_uniform",
+  "sampler": "dpmpp_2m",
+  "steps": 40,
+  "cfg": 1.0,
+  "shift": 3.0,
+  "spectral_variants": true,
+  "source": "workflows\\sd35_medium_api.json",
+  "source_kind": "r18",
+  "model": "--sd3--\\sd3.5_medium.safetensors",
+  "written": "2026-11-11T03:46:06Z"
+ }
+}

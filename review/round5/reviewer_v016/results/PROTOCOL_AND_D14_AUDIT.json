@@ -1,0 +1,50 @@
+{
+  "prompt_protocol": {
+    "frozen_prompt_count": 30,
+    "core_prompt_count": 30,
+    "exact_set_match": false,
+    "missing_from_core": [
+      "A Japanese temple garden in autumn with a curved wooden bridge over a koi pond, maple leaves floating on still water, and morning fog softening distant pagoda roofs",
+      "A massive Gothic cathedral interior with stained glass windows projecting colored light patterns across stone columns and a lone figure kneeling in a distant pew",
+      "A sea otter floating on its back in kelp, cracking a sea urchin on a rock balanced on its chest, with whiskers detailed and the kelp forest visible in the clear water below",
+      "Cross-section of a geode revealing concentric bands of purple amethyst, white quartz, and gray agate, lit from behind to show translucency at the crystal tips"
+    ],
+    "extra_in_core": [
+      "A brutalist concrete parking structure at 3am under sodium vapor lights, with rain-slicked surfaces reflecting orange and the geometry casting deep angular shadows",
+      "A chameleon on a branch reaching for an insect with its tongue extended, captured mid-strike, with the spiral tail, textured skin, and independently aimed eyes all in sharp detail",
+      "A collection of antique scientific instruments arranged on dark velvet, including a brass astrolabe, a prism, a compass, and a hand-drawn star chart",
+      "An abandoned Art Deco theater with peeling gold leaf, shattered chandelier crystals catching light from a hole in the roof, and velvet seats covered in dust"
+    ]
+  },
+  "D14": {
+    "schema_columns": [
+      "_csv",
+      "branch",
+      "g_micro",
+      "gen_idx",
+      "gen_len",
+      "hidden_dim",
+      "hook_mode",
+      "layer",
+      "phi_micro",
+      "phi_micro_skip",
+      "prompt_hash",
+      "prompt_influence",
+      "prompt_len",
+      "prompt_text",
+      "prompt_text_full",
+      "seed",
+      "seq_len",
+      "sigma",
+      "spectral_gap",
+      "submodule",
+      "sv_entropy",
+      "token_idx",
+      "token_type"
+    ],
+    "output_or_quality_like_fields": [],
+    "has_stable_output_identifier": false,
+    "has_quality_or_correctness_label": false,
+    "status": "BLOCKED"
+  }
+}

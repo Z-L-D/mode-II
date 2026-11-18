@@ -1,0 +1,215 @@
+set,step,sigma,topology
+archive ZIT-mlp,0,1.0,-++
+archive ZIT-mlp,1,0.954545,-+-
+archive ZIT-mlp,2,0.9,-+-
+archive ZIT-mlp,3,0.833333,+-+
+archive ZIT-mlp,4,0.75,+-+
+archive ZIT-mlp,5,0.642857,+-+
+archive ZIT-mlp,6,0.5,+-+
+archive ZIT-mlp,7,0.3,+-+
+archive ZIB-mlp,0,1.0,-++
+archive ZIB-mlp,1,0.986301,-++
+archive ZIB-mlp,2,0.971831,+-+
+archive ZIB-mlp,3,0.956522,-+-
+archive ZIB-mlp,4,0.940299,-+-
+archive ZIB-mlp,5,0.923077,-+-
+archive ZIB-mlp,6,0.904762,-+-
+archive ZIB-mlp,7,0.885246,-+-
+archive ZIB-mlp,8,0.864407,-+-
+archive ZIB-mlp,9,0.842105,-+-
+archive ZIB-mlp,10,0.818182,+-+
+archive ZIB-mlp,11,0.792453,+-+
+archive ZIB-mlp,12,0.764706,+-+
+archive ZIB-mlp,13,0.734694,+-+
+archive ZIB-mlp,14,0.702128,+-+
+archive ZIB-mlp,15,0.666667,+-+
+archive ZIB-mlp,16,0.627907,+-+
+archive ZIB-mlp,17,0.585366,+-+
+archive ZIB-mlp,18,0.538462,+-+
+archive ZIB-mlp,19,0.486486,+-+
+archive ZIB-mlp,20,0.428571,+-+
+archive ZIB-mlp,21,0.363636,+-+
+archive ZIB-mlp,22,0.290323,+-+
+archive ZIB-mlp,23,0.206897,+-+
+archive ZIB-mlp,24,0.111111,+-+
+archive ZIT-attn,0,1.0,++-
+archive ZIT-attn,1,0.954545,+++
+archive ZIT-attn,2,0.9,+++
+archive ZIT-attn,3,0.833333,+-+
+archive ZIT-attn,4,0.75,+-+
+archive ZIT-attn,5,0.642857,+-+
+archive ZIT-attn,6,0.5,+-+
+archive ZIT-attn,7,0.3,+-+
+archive ZIB-attn,0,1.0,++-
+archive ZIB-attn,1,0.986301,++-
+archive ZIB-attn,2,0.971831,++-
+archive ZIB-attn,3,0.956522,++-
+archive ZIB-attn,4,0.940299,++-
+archive ZIB-attn,5,0.923077,++-
+archive ZIB-attn,6,0.904762,++-
+archive ZIB-attn,7,0.885246,++-
+archive ZIB-attn,8,0.864407,++-
+archive ZIB-attn,9,0.842105,++-
+archive ZIB-attn,10,0.818182,+-+
+archive ZIB-attn,11,0.792453,+-+
+archive ZIB-attn,12,0.764706,+-+
+archive ZIB-attn,13,0.734694,+-+
+archive ZIB-attn,14,0.702128,+-+
+archive ZIB-attn,15,0.666667,+-+
+archive ZIB-attn,16,0.627907,+-+
+archive ZIB-attn,17,0.585366,+-+
+archive ZIB-attn,18,0.538462,+-+
+archive ZIB-attn,19,0.486486,+-+
+archive ZIB-attn,20,0.428571,+-+
+archive ZIB-attn,21,0.363636,+-+
+archive ZIB-attn,22,0.290323,+-+
+archive ZIB-attn,23,0.206897,+-+
+archive ZIB-attn,24,0.111111,+-+
+archive MOCHI-attn,0,1.0,++-
+archive MOCHI-attn,1,0.994344,++-
+archive MOCHI-attn,2,0.98836,++-
+archive MOCHI-attn,3,0.981818,++-
+archive MOCHI-attn,4,0.97507,++-
+archive MOCHI-attn,5,0.967892,++-
+archive MOCHI-attn,6,0.96,++-
+archive MOCHI-attn,7,0.95181,++-
+archive MOCHI-attn,8,0.943041,++-
+archive MOCHI-attn,9,0.933333,++-
+archive MOCHI-attn,10,0.923183,++-
+archive MOCHI-attn,11,0.91223,+-+
+archive MOCHI-attn,12,0.9,+-+
+archive MOCHI-attn,13,0.887093,+-+
+archive MOCHI-attn,14,0.873025,+-+
+archive MOCHI-attn,15,0.857143,+-+
+archive MOCHI-attn,16,0.84018,+-+
+archive MOCHI-attn,17,0.821451,+-+
+archive MOCHI-attn,18,0.8,+-+
+archive MOCHI-attn,19,0.77672,+-+
+archive MOCHI-attn,20,0.750562,+-+
+archive MOCHI-attn,21,0.72,+-+
+archive MOCHI-attn,22,0.686081,+-+
+archive MOCHI-attn,23,0.647005,+-+
+archive MOCHI-attn,24,0.6,+-+
+archive MOCHI-attn,25,0.546049,+-+
+archive MOCHI-attn,26,0.481437,+-+
+archive MOCHI-attn,27,0.4,+-+
+archive MOCHI-attn,28,0.301124,+-+
+archive MOCHI-attn,29,0.174359,+-+
+archive SD35M-attn,0,1.0,+--
+archive SD35M-attn,1,0.991525,+--
+archive SD35M-attn,2,0.982759,+--
+archive SD35M-attn,3,0.973684,+--
+archive SD35M-attn,4,0.964286,+--
+archive SD35M-attn,5,0.954545,+--
+archive SD35M-attn,6,0.944444,+--
+archive SD35M-attn,7,0.933962,+--
+archive SD35M-attn,8,0.923077,+--
+archive SD35M-attn,9,0.911765,+--
+archive SD35M-attn,10,0.9,+--
+archive SD35M-attn,11,0.887755,+--
+archive SD35M-attn,12,0.875,+--
+archive SD35M-attn,13,0.861702,+--
+archive SD35M-attn,14,0.847826,+--
+archive SD35M-attn,15,0.833333,+--
+archive SD35M-attn,16,0.818182,+--
+archive SD35M-attn,17,0.802325,+--
+archive SD35M-attn,18,0.785714,+--
+archive SD35M-attn,19,0.768293,+--
+archive SD35M-attn,20,0.75,+--
+archive SD35M-attn,21,0.730769,+--
+archive SD35M-attn,22,0.710526,+--
+archive SD35M-attn,23,0.689189,+--
+archive SD35M-attn,24,0.666667,+--
+archive SD35M-attn,25,0.642857,+--
+archive SD35M-attn,26,0.617647,+--
+archive SD35M-attn,27,0.590909,+--
+archive SD35M-attn,28,0.5625,+--
+archive SD35M-attn,29,0.532258,+--
+archive SD35M-attn,30,0.5,+--
+archive SD35M-attn,31,0.465517,+--
+archive SD35M-attn,32,0.428571,+--
+archive SD35M-attn,33,0.388889,+--
+archive SD35M-attn,34,0.346154,+--
+archive SD35M-attn,35,0.3,+--
+archive SD35M-attn,36,0.25,+--
+archive SD35M-attn,37,0.195652,+--
+archive SD35M-attn,38,0.136364,+--
+archive SD35M-attn,39,0.071429,++-
+archive SD35L-attn,0,1.0,++-
+archive SD35L-attn,1,0.988055,++-
+archive SD35L-attn,2,0.975157,++-
+archive SD35L-attn,3,0.961594,+--
+archive SD35L-attn,4,0.947717,+--
+archive SD35L-attn,5,0.932678,+--
+archive SD35L-attn,6,0.916796,+--
+archive SD35L-attn,7,0.9,+--
+archive SD35L-attn,8,0.882716,+--
+archive SD35L-attn,9,0.863868,+--
+archive SD35L-attn,10,0.843832,+--
+archive SD35L-attn,11,0.823105,+--
+archive SD35L-attn,12,0.800373,+--
+archive SD35L-attn,13,0.776062,+--
+archive SD35L-attn,14,0.75,+--
+archive SD35L-attn,15,0.722798,+--
+archive SD35L-attn,16,0.69268,+--
+archive SD35L-attn,17,0.660134,+--
+archive SD35L-attn,18,0.625874,+--
+archive SD35L-attn,19,0.587591,+--
+archive SD35L-attn,20,0.545802,+--
+archive SD35L-attn,21,0.5,+--
+archive SD35L-attn,22,0.451049,++-
+archive SD35L-attn,23,0.395434,++-
+archive SD35L-attn,24,0.333593,++-
+archive SD35L-attn,25,0.266447,++-
+archive SD35L-attn,26,0.188811,+--
+archive SD35L-attn,27,0.100746,+--
+R4 ZIB CFG4 cond-mlp,0,1.0,-++
+R4 ZIB CFG4 cond-mlp,1,0.986301,-++
+R4 ZIB CFG4 cond-mlp,2,0.971831,+-+
+R4 ZIB CFG4 cond-mlp,3,0.956522,-+-
+R4 ZIB CFG4 cond-mlp,4,0.940299,-+-
+R4 ZIB CFG4 cond-mlp,5,0.923077,-+-
+R4 ZIB CFG4 cond-mlp,6,0.904762,-+-
+R4 ZIB CFG4 cond-mlp,7,0.885246,+-+
+R4 ZIB CFG4 cond-mlp,8,0.864407,+-+
+R4 ZIB CFG4 cond-mlp,9,0.842105,+-+
+R4 ZIB CFG4 cond-mlp,10,0.818182,+-+
+R4 ZIB CFG4 cond-mlp,11,0.792453,+-+
+R4 ZIB CFG4 cond-mlp,12,0.764706,+-+
+R4 ZIB CFG4 cond-mlp,13,0.734694,+-+
+R4 ZIB CFG4 cond-mlp,14,0.702128,+-+
+R4 ZIB CFG4 cond-mlp,15,0.666667,+-+
+R4 ZIB CFG4 cond-mlp,16,0.627907,+-+
+R4 ZIB CFG4 cond-mlp,17,0.585366,+-+
+R4 ZIB CFG4 cond-mlp,18,0.538462,+-+
+R4 ZIB CFG4 cond-mlp,19,0.486486,+-+
+R4 ZIB CFG4 cond-mlp,20,0.428571,+-+
+R4 ZIB CFG4 cond-mlp,21,0.363636,+-+
+R4 ZIB CFG4 cond-mlp,22,0.290323,+-+
+R4 ZIB CFG4 cond-mlp,23,0.206897,+-+
+R4 ZIB CFG4 cond-mlp,24,0.111111,+-+
+R4 ZIB CFG4 cond-attn,0,1.0,++-
+R4 ZIB CFG4 cond-attn,1,0.986301,++-
+R4 ZIB CFG4 cond-attn,2,0.971831,++-
+R4 ZIB CFG4 cond-attn,3,0.956522,++-
+R4 ZIB CFG4 cond-attn,4,0.940299,+++
+R4 ZIB CFG4 cond-attn,5,0.923077,+-+
+R4 ZIB CFG4 cond-attn,6,0.904762,+-+
+R4 ZIB CFG4 cond-attn,7,0.885246,+-+
+R4 ZIB CFG4 cond-attn,8,0.864407,+-+
+R4 ZIB CFG4 cond-attn,9,0.842105,+-+
+R4 ZIB CFG4 cond-attn,10,0.818182,+-+
+R4 ZIB CFG4 cond-attn,11,0.792453,+-+
+R4 ZIB CFG4 cond-attn,12,0.764706,+-+
+R4 ZIB CFG4 cond-attn,13,0.734694,+-+
+R4 ZIB CFG4 cond-attn,14,0.702128,+-+
+R4 ZIB CFG4 cond-attn,15,0.666667,+-+
+R4 ZIB CFG4 cond-attn,16,0.627907,+-+
+R4 ZIB CFG4 cond-attn,17,0.585366,+-+
+R4 ZIB CFG4 cond-attn,18,0.538462,+-+
+R4 ZIB CFG4 cond-attn,19,0.486486,+-+
+R4 ZIB CFG4 cond-attn,20,0.428571,+-+
+R4 ZIB CFG4 cond-attn,21,0.363636,+-+
+R4 ZIB CFG4 cond-attn,22,0.290323,+-+
+R4 ZIB CFG4 cond-attn,23,0.206897,+-+
+R4 ZIB CFG4 cond-attn,24,0.111111,+-+

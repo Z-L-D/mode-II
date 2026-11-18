@@ -1,0 +1,3 @@
+channel,gens,observed_n,observed_pattern,boot,frac_1,frac_3,frac_5plus,frac_3_plus_minus_plus,modal_n
+ACE attn,120,1,+-,100,1.0,0.0,0.0,0.0,1
+ACE mlp,120,1,+-,100,0.95,0.05,0.0,0.05,1

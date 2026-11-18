@@ -1,0 +1,12 @@
+gate,status,when,determination
+Estimator calibration,NOW / PRE-PAPER,Run in current round,Required for any sigma50/VR table; use matched-n or relative onset and calibrated VR nulls.
+G3 committor/clones,DEFER UNLESS CLAIM RETAINED,Mode-III or pre-claim,Mandatory only before commitment/speciation/separatrix wording; exclude such wording from Mode-I/II release.
+G4 context-invariant AR,DEFER,Mode-III,"v1 AR is nested running statistic; Mode-I may report this negative instrument result, not positive per-token phase dynamics."
+D14 quality/output linkage,BLOCKED,Future capture,No stable output IDs/quality labels; prohibit geometry->quality claims.
+G2 distillation ladder,DEFER,Mode-III,"Needed for geometry-quality engineering, not current empirical lineage claim."
+G1 finite perturbation Base/Turbo,DEFER,Mode-III,Geometry is resolved on explicit branches; response/Jacobian sensitivity remains prospective.
+Legacy instrument A/B,POST-PAPER CONDITIONAL,Only for causal attribution,Not needed if papers describe legacy functional phenomenology without claiming EMAG causation.
+Guidance-interval rider,DEFER,Mode-III,Mode-I may state contraction but not timing.
+G5 targeted ablation,DEFER,With G4,Not needed for Mode-I/II central claims.
+G6 matched scaling,POST-PAPER,Future,Current negative scaling control is already sufficient for paper framing.
+Llama Base/Instruct clean intervention,DEFER,With G4,Hook mismatch prevents current clean causal comparison.

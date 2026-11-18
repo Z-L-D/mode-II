@@ -1,0 +1,20 @@
+gate,v0.16_status,evidence,minimum_action,when
+Capture preflight,PASS + PERMANENT PROCESS GATE,Branch split is now genuinely active and complete at 1024.,Run before every CFG>1 capture; abort on failure.,Every diffusion capture
+Prompt protocol lock,FAILED THIS SESSION,Core uses 26/30 frozen prompts; 4 frozen prompts replaced by 4 others.,Hash/compare prompt file before launch; reject mismatched set.,Before next matched study
+Seed design,FAILED THIS SESSION,Global seeds 1001/1002 reused across all prompts.,"Use one unique seed pair per prompt, paired across CFG arms.",Before any seed-fate/persistence claim
+Regime map,RESOLVED AS METHODS REQUIREMENT,Explicit branches show branch-mean≈cond while historical pooling shifts g strongly.,Tag every result cond-only/pooled/branch-mean/explicit branch.,Now; paper methods
+G0 per-branch diffusion,PARTIALLY RESOLVED,"R1b/R1f/R1g resolve branch identity, guidance contraction and cond/uncond separation. R1c-e remain unscored because seed design failed.",Unique-seed 30-prompt paired CFG1/4.5 rerun only if seed-fate/persistence remain main-text claims.,Pre-paper only for seed claims
+G0b 100-step passive B7,SCIENTIFICALLY STRONG; FORMAL R2 UNDERPOWERED,"15 passive 100-step seeds: 0/15 legacy -+-+-; legacy 30/30 -+-+-. Schedule grids differ, but reweighting does not change topology and passive 40->100 matched-sigma shift is small.",Add 15 more passive 100-step seeds for strict prereg closure if desired.,Optional pre-paper; required only for strict numerical prereg completion
+Legacy instrument A/B,PROVENANCE-ONLY / CONDITIONAL,"Same prompt+100 steps still has different sigma schedule/build. Evidence strongly isolates legacy functional, but exact EMAG causal attribution is not identified.",Run exact old/new build with identical sigma schedule/seeds only if naming EMAG as cause.,Post-paper or if causal provenance retained
+Guidance-interval rider,HIGH-VALUE MODE-III; OPTIONAL MODE-I,R1f now shows real cond-branch contraction; branch divergence is strongest early while contraction is strongest later.,Early-only vs late-only CFG schedule.,Mode-III unless guidance mechanism is a Mode-I headline
+G1 paired-noise Base/Turbo,GEOMETRY RESOLVED; RESPONSE OPEN,No new finite perturbation data.,Matched finite perturbations.,Mode-III
+G3 committor/clones,REQUIRED BEFORE SEPARATRIX,No clone continuations supplied; passive predictability remains non-committor.,"Clone same intermediate state, >=16 continuations/point, label output fate.",Before commitment/speciation/separatrix wording
+G4 context-invariant AR,PENDING,No v2 Qwen capture supplied.,Windowed greedy Qwen 1.5/3/7B.,Before AR dynamics in Mode-I; otherwise Mode-III
+G2 distillation ladder,PENDING,No teacher + >=3 student quality-linked ladder.,Matched sigma plus quality/diversity labels.,Mode-III
+G5 targeted Mistral ablation,PENDING,No targeted teacher-forced capture.,Run as rider with G4 if kept.,With G4 / otherwise defer
+G6 matched scaling,PENDING,No matched scaling capture.,Matched architecture/training conditions.,Post-paper
+Llama Base-Instruct,DATA PENDING,Instrument mismatch is fixable but no new matched capture supplied.,Dual hook + teacher forcing.,With G4 or defer
+g vs EMAG susceptibility,PENDING,No paired active/passive response capture.,Controlled perturbation response.,Mode-III
+D14 quality/output linkage,FAILED PROCESS REQUIREMENT AGAIN,New telemetry still has no output filename/id or quality/correctness label.,Save output filename/id keyed to prompt_hash+seed and later quality/correctness.,Every future capture
+Beta topology invariance,RESOLVED NEGATIVE,Corrected branches give 1 or 3 crossings depending on resolution/branch; legacy 4-crossing remains isolated.,Do not use crossing count as universal phase invariant.,No further pre-paper gate
+PSTF multi-arm R4,PENDING,No new PSTF v2 multi-arm data supplied.,Run frozen R3 D0-D6 when data arrive.,Mode-III

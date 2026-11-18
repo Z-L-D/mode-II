@@ -1,0 +1,4 @@
+RC4 (post hoc, Qwen review question on regime and RSA): same SD3.5 M weights, Round 3, 60 prompts x seeds 1001/1002,
+CFG 1 cond-only vs CFG 4.5 pooled, attention, prompt RSA (Spearman of RDM upper triangles):
+step 0: 0.751; step 20: 0.382; step 39: 0.379.
+Guidance + capture regime moves same-weights RSA as far as the spread between unrelated archive pairs (0.13-0.43).

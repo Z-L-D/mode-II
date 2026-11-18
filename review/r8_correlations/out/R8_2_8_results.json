@@ -1,0 +1,24 @@
+{
+ "R8-2a": [
+  "not a grid artifact",
+  "0/5 channels drop >= 0.10"
+ ],
+ "R8-2b": [
+  "grid artifact",
+  "3/5 channels VR4/walk >= 1 on the 8-state grid"
+ ],
+ "R8-8": [
+  "no consistent change",
+  "MOCHI-attn: above 1.00 below 0.82; SD35L-attn: above 0.94 below 1.77; SD35M-attn: above 1.92 below 3.35; ZIB-attn: above 0.62 below 0.81; ZIB-mlp: above 0.55 below 0.60"
+ ],
+ "R8-2_tabulation_steps_vs_rel_onset": {
+  "matched60_rel_median": {
+   "rho_7": 0.8001322641986389,
+   "rho_without_ZIT": 0.46169025843831935
+  },
+  "native_rel_median": {
+   "rho_7": 0.7092081432669753,
+   "rho_without_ZIT": 0.20519567041703085
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "n_prompts": 117,
+ "score": {
+  "S2a": [
+   "CONFIRMED",
+   "lineage theme r first 0.678, middle 0.750, last 0.626"
+  ],
+  "S2b": [
+   "REFUTED",
+   "4/8 unrelated pairs with theme r <= 0.20 at >= 2 tau; max 0.517"
+  ],
+  "S2c": [
+   "CONFIRMED",
+   "lineage RSA first 0.564 (p 0.0005), middle 0.616 (p 0.0005), last 0.619 (p 0.0005)"
+  ],
+  "S2d": [
+   "CONFIRMED",
+   "SD35M-SD35L first-step RSA 0.308"
+  ],
+  "S2e": [
+   "REFUTED",
+   "tiers 0.564 > 0.308 > 0.285 > 0.390"
+  ],
+  "S2f": [
+   "CONFIRMED",
+   "5/5 models; ZIT 0.104 (p 0.0005), ZIB 0.104 (p 0.0005), MOCHI 0.148 (p 0.0005), SD35M 0.082 (p 0.0005), SD35L 0.107 (p 0.0005)"
+  ],
+  "S2g": [
+   "CONFIRMED",
+   "Spearman(first-step RSA, tangent) over 10 pairs = 0.297"
+  ]
+ }
+}

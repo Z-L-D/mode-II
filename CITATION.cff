@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Projection, Pooling and Tangent Agreement: Equivalence Relations for Layerwise Spectral Trajectories of Generative Transformers (Mode-II)"
+authors:
+  - family-names: Doyle
+    given-names: Zac
+    orcid: "https://orcid.org/0009-0006-0452-1374"
+    affiliation: mode:LIMINAL
+date-released: 2026-10-09
+repository-code: "https://github.com/Z-L-D/mode-II"
+type: software

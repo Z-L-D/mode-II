@@ -1,0 +1,13 @@
+{
+  "prereg_sha256_actual": "82ef210a5bbad88fdf77c5386f538664cc19f06a7e26aa6c6d4f800c30c79634",
+  "prereg_hash_file_contains_actual": true,
+  "n_confirmed": 11,
+  "n_refuted": 5,
+  "all_16_scored": true,
+  "scorecard_matches_reported_11_5": true,
+  "notes": [
+    "P3d=.74 refutes >1 prediction but also does not meet the <=.6 alternative band; 'between bands' is correct.",
+    "P4b's original interpretation transferred a step-count perturbation scale from ZIT to SD3.5M; the new direct 40/100 passive pyramid data supersede that inference.",
+    "No arithmetic/verdict inconsistency found in P1-P5."
+  ]
+}

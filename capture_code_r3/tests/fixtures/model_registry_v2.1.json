@@ -1,0 +1,786 @@
+{
+    "_comment": "CoS-PAFS Model Hook Registry v2.0. Non-commutativity analysis added. Maps model architectures to their transformer block paths, attention attribute names, and MLP/FFN attribute names. Used by the EMAG guider for hook registration and by the measurement system for passive g/phi capture. v2.0 adds nc_source (non-commutativity classification) and pred_crossings for each architecture. v2.1 (R3, 2026-10-08): keys must be ComfyUI's diffusion_model class name; UNetModel replaces the two diffusers-named SD1.5/SDXL keys; ACE-Step 1.5 and v1 added; block_path may be dotted or 'a + b'.",
+    "_version": "2.1",
+    "_schema_notes": {
+        "block_path": "Dotted path from the transformer model root to the iterable of transformer blocks. UNET_LINEARIZE flags special handling for nested UNet structures. NEEDS_DISCOVERY flags entries awaiting a discovery pass (cos_pafs_discover.py or manual inspection).",
+        "attn_attrs": "Dotted paths from a single block instance to attention output-projection modules whose forward() fires exactly once per block forward pass. self_attn for self-attention, cross_attn for cross-attention. __block__ is a sentinel for block-level passive measurement when sub-attention forward() never fires (joint attention).",
+        "mlp_attrs": "Dotted paths from a single block instance to the MLP/FFN output-projection module(s). NEW v1.5. Required for dual-hook (sublattice) telemetry. The hook should fire on the FINAL Linear/Conv inside the MLP — typically down_proj (Llama), fc2 (GELU MLP), w2 (SwiGLU NextDiT), to_out (Diffusers). NEEDS_DISCOVERY flags entries to be discovered. Empty list disables MLP hooking for this architecture (legacy single-hook mode).",
+        "dual_hook_supported": "true if mlp_attrs.mlp has been verified to fire exactly once per block forward pass and produces meaningful telemetry. false otherwise — single-hook (attn-only) mode will be used.",
+        "verified": "true if attn_attrs has been confirmed via discovery + one full sampler run with non-zero g_micro on every block. Independent of dual_hook_supported.",
+        "nc_source": "Non-commutativity source classification. Determines predicted crossing count. Values: single_stream (homogeneous, pred 1), dual_stream (separate weights per modality, pred >=2), cross_attn (text cross-attention, pred 1-2), asymm_stream (asymmetric separate MLPs, pred >=2), expert_adaln (modality-specific normalization, pred 1-2), gqa_high (GQA ratio >=7, pred >=3), gqa_low (GQA ratio <=4, pred 1), mha (full MHA, pred 1), mqa (single KV head, pred 1), mla (latent KV compression, pred unknown).",
+        "pred_crossings": "Predicted cloud beta(g) crossing count based on non-commutativity analysis. Format: 'N' or 'N-M' range."
+    },
+    "SD3Transformer2DModel": {
+        "description": "Stable Diffusion 3.x Medium (MMDiT, joint attention)",
+        "models": [
+            "sd3.5-medium",
+            "sd3-medium"
+        ],
+        "block_path": "joint_blocks",
+        "block_count": 24,
+        "hidden_dim": 1536,
+        "attn_attrs": {
+            "self_attn": [
+                "x_block.attn.proj"
+            ],
+            "cross_attn": [
+                "context_block.attn.proj"
+            ]
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "x_block.mlp.fc2"
+            ]
+        },
+        "notes": "MMDiT JointBlock: attn sub-modules' forward() is never called, but the output projection (attn.proj, nn.Linear) IS called during post_attention(). x_block.attn.proj is the latent-stream attention output (pre-gate, pre-residual, pre-FFN) — exists on ALL blocks (x_block is always pre_only=False). context_block.attn.proj exists only on early blocks (pre_only=False). For MLP: x_block has a standard 2-layer MLP (fc1 → GELU → fc2). x_block.mlp.fc2 captures the MLP output projection (pre-gate, pre-residual). TENTATIVE — needs discovery verification. Use hook_mode=auto for dual-hook. Blocks 0-4: dual-stream, Blocks 5-22: single-stream, Block 23: final.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "nc_source": "dual_stream",
+        "pred_crossings": ">=2",
+        "nc_notes": "MMDiT dual-stream: separate QKV weights for image (x_block) and text (context_block). Equivalent to two independent transformers joining for attention. Strong non-commutativity. Blocks 0-4 dual, 5-22 single.",
+        "comfyui_class": "SD3 (same as Large)",
+        "comfyui_unet_model": "OpenAISignatureMMDITWrapper"
+    },
+    "FluxTransformer2DModel": {
+        "description": "Flux 1.x / Flux 2 Klein (double + single stream DiT)",
+        "models": [
+            "flux1-dev",
+            "flux1-schnell",
+            "flux2-klein-4b",
+            "flux2-klein-9b"
+        ],
+        "block_path": "double_blocks + single_blocks",
+        "block_count": "depth + depth_single_blocks (e.g. 19+38=57 for Flux1, 8+48=56 for Klein)",
+        "hidden_dim": "hidden_size (3072 for Flux1/Klein-4B, 4096 for Klein-9B)",
+        "attn_attrs": {
+            "self_attn": [
+                "img_attn.proj"
+            ],
+            "cross_attn": [],
+            "note": "DoubleStreamBlock only. SelfAttention.proj is output Linear. txt_attn.proj is the text-stream equivalent. SingleStreamBlock has NO separable attn hook."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "img_mlp.2"
+            ],
+            "note": "DoubleStreamBlock only. build_mlp → nn.Sequential(Linear, GELU, Linear). Index 2 is output proj. txt_mlp.2 is text-stream equivalent. YakMLP variant uses .down_proj instead."
+        },
+        "notes": "Flux has TWO block types. DoubleStreamBlock: separate img/txt streams with independent attn+MLP per modality → strong NC. SingleStreamBlock: parallel attn+MLP on concatenated tokens via fused linear1/linear2 → weak NC (attn and MLP computed from same input simultaneously). Hook strategy: hook only double_blocks for clean dual-stream telemetry. single_blocks have no separable attn vs MLP signal.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "nc_source": "dual_stream_partial",
+        "pred_crossings": "1-2",
+        "nc_notes": "Double-stream blocks (transformer_blocks) have separate weights for image/text modalities — strong NC. Single-stream blocks (single_transformer_blocks) use parallel attn+MLP on concatenated tokens — weak NC. Flux 1: 19 double + 38 single. Flux 2 Klein: 8 double + 48 single (even less dual-stream proportion). Crossing count depends on whether the dual-stream minority dominates. Single-stream parallel computation means attn and MLP never see each other's outputs within a block.",
+        "comfyui_class": "Flux / Flux2",
+        "comfyui_unet_model": "comfy.ldm.flux.model.Flux"
+    },
+    "UNetModel": {
+        "description": "Stable Diffusion 1.5 and SDXL (ComfyUI UNetModel; both use this one class)",
+        "models": [
+            "sd1.5",
+            "sd1.5-variants",
+            "sdxl-base",
+            "sdxl-turbo",
+            "sdxl-variants"
+        ],
+        "block_path": "UNET_LINEARIZE",
+        "block_count": "16 (SD1.5) / 70 (SDXL), in forward order input_blocks -> middle_block -> output_blocks",
+        "hidden_dim": "varies by level: SD1.5 320/640/1280; SDXL 640/1280 (the CSV hidden_dim column records it per row)",
+        "attn_attrs": {
+            "self_attn": [
+                "attn1.to_out.0"
+            ],
+            "cross_attn": [
+                "attn2.to_out.0"
+            ],
+            "note": "comfy.ldm.modules.attention.BasicTransformerBlock. CrossAttention.to_out = Sequential(Linear, Dropout); .0 is the output Linear."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "ff.net.2"
+            ],
+            "note": "FeedForward.net = Sequential(GEGLU, Dropout, Linear); .2 is the output Linear."
+        },
+        "notes": "R3: the old keys UNet2DConditionModel_SD15/_SDXL were diffusers class names and never matched ComfyUI's class (UNetModel), and the R2 Passive guider had no UNet path at all, so it found 0 blocks and wrote no telemetry. R3 nodes.py linearizes the UNet. Block structure and hook firing checked on the real class (tests/test_r3_blocks_real_comfy.py, ComfyUI master 58b176f (2026-10-08)); needs one real sampler run before verified=true. Token count per block varies with level (SD1.5 at 512px: 4096/1024/256/64), and so does D, so g is rank-limited where tokens < D; compare blocks only against their own isotropic (Marchenko-Pastur) baseline.",
+        "verified": false,
+        "dual_hook_supported": true,
+        "nc_source": "cross_attn_unet",
+        "pred_crossings": "?",
+        "nc_notes": "Self-attention (attn1) + text cross-attention (attn2) + GEGLU FFN per block, with width and token count changing across U-Net levels and skip connections joining down and up paths. The D/N framework does not apply directly.",
+        "comfyui_class": "SD15 / SDXL",
+        "comfyui_unet_model": "comfy.ldm.modules.diffusionmodules.openaimodel.UNetModel"
+    },
+    "WanTransformer3DModel": {
+        "description": "Wan 2.1 / 2.2 (video DiT, self-attn + cross-attn)",
+        "models": [
+            "wan2.1-14b",
+            "wan2.1-1.3b",
+            "wan2.2-a14b"
+        ],
+        "block_path": "blocks",
+        "block_count": 40,
+        "hidden_dim": 5120,
+        "attn_attrs": {
+            "self_attn": [
+                "self_attn.o"
+            ],
+            "cross_attn": [
+                "cross_attn.o"
+            ]
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "ffn.2"
+            ],
+            "note": "ffn is nn.Sequential(Linear(dim, ffn_dim), GELU, Linear(ffn_dim, dim)). ffn.2 is the output projection."
+        },
+        "notes": "WanAttentionBlock: self_attn (WanSelfAttention with .o output proj) + cross_attn (text cross-attn with .o output proj) + ffn (4-layer SwiGLU Sequential). Both self_attn.o and cross_attn.o fire once per block forward. ffn.3 is the final down projection. D varies: 5120 (14B, 40 layers), 3072 (5B, 30 layers), 1536 (1.3B, 30 layers). cross_attn_type varies by model_type (t2v, i2v, s2v). VaceWanAttentionBlock extends with before_proj/after_proj.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "nc_source": "cross_attn",
+        "pred_crossings": "1-2",
+        "nc_notes": "Each block has self-attention over visual tokens + cross-attention to T5 text embeddings + MLP. Cross-attn adds moderate heterogeneity but self-attn dominates parameter budget. Shared MLP across modulations with per-block biases. D=5120, N=40 (14B); D=1536, N=30 (1.3B). Feedforward_dim=13824, 40 heads.",
+        "comfyui_class": "WAN21 (multiple subclasses)",
+        "comfyui_unet_model": "comfy.ldm.wan.model.WanModel (+ VaceWanModel, CameraWanModel, HumoWanModel, SCAILWanModel, WanModel_S2V, AnimateWanModel)"
+    },
+    "LTXVideoTransformer3DModel_09": {
+        "description": "LTX 0.9 (video DiT)",
+        "models": [
+            "ltx-0.9"
+        ],
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "notes": "Original LTX. Run discovery.",
+        "verified": false,
+        "dual_hook_supported": false,
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "1",
+        "nc_notes": "Likely single-stream full attention (similar to Z-Image). If confirmed single-stream → predict 1 crossing. Needs discovery to verify attention architecture."
+    },
+    "LTXVideoTransformer3DModel_20": {
+        "description": "LTX 2.0 (video DiT, 19B)",
+        "models": [
+            "ltx-2.0"
+        ],
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "notes": "Different architecture from LTX 2.3. Run discovery. May share BasicTransformerBlock pattern.",
+        "verified": false,
+        "dual_hook_supported": false,
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "1",
+        "nc_notes": "Likely single-stream full attention (similar to Z-Image). If confirmed single-stream → predict 1 crossing. Needs discovery to verify attention architecture."
+    },
+    "LTXVideoTransformer3DModel_23": {
+        "description": "LTX 2.3 (video DiT, 22B)",
+        "models": [
+            "ltx-2.3"
+        ],
+        "block_path": "transformer_blocks",
+        "block_count": "num_layers (from config)",
+        "hidden_dim": "inner_dim (num_attention_heads * attention_head_dim)",
+        "attn_attrs": {
+            "self_attn": [
+                "attn1.to_out.0"
+            ],
+            "cross_attn": [
+                "attn2.to_out.0"
+            ],
+            "note": "attn1 = self-attention, attn2 = cross-attention to text. Both are CrossAttention class. to_out is nn.Sequential([Linear]). .0 gets the Linear."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "ff.net.2"
+            ],
+            "note": "FeedForward.net is nn.Sequential(GELU_approx(dim, inner), dropout, Linear(inner, dim)). ff.net.2 is the output Linear."
+        },
+        "notes": "LTX 2.3 uses BasicTransformerBlock with attn1 (self) + attn2 (cross) + ff. Same structure as SD1.5/SDXL BasicTransformerBlock but as a flat DiT (not UNet). The Embeddings1DConnector is a separate 2-layer transformer for conditioning preprocessing.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "nc_source": "cross_attn",
+        "pred_crossings": "1-2",
+        "nc_notes": "Has separate self-attn (attn1) and cross-attn (attn2) per block, similar to UNet BasicTransformerBlock. Cross-attn provides moderate NC. Also has an Embeddings1DConnector (separate transformer for conditioning) which is NOT part of the main block iteration.",
+        "comfyui_class": "LTXV",
+        "comfyui_unet_model": "comfy.ldm.lightricks.model.LTXVModel"
+    },
+    "NextDiT": {
+        "description": "Z-Image-Base/Turbo (NextDiT)",
+        "models": [
+            "z-image-base",
+            "z-image-turbo"
+        ],
+        "block_path": "layers",
+        "block_count": 30,
+        "hidden_dim": 3840,
+        "attn_attrs": {
+            "self_attn": [
+                "attention.out"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "feed_forward.w2"
+            ]
+        },
+        "notes": "NextDiT JointTransformerBlock with JointAttention and SwiGLU FeedForward. attention.out is the output projection Linear layer (nn.Linear) inside JointAttention, capturing attention output pre-clamp_fp16, pre-attention_norm2, pre-gate, pre-residual. JointAttention.forward() is called directly in JointTransformerBlock.forward(), so PyTorch hooks fire normally. NextDiT uses single joint attention on concatenated text+image sequence — no separate cross-attn in main layers, hence cross_attn is empty. For MLP: NextDiT FeedForward is SwiGLU (w1=gate, w3=up, w2=down/output). feed_forward.w2 captures the FFN output projection (pre-residual). TENTATIVE — needs discovery verification. D=3840, N=30, D/N=128. Full bidirectional attention.",
+        "verified": true,
+        "dual_hook_supported": true,
+        "nc_source": "single_stream",
+        "pred_crossings": "1",
+        "nc_notes": "Single joint attention on concatenated text+image sequence. No structural heterogeneity between attention operations at different layers. CONFIRMED: ZIT=1 crossing (g*=0.030), ZIB=1 crossing (g*=0.0085).",
+        "comfyui_class": "Lumina2 (shares NextDiT name) / Z-Image uses separate loader",
+        "comfyui_unet_model": "NextDiT (loaded directly, not via model_base)"
+    },
+    "AceStepConditionGenerationModel": {
+        "description": "ACE-Step 1.5 (audio DiT decoder inside AceStepConditionGenerationModel)",
+        "models": [
+            "acestep-1.5",
+            "acestep-1.5-turbo"
+        ],
+        "block_path": "decoder.layers",
+        "block_count": 24,
+        "hidden_dim": 2048,
+        "attn_attrs": {
+            "self_attn": [
+                "self_attn.o_proj"
+            ],
+            "cross_attn": [
+                "cross_attn.o_proj"
+            ],
+            "note": "AceStepDiTLayer: self_attn and cross_attn are AceStepAttention; o_proj is the output Linear (pre-gate, pre-residual)."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "mlp.down_proj"
+            ],
+            "note": "SwiGLU MLP (gate_proj, up_proj, down_proj); down_proj is the output Linear."
+        },
+        "notes": "Blocks sit under .decoder, so the dotted block_path needs R3 nodes.py (R2 used hasattr and found nothing). The condition encoder (lyric 8 layers, timbre 4) also has a .layers list; it is not hooked. 16 query heads, 8 KV heads (GQA 2), head_dim 128, MLP 6144. Even layers use sliding-window self-attention (window 128 tokens), odd layers full attention. Tokens = latent frames / 2: latent is 25 frames/s (48 kHz / 1920), so 12.5 tokens/s; N >= D=2048 needs >= 164 s of audio. Checked on the real class (ComfyUI master 58b176f (2026-10-08)); needs one real sampler run before verified=true.",
+        "verified": false,
+        "dual_hook_supported": true,
+        "nc_source": "cross_attn",
+        "pred_crossings": "?",
+        "nc_notes": "Self-attention over audio tokens + cross-attention to the encoded text/lyric condition + SwiGLU MLP, with alternating local (sliding-window) and global self-attention. The alternation is a structural layer-parity difference that may show up as an even/odd zig-zag along depth.",
+        "comfyui_class": "ACEStep15",
+        "comfyui_unet_model": "comfy.ldm.ace.ace_step15.AceStepConditionGenerationModel"
+    },
+    "ACEStepTransformer2DModel": {
+        "description": "ACE-Step v1 (audio DiT with linear self-attention)",
+        "models": [
+            "acestep-v1-3.5b"
+        ],
+        "block_path": "transformer_blocks",
+        "block_count": 28,
+        "hidden_dim": 1536,
+        "attn_attrs": {
+            "self_attn": [
+                "attn.to_out.0"
+            ],
+            "cross_attn": [
+                "cross_attn.to_out.0"
+            ],
+            "note": "LinearTransformerBlock: attn uses the linear-attention (LiteLA, ReLU kernel) processor; cross_attn is softmax cross-attention. to_out = ModuleList(Linear, Dropout)."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "ff"
+            ],
+            "note": "GLUMBConv (inverted conv, depthwise conv, GLU, point conv). Its last op is a Conv1d on (B, C, N), so hook the module itself, whose output is (B, N, C)."
+        },
+        "notes": "Was auto-detected by R2 through transformer_blocks, but the registry key AceStepTransformer never matched, so MLP paths were not used. 24 heads x 64. Latent 8 channels x 16 bins at 44100/512/8 = 10.77 frames/s, one token per frame. Checked on the real class (ComfyUI master 58b176f (2026-10-08)).",
+        "verified": false,
+        "dual_hook_supported": true,
+        "nc_source": "cross_attn",
+        "pred_crossings": "?",
+        "nc_notes": "Linear self-attention is low-rank by construction (rank <= head_dim per head), so attention-output spectra are not comparable with softmax DiTs without that caveat.",
+        "comfyui_class": "ACEStep",
+        "comfyui_unet_model": "comfy.ldm.ace.model.ACEStepTransformer2DModel"
+    },
+    "OpenAISignatureMMDITWrapper": {
+        "description": "SD3.5-large (MMDiT, joint attention)",
+        "models": [
+            "SD3.5-large",
+            "sd3.5-large",
+            "sd3.5-large-turbo"
+        ],
+        "block_path": "joint_blocks",
+        "block_count": 38,
+        "hidden_dim": 2432,
+        "attn_attrs": {
+            "self_attn": [
+                "x_block.attn.proj"
+            ],
+            "cross_attn": [
+                "context_block.attn.proj"
+            ]
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "x_block.mlp.fc2"
+            ]
+        },
+        "notes": "MMDiT JointBlock: attn sub-modules' forward() is never called, but the output projection (attn.proj, nn.Linear) IS called during post_attention(). x_block.attn.proj is the latent-stream attention output (pre-gate, pre-residual, pre-FFN) — exists on ALL 38 blocks (x_block is always pre_only=False). context_block.attn.proj exists only on blocks 0-12 (pre_only=False). For MLP: x_block.mlp.fc2 is the MLP output projection. TENTATIVE — needs discovery verification. Use hook_mode=auto for dual-hook. Blocks 0-12: dual-stream, Blocks 13-37: single-stream. head_dim=64, num_heads=38.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "nc_source": "dual_stream",
+        "pred_crossings": ">=2",
+        "nc_notes": "MMDiT dual-stream: same mechanism as SD3 Medium. Blocks 0-12 dual, 13-37 single. MEASURED ~3 crossings with block hooks (needs attn-hook rerun). Strongest DM non-commutativity source.",
+        "comfyui_class": "SD3",
+        "comfyui_unet_model": "comfy.ldm.modules.diffusionmodules.mmdit.OpenAISignatureMMDITWrapper"
+    },
+    "MochiTransformer3DModel": {
+        "description": "Mochi 1 (AsymmDiT, asymmetric separate MLPs per modality)",
+        "models": [
+            "mochi-1-preview"
+        ],
+        "block_path": "blocks",
+        "block_count": 48,
+        "hidden_dim": 3072,
+        "attn_attrs": {
+            "self_attn": [
+                "attn.proj_x"
+            ],
+            "cross_attn": [],
+            "note": "AsymmetricAttention: joint attention over visual+text, then SEPARATE output projections. proj_x = visual output Linear, proj_y = text output Linear. Both fire once per block forward."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "mlp_x.w2"
+            ],
+            "note": "SEPARATE MLPs per modality. mlp_x = visual FeedForward (SwiGLU: w1 fused gate+up, w2 output). mlp_y = text FeedForward (same structure, absent on last block where update_y=False). w2 is the output projection Linear."
+        },
+        "notes": "AsymmDiTJoint: 48 AsymmetricJointBlocks. STRONGEST DM non-commutativity: separate proj_x/proj_y after attention AND separate mlp_x/mlp_y. Visual stream has mlp_ratio=8.0 (hidden=24576), text stream has mlp_ratio=4.0 (hidden=12288). Non-square QKV (dim_x=3072, dim_y=1536). Block 47 has update_y=False (no text update). 24 heads, head_dim=128. ComfyUI: GenmoMochi → comfy.ldm.genmo.joint_model.asymm_models_joint.AsymmDiTJoint.",
+        "nc_source": "asymm_stream",
+        "pred_crossings": ">=2",
+        "nc_notes": "Separate MLPs for text vs visual modality = explicit non-commutativity between submodule types. The visual MLP and text MLP process different subspaces. Non-square QKV projections add further asymmetry. This is the DM analog of high-ratio GQA in LLMs. HIGHEST PRIORITY DM measurement target.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "comfyui_class": "GenmoMochi",
+        "comfyui_unet_model": "comfy.ldm.genmo.joint_model.asymm_models_joint.AsymmDiTJoint"
+    },
+    "CogVideoXTransformer3DModel": {
+        "description": "CogVideoX (Expert Transformer with Expert AdaLN, 3D full attention)",
+        "models": [
+            "cogvideox-2b",
+            "cogvideox-5b",
+            "cogvideox-1.5-5b"
+        ],
+        "block_path": "blocks",
+        "block_count": 30,
+        "hidden_dim": 3072,
+        "attn_attrs": {
+            "self_attn": [
+                "attn_out"
+            ],
+            "cross_attn": [],
+            "note": "CogVideoX uses unified 3D full attention over concatenated text+video tokens. No separate cross-attn. attn_out is the Linear output projection after attention."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "ff_out"
+            ],
+            "note": "ff_out is Linear(inner_dim, dim). ff_proj is the input projection with GELU."
+        },
+        "notes": "CogVideoXBlock: text and video tokens concatenated, processed by unified attention (no cross-attn), then split for modality-specific AdaLN modulation. attn_out and ff_out are clean single-fire Linear layers. Expert AdaLN (CogVideoXLayerNormZero/CogVideoXAdaLayerNorm) provides modality-specific normalization before shared attention. D=dim, varies by model size.",
+        "nc_source": "expert_adaln",
+        "pred_crossings": "1-2",
+        "nc_notes": "Expert AdaLN creates modality-specific normalization pathways, but the attention and MLP are shared across modalities (unlike Mochi which has separate MLPs). Weaker non-commutativity than dual-stream or asymmetric architectures. May produce 1-2 crossings depending on how strongly AdaLN modulation affects the SVD spectrum.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "comfyui_class": "CogVideoX",
+        "comfyui_unet_model": "comfy.ldm.cogvideo.model.CogVideoXTransformer3DModel"
+    },
+    "HunyuanVideoTransformer3DModel": {
+        "description": "HunyuanVideo (Tencent video DiT)",
+        "models": [
+            "hunyuanvideo"
+        ],
+        "block_path": "double_blocks + single_blocks",
+        "block_count": "double: params.depth, single: params.depth_single_blocks",
+        "hidden_dim": "hidden_size (3072)",
+        "attn_attrs": {
+            "self_attn": [
+                "img_attn.proj"
+            ],
+            "cross_attn": [],
+            "note": "Same DoubleStreamBlock as Flux. img_attn.proj is output Linear."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "img_mlp.2"
+            ],
+            "note": "Same build_mlp as Flux. nn.Sequential index 2 is output Linear."
+        },
+        "notes": "HunyuanVideo uses IDENTICAL block types to Flux (imported from comfy.ldm.flux.layers). DoubleStreamBlock for dual-stream + SingleStreamBlock for fused single-stream. txt_in is a TokenRefiner (not raw Linear). Also has optional vision_in (MLPProj), ByT5Mapper, and upsampler components.",
+        "nc_source": "dual_stream_partial",
+        "pred_crossings": "1-2",
+        "nc_notes": "Architecture is Flux-style: double_blocks (dual-stream, strong NC) + single_blocks (parallel fused, weak NC). Same prediction logic as Flux — crossing count depends on double-block proportion. Has additional TokenRefiner for text conditioning.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "comfyui_class": "HunyuanVideo",
+        "comfyui_unet_model": "comfy.ldm.hunyuan_video.model.HunyuanVideo"
+    },
+    "LTXVideoTransformer3DModel_23_AV": {
+        "description": "LTX 2.3 Audio-Video (video+audio DiT)",
+        "models": [
+            "ltx-2.3-av"
+        ],
+        "block_path": "transformer_blocks",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "video_self_attn": [
+                "attn1.to_out.0"
+            ],
+            "video_cross_attn": [
+                "attn2.to_out.0"
+            ],
+            "audio_self_attn": [
+                "audio_attn1.to_out.0"
+            ],
+            "audio_cross_attn": [
+                "audio_attn2.to_out.0"
+            ],
+            "audio_to_video": [
+                "audio_to_video_attn.to_out.0"
+            ],
+            "video_to_audio": [
+                "video_to_audio_attn.to_out.0"
+            ],
+            "note": "8 separate attention modules. Video and audio streams fully independent except cross-modal coupling."
+        },
+        "mlp_attrs": {
+            "video_mlp": [
+                "ff.net.2"
+            ],
+            "audio_mlp": [
+                "audio_ff.net.2"
+            ],
+            "note": "Separate FeedForward per modality. Same structure as LTX 2.3 video-only."
+        },
+        "nc_source": "dual_stream_av",
+        "pred_crossings": ">=2",
+        "nc_notes": "SEPARATE attn and MLP per modality (video vs audio) + cross-modal coupling. This is structurally similar to MMDiT but with audio instead of text as the second stream. Separate ff/audio_ff creates explicit non-commutativity. Unique measurement: two parallel phase flows through same block structure, coupled by audio_to_video_attn and video_to_audio_attn.",
+        "notes": "BasicAVTransformerBlock extends BasicTransformerBlock with 4 additional CrossAttention modules for audio: audio self-attn, audio cross-attn, audio-to-video cross-attn, video-to-audio cross-attn.",
+        "verified": true,
+        "dual_hook_supported": false
+    },
+    "QwenImageTransformer2DModel": {
+        "description": "Qwen-Image (MMDiT-style dual-stream image DiT)",
+        "models": [
+            "qwen-image"
+        ],
+        "block_path": "transformer_blocks",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "attn.to_out.0"
+            ],
+            "cross_attn": [],
+            "note": "Joint attention over concatenated img+txt tokens. attn.to_out[0] is the image stream output. attn.to_add_out is the text stream output. Single joint attention, not cross-attn."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "img_mlp.net.2",
+                "txt_mlp.net.2"
+            ],
+            "note": "SEPARATE MLPs per modality! img_mlp and txt_mlp are independent FeedForward modules. This is the MMDiT dual-MLP pattern. .net.2 is the output Linear."
+        },
+        "nc_source": "dual_stream",
+        "pred_crossings": ">=2",
+        "nc_notes": "MMDiT-style: joint attention + SEPARATE MLPs per modality (img_mlp, txt_mlp). This is structurally identical to SD3.5 and is the strongest NC source in DMs. The separate MLPs create explicit non-commutativity. If D/N is sufficient, predict >=2 crossings.",
+        "notes": "QwenImageTransformerBlock: joint attention (Attention class) with separate output projections per modality (to_out for image, to_add_out for text) + separate FeedForward per modality (img_mlp, txt_mlp). Timestep modulation via AdaLN with separate scale/shift/gate per modality. LastLayer for final output.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "comfyui_class": "QwenImage",
+        "comfyui_unet_model": "comfy.ldm.qwen_image.model.QwenImageTransformer2DModel"
+    },
+    "ErnieImageModel": {
+        "description": "ERNIE Image (single-stream DiT with shared AdaLN, Baidu)",
+        "models": [
+            "ernie-image"
+        ],
+        "block_path": "layers",
+        "block_count": 36,
+        "hidden_dim": 4096,
+        "attn_attrs": {
+            "self_attn": [
+                "self_attention.to_out.0"
+            ],
+            "cross_attn": [],
+            "note": "Single joint attention over concatenated image+text tokens. No separate cross-attn. ErnieImageAttention.to_out is nn.ModuleList([Linear]). .0 gets the Linear."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "mlp.linear_fc2"
+            ],
+            "note": "ErnieImageFeedForward: SwiGLU (gate_proj, up_proj → multiply → linear_fc2). linear_fc2 is the output projection Linear."
+        },
+        "nc_source": "single_stream",
+        "pred_crossings": "1",
+        "nc_notes": "Single-stream architecture: image and text tokens concatenated and processed by unified attention + shared MLP. Same structural class as Z-Image/NextDiT. Shared AdaLN modulation (same 6 modulation parameters for all tokens). No per-modality MLP separation. Predict 1 crossing. D=4096, N=36, D/N=114.",
+        "notes": "ErnieImageSharedAdaLNBlock: adaLN_sa_ln → self_attention (ErnieImageAttention with RoPE) → adaLN_mlp_ln → mlp (ErnieImageFeedForward SwiGLU). Shared timestep modulation (6 parameters from adaLN_modulation). 3D RoPE (ErnieImageEmbedND3) over text+image positions. num_heads=32, head_dim=128, ffn_hidden_size=12288.",
+        "verified": true,
+        "dual_hook_supported": false,
+        "comfyui_class": "ErnieImage",
+        "comfyui_unet_model": "comfy.ldm.ernie.model.ErnieImageModel"
+    },
+    "Lumina2NextDiT": {
+        "description": "Lumina 2 (NextDiT, different from Z-Image NextDiT)",
+        "models": [
+            "lumina2"
+        ],
+        "comfyui_class": "Lumina2",
+        "comfyui_unet_model": "comfy.ldm.lumina.model.NextDiT",
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "?",
+        "nc_notes": "Same class name (NextDiT) as Z-Image but in comfy.ldm.lumina, not comfy.ldm.z_image. Architecture may differ. Needs discovery.",
+        "notes": "comfy.ldm.lumina.model.NextDiT. NOT the same as Z-Image's NextDiT. Needs source inspection.",
+        "verified": false,
+        "dual_hook_supported": false
+    },
+    "HunyuanImage21": {
+        "description": "Hunyuan Image 2.1 (reuses HunyuanVideo Flux-style architecture)",
+        "models": [
+            "hunyuan-image-2.1"
+        ],
+        "comfyui_class": "HunyuanImage21",
+        "comfyui_unet_model": "comfy.ldm.hunyuan_video.model.HunyuanVideo",
+        "block_path": "double_blocks + single_blocks",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "img_attn.proj"
+            ],
+            "cross_attn": [],
+            "note": "Same DoubleStreamBlock as Flux. img_attn.proj is output Linear."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "img_mlp.2"
+            ],
+            "note": "Same build_mlp as Flux. nn.Sequential index 2 is output Linear."
+        },
+        "nc_source": "dual_stream_partial",
+        "pred_crossings": "1-2",
+        "nc_notes": "Reuses exact HunyuanVideo model class. Same Flux-style dual+single stream architecture. Image model variant.",
+        "notes": "ComfyUI maps HunyuanImage21 → comfy.ldm.hunyuan_video.model.HunyuanVideo. Same model architecture as HunyuanVideo but for image generation.",
+        "verified": true,
+        "dual_hook_supported": false
+    },
+    "ChromaTransformer": {
+        "description": "Chroma (Flux architecture variant, text-free)",
+        "models": [
+            "chroma"
+        ],
+        "comfyui_class": "Chroma",
+        "comfyui_unet_model": "comfy.ldm.chroma.model.Chroma",
+        "block_path": "double_blocks + single_blocks",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "img_attn.proj"
+            ],
+            "cross_attn": [],
+            "note": "Same DoubleStreamBlock as Flux. img_attn.proj is output Linear."
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "img_mlp.2"
+            ],
+            "note": "Same build_mlp as Flux. nn.Sequential index 2 is output Linear."
+        },
+        "nc_source": "dual_stream_partial",
+        "pred_crossings": "1-2",
+        "nc_notes": "Flux subclass. Same dual+single stream architecture. Text-free variant.",
+        "notes": "Inherits from Flux in ComfyUI. ChromaRadiance is another variant (comfy.ldm.chroma_radiance.model.ChromaRadiance).",
+        "verified": true,
+        "dual_hook_supported": false
+    },
+    "CosmosGeneralDIT": {
+        "description": "Cosmos Video (NVIDIA GeneralDIT)",
+        "models": [
+            "cosmos-video"
+        ],
+        "comfyui_class": "CosmosVideo",
+        "comfyui_unet_model": "comfy.ldm.cosmos.model.GeneralDIT",
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "?",
+        "nc_notes": "NVIDIA Cosmos. Architecture needs source inspection.",
+        "notes": "comfy.ldm.cosmos.model.GeneralDIT. Also CosmosPredict2 variant (MiniTrainDIT).",
+        "verified": false,
+        "dual_hook_supported": false
+    },
+    "HiDreamTransformer": {
+        "description": "HiDream Image (Transformer2D)",
+        "models": [
+            "hidream"
+        ],
+        "comfyui_class": "HiDream",
+        "comfyui_unet_model": "comfy.ldm.hidream.model.HiDreamImageTransformer2DModel",
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "?",
+        "nc_notes": "Architecture needs source inspection.",
+        "notes": "comfy.ldm.hidream.model.HiDreamImageTransformer2DModel.",
+        "verified": false,
+        "dual_hook_supported": false
+    },
+    "OmniGen2Transformer": {
+        "description": "OmniGen2 (Transformer2D)",
+        "models": [
+            "omnigen2"
+        ],
+        "comfyui_class": "Omnigen2",
+        "comfyui_unet_model": "comfy.ldm.omnigen.omnigen2.OmniGen2Transformer2DModel",
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "?",
+        "nc_notes": "Architecture needs source inspection.",
+        "notes": "comfy.ldm.omnigen.omnigen2.OmniGen2Transformer2DModel.",
+        "verified": false,
+        "dual_hook_supported": false
+    },
+    "Kandinsky5Model": {
+        "description": "Kandinsky 5 (Sber image model)",
+        "models": [
+            "kandinsky5"
+        ],
+        "comfyui_class": "Kandinsky5",
+        "comfyui_unet_model": "comfy.ldm.kandinsky5.model.Kandinsky5",
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "?",
+        "nc_notes": "Architecture needs source inspection.",
+        "notes": "comfy.ldm.kandinsky5.model.Kandinsky5. Sber AI image generation.",
+        "verified": false,
+        "dual_hook_supported": false
+    },
+    "AnimaModel": {
+        "description": "Anima (video model)",
+        "models": [
+            "anima"
+        ],
+        "comfyui_class": "Anima",
+        "comfyui_unet_model": "comfy.ldm.anima.model.Anima",
+        "block_path": "NEEDS_DISCOVERY",
+        "block_count": null,
+        "hidden_dim": null,
+        "attn_attrs": {
+            "self_attn": [
+                "NEEDS_DISCOVERY"
+            ],
+            "cross_attn": []
+        },
+        "mlp_attrs": {
+            "mlp": [
+                "NEEDS_DISCOVERY"
+            ]
+        },
+        "nc_source": "NEEDS_DISCOVERY",
+        "pred_crossings": "?",
+        "nc_notes": "Architecture needs source inspection.",
+        "notes": "comfy.ldm.anima.model.Anima.",
+        "verified": false,
+        "dual_hook_supported": false
+    }
+}

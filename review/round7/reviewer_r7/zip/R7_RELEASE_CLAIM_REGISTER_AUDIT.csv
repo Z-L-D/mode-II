@@ -1,0 +1,38 @@
+id,claim,status,evidence,release_wording
+M1,g = amplitude PR / D on the uncentred XᵀX/N; H = entropy of s/Σs; gap = s1/s2,**USE**,"R1 §0, from `nodes.py`","""Uncentred second-moment matrix""; cite effective rank (Roy & Vetterli 2007), not the eigenvalue PR (`LIT_R6C.md` §3)"
+M2,The passive corpus is free of the EMAG fall-through bug,**USE WITH WORDING**,09-15 §5; R2,Add that the capture *regime* differs by campaign: ZIB archive pooled; ZIT cond-only; SD3.5 M switches regime inside runs; SD3.5 L varies by domain (R1 §3.2). Name the regime for every number
+M3,Generation ids are namespaced,**USE**,"09-15 §11; R5 (gen_idx, seed)",—
+M4,ComfyUI's sampling shift is 3.0 for every Z-Image and SD3.5 capture,**USE**,R5 shift fit,"""Z-Image Base at shift 3.0"", which is below its official 6.0"
+M5,"Pooling raises g, with a concavity bound",**USE** (Mode-II),R5 Q1,The theorem plus +0.040 / +0.050 / +0.088 on identical trajectories
+1,Phase-blind three-regime structure in diffusion MLP telemetry,**USE WITH WORDING** (revised after the analyzer replay),"Two different measurements. *Along σ* (S4a–d): layer-mean MLP g goes +−+ in 100% of bootstraps, archive and clean, CFG 1 and 4, −50%; Z-Image MLP only, because attention is ""++−"" (S4e, P1). *Along the layer axis* (analyzer β_layer, `R6C_ANALYZER_REPLAY.md`): + − + − with three crossings in SD3.5 M and L attention (100% of bootstraps), ZIT/ZIB MLP (90% / 84%) and ZIB attention (67%). At fixed σ it appears in all four architectures, Mochi included. It beats both 09-15 surrogates in SD3.5 M attn and ZIB attn/MLP; SD3.5 L is null-generic","State the two separately. Layer axis: ""the analyzer's layer-direction flow shows the + − + − three-crossing pattern in Z-Image, SD3.5 M/L and Mochi at some or all σ; it exceeds marginal and mean-field surrogates in SD3.5 M and Z-Image Base"". Report per σ or with its bootstrap rate, not as one crossing count. σ axis: ""in Z-Image MLP"""
+2,1000/1000 bootstraps recover +→−→+,**USE**,Reproduced 1000/1000 (S4a) and on clean captures (S4b),—
+3,0/1000 time-order permutations fit comparably,**USE WITH WORDING**,P3: ZIB 0/1000 (all three captures); ZIT 38/1000,State it for the 25-step channel. ZIT's 8 points cannot carry the test
+4,MLP turning points are fixed under a 12.5× step-count change,**USE WITH WORDING**,"R2 P4: ZIT 8 vs 100 steps at matched σ, g ≤ 1.9%, but the 100-step set is 4 generations; R5 Q5: SD3.5 M 40→100 steps changes g 3% at CFG 1, nothing at CFG 4.5","""Per-σ geometry changes ≤ 2–3% between 8/40 and 100 steps""; disclose the 4-generation control"
+5,Synchronization reaches 0.81–0.89 across five channels,**DO NOT USE as an event**,R1 §3.1; R6 S5: a straight line beats it in 7/7; the warp null matches it in 4/7,"Optional supplementary: ""cross-layer timing coordination beyond independent monotone drift in ZIT (p ≤ 0.014)"""
+6,Mochi reproduces the synchronization pulse,**DO NOT USE**,as #5,—
+7,Pooled cloud-β fixed-point semantics fail explicit surrogates,**USE**,09-15 §8–10,"Keep ""null-generic under the tested construction"""
+8,Dense β multi-crossings are the temporal profile projected,**USE**,09-15 §9; R5 Q6 (extra pair is a noise-floor lobe),"Report the main crossing g*, not counts"
+9,Raw cross-φ ≈ −1/2 is a differencing null,**USE**,09-15 §17 (algebra),—
+10,Null-corrected φ residuals reproduce strongly between ZIT and ZIB,**USE WITH WORDING**,R2 P9: φ adds no held-out information once depth and σ are known,"Descriptive only; ""φ is redundant with [g, gap, H, depth, σ]"""
+11,ZIT/ZIB fields collapse under an affine σ warp,**USE WITH WORDING**,R1 §3.4: equal-σ matching is within 0.005 of the optimized warp,"""Turbo samples Base's σ-indexed geometry at 8 points""; no learned reparameterization or compressed clock"
+12,The same warp predicts the sync trajectory without refitting,**DO NOT USE**,It depends on #5 and #11,—
+13,117/117 prompts choose zero layer shift,**USE**,09-15 §25; consistent with the R1/R2 registration nulls,Pair it with the tangent statistic
+14,Most phase-field geometry is prompt-independent (96% scaffold),**USE WITH WORDING**,"R1 §2: the 96% is mostly between-model and time variance; within a (model, state) cell prompt identity explains 51–96%",State both numbers
+15,Qwen 2.5-7B multiscale β anomaly survives both nulls,**DO NOT USE as an anomaly**,"Ledger: ""Qwen beta ladder — measured but demoted""; v1 LLM g is a nested running statistic (R1 §3.7)","Report as demoted, with the context-clock explanation, or move to Mode-III with G4"
+16,Qwen anomaly mechanism (coherent scaling + profile deformation),**DO NOT USE**,as #15,—
+17,Correction trail as a contribution,**USE**,09-15 §33 plus R1–R6,"Add the scalar-curve ordering (R6 S1d), the sync pulse (R1, R6 S5), σ50 (R5) and pooling (R5)"
+18,"Semantic domain decodable from ordered depth geometry (0.43–0.61, chance 0.10; beats TF-IDF on the prompt text)",**USE**,R1 §2,—
+19,**New:** prompt-similarity structure is shared across five unrelated models beyond theme and text; strongest in the lineage,**USE** (preregistered),"R6 S2c, S2f; P2","""Mantel ρ 0.13–0.43 unrelated, 0.56–0.62 Base↔Turbo, all p ≤ 0.0005; persists within themes and after removing prompt-text overlap"""
+20,Theme inheritance is lineage-specific,**USE WITH WORDING**,R6 S2a (0.63–0.75) / S2b refuted (unrelated up to 0.52 by the middle step),"""Strongest in the lineage at every step; lineage-specific only at the first step"""
+21,**New:** the lineage statistic is the tangent; scalar curves cannot separate lineage,**USE** (preregistered),R6 S1a–c; R2 E10; R5 Q2,"""Tangent 0.94–0.99 (Base↔Turbo) vs ≤ 0.24 unrelated; on the scalar curve ZIT↔SD3.5 L (0.981) beats ZIT↔ZIB (0.933)"""
+22,Historical ZIB↔Mochi 0.9405 > ZIB↔ZIT 0.9325,**DO NOT USE as architecture evidence**,R6 S1d,Use only as a worked example of capture-regime sensitivity
+23,**New:** attention g rises then falls late in all five models,"**USE** (post hoc, descriptive)",R6 P1,Label as post hoc
+23b,"Z-Image MLP depth profile: peak at layer 5, middle floor, rise over the last layers","**USE** (post hoc, descriptive)",R6 P4 (piecewise-linear fit to the time-averaged depth profile). Its attention statement is **withdrawn**: the analyzer's β_layer finds the three-crossing pattern in attention too (row 1),Describe the MLP profile only; the cross-architecture layer-axis claim goes in row 1
+23c,**New:** analyzer instrument facts,**USE** (methods),`R6C_ANALYZER_REPLAY.md` A1,"The v3 mean-profile, interval and g₃/g₁ tools keep only `token_type == ""generated""` rows, so they are LLM-only. The dashboard pools attn and mlp. A header-less CSV is silently dropped. The run-level crossing count depends on capture, submodule, step mixing and n"
+24,Plateau onset σ ≈ 0.8,**USE WITH WORDING**,R2 E3; R5 Q8/H3,Give resolution and shift; 0.81–0.84 on the resolution-corrected clock
+25,"""Late slow flow""",**USE WITH WORDING**,R1 §3.3,"""An early high-speed transient at σ ≈ 1, then a σ-invariant plateau"""
+26,"Seed fate: gradual, with no sharp commitment step",**USE WITH WORDING**,R1 §5; R5 Q3; R6 S3,Relative onset at matched n 0.84–0.95 σ (ZIT MLP 0.67); no σ50 comparisons across n; no commitment wording (G3)
+27,Seed deviations are walk-like,**USE WITH WORDING**,R6 S3d,"""Between AR(0.8) and a random walk on the calibrated scale (0.49–0.87 of walk), except ZIT attn (1.13)"""
+28,Guidance contracts cond-branch seed spread,**USE WITH WORDING**,R4/R5 R1f 0.637 (paired),No timing; the rider is Mode-III
+29,Low-dimensional temporal backbone (PC1 0.74–0.89),**USE WITH WORDING**,R1 §2,"Descriptive; ZIT has 8 states, so rank ≤ 7 by construction"
+30,Fixed-weight invariance (Mochi CFG 0.996; Mistral ablit 0.9998),**USE WITH WORDING**,R1 §2,Mochi CFG comparison is also 30 vs 100 steps

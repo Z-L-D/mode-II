@@ -1,0 +1,12 @@
+{
+ "score": {
+  "S5a": [
+   "REFUTED",
+   "3/7 channels with R_peak above the warp-null p95"
+  ],
+  "S5b": [
+   "CONFIRMED",
+   "7/7 channels with R_peak <= linear-trend surrogate"
+  ]
+ }
+}

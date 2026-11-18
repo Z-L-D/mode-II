@@ -1,0 +1,85 @@
+{
+ "qwen25_1_5b~qwen25_3b": {
+  "verdict": "survives the text control",
+  "partial": [
+   0.82,
+   0.79,
+   0.867
+  ],
+  "ratio": [
+   0.996,
+   0.995,
+   0.994
+  ],
+  "p": [
+   0.0001,
+   0.0001,
+   0.0001
+  ]
+ },
+ "qwen25_1_5b~qwen25_7b": {
+  "verdict": "survives the text control",
+  "partial": [
+   0.736,
+   0.748,
+   0.849
+  ],
+  "ratio": [
+   0.995,
+   0.997,
+   0.995
+  ],
+  "p": [
+   0.0001,
+   0.0001,
+   0.0001
+  ]
+ },
+ "qwen25_3b~qwen25_7b": {
+  "verdict": "survives the text control",
+  "partial": [
+   0.784,
+   0.716,
+   0.892
+  ],
+  "ratio": [
+   0.996,
+   0.995,
+   0.997
+  ],
+  "p": [
+   0.0001,
+   0.0001,
+   0.0001
+  ]
+ },
+ "mistral_instruct~llama31_instruct": {
+  "verdict": "survives the text control",
+  "partial": [
+   0.478,
+   0.441,
+   0.452
+  ],
+  "ratio": [
+   0.968,
+   0.975,
+   0.973
+  ],
+  "p": [
+   0.0001,
+   0.0001,
+   0.0001
+  ]
+ },
+ "diffusion_unrelated_first": {
+  "partial_range": [
+   0.2266179176922713,
+   0.3804344460439312
+  ],
+  "ratio_range": [
+   0.9543334676791247,
+   0.9807019755377645
+  ],
+  "max_p": 9.999000099990002e-05
+ }
+}

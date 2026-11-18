@@ -1,0 +1,15 @@
+channel,geometry,modal_global_min,modal_share,L15_share,distribution
+ZIT_mlp,G-z,14,0.978,0.022,14:489 15:11
+ZIT_mlp,G-ent,15,1.0,1.0,15:500
+ZIB_mlp,G-z,15,1.0,1.0,15:500
+ZIB_mlp,G-ent,15,0.998,0.998,15:499 12:1
+ZIT_attn,G-z,22,1.0,0.0,22:500
+ZIT_attn,G-ent,22,0.896,0.0,22:448 23:52
+ZIB_attn,G-z,20,0.654,0.0,20:327 11:173
+ZIB_attn,G-ent,20,1.0,0.0,20:500
+Mochi_attn,G-z,38,0.848,0.0,38:424 35:76
+Mochi_attn,G-ent,30,0.864,0.0,30:432 31:68
+SD35M_attn,G-z,6,0.998,0.0,6:499 11:1
+SD35M_attn,G-ent,12,0.912,0.0,12:456 11:44
+SD35L_attn,G-z,22,0.994,0.0,22:497 23:3
+SD35L_attn,G-ent,26,0.944,0.0,26:472 22:28

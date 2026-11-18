@@ -1,0 +1,3 @@
+channel,clock,prompts,steps,topology,frac_pmp,frac_ppm,modal,modal_frac,break1,break2,contraction,rebound,late_drop,sigma_at_max
+ACE-attn,sigma,29,6,-+-,0.0,0.0,-+-,1.0,0.937781,0.857326,-0.1911198896183309,0.0,-0.1911198896183309,1.0
+ACE-mlp,sigma,29,6,-+-,0.0,0.0,-+-,1.0,0.937781,0.857326,-0.1639239675686121,0.0,-0.1639239675686121,1.0

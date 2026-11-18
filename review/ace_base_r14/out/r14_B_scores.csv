@@ -1,0 +1,11 @@
+id,result,verdict
+B1,24 layers x attn/mlp on every step: True; seq_len [np.int64(2250)]; D [np.int64(2048)],PASS
+B2,"g_MP 0.7505; cells >= 0.10: attn 0.482, mlp 0.890; median ratio attn 0.0952, mlp 0.2760",REFUTED
+B3,"PC1+PC2 attn 0.9875, mlp 0.9794",REFUTED
+B4,"dR2 attn 0.254 (R2 g 0.689 -> 0.943), mlp 0.671 (R2 g 0.033 -> 0.704)",REFUTED
+B5,"attn even>odd in 1.000 of (gen, step) cells (median diff 1.165); mlp even>odd 0.922 (descriptive)",CONFIRMED
+B6,"point estimate 1 crossings, pattern +; bootstrap modal count 1 in 1.00 (3 in 0.00)",REFUTED
+B7,not run: B6 did not hold,NOT RUN
+B8,"onset sigma attn 0.786, mlp 0.848 (plateau from 16 interval)",CONFIRMED
+B9,"attn argmax step 6 (interior True, stab 0.92, margin True); mlp argmax 49 (interior False, stab 0.94, margin False)",REFUTED
+B10,"steepest rise interval attn 0, mlp 0 (g-only 0/0); attn 0.34->0.50, mlp 0.22->0.52",CONFIRMED

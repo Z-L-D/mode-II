@@ -1,0 +1,3 @@
+family,n_lineage,lineage_min,n_unrelated,unrelated_max,separated,ace_mlp_draws_above_0.542,ace_mlp_draw_p05
+Z,4,0.6968404813841144,15,0.23878108139181,True,0.86,0.5352072358005786
+ACE,2,0.5630404505027126,6,0.209236883110172,True,0.86,0.5352072358005786

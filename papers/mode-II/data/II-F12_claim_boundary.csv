@@ -1,0 +1,57 @@
+panel,series,x,status,label,source
+matrix,"scalar envelope (attn $g$ rises, falls late)","content (prompts, themes)",holds,92–100%,review/round6/out/posthoc_R6C.json P1 (prompt bootstraps; ZIT 92%)
+matrix,"scalar envelope (attn $g$ rises, falls late)","fixed weights (CFG, capture)",holds,++− all arms,"review/round6/out/S4_topology.csv (R3/R4 ZIT-25 attn CFG 1, CFG 4 cond/uncond)"
+matrix,"scalar envelope (attn $g$ rises, falls late)","model scale (SD3.5, Qwen)",holds,"M, L ++−",review/round6/out/posthoc_R6C.json P1
+matrix,"scalar envelope (attn $g$ rises, falls late)",distillation (Base↔Turbo),holds,Base ++−,review/ace_base_r14/out/posthoc_backbone_clock.csv Z1 attn ++− (post hoc); ACE Base attn −++ (R14 post hoc)
+matrix,"scalar envelope (attn $g$ rises, falls late)",unrelated architectures,scoped,r .73–.98; U-Net +++,"review/round6/out/S1_hierarchy.csv L0_D1 (S1b); recurs but cannot identify lineage (register T2). SD1.5 U-Net attn (post hoc, cond, t clock): +++ in 100% of bootstraps, no late fall (review/r3_unet/out/P7_clock_topology.csv)"
+matrix,"scalar envelope (attn $g$ rises, falls late)",audio modality (ACE-Step),fails,T −+− / B −++,"review/r3_ace/out/P7_clock_topology.csv ACE-attn: −+− in 100% of 1000 prompt bootstraps, max at sigma=1, 6 steps (post hoc, cond-only); review/ace_base_r14/out/posthoc_backbone_clock.csv ACEB attn −++"
+matrix,"scalar envelope (attn $g$ rises, falls late)",causal gate,not tested,descriptive,"register #23 (post hoc, descriptive)"
+matrix,content geometry (prompt RSA),"content (prompts, themes)",holds,29/30 within-theme,review/round6/out/P2_rsa_robustness.csv / R6C_RESULTS P2 (within-theme p<0.05 in 29 of 30 cells)
+matrix,content geometry (prompt RSA),"fixed weights (CFG, capture)",holds,0.56–0.62,"review/round6/out/S2_rsa.csv ZIT-ZIB = ZIT-25 vs ZIT, same Turbo weights"
+matrix,content geometry (prompt RSA),"model scale (SD3.5, Qwen)",holds,0.31–0.43,review/round6/out/S2_rsa.csv SD35M-SD35L
+matrix,content geometry (prompt RSA),distillation (Base↔Turbo),not tested,not on real Base,not recomputed on the real Base captures
+matrix,content geometry (prompt RSA),unrelated architectures,holds,.13–.43; U-Net .11–.35,"review/round6/out/S2_rsa.csv unrelated pairs, all p 0.0005 (register #19); SD1.5 U-Net attn vs each DiT, 116 prompts, all p 0.0005 (post hoc, review/r3_unet/out/P6_rsa.csv)"
+matrix,content geometry (prompt RSA),audio modality (ACE-Step),not tested,other prompts,ACE-Step used 29 music prompts; no prompts shared with the image archive
+matrix,content geometry (prompt RSA),causal gate,not tested,—,no intervention on content geometry
+matrix,tangent field (depth derivative),"content (prompts, themes)",holds,R² 0.905–0.956,ledger D04 (held-out-theme vector-field R² within model)
+matrix,tangent field (depth derivative),"fixed weights (CFG, capture)",holds,0.94–0.999,"review/round2/out/E10_tangent.csv Mochi CFG 1↔4.5 0.992, ZIT-25↔ZIT 0.943/0.968; review/round5/out/Q_results.json Q2a-c; review/zib_turbo_mixup_2026-10-18/r12/out/r12_tangents.csv Z3↔ZIT 0.990/0.992"
+matrix,tangent field (depth derivative),"model scale (SD3.5, Qwen)",fails,−0.25,review/round6/out/S1_hierarchy.csv SD35M-SD35L L3_tangent
+matrix,tangent field (depth derivative),distillation (Base↔Turbo),scoped,middle tier .71/.72,review/zib_turbo_mixup_2026-10-18/r12/out/r12_tangents.csv Z1↔ZIT 0.707/0.719 (R12-1..5 preregistered); review/ace_base_r14/out/r14_tangents.csv ACE Base↔Turbo 0.850/0.572 (R12-6)
+matrix,tangent field (depth derivative),unrelated architectures,fails,≤ 0.28,"review/round6/out/S1_hierarchy.csv unrelated L3_tangent ≤0.24, inside permutation null (E10); review/zib_turbo_mixup_2026-10-18/r12/out/r12_unrelated_attn.json ≤0.21; review/ace_base_r14/out/posthoc_ace_vs_image_tangents.csv ≤0.27"
+matrix,tangent field (depth derivative),audio modality (ACE-Step),scoped,ACE tier .85/.57,review/ace_base_r14/out/r14_tangents.csv: the lineage tier recurs inside audio (R12-6); ACE vs image models −0.11 to 0.27 (post hoc)
+matrix,tangent field (depth derivative),causal gate,not tested,G1 response,R6C_GATES.md G1: geometry resolved; response/Jacobian not measured
+matrix,σ-axis MLP + − + (Z-Image),"content (prompts, themes)",holds,100%,review/round6/out/S4_topology.csv frac_pmp (S4a)
+matrix,σ-axis MLP + − + (Z-Image),"fixed weights (CFG, capture)",holds,"CFG 1/4, clean",review/round6/out/S4_topology.csv (S4b–d; contraction −49.7% vs −50.5%)
+matrix,σ-axis MLP + − + (Z-Image),"model scale (SD3.5, Qwen)",not tested,no MLP hooks,"R6C_GATES.md ""MLP hooks on other architectures"" (Mode-III)"
+matrix,σ-axis MLP + − + (Z-Image),distillation (Base↔Turbo),fails,Base +++,review/peer_review_2026-10-17/r11/out/r11_clock.csv Base MLP +++ in every variant (R11-6 refuted); review/ace_base_r14/out/posthoc_backbone_clock.csv Z1 mlp +++
+matrix,σ-axis MLP + − + (Z-Image),unrelated architectures,fails,U-Net MLP +++,"review/round6/out/S4_results.json S4e refuted; MLP not captured in Mochi/SD3.5. SD1.5 U-Net MLP (post hoc, cond): +++ in 100% of bootstraps on t, sigma_VP and resolution-shifted clocks, no contraction (review/r3_unet/out/P7_clock_topology.csv)"
+matrix,σ-axis MLP + − + (Z-Image),audio modality (ACE-Step),fails,T −+− / B ++−,"review/r3_ace/out/P7_clock_topology.csv ACE-mlp: −+− in 100% of bootstraps, no +−+ (post hoc); review/ace_base_r14/out/posthoc_backbone_clock.csv ACEB mlp ++−"
+matrix,σ-axis MLP + − + (Z-Image),causal gate,not tested,—,descriptive
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),"content (prompts, themes)",holds,"SD3.5 M, 10 dom.","review/round2/out/E12_beta_topology.csv (10 domains, +−+−, bootstrap 0.635–1.0)"
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),"fixed weights (CFG, capture)",scoped,CFG1 74%; CFG4 4%,review/round6/out/A2_beta_layer_bootstrap.csv ZIT-25 R4 cond MLP
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),"model scale (SD3.5, Qwen)",scoped,L null-generic,"review/round6/out/A2 (M, L 100%) + A4_beta_layer_surrogates.csv (SD3.5 L reproduced by A and B)"
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),distillation (Base↔Turbo),fails,Base 1 crossing,"review/zib_turbo_mixup_2026-10-18/r12/out/r12_8_crossings.csv Z1 attn modal 1 (0.50; 3 in 0.11), MLP 1 in 1.00 (R12-8); ACE Base 1 (R12-7)"
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),unrelated architectures,scoped,"per σ, all 4",R6C_ANALYZER_REPLAY.md A3; A4_beta_layer_per_step.csv
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),audio modality (ACE-Step),fails,"1 crossing, both","review/r3_ace/out/B_scores.csv B6 refuted: attn +− at g*=0.090, 1 crossing in 99/100 prompt bootstraps; review/ace_base_r14/out/r14_B6_boot.csv base 1 crossing in 100/100 (R12-7: modality rule; Z-Image Base also 1)"
+matrix,layer-axis $\beta_{\rm layer}$ + − + − (post hoc),causal gate,not tested,—,no intervention
+matrix,"local linear modes (modulus, complex pairs)","content (prompts, themes)",scoped,CV ≈2.2%; cx 0–1,"ledger card ""Complex local modes are regime-specific"" (script 14)"
+matrix,"local linear modes (modulus, complex pairs)","fixed weights (CFG, capture)",scoped,MLP .002; attn .26,"ledger card script 12 (p=0.00196 MLP, p=0.259 attention); the 25->8-step registration is within Turbo (ZIT-25 -> ZIT)"
+matrix,"local linear modes (modulus, complex pairs)","model scale (SD3.5, Qwen)",not tested,—,not tested
+matrix,"local linear modes (modulus, complex pairs)",distillation (Base↔Turbo),not tested,not on real Base,not recomputed on the real Base captures
+matrix,"local linear modes (modulus, complex pairs)",unrelated architectures,fails,complex pairs < null,Mode-I RC23D: complex pairs 17% of cells vs 67% under layer permutation; modulus above null in 95% = smoothness
+matrix,"local linear modes (modulus, complex pairs)",audio modality (ACE-Step),not tested,—,not tested
+matrix,"local linear modes (modulus, complex pairs)",causal gate,gate required,response / Jacobian,"ledger ""Next gate — rotational current versus representation-space rotation"" (open)"
+matrix,microscopic field $F$ (universal),"content (prompts, themes)",holds,R² 0.894–0.965,"ledger D01 (prompt-held), D04"
+matrix,microscopic field $F$ (universal),"fixed weights (CFG, capture)",holds,R² 0.70–0.89,"ledger D03 control (ZIT-25↔ZIT, same weights); D15 residual 0.437 vs ceiling 0.579"
+matrix,microscopic field $F$ (universal),"model scale (SD3.5, Qwen)",fails,Qwen sizes −0.06,"ledger D13 (LLM population derivative, 3B↔7B −0.064; 1.5B↔7B −0.062)"
+matrix,microscopic field $F$ (universal),distillation (Base↔Turbo),not tested,not on real Base,field transfer not refitted on the real Base captures
+matrix,microscopic field $F$ (universal),unrelated architectures,fails,≈0 / −0.256,"ledger D03 (approx. zero or negative), D15 (−0.256); register T5 DO NOT USE"
+matrix,microscopic field $F$ (universal),audio modality (ACE-Step),scoped,"B4: T yes, B no","not tested across modality; B4 within ACE: turbo dR2 0.60/0.77 (confirmed), base 0.254/0.671 (attn below 0.30, refuted; review/ace_base_r14/out/r14_B_scores.csv)"
+matrix,microscopic field $F$ (universal),causal gate,not tested,—,not claimed
+matrix,separatrix / commitment,"content (prompts, themes)",not tested,gradual onset,review/round6/out/S3_estimators.csv (relative onset 0.84–0.95; no sharp step)
+matrix,separatrix / commitment,"fixed weights (CFG, capture)",not tested,—,not tested
+matrix,separatrix / commitment,"model scale (SD3.5, Qwen)",not tested,—,not tested
+matrix,separatrix / commitment,distillation (Base↔Turbo),not tested,—,not tested
+matrix,separatrix / commitment,unrelated architectures,not tested,—,not tested
+matrix,separatrix / commitment,audio modality (ACE-Step),not tested,—,not tested
+matrix,separatrix / commitment,causal gate,gate required,G3 committor,R6C_GATES.md G3: clone continuations required before any commitment wording

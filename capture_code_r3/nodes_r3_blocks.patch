@@ -1,0 +1,248 @@
+--- capture_code_r2/nodes.py	2026-10-06 22:52:20.957602000 +0000
++++ capture_code_r3/nodes.py	2026-10-08 17:02:44.827750000 +0000
+@@ -65,6 +65,58 @@
+             return None
+     return current
+ 
++
++def _linearize_unet(dm):
++    """R3: transformer blocks of a ComfyUI UNetModel (SD1.5 / SDXL) in forward order:
++    input_blocks -> middle_block -> output_blocks, each SpatialTransformer's
++    transformer_blocks in turn. Shared by the EMAG and Passive guiders."""
++    found = []
++    def walk(module):
++        for name, child in module.named_children():
++            if hasattr(child, 'attn1') or hasattr(child, 'attn2'):
++                found.append(child)
++            elif hasattr(child, 'transformer_blocks'):
++                found.extend(tb for tb in child.transformer_blocks
++                             if hasattr(tb, 'attn1') or hasattr(tb, 'attn2'))
++            elif (name in ('input_blocks', 'output_blocks', 'middle_block')
++                  or isinstance(child, torch.nn.ModuleList)):
++                walk(child)
++            elif any(hasattr(gc, 'transformer_blocks') or hasattr(gc, 'attn1')
++                     for gc in child.children()):
++                walk(child)
++    walk(dm)
++    return found
++
++
++def _as_block_seq(seq):
++    """R3: list of block modules. list() on an nn.ModuleDict returns its key
++    strings (Cosmos-1 GeneralDIT 'blocks'), which silently registered 0 hooks."""
++    if isinstance(seq, (torch.nn.ModuleDict, dict)):
++        return list(seq.values())
++    return list(seq)
++
++def _same_width(mvecs, keys):
++    """R3: True if the stored mean vectors under keys all have one shape."""
++    shapes = {tuple(mvecs[k].shape) for k in keys}
++    return len(shapes) == 1
++
++def _resolve_block_list(dm, block_path):
++    """R3: resolve a registry block_path to a list of blocks, or None.
++    Accepts a dotted path ('decoder.layers', ACE-Step 1.5), a composite
++    ('double_blocks + single_blocks', Flux/Hunyuan/Chroma) and UNET_LINEARIZE.
++    The R2 code used hasattr(dm, block_path), which fails on all three."""
++    if not block_path or block_path == 'NEEDS_DISCOVERY':
++        return None
++    if block_path == 'UNET_LINEARIZE':
++        return _linearize_unet(dm) or None
++    blocks = []
++    for part in block_path.split('+'):
++        seq = _resolve_dotted_attr(dm, part.strip())
++        if seq is None:
++            return None
++        blocks.extend(_as_block_seq(seq))
++    return blocks or None
++
+ # =============================================================================
+ # Sampler Node
+ # =============================================================================
+@@ -1167,9 +1219,8 @@
+             attn_cfg = reg_entry.get('attn_attrs', {})
+             self_attn_paths = attn_cfg.get('self_attn', [])
+             
+-            if (block_path not in ('NEEDS_DISCOVERY', 'UNET_LINEARIZE')
+-                    and hasattr(dm, block_path)):
+-                blocks = getattr(dm, block_path)
++            blocks = _resolve_block_list(dm, block_path)
++            if blocks is not None:
+                 if len(blocks) > 0:
+                     # Validate: check that at least one attn path resolves on block[0]
+                     resolved = False
+@@ -1212,7 +1263,7 @@
+         # --- Step 2: Auto-detect DiT/MMDiT (flat structure) ---
+         for attr in ('transformer_blocks', 'joint_blocks', 'blocks', 'layers'):
+             if hasattr(dm, attr):
+-                blocks = getattr(dm, attr)
++                blocks = _as_block_seq(getattr(dm, attr))
+                 if len(blocks) > 0:
+                     # In block hook mode, accept any block list — we hook the
+                     # block itself, no attn sub-module needed
+@@ -1243,31 +1294,7 @@
+                             print(f"[CoS-EMAG DEBUG] child modules: {children[:20]}")
+         
+         # --- Step 3: UNet linearization ---
+-        unet_blocks = []
+-        
+-        def _extract_transformer_blocks(module, path=""):
+-            """Recursively find BasicTransformerBlock-like modules."""
+-            for name, child in module.named_children():
+-                child_path = f"{path}.{name}" if path else name
+-                if hasattr(child, 'attn1') or hasattr(child, 'attn2'):
+-                    unet_blocks.append(child)
+-                elif hasattr(child, 'transformer_blocks'):
+-                    for tb in child.transformer_blocks:
+-                        if hasattr(tb, 'attn1') or hasattr(tb, 'attn2'):
+-                            unet_blocks.append(tb)
+-                elif (name in ('input_blocks', 'output_blocks', 'middle_block')
+-                      or isinstance(child, torch.nn.ModuleList)):
+-                    _extract_transformer_blocks(child, child_path)
+-                elif (hasattr(child, 'children')
+-                      and len(list(child.children())) > 0):
+-                    has_spatial = any(
+-                        hasattr(gc, 'transformer_blocks') or hasattr(gc, 'attn1')
+-                        for gc in child.children()
+-                    )
+-                    if has_spatial:
+-                        _extract_transformer_blocks(child, child_path)
+-        
+-        _extract_transformer_blocks(dm)
++        unet_blocks = _linearize_unet(dm)
+         
+         if unet_blocks:
+             if self._log_steps:
+@@ -2353,8 +2380,11 @@
+                 phi_val = 0.0
+                 phi_skip_val = 0.0
+ 
++                # R3: UNet levels change width; a cosine across a width change is undefined (nan)
++                if _i >= 2 and not _same_width(_mvecs, _sorted_keys[_i - 2:_i + 1]):
++                    phi_val = float('nan')
+                 # phi_micro: stride-1, needs i >= 2
+-                if _i >= 2:
++                elif _i >= 2:
+                     _prev_prev = _sorted_keys[_i - 2]
+                     _prev = _sorted_keys[_i - 1]
+                     _delta_prev = _mvecs[_prev] - _mvecs[_prev_prev]
+@@ -2365,7 +2395,9 @@
+                         phi_val = (_delta_prev @ _delta_curr / (_np * _nc)).item()
+ 
+                 # phi_micro_skip: stride-2 (delta(i-2) vs delta(i)), needs i >= 3
+-                if _i >= 3:
++                if _i >= 3 and not _same_width(_mvecs, _sorted_keys[_i - 3:_i + 1]):
++                    phi_skip_val = float('nan')
++                elif _i >= 3:
+                     _two_back_prev = _sorted_keys[_i - 3]
+                     _two_back_curr = _sorted_keys[_i - 2]
+                     _delta_two_back = _mvecs[_two_back_curr] - _mvecs[_two_back_prev]
+@@ -3025,7 +3057,19 @@
+         branches = self._cur_branches or self._root_branches
+         if not self._split_branches:
+             branches = None
+-        if (branches and activation.dim() >= 3
++        bdim = ((self._registry_config or {}).get('batch_dim') or {}).get(label)
++        if bdim and branches and len(branches) > 1 and activation.dim() > bdim:
++            # R3: sequence-first layouts (Cosmos-1 GeneralDIT: attn (THW, B, D),
++            # MLP (T, H, W, B, D)) carry the CFG batch on another axis.
++            activation = activation.movedim(bdim, 0)
++        if branches and len(branches) == 1:
++            # R3: one branch in this forward owns the whole activation, whatever its
++            # layout (MiniMax H3 packs one sample into a 2-D [tokens, D] tensor,
++            # which the batch split below would wrongly cut along tokens).
++            name = 'cond' if branches[0] == 0 else 'uncond'
++            self._capture_core(layer_idx, sub_pos, activation, label,
++                               key=(layer_idx, sub_pos, name))
++        elif (branches and activation.dim() >= 3
+                 and activation.shape[0] % len(branches) == 0):
+             chunks = activation.chunk(len(branches), dim=0)
+             for b, chunk in zip(branches, chunks):
+@@ -3127,23 +3171,32 @@
+         reg = _MODEL_REGISTRY.get(dm_class)
+         if reg is not None:
+             block_path = reg.get('block_path', 'NEEDS_DISCOVERY')
+-            if (block_path not in ('NEEDS_DISCOVERY', 'UNET_LINEARIZE')
+-                    and hasattr(dm, block_path)):
+-                blocks = list(getattr(dm, block_path))
+-                if len(blocks) > 0:
+-                    self._registry_config = reg
+-                    if self._log_steps:
+-                        print(f"[CoS-Passive] Registry match: {dm_class} → "
+-                              f"{len(blocks)} blocks via '{block_path}'")
+-                    return blocks
++            blocks = _resolve_block_list(dm, block_path)
++            if blocks:
++                self._registry_config = reg
++                if self._log_steps:
++                    print(f"[CoS-Passive] Registry match: {dm_class} → "
++                          f"{len(blocks)} blocks via '{block_path}'")
++                return blocks
++            print(f"[CoS-Passive] Registry entry {dm_class}: block_path "
++                  f"'{block_path}' did not resolve; trying auto-detect")
+         
+         for attr in ('transformer_blocks', 'joint_blocks', 'blocks', 'layers'):
+             if hasattr(dm, attr):
+-                blocks = list(getattr(dm, attr))
++                blocks = _as_block_seq(getattr(dm, attr))
+                 if len(blocks) > 0:
+                     if self._log_steps:
+                         print(f"[CoS-Passive] Auto-detected blocks via '{attr}': {len(blocks)}")
+                     return blocks
++        # R3: UNet (SD1.5 / SDXL) has no flat block list; R2 returned [] here.
++        blocks = _linearize_unet(dm)
++        if blocks:
++            print(f"[CoS-Passive] {dm_class}: {len(blocks)} UNet transformer blocks "
++                  f"(linearized); not in the registry, so attn1 / ff fallbacks are used")
++            return blocks
++        print(f"[CoS-Passive] *** No transformer blocks found for {dm_class}; "
++              f"no telemetry will be written. Children: "
++              f"{[n for n, _ in dm.named_children()][:12]}")
+         return []
+     
+     def _register_hooks(self, blocks):
+@@ -3384,6 +3437,19 @@
+             model_options = dict(model_options)
+             model_options['model_function_wrapper'] = _branch_wrapper
+         
++        # R3: some architectures need a transformer option for consistent capture
++        # (Qwen-Image 2.1's prefix K/V cache runs text rows once, then image rows
++        # only, so hooks would see different sequences per step). The registry
++        # entry's 'transformer_options_set' is merged in for this guider's calls.
++        tos = (self._registry_config or {}).get('transformer_options_set')
++        if tos:
++            model_options = dict(model_options)
++            to = dict(model_options.get('transformer_options', {}))
++            to.update(tos)
++            model_options['transformer_options'] = to
++            if is_new:
++                print(f"[CoS-Passive] registry transformer options applied: {tos}")
++        
+         # Standard 2-pass CFG forward — clean, no perturbation
+         try:
+             self.cfg = self._cfg_value
+@@ -3409,7 +3475,12 @@
+                 key = sorted_keys[i]
+                 phi_val = 0.0
+                 phi_skip_val = 0.0
+-                if i >= 2:
++                mv = self._micro_mean_vectors
++                if i >= 2 and not _same_width(mv, sorted_keys[i - 2:i + 1]):
++                    # R3: UNet levels change width (SD1.5 320/640/1280), so a step
++                    # across a level boundary has no direction cosine. Left blank.
++                    phi_val = None
++                elif i >= 2:
+                     pp = sorted_keys[i - 2]
+                     p = sorted_keys[i - 1]
+                     dp = self._micro_mean_vectors[p] - self._micro_mean_vectors[pp]
+@@ -3417,7 +3488,9 @@
+                     np_, nc = dp.norm(), dc.norm()
+                     if np_ > 1e-8 and nc > 1e-8:
+                         phi_val = (dp @ dc / (np_ * nc)).item()
+-                if i >= 3:
++                if i >= 3 and not _same_width(mv, sorted_keys[i - 3:i + 1]):
++                    phi_skip_val = None
++                elif i >= 3:
+                     tbp = sorted_keys[i - 3]
+                     tbc = sorted_keys[i - 2]
+                     p = sorted_keys[i - 1]

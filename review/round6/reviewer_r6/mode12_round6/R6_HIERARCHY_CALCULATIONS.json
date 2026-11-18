@@ -1,0 +1,8 @@
+{
+  "scalar_reversal_margin_ZIBMochi_minus_ZIBZITattn": 0.008000000000000007,
+  "shape_lineage_margin_min_vs_unrelated_upper": 0.14200000000000002,
+  "tangent_lineage_margin_attn_vs_unrelated_upper": 0.703,
+  "tangent_lineage_margin_mlp_vs_unrelated_upper": 0.728,
+  "semantic_lineage_mean": 0.6846666666666666,
+  "semantic_lineage_minus_unrelated_early": 0.5656666666666667
+}

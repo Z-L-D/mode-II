@@ -1,0 +1,9 @@
+arm,var,topology,frac_pmp
+Base,V0,+++,0.0
+Turbo,V0,+-+,1.0
+Base,V1,+++,0.0
+Turbo,V1,+++,0.0
+Base,V3,+++,0.0
+Turbo,V3,+++,0.0
+Base,V4,++-,0.0
+Turbo,V4,+++,0.0

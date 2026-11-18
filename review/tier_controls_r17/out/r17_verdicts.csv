@@ -1,0 +1,7 @@
+id,test,verdict,detail
+R17-0a/b,>= 58 complete gens per session; every block hooked,PASS,"PIXART attn: 60 gens, 28/28 blocks; PIXART mlp: 60 gens, 28/28 blocks; COSMOS2B attn: 60 gens, 28/28 blocks; COSMOS2B mlp: 60 gens, 28/28 blocks; SD3M attn: 60 gens, 24/24 blocks; SD35M attn: 60 gens, 24/24 blocks"
+R17-0c,right checkpoints (step-0 r),FAIL,"PixArt vs Cosmos attn 0.098, mlp 0.668; SD3 M vs SD3.5 M 0.940; SD3.5 M recapture vs R11 1.000"
+R17-1,"PixArt <-> Cosmos tangent below its null p95, attn and mlp",REFUTED (bottom tier did not replicate),attn 0.303 (p95 0.251); mlp 0.687 (p95 0.206)
+R17-2,SD3 M <-> SD3.5 M (attn): decision rule,MIDDLE TIER,0.926 (p95 0.260; middle needs >= 0.560 and <= 0.95)
+R17-3,same-weights references: cond<->uncond >= 0.90; SD3.5 M recapture vs R11 >= 0.94,SUPPORTED,PIXART attn 0.996; PIXART mlp 0.998; COSMOS2B attn 0.995; COSMOS2B mlp 0.993; SD3M attn 0.995; SD35M attn 0.995; recapture vs R11 0.980
+R17-4,recapture <-> R11 > SD3 M <-> SD3.5 M,SUPPORTED,0.980 vs 0.926

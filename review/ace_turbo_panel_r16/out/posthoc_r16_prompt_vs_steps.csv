@@ -1,0 +1,25 @@
+test,a,sub,tangent,lo
+T_k <-> T6,T1,attn,0.9268544602350713,
+T_k <-> T6,T2,attn,0.935522519600835,
+T_k <-> T6,T3,attn,0.9379279191027301,
+T_k <-> T6,T4,attn,0.9339615255202312,
+T_k <-> T6,T5,attn,0.9286858610883957,
+T_k <-> T6,T7,attn,0.9240565112882059,
+T_k <-> T6,T8,attn,0.9178222544593783,
+T_k <-> T6,T9,attn,0.9170843033732969,
+T_k <-> T6,T10,attn,0.917999025533835,
+"T8 seed_a <-> seed_b (same prompts, same steps)",T8a,attn,0.988822664552479,
+"T6 prompt-half <-> other half (different prompts, same steps), mean of 50 splits",T6,attn,0.9805215927393399,0.9449647982176931
+"T8 prompt-half <-> other half, mean of 50 splits",T8,attn,0.9895536108140519,0.9762317772813492
+T_k <-> T6,T1,mlp,0.7732554937895233,
+T_k <-> T6,T2,mlp,0.7807734575871248,
+T_k <-> T6,T3,mlp,0.6995472949094014,
+T_k <-> T6,T4,mlp,0.7335967024423247,
+T_k <-> T6,T5,mlp,0.7268221500163989,
+T_k <-> T6,T7,mlp,0.7968640261625064,
+T_k <-> T6,T8,mlp,0.821363671389416,
+T_k <-> T6,T9,mlp,0.8200728122543048,
+T_k <-> T6,T10,mlp,0.8291237813012176,
+"T8 seed_a <-> seed_b (same prompts, same steps)",T8a,mlp,0.9735216148169312,
+"T6 prompt-half <-> other half (different prompts, same steps), mean of 50 splits",T6,mlp,0.931439737140037,0.8500971045424293
+"T8 prompt-half <-> other half, mean of 50 splits",T8,mlp,0.9577717997201032,0.9215487246005658

@@ -1,0 +1,8 @@
+id,test,verdict,detail
+R12-6,ACE Base <-> ACE Turbo tangent >= null p95 + 0.30 and <= 0.95 (attn and mlp),SUPPORTED,attn 0.850 (p95 0.316 + 0.30 = 0.616); mlp 0.572 (p95 0.242 + 0.30 = 0.542)
+R14-1,gpu0 vs gpu1: tangent >= 0.95 and field r >= 0.98,SUPPORTED,"attn tangent 0.992, field r 0.9978; mlp tangent 0.972, field r 0.9983"
+R14-2,"Base log g < Turbo in >= 18/24 layers (sigma-matched), attn and mlp",REFUTED,"attn 14/24, mlp 10/24"
+R14-3,Base cond <-> uncond tangent >= 0.90,SUPPORTED,"attn 0.997, mlp 0.964"
+R14-4,Base MLP: L23 below median(L12-22) by > 0.20 (log g),SUPPORTED,"Base drop 2.303 (Turbo, descriptive: 1.874)"
+R14-5,"attn even > odd (Turbo sign) in >= 80% of (gen, step) cells",SUPPORTED,"attn even>odd share 1.000, median diff 1.165; mlp (descriptive) even>odd 0.922, median 0.077"
+R14-6,E6 ANOVA prompt share at last step >= 0.70,REFUTED,"attn 0.481, mlp 0.518"

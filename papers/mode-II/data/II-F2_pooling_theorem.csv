@@ -1,0 +1,141 @@
+panel,series,x,y,count_energy_weighted,count_unweighted,pairs,median_log_gap,source
+a,summary,violations_energy_weighted,0.0,,,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,summary,violations_unweighted,1000.0,,,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,summary,violations_sqrt_corollary,841.0,,,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,summary,n_sim,20000.0,,,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.99,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.97,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.95,,0.0,1.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.9299999999999999,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.91,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.89,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.87,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.85,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.8300000000000001,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.81,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.79,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.77,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.75,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.73,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.71,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.69,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.6699999999999999,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.6499999999999999,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.63,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.61,,0.0,2.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.5900000000000001,,0.0,1.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.5700000000000001,,0.0,1.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.55,,0.0,2.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.53,,0.0,2.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.51,,0.0,2.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.49,,0.0,6.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.47,,0.0,2.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.44999999999999996,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.43,,0.0,5.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.41000000000000003,,0.0,5.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.39,,0.0,10.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.37,,0.0,7.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.35,,0.0,11.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.32999999999999996,,0.0,14.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.30999999999999994,,0.0,13.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.29,,0.0,12.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.27,,0.0,30.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.25,,0.0,29.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.22999999999999998,,0.0,20.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.20999999999999996,,0.0,37.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.18999999999999995,,0.0,35.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.16999999999999998,,0.0,55.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.15000000000000002,,0.0,58.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.13,,0.0,68.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.10999999999999999,,0.0,59.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.08999999999999997,,0.0,86.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.06999999999999995,,0.0,85.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.04999999999999999,,0.0,101.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.030000000000000027,,0.0,102.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),-0.010000000000000009,,0.0,139.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.010000000000000009,,153.0,142.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.030000000000000027,,123.0,188.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.050000000000000044,,116.0,217.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.07000000000000006,,155.0,219.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.09000000000000008,,179.0,252.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.1100000000000001,,204.0,234.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.13000000000000012,,196.0,281.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.15000000000000002,,247.0,291.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.16999999999999993,,299.0,351.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.18999999999999995,,350.0,349.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.20999999999999996,,395.0,374.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.22999999999999998,,433.0,416.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.25,,523.0,410.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.27,,537.0,513.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.29000000000000004,,568.0,527.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.31000000000000005,,688.0,631.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.33000000000000007,,691.0,665.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.3500000000000001,,762.0,662.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.3700000000000001,,833.0,740.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.3900000000000001,,916.0,804.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.41000000000000003,,1009.0,850.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.42999999999999994,,1051.0,919.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.44999999999999996,,1110.0,992.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.47,,1082.0,1015.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.49,,1153.0,1017.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.51,,1112.0,1014.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.53,,1042.0,976.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.55,,963.0,874.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.5700000000000001,,893.0,801.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.5900000000000001,,750.0,758.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.6100000000000001,,595.0,631.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.6300000000000001,,464.0,441.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.6500000000000001,,283.0,328.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.67,,111.0,114.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.69,,14.0,4.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.71,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.73,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.75,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.77,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+a,histogram of log(g_pool/gbar),0.79,,0.0,0.0,,,"illustration: Monte Carlo, 20000 random PSD branch pairs (D 2-32, log-normal energy ratio), seed 2026"
+b,"median log(g_pooled/g_branch-mean), steps>=2",1024,0.04026112405376071,,,60.0,1.5159459526538039e-05,review/round5/out/Q_results.json: Q1c_median_log_g_pooled_over_BM_steps>=2
+b,"median log(g_pooled/g_branch-mean), steps>=2",768,0.05026758917260794,,,29.0,2.2204460492503128e-16,review/round5/out/Q_results.json: Q1d_768_median_log_g_pooled_over_BM_steps>=2
+b,"median log(g_pooled/g_branch-mean), steps>=2",512,0.08809448156416477,,,29.0,-2.5296294513008334e-05,review/round5/out/Q_results.json: Q1d_512_median_log_g_pooled_over_BM_steps>=2
+b,Q1e sqrt corollary,frac_cells_bound_holds,1.0,,,,,"review/round5/out/Q_results.json: Q1e_frac_cells_bound_holds, Q1e_median_slack_log, Q1f_spearman_excess_vs_1-PI"
+b,Q1e sqrt corollary,median_slack_log,0.02197118002080734,,,,,"review/round5/out/Q_results.json: Q1e_frac_cells_bound_holds, Q1e_median_slack_log, Q1f_spearman_excess_vs_1-PI"
+b,Q1e sqrt corollary,spearman_excess_vs_1-PI,0.831926169080963,,,,,"review/round5/out/Q_results.json: Q1e_frac_cells_bound_holds, Q1e_median_slack_log, Q1f_spearman_excess_vs_1-PI"
+c,1024 by step,0,0.2706,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,1,0.2645,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,2,0.2213,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,3,0.1894,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,4,0.1682,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,5,0.1504,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,6,0.1372,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,7,0.1261,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,8,0.1164,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,9,0.1073,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,10,0.0999,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,11,0.0926,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,12,0.0855,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,13,0.079,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,14,0.0731,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,15,0.068,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,16,0.0631,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,17,0.0583,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,18,0.0545,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,19,0.0502,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,20,0.0464,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,21,0.043,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,22,0.0392,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,23,0.0359,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,24,0.0327,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,25,0.0299,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,26,0.0272,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,27,0.025,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,28,0.0232,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,29,0.0218,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,30,0.0203,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,31,0.0187,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,32,0.0173,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,33,0.0158,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,34,0.0141,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,35,0.0127,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,36,0.0115,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,37,0.0105,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,38,0.0097,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step
+c,1024 by step,39,0.0088,,,,,review/round5/out/Q_results.json: Q1c_median_log_g_by_step

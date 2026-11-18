@@ -1,0 +1,53 @@
+{
+ "R1f_frozen_def": {
+  "median": 0.637027780427693,
+  "quarters": [
+   1.0012321531262194,
+   0.8987322866497562,
+   0.5809146329428159,
+   0.4546043944314998
+  ]
+ },
+ "R1f_v016_def": {
+  "median": 0.5746463186086345,
+  "quarters": [
+   1.0030092684136673,
+   0.7724229445727112,
+   0.5454485386884169,
+   0.4560321049310425
+  ]
+ },
+ "sigma50_CFG1_cond": {
+  "reviewer_order_uncentred": 0.9528961084524173,
+  "reviewer_order_centred": 0.6314005491708544,
+  "claude_order_uncentred": 0.9352510420770603,
+  "claude_order_centred": 0.48444730987821427
+ },
+ "sigma50_CFG45_cond": {
+  "reviewer_order_uncentred": 0.6321633448133637,
+  "reviewer_order_centred": 0.5955518662844789,
+  "claude_order_uncentred": 0.624148939793258,
+  "claude_order_centred": 0.5714406705567222
+ },
+ "sigma50_CFG45_uncond": {
+  "reviewer_order_uncentred": 0.6121489051440436,
+  "reviewer_order_centred": 0.5706320788916791,
+  "claude_order_uncentred": 0.5962406589186134,
+  "claude_order_centred": 0.5278384140866239
+ },
+ "legacy_sigma_grid": {
+  "max_same_index_diff": 0.181579
+ },
+ "legacy_native": {
+  "signs": "-+-+-",
+  "n_cross": 4,
+  "crossings": "0.00524-+;0.00983+-;0.02132-+;0.03381+-",
+  "TRI": 0.25962260090365674
+ },
+ "legacy_thinned_to_passive_grid": {
+  "signs": "-+-+-",
+  "n_cross": 4,
+  "crossings": "0.00534-+;0.01008+-;0.02247-+;0.03452+-",
+  "TRI": 0.32378688175289977
+ }
+}

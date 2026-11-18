@@ -1,0 +1,12 @@
+{
+ "n_prompts": 117,
+ "len_chars_median": 164.0,
+ "len_chars_range": [
+  130.0,
+  188.0
+ ],
+ "R8-12": [
+  "survives the length control",
+  "24/24 unrelated (pair, step) cells keep p <= 0.01 and partial >= 0.8 x full; min ratio 0.998; max |r(RDM, length)| 0.053"
+ ]
+}

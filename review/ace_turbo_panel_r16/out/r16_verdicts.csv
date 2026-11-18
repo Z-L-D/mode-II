@@ -1,0 +1,10 @@
+id,test,verdict,detail
+R16-0,"every arm: step-0 r with T6 >= 0.85 and with Base < 0.85 (attn, mlp)",PASS,r with T6 0.863-0.927; r with Base 0.169-0.383; failing: []
+R16-1,"T8 <-> T6 tangent >= 0.94, attn and mlp",REFUTED,attn 0.918; mlp 0.821
+R16-2,"Base <-> T8 tangent >= p95 + 0.30 and <= 0.95, attn and mlp",SUPPORTED,attn 0.795 (p95 0.337 + 0.30 = 0.637); mlp 0.594 (p95 0.229 + 0.30 = 0.529)
+R16-3,"Base <-> T8 within 0.10 of Base <-> T6 (0.850 attn, 0.572 mlp)",SUPPORTED,attn 0.795 vs 0.850 (diff -0.055); mlp 0.594 vs 0.572 (diff +0.022)
+R16-4,"T_k <-> T8 >= 0.94 for k in {3,4,5,7,9,10}, attn and mlp (12 tests)",REFUTED,min 0.906; below 0.94: ['T3 mlp 0.906']
+R16-5,T8 attn: 1 crossing modal in >= 50% of prompt bootstraps,SUPPORTED,"point 1 (+); 1 crossing in 0.94; dist {1: 94, 3: 6}"
+R16-6,"MLP L23 below median(L12-22) by > 0.20, T8 and every k >= 2",SUPPORTED,k1 1.55; k2 1.61; k3 1.64; k4 1.67; k5 1.69; k7 1.76; k8 1.78; k9 1.80; k10 1.83
+R16-7,"attn even > odd in >= 80% of (gen, step) cells, T8 and every T_k",SUPPORTED,k1 1.00; k2 1.00; k3 1.00; k4 1.00; k5 1.00; k7 1.00; k8 1.00; k9 1.00; k10 1.00
+R16-8,"T8 final-step E6 prompt share >= 0.70, attn and mlp",REFUTED,"attn 0.692, mlp 0.593"

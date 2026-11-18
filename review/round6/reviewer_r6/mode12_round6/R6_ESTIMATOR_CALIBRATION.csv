@@ -1,0 +1,23 @@
+quantity,condition,estimate,p5,p95,note
+sigma50,archive SD35M CFG4.5 BM (60 prompts) centred=False,0.7199207230926172,0.6927075580239741,0.7375169592006652,sample-size/fold sensitive
+relative_onset,archive SD35M CFG4.5 BM (60 prompts) centred=False,0.8671634449894794,0.8571958577643725,0.8795457830296325,more stable publication metric
+sigma50,archive SD35M CFG4.5 BM (60 prompts) centred=False,0.9173785119892328,0.9125584339006481,0.9217275549145584,sample-size/fold sensitive
+relative_onset,archive SD35M CFG4.5 BM (60 prompts) centred=False,0.951637921442198,0.9479803515151078,0.9541718809838897,more stable publication metric
+sigma50,archive SD35M CFG4.5 BM (120 prompts) centred=False,0.8428660087553305,0.8349543093384872,0.8474734391269173,sample-size/fold sensitive
+relative_onset,archive SD35M CFG4.5 BM (120 prompts) centred=False,0.9145019033889311,0.9076996393648799,0.9210113502864941,more stable publication metric
+sigma50,archive SD35M CFG4.5 BM (120 prompts) centred=False,0.9357249786806052,0.9325448485501078,0.9373488264650979,sample-size/fold sensitive
+relative_onset,archive SD35M CFG4.5 BM (120 prompts) centred=False,0.9559317667226594,0.9528245658321576,0.9576194555926483,more stable publication metric
+sigma50,"R3 CFG1 cond-only, 60 prompts centred=False",0.9911793957673515,0.9883825889054306,0.9928182211166242,sample-size/fold sensitive
+relative_onset,"R3 CFG1 cond-only, 60 prompts centred=False",1.0,0.9986780950007561,1.0,more stable publication metric
+sigma50,"R3 CFG1 cond-only, 60 prompts centred=True",0.7286359066719607,0.6935108860992619,0.7573694802338016,sample-size/fold sensitive
+relative_onset,"R3 CFG1 cond-only, 60 prompts centred=True",0.9165874395018061,0.8780526303130778,0.938248063282881,more stable publication metric
+sigma50,new CFG1 cond (30 prompts) centred=False,0.9464284010347979,0.9355664199151018,0.9543837742606847,sample-size/fold sensitive
+relative_onset,new CFG1 cond (30 prompts) centred=False,0.9872285942429776,0.9815713280151191,0.9900588446510886,more stable publication metric
+sigma50,new CFG1 cond (30 prompts) centred=True,0.5272521558629073,0.48107869208406456,0.5801549735962949,sample-size/fold sensitive
+relative_onset,new CFG1 cond (30 prompts) centred=True,0.904983779233907,0.854755224670033,0.9264203355520142,more stable publication metric
+VR4_null,walk_30x2_VR4,0.8264954949716473,0.8149881048680401,0.8391148529438572,calibration reference
+VR4_null,walk_1x15_VR4,0.817968709883707,0.7942864851914416,0.8350608226862005,calibration reference
+VR4_null,ar1_0.8_30x2_VR4,0.7204398280273279,0.7107809392768288,0.727678624673382,calibration reference
+VR4_null,ar1_0.8_1x15_VR4,0.7031246911327762,0.6936640717106908,0.7188281139736997,calibration reference
+VR4_null,iid_30x2_VR4,0.24974024320782448,0.24770496851008575,0.25204381689444244,calibration reference
+VR4_null,iid_1x15_VR4,0.250371765750955,0.24802365819853173,0.2539150563680472,calibration reference

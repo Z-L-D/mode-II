@@ -1,0 +1,1169 @@
+{
+  "_comment": "CoS-PAFS Model Hook Registry v2.0. Non-commutativity analysis added. Maps model architectures to their transformer block paths, attention attribute names, and MLP/FFN attribute names. Used by the EMAG guider for hook registration and by the measurement system for passive g/phi capture. v2.0 adds nc_source (non-commutativity classification) and pred_crossings for each architecture. v2.1 (R3, 2026-10-08): UNetModel and ACE-Step added. v3.0 (2026-10-08): every key is ComfyUI's diffusion_model class name, checked against ComfyUI master 58b176f with real-class forward tests (capture_code_r3/tests). Dead diffusers-named keys removed; Ideogram 4, Krea 2, MiniMax H3, Qwen-Image 2.1, Flux 1/2, Chroma, HunyuanVideo/Image, Wan family, LTX, Cosmos, HiDream, OmniGen2, Kandinsky 5 and Anima added or fixed. verified stays false until one real sampler run.",
+  "_version": "3.0",
+  "_schema_notes": {
+    "block_path": "Dotted path from the transformer model root to the iterable of transformer blocks. UNET_LINEARIZE flags special handling for nested UNet structures. NEEDS_DISCOVERY flags entries awaiting a discovery pass (cos_pafs_discover.py or manual inspection). v3.0: an nn.ModuleDict is iterated by value.",
+    "attn_attrs": "Dotted paths from a single block instance to attention output-projection modules whose forward() fires exactly once per block forward pass. self_attn for self-attention, cross_attn for cross-attention. __block__ is a sentinel for block-level passive measurement when sub-attention forward() never fires (joint attention).",
+    "mlp_attrs": "Dotted paths from a single block instance to the MLP/FFN output-projection module(s). NEW v1.5. Required for dual-hook (sublattice) telemetry. The hook should fire on the FINAL Linear/Conv inside the MLP — typically down_proj (Llama), fc2 (GELU MLP), w2 (SwiGLU NextDiT), to_out (Diffusers). NEEDS_DISCOVERY flags entries to be discovered. Empty list disables MLP hooking for this architecture (legacy single-hook mode).",
+    "dual_hook_supported": "true if mlp_attrs.mlp has been verified to fire exactly once per block forward pass and produces meaningful telemetry. false otherwise — single-hook (attn-only) mode will be used.",
+    "verified": "true if attn_attrs has been confirmed via discovery + one full sampler run with non-zero g_micro on every block. Independent of dual_hook_supported.",
+    "nc_source": "Non-commutativity source classification. Determines predicted crossing count. Values: single_stream (homogeneous, pred 1), dual_stream (separate weights per modality, pred >=2), cross_attn (text cross-attention, pred 1-2), asymm_stream (asymmetric separate MLPs, pred >=2), expert_adaln (modality-specific normalization, pred 1-2), gqa_high (GQA ratio >=7, pred >=3), gqa_low (GQA ratio <=4, pred 1), mha (full MHA, pred 1), mqa (single KV head, pred 1), mla (latent KV compression, pred unknown).",
+    "pred_crossings": "Predicted cloud beta(g) crossing count based on non-commutativity analysis. Format: 'N' or 'N-M' range.",
+    "class_checked": "What was checked against real ComfyUI classes, and on which commit.",
+    "transformer_options_set": "Optional dict merged into model_options.transformer_options by the Passive guider (Qwen-Image 2.1 prefix cache off).",
+    "batch_dim": "Optional {\"attn\": i, \"mlp\": j}: axis of the hooked output that carries the CFG batch, for sequence-first models (Cosmos-1 GeneralDIT). Default 0."
+  },
+  "ACEStepTransformer2DModel": {
+    "description": "ACE-Step v1 (audio DiT with linear self-attention)",
+    "models": [
+      "acestep-v1-3.5b"
+    ],
+    "block_path": "transformer_blocks",
+    "block_count": 28,
+    "hidden_dim": 1536,
+    "attn_attrs": {
+      "self_attn": [
+        "attn.to_out.0"
+      ],
+      "cross_attn": [
+        "cross_attn.to_out.0"
+      ],
+      "note": "LinearTransformerBlock: attn uses the linear-attention (LiteLA, ReLU kernel) processor; cross_attn is softmax cross-attention. to_out = ModuleList(Linear, Dropout)."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ff"
+      ],
+      "note": "GLUMBConv (inverted conv, depthwise conv, GLU, point conv). Its last op is a Conv1d on (B, C, N), so hook the module itself, whose output is (B, N, C)."
+    },
+    "notes": "Was auto-detected by R2 through transformer_blocks, but the registry key AceStepTransformer never matched, so MLP paths were not used. 24 heads x 64. Latent 8 channels x 16 bins at 44100/512/8 = 10.77 frames/s, one token per frame. Checked on the real class (ComfyUI master 58b176f (2026-10-08)).",
+    "verified": false,
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "?",
+    "nc_notes": "Linear self-attention is low-rank by construction (rank <= head_dim per head), so attention-output spectra are not comparable with softmax DiTs without that caveat.",
+    "comfyui_class": "ACEStep",
+    "comfyui_unet_model": "comfy.ldm.ace.model.ACEStepTransformer2DModel"
+  },
+  "AceStepConditionGenerationModel": {
+    "description": "ACE-Step 1.5 (audio DiT decoder inside AceStepConditionGenerationModel)",
+    "models": [
+      "acestep-1.5",
+      "acestep-1.5-turbo"
+    ],
+    "block_path": "decoder.layers",
+    "block_count": 24,
+    "hidden_dim": 2048,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o_proj"
+      ],
+      "cross_attn": [
+        "cross_attn.o_proj"
+      ],
+      "note": "AceStepDiTLayer: self_attn and cross_attn are AceStepAttention; o_proj is the output Linear (pre-gate, pre-residual)."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp.down_proj"
+      ],
+      "note": "SwiGLU MLP (gate_proj, up_proj, down_proj); down_proj is the output Linear."
+    },
+    "notes": "Blocks sit under .decoder, so the dotted block_path needs R3 nodes.py (R2 used hasattr and found nothing). The condition encoder (lyric 8 layers, timbre 4) also has a .layers list; it is not hooked. 16 query heads, 8 KV heads (GQA 2), head_dim 128, MLP 6144. Even layers use sliding-window self-attention (window 128 tokens), odd layers full attention. Tokens = latent frames / 2: latent is 25 frames/s (48 kHz / 1920), so 12.5 tokens/s; N >= D=2048 needs >= 164 s of audio. Checked on the real class (ComfyUI master 58b176f (2026-10-08)); needs one real sampler run before verified=true.",
+    "verified": false,
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "?",
+    "nc_notes": "Self-attention over audio tokens + cross-attention to the encoded text/lyric condition + SwiGLU MLP, with alternating local (sliding-window) and global self-attention. The alternation is a structural layer-parity difference that may show up as an even/odd zig-zag along depth.",
+    "comfyui_class": "ACEStep15",
+    "comfyui_unet_model": "comfy.ldm.ace.ace_step15.AceStepConditionGenerationModel"
+  },
+  "Anima": {
+    "description": "Anima (anime image model on the Cosmos-Predict2 MiniTrainDIT with a Qwen3-0.6B LLM adapter)",
+    "models": [
+      "anima"
+    ],
+    "block_path": "blocks",
+    "block_count": 28,
+    "hidden_dim": 2048,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.output_proj"
+      ],
+      "cross_attn": [
+        "cross_attn.output_proj"
+      ],
+      "note": "Cosmos-Predict2 Block: self-attention, then cross-attention to the adapted text, then MLP, each AdaLN(-LoRA) gated. self_attn.output_proj is the self-attention output Linear (called as a module, pre-gate). cross_attn.output_proj documented only."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp.layer2"
+      ],
+      "note": "GPT2FeedForward (layer1 -> GELU -> layer2); layer2 is the output Linear, called as a module."
+    },
+    "notes": "Anima subclasses comfy.ldm.cosmos.predict2.MiniTrainDIT, so the class name is 'Anima' (not MiniTrainDIT) and it needs its own key. block_path 'blocks' is the DiT; llm_adapter.blocks (6 small text blocks that map Qwen3-0.6B states + T5 token ids to the 1024-d cross-attention context, padded to 512 tokens) are not hooked. Rows are image tokens only (latent of the Wan 2.1 VAE, T=1 for images), N = (H/16)*(W/16); text enters through cross-attention. Activations: the self-attention output is (B, N, D) and the MLP output is (B, T, H, W, D) (5-D); both flatten to (-1, D) rows and dim >= 3, so cond/uncond splitting on dim 0 works. With fp16 the residual stream is kept in fp32 but attention/MLP run in fp16. hidden_dim/blocks: comfy/model_detection.py reads model_channels from x_embedder.proj.1.weight and counts blocks from the checkpoint (num_heads 16 when model_channels is 2048). 2048 / 28 are the Cosmos-Predict2-2B numbers that Anima (2B) is built on; they were NOT checked against an Anima checkpoint here.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: model_detection config with model_channels 2048 / 28 blocks (assumed Anima size) on meta: 28 blocks via 'blocks', paths resolve, D=2048; tiny DiT (3 blocks, real-size LLM adapter) real forward with Qwen3 states + T5 ids through the llm_adapter: attn and MLP hooks fire once per block, D matches, rows = 64 image tokens. PASS",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "?",
+    "nc_notes": "Image-only residual stream with cross-attention to text (Cosmos-Predict2 layout), AdaLN-LoRA modulation from the timestep.",
+    "comfyui_class": "Anima",
+    "comfyui_unet_model": "comfy.ldm.anima.model.Anima"
+  },
+  "AnimateWanModel": {
+    "description": "Wan 2.2 Animate (character animation / replacement)",
+    "models": [
+      "wan2.2-animate-14b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). Blocks are plain WanAttentionBlock (i2v cross-attn). Pose latents are added to the patch embedding; face motion is fused OUTSIDE the blocks by face_adapter.fuser_blocks after every 5th block (i % 5 == 0), not hooked. Reference tokens via ref_conv, if present, are prepended and captured.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny AnimateWanModel real CPU forward with clip_fea and pose_latents (no face input): self_attn.o and ffn fire once per block, D=64, forward order; 14B config on meta resolves on all 40 blocks, D=5120.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN22_Animate",
+    "comfyui_unet_model": "comfy.ldm.wan.model_animate.AnimateWanModel"
+  },
+  "AsymmDiTJoint": {
+    "description": "Mochi 1 (AsymmDiT, asymmetric separate MLPs per modality)",
+    "models": [
+      "mochi-1-preview"
+    ],
+    "block_path": "blocks",
+    "block_count": 48,
+    "hidden_dim": 3072,
+    "attn_attrs": {
+      "self_attn": [
+        "attn.proj_x"
+      ],
+      "cross_attn": [],
+      "note": "AsymmetricAttention: joint attention over visual+text, then SEPARATE output projections. proj_x = visual output Linear, proj_y = text output Linear. Both fire once per block forward."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp_x.w2"
+      ],
+      "note": "SEPARATE MLPs per modality. mlp_x = visual FeedForward (SwiGLU: w1 fused gate+up, w2 output). mlp_y = text FeedForward (same structure, absent on last block where update_y=False). w2 is the output projection Linear."
+    },
+    "notes": "AsymmDiTJoint: 48 AsymmetricJointBlocks. STRONGEST DM non-commutativity: separate proj_x/proj_y after attention AND separate mlp_x/mlp_y. Visual stream has mlp_ratio=8.0 (hidden=24576), text stream has mlp_ratio=4.0 (hidden=12288). Non-square QKV (dim_x=3072, dim_y=1536). Block 47 has update_y=False (no text update). 24 heads, head_dim=128. ComfyUI: GenmoMochi → comfy.ldm.genmo.joint_model.asymm_models_joint.AsymmDiTJoint. R3/v3: key renamed to ComfyUI's class AsymmDiTJoint. The archive was captured through the generic fallback (block.attn, whose output[0] is proj_x's output), so the attn rows are identical with this entry (checked numerically, ComfyUI master 58b176f (2026-10-08)). dual_hook_supported stays false so Mochi capture stays attn-only like the archive.",
+    "nc_source": "asymm_stream",
+    "pred_crossings": ">=2",
+    "nc_notes": "Separate MLPs for text vs visual modality = explicit non-commutativity between submodule types. The visual MLP and text MLP process different subspaces. Non-square QKV projections add further asymmetry. This is the DM analog of high-ratio GQA in LLMs. HIGHEST PRIORITY DM measurement target.",
+    "verified": true,
+    "dual_hook_supported": false,
+    "comfyui_class": "GenmoMochi",
+    "comfyui_unet_model": "comfy.ldm.genmo.joint_model.asymm_models_joint.AsymmDiTJoint",
+    "class_checked": "ComfyUI master 58b176f (2026-10-08): tiny forward; attn g identical to the R2 fallback capture"
+  },
+  "CameraWanModel": {
+    "description": "Wan 2.1 / 2.2 Fun Camera Control",
+    "models": [
+      "wan2.1-fun-camera-14b",
+      "wan2.1-fun-camera-1.3b",
+      "wan2.2-fun-camera-a14b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). camera_conditions go through control_adapter and are added to the patch embedding before the blocks; blocks are plain WanAttentionBlock (i2v cross-attn for model_type 'camera', t2v for 'camera_2.2').",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny CameraWanModel (camera/i2v) real CPU forward with clip_fea and camera_conditions: self_attn.o and ffn fire once per block, D=64, forward order; 14B config on meta resolves on all 40 blocks, D=5120.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN21_Camera",
+    "comfyui_unet_model": "comfy.ldm.wan.model.CameraWanModel"
+  },
+  "Chroma": {
+    "description": "Chroma (lodestone-rock), Flux.1-schnell-derived DiT with per-block modulations produced by a distilled_guidance_layer (Approximator) instead of per-block Modulation layers. Same DoubleStreamBlock/SingleStreamBlock as Flux (imported from comfy.ldm.flux.layers). Only double blocks hooked.",
+    "models": [
+      "chroma (v1-v50, Chroma1-HD, Chroma1-Base, Chroma1-Flash)"
+    ],
+    "block_path": "double_blocks",
+    "block_count": "params.depth from the checkpoint (count_blocks 'double_blocks.{}'): 19 (+38 single blocks not hooked). Consistent with forward_orig's hard-coded mod_index_length 344 = 3*38 + 2*6*19 + 2, and with diffusers 0.41.0 ChromaTransformer2DModel defaults (19/38).",
+    "hidden_dim": "3072 (img_in.weight.shape[0]; model_detection also sets out_dim 3072 for the Approximator, which must equal hidden_size).",
+    "attn_attrs": {
+      "self_attn": [
+        "img_attn.proj"
+      ],
+      "cross_attn": [],
+      "note": "Same comfy.ldm.flux.layers.DoubleStreamBlock (built with modulation=False; the (img_mod, txt_mod) tuples are passed in as vec). img_attn.proj is called as a module once per block, pre-gate, pre-residual, image tokens only. Nothing resolves on SingleStreamBlock."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "img_mlp.2"
+      ],
+      "note": "build_mlp default: Sequential(Linear, GELU(tanh), Linear); index 2 is the output Linear, called via the Sequential. Chroma never sets mlp_silu_act or yak_mlp."
+    },
+    "notes": "Key must be 'Chroma' (old key 'ChromaTransformer' never matches). comfy.ldm.chroma.model.Chroma is a plain nn.Module, NOT a subclass of the ldm Flux class (only model_base.Chroma subclasses model_base.Flux). Chroma is not text-free (the old description was wrong): it conditions on T5-XXL tokens through txt_in (pixart_t5 text encoder in supported_models.Chroma). Chroma has no pooled vector or guidance embedding in the blocks; guidance (default 0) only feeds the Approximator. Chroma.skip_mmdit / skip_dit lists (empty by default) skip blocks entirely and their hooks then do not fire. Single blocks: same situation as Flux (fused linear1/linear2, nothing resolves), so block_path is 'double_blocks'. Activations [B, L_img, 3072]; Chroma is typically run with real CFG (cfg > 1), cond and uncond are batched on dim 0 and the node's branch split works because the activation is 3-D. Token count = (H/16)*(W/16).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real-size Chroma (19+38, D3072) built on meta resolves 19 double blocks with both paths on every block; tiny CPU forward of comfy.ldm.chroma.model.Chroma (2 double + 3 single, D64) through the node's guider: img_attn.proj and img_mlp.2 fire exactly once per double block, D = 64, rows = image tokens only, batch 2; with cond_or_uncond=[0,1] set as the node's model wrapper sets it, every row splits into cond and uncond halves (64 rows each). See test_A_flux.log.",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream_partial",
+    "pred_crossings": "?",
+    "nc_notes": "Same block mix as Flux.1 (19 double / 38 single); only the 19 double blocks' image stream is captured. Old '1-2' prediction covered double+single depth, reset to '?'.",
+    "comfyui_class": "Chroma",
+    "comfyui_unet_model": "comfy.ldm.chroma.model.Chroma"
+  },
+  "ChromaRadiance": {
+    "description": "Chroma Radiance: pixel-space Chroma (Conv2d patch embed img_in_patch, NeRF-style per-patch MLP head nerf_blocks) around the same 19 double + 38 single Flux blocks. Only double blocks hooked.",
+    "models": [
+      "chroma-radiance (x0 and v-pred variants)"
+    ],
+    "block_path": "double_blocks",
+    "block_count": "params.depth from the checkpoint: 19 (+38 single not hooked); ChromaRadiance subclasses ldm Chroma and keeps its modulation layout (mod_index_length 344).",
+    "hidden_dim": "3072 (Chroma backbone hidden_size; the nerf head runs at nerf_hidden_size 64 and is not hooked).",
+    "attn_attrs": {
+      "self_attn": [
+        "img_attn.proj"
+      ],
+      "cross_attn": [],
+      "note": "Same flux DoubleStreamBlock (modulation=False). img_attn.proj called once per double block, image-patch tokens only."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "img_mlp.2"
+      ],
+      "note": "build_mlp default GELU Sequential; index 2 is the output Linear."
+    },
+    "notes": "Key 'ChromaRadiance' (comfy.ldm.chroma_radiance.model.ChromaRadiance subclasses comfy.ldm.chroma.model.Chroma, so type().__name__ differs from Chroma and needs its own entry). Pixel space: a patch is patch_size x patch_size RGB pixels (patch_size read from img_in_patch.weight, 16 in released checkpoints), so L_img = (H/16)*(W/16) for pixel H, W, the same token count as Flux at the same output resolution. The nerf_blocks (NerfGLUBlock, width 64) are not hooked. Everything else as Chroma (CFG batching works, 3-D activations, skip_mmdit/skip_dit).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real-size ChromaRadiance (19+38, D3072, patch 16) built on meta resolves 19 double blocks with both paths; tiny CPU forward of comfy.ldm.chroma_radiance.model.ChromaRadiance (2 double + 3 single, D64, patch 4, linear nerf head) through the node's guider: both hooks fire exactly once per double block, D = 64, rows = pixel-patch tokens. See test_A_flux.log.",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream_partial",
+    "pred_crossings": "?",
+    "nc_notes": "Same backbone and block mix as Chroma; only the 19 double blocks' image stream is captured.",
+    "comfyui_class": "ChromaRadiance",
+    "comfyui_unet_model": "comfy.ldm.chroma_radiance.model.ChromaRadiance"
+  },
+  "CogVideoXTransformer3DModel": {
+    "description": "CogVideoX 1.0 / 1.5 (expert-AdaLN DiT, joint text+video full attention)",
+    "models": [
+      "cogvideox-2b",
+      "cogvideox-5b",
+      "cogvideox-5b-i2v",
+      "cogvideox-1.5-5b",
+      "cogvideox-fun-v1.5"
+    ],
+    "block_path": "blocks",
+    "block_count": 42,
+    "hidden_dim": 3072,
+    "attn_attrs": {
+      "self_attn": [
+        "attn_out"
+      ],
+      "cross_attn": [],
+      "note": "CogVideoXBlock: q/k/v over the concatenation [text ; video], attention, then self.attn_out(...) Linear called as a module once per block, pre-gate. No separate cross-attention."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ff_out"
+      ],
+      "note": "ff_out(F.gelu(ff_proj(x), 'tanh')) with both Linears called as modules (no linear_input_act), once per block, on the concatenated [text ; video] sequence."
+    },
+    "notes": "Captured rows = text tokens (first, max 226) + video tokens, concatenated in one [B, L_text + L_video, D] tensor (checked: 7 + n_video rows). Text and video are split again only after attention / MLP for the modality-specific gates. Batch-first, so cond/uncond batching splits correctly. RoPE on video tokens only (5B, 1.5) or sincos absolute embedding (2B). Dims: ComfyUI detection sets dim = blocks.0.norm1.linear.weight.shape[0] // 6, heads = dim // 64, num_layers = count of blocks.N; supported_models comments give dim 1920 / 30 heads (2B) and 3072 / 48 heads (5B, 1.5-5B). Block counts 30 (2B) and 42 (5B, 1.5-5B) are the public diffusers configs (built on meta here, not read from a file). The old entry's 30 blocks with D=3072 mixed the two sizes. The old entry had dual_hook_supported false although ff_out was listed; ff_out was verified here, so it is now true.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny CogVideoXTransformer3DModel (dim 32, 3 blocks) real CPU forward, 1.0-style (Conv2d patch) and 1.5-style (patch_size_t=2): attn_out and ff_out fire once per block, D=32, rows = text + video tokens, forward order; 2B (30 blocks, D 1920) and 5B (42 blocks, D 3072) configs on meta resolve on all blocks.",
+    "dual_hook_supported": true,
+    "nc_source": "expert_adaln",
+    "pred_crossings": "1-2",
+    "nc_notes": "Expert AdaLN: text and video tokens get separate scale/shift/gate from one CogVideoXLayerNormZero, but share attention and MLP weights. Weaker non-commutativity than dual-stream; the captured spectrum mixes text and video rows.",
+    "comfyui_class": "CogVideoX",
+    "comfyui_unet_model": "comfy.ldm.cogvideo.model.CogVideoXTransformer3DModel"
+  },
+  "ErnieImageModel": {
+    "description": "ERNIE Image (single-stream DiT with shared AdaLN, Baidu)",
+    "models": [
+      "ernie-image"
+    ],
+    "block_path": "layers",
+    "block_count": 36,
+    "hidden_dim": 4096,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attention.to_out.0"
+      ],
+      "cross_attn": [],
+      "note": "Single joint attention over concatenated image+text tokens. No separate cross-attn. ErnieImageAttention.to_out is nn.ModuleList([Linear]) and forward calls self.to_out[0](...), so .0 fires. 32 heads x 128, no GQA."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp.linear_fc2"
+      ],
+      "note": "ErnieImageFeedForward: gated GELU (up_proj * gelu(gate_proj) -> linear_fc2). linear_fc2 is the output projection Linear, called as a module."
+    },
+    "notes": "ErnieImageSharedAdaLNBlock: adaLN_sa_ln -> self_attention (ErnieImageAttention with 3D RoPE) -> adaLN_mlp_ln -> mlp. One set of 6 modulation tensors computed once in the model and shared by all layers. Rows are [image tokens | text tokens] concatenated (image first): image N_img = (H/16)*(W/16) (patch 1 on the 128-channel Flux2 latent), text = full padded context length; no attention mask is passed to the layers, so padding text tokens attend and are captured. Activations (B, N, D), dim 3. Dims are class defaults (hidden 4096, 36 layers, 32 heads, ffn 12288); comfy/model_detection.py sets only image_model='ernie' and overrides nothing.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: class-default config on meta: 36 layers, paths resolve, D=4096; tiny config (3 layers) real forward B=1 and B=2: attn and MLP hooks fire once per layer, D matches, rows = image + text tokens. PASS",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "1",
+    "nc_notes": "Single-stream architecture: image and text tokens concatenated and processed by unified attention + shared MLP. Same structural class as Z-Image/NextDiT. Shared AdaLN modulation (same 6 modulation parameters for all tokens). No per-modality MLP separation. Predict 1 crossing. D=4096, N=36, D/N=114.",
+    "comfyui_class": "ErnieImage",
+    "comfyui_unet_model": "comfy.ldm.ernie.model.ErnieImageModel"
+  },
+  "Flux": {
+    "description": "BFL Flux family DiT (comfy.ldm.flux.model.Flux): N DoubleStreamBlocks (separate img/txt weights, joint attention) followed by M SingleStreamBlocks (fused parallel attn+MLP on concatenated txt+img tokens). Only the double blocks are hooked.",
+    "models": [
+      "flux1-dev",
+      "flux1-schnell",
+      "flux1-fill (FluxInpaint, in_channels 96)",
+      "flux1-kontext (same class; reference images via ref_latents)",
+      "flux2-dev",
+      "flux2-klein-4b",
+      "flux2-klein-9b",
+      "longcat-image",
+      "ovis-image (yak_mlp + txt_norm variant)"
+    ],
+    "block_path": "double_blocks",
+    "block_count": "params.depth, counted from the checkpoint by model_detection.count_blocks('double_blocks.{}'): Flux.1 dev/schnell/fill/kontext 19 (+38 single blocks not hooked); Flux.2 dev 8 (+48 single not hooked); LongCat-Image 19 (+38); Ovis-Image 6 (+27). Flux.1/Flux.2-dev/LongCat/Ovis counts are the diffusers 0.41.0 reference-config defaults (FluxTransformer2DModel, Flux2Transformer2DModel, LongCatImageTransformer2DModel, OvisImageTransformer2DModel); Klein depths are NOT verified here (no checkpoint or config reachable).",
+    "hidden_dim": "params.hidden_size = img_in.weight.shape[0] of the checkpoint (model_detection.py): 3072 for Flux.1 / LongCat / Ovis (24 heads x 128), 6144 for Flux.2 dev (48 x 128). Klein-4B / Klein-9B not verified here (old entry said 3072 / 4096).",
+    "attn_attrs": {
+      "self_attn": [
+        "img_attn.proj"
+      ],
+      "cross_attn": [],
+      "note": "DoubleStreamBlock.forward calls self.img_attn.proj(img_attn) as a module (flux/layers.py), once per block, on the image-stream slice of the joint attention output, before apply_mod(gate) and the residual add. D = hidden_size. txt_attn.proj is the text-stream equivalent and is not hooked. SingleStreamBlock has no attn submodule: none of img_attn.proj / attn1 / self_attn / attn / attention resolves on it."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "img_mlp.2",
+        "img_mlp.down_proj"
+      ],
+      "note": "img_mlp is built by build_mlp and called as a module (self.img_mlp(...)), so its children run as modules. Default / Flux.1 / LongCat: Sequential(Linear, GELU(tanh), Linear) -> img_mlp.2. Flux.2 (mlp_silu_act): Sequential(Linear(2x), SiLUActivation, Linear) -> img_mlp.2. Ovis-Image (yak_mlp): YakMLP -> img_mlp.down_proj (img_mlp.2 does not exist there). Output is pre-gate, pre-residual, image tokens only, D = hidden_size."
+    },
+    "notes": "Registry key must be 'Flux' (type(model.diffusion_model).__name__); the old key 'FluxTransformer2DModel' is the diffusers name and never matches in ComfyUI, and with the current model_registry.json the passive guider finds 0 blocks for this class (no transformer_blocks/joint_blocks/blocks/layers attribute, UNet linearizer finds nothing). Flux 2 does NOT have its own diffusion class: model_base.Flux2 subclasses model_base.Flux and keeps unet_model=comfy.ldm.flux.model.Flux; Flux 2 differs only by params (global_modulation=True -> per-block img_mod/txt_mod are absent and modulation comes from double_stream_modulation_img/txt; mlp_silu_act=True; qkv_bias/ops_bias False; mlp_ratio 3.0; patch_size 1; 128 latent channels). LongCatImage (model_base.LongCatImage) and Ovis-Image also build this class. block_path is 'double_blocks', not 'double_blocks + single_blocks': on a SingleStreamBlock nothing in attn_attrs/mlp_attrs nor the node's fallbacks resolves (its modules are linear1, linear2, norm (QKNorm), pre_norm, mlp_act, modulation), so including single_blocks only adds blocks that get no hook while inflating n_blocks and the layer-filter range. The only block-width module on a single block is linear2, whose output is the fused [attn || act(mlp)] projection (attention and MLP inseparable); adding 'linear2' to self_attn would produce one 'attn'-labelled row per single block that is really attn+MLP, so it is deliberately not listed (tested as an alternative: it fires once per single block with D = hidden_size). pre_norm is never called on inference (modulated_norm uses comfy.quant_ops.ck.adaln). Token content: the hooked tensors hold image tokens only (the txt stream is separate in double blocks); with Kontext / Flux.2 reference images (ref_latents) the reference-image tokens are concatenated after the target tokens in the img stream and are included in the rows; Flux.2 'index_timestep_zero' doubles the vec batch but not the activation batch. Activations are [B, L_img, D] (3-D), so the node's cond/uncond chunking works; Flux.1 dev/Flux.2 dev are guidance-distilled and usually run cfg=1 (cond only) (schnell likewise); whether a given Klein checkpoint is run with real CFG depends on the variant. Token count varies with resolution and reference images: L_img = (h/patch_size)*(w/patch_size) of the latent (patch 2 for Flux.1 = (H/16)*(W/16) pixels), plus the reference tokens. Hooks fire also when a ('double_block', i) patches_replace is installed (block_wrap still calls the block); caching nodes that skip blocks will skip the hooks.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real-size configs built on meta (Flux.1 19+38 D3072, Flux.2-dev 8+48 D6144 silu/global-mod, Ovis yak 6+27) resolve 'double_blocks' to depth blocks with img_attn.proj and img_mlp.2|img_mlp.down_proj on every block; tiny CPU forwards of comfy.ldm.flux.model.Flux in 4 configs (Flux.1-style with guidance+vector_in, Flux.2-style global_modulation+mlp_silu_act with 2 ref_latents, Flux.2 'index_timestep_zero' ref method, Ovis-style yak_mlp+txt_norm) through the node's guider: attn and MLP hooks fire exactly once per double block, D = hidden_size, rows = image(+reference) tokens only; single blocks resolve no path (checked). See test_A_flux.log.",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream_partial",
+    "pred_crossings": "?",
+    "nc_notes": "Architecture is dual-stream for the first N blocks (separate img/txt weights, joint attention) and single-stream parallel (attn and MLP computed from the same normed input, summed through one linear2) for the remaining M. Only the N double blocks are captured (19 of 57 for Flux.1, 8 of 56 for Flux.2 dev), and only their image stream. The old '1-2' crossing prediction reasoned over double+single depth, which this entry no longer captures, so it is reset to '?'.",
+    "comfyui_class": "Flux, Flux2, LongCatImage (model_base classes; Flux2 and LongCatImage subclass model_base.Flux and keep unet_model=comfy.ldm.flux.model.Flux)",
+    "comfyui_unet_model": "comfy.ldm.flux.model.Flux"
+  },
+  "GeneralDIT": {
+    "description": "NVIDIA Cosmos 1.0 Diffusion (text2world / video2world 7B, 14B)",
+    "models": [
+      "cosmos-1.0-diffusion-7b-text2world",
+      "cosmos-1.0-diffusion-14b-text2world",
+      "cosmos-1.0-diffusion-7b-video2world",
+      "cosmos-1.0-diffusion-14b-video2world"
+    ],
+    "block_path": "blocks",
+    "block_count": 28,
+    "hidden_dim": 4096,
+    "attn_attrs": {
+      "self_attn": [
+        "blocks.0.block.attn.to_out.0"
+      ],
+      "cross_attn": [
+        "blocks.1.block.attn.to_out.0"
+      ],
+      "note": "Each GeneralDITTransformerBlock holds .blocks = ModuleList of 3 DITBuildingBlocks for block_config 'FA-CA-MLP' (the only config ComfyUI builds): blocks.0 = full self-attention (VideoAttn -> Attention), blocks.1 = text cross-attention, blocks.2 = MLP. Attention.forward ends with self.to_out(out), to_out = Sequential(Linear, Dropout), so to_out.0 fires once per block, pre-gate."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "blocks.2.block.layer2"
+      ],
+      "note": "blocks.2.block is GPT2FeedForward; forward calls self.layer1, GELU, self.layer2 as modules (no linear_input_act), so layer2 (the output Linear) fires once per block."
+    },
+    "notes": "FIXED IN R3 nodes.py (ModuleDict values, batch_dim): GeneralDIT.blocks is an nn.ModuleDict ('block0'...'blockN'). The node's _resolve_block_list does list(seq), which for a ModuleDict gives the KEY STRINGS, so with this entry (or the auto-detect fallback) the guider gets ['block0', ...], registers 0 hooks and writes no telemetry, silently (checked). No dotted/composite block_path works for both 7B and 14B with the current resolver (a composite of per-block paths fails on the other size, and list() of a single block raises). Fix in nodes.py _resolve_block_list: if isinstance(seq, torch.nn.ModuleDict): seq = seq.values(). With that list the paths below fire once per block (checked). SECOND ISSUE, cond/uncond split: ComfyUI builds this model with block_x_format 'THWBD', so inside the blocks the tensors are sequence-first: the attn to_out.0 output is [T*H*W, B, D] and the MLP output [T, H, W, B, D] (checked). The node's _capture_one chunks dim 0 by CFG branch, which here splits TOKENS, not cond/uncond: with batched CFG the 'cond'/'uncond' rows are each half the tokens of both branches. Single-branch captures (or split_branches off) are still valid spectra over all tokens. Dims straight from ComfyUI model_detection: model_channels 4096 -> 7B, 28 blocks, 32 heads; 5120 -> 14B, 36 blocks, 40 heads (both built on meta and checked). Video tokens only (text via cross-attn, T5-XXL 1024-d); extra learnable per-block absolute position embedding is added to x before every block; AdaLN-LoRA modulation. The old key 'CosmosGeneralDIT' never matched (class name is GeneralDIT).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny GeneralDIT (D 64, 3 blocks, FA-CA-MLP, THWBD, AdaLN-LoRA, learnable extra pos emb) real CPU forward. With current nodes.py: block list = ModuleDict key strings, 0 hooks (reproduced). With the block list = blocks.values() supplied by the test: blocks.0.block.attn.to_out.0 and blocks.2.block.layer2 fire once per block, D=64; B=2 output shapes (32, 2, 64) and (2, 4, 4, 2, 64) confirm sequence-first layout; 7B and 14B configs on meta: 28 / 36 blocks, paths resolve, D 4096 / 5120.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "?",
+    "nc_notes": "Per block: full 3D self-attention over video tokens, then cross-attention to T5 text, then GELU MLP, each with its own AdaLN(-LoRA) modulation. Same family as Wan / Predict2.",
+    "comfyui_class": "CosmosVideo",
+    "comfyui_unet_model": "comfy.ldm.cosmos.model.GeneralDIT",
+    "batch_dim": {
+      "attn": 1,
+      "mlp": 3
+    }
+  },
+  "HiDreamImageTransformer2DModel": {
+    "description": "HiDream-I1 / HiDream-E1 (17B MMDiT-style image DiT: 16 dual-stream + 32 single-stream blocks, MoE FFN)",
+    "models": [
+      "hidream-i1-full",
+      "hidream-i1-dev",
+      "hidream-i1-fast",
+      "hidream-e1"
+    ],
+    "block_path": "double_stream_blocks + single_stream_blocks",
+    "block_count": 48,
+    "hidden_dim": 2560,
+    "attn_attrs": {
+      "self_attn": [
+        "block.attn1.to_out"
+      ],
+      "cross_attn": [],
+      "note": "Every list entry is a HiDreamImageBlock wrapper; the real block is .block (HiDreamImageTransformerBlock for the 16 double-stream entries, HiDreamImageSingleTransformerBlock for the 32 single-stream entries). block.attn1.to_out resolves on both types and is a Linear called as a module (pre-gate, pre-residual). Double-stream blocks: to_out projects the IMAGE tokens only (text tokens go through attn1.to_out_t, not hooked). Single-stream blocks: to_out projects the whole concatenated sequence [image | T5+Llama initial text | current Llama layer tokens]. The joint attention itself runs over image+text in both block types."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "block.ff_i"
+      ],
+      "note": "block.ff_i is MOEFeedForwardSwiGLU (4 routed experts, top-2, plus a shared expert) with the shipped config, FeedForwardSwiGLU if num_routed_experts=0. The whole module is hooked: inside the MoE, each expert's w2 runs once per expert on a variable token subset and shared_experts.w2 is only part of the output, so no single output Linear exists. Double-stream: image tokens only (text FFN ff_t not hooked). Single-stream: the whole concatenated sequence."
+    },
+    "notes": "Heterogeneous blocks. Double-stream (indices 0-15): captured rows are image tokens only, N = (H/16)*(W/16) for a VAE latent of the image (patch 2 on the 8x-downsampled Flux latent). Single-stream (indices 16-47): captured rows are image tokens + initial text (T5 tokens + last-Llama-layer tokens, carried from the double stream) + the per-block Llama-3 hidden-state tokens appended for that block (sliced off after the block), so N jumps at index 16 and the row set mixes image and text tokens. Each block receives a DIFFERENT Llama-3.1 layer's hidden states (llama_layers list), so the text part changes per block. Activations are (B, N, D), dim 3, so cond/uncond batching splits correctly. Full attention, no GQA (20 heads x 128). E1 (edit) concatenates the condition image along the width axis of the latent before patchify, so it doubles the image token count.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real config (model_detection dims) on meta: 48 blocks (16 double + 32 single), paths resolve on all, to_out D=2560, ff_i is MoE on all; tiny config (2 double + 3 single, 4 experts top-2) real forward B=1 and B=2: attn and MLP hooks fire once per block, D matches, double rows = image tokens, single rows = image + text, list order = forward order. PASS",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream (16 blocks) + single_stream (32 blocks)",
+    "pred_crossings": "?",
+    "nc_notes": "Flux-like layout: separate image/text weights (attn projections, FFNs, AdaLN) in the 16 double-stream blocks, then shared weights in 32 single-stream blocks. The image FFN is a routed MoE, which adds token-dependent nonlinearity. Text conditioning is re-injected per block from different Llama layers.",
+    "comfyui_class": "HiDream",
+    "comfyui_unet_model": "comfy.ldm.hidream.model.HiDreamImageTransformer2DModel"
+  },
+  "HiDreamO1Transformer": {
+    "description": "HiDream-O1-Image (pixel-space unified transformer on the Qwen3-VL-8B decoder)",
+    "models": [
+      "hidream-o1-image"
+    ],
+    "block_path": "language_model.layers",
+    "block_count": 36,
+    "hidden_dim": 4096,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o_proj"
+      ],
+      "cross_attn": [],
+      "note": "Llama-style decoder layer (comfy.text_encoders.llama.TransformerBlock). self_attn.o_proj is a Linear called as a module on every path (cold, KV-cache hot path and FixedKV paths all return self.o_proj(...)). GQA: 32 query heads, 8 KV heads, head_dim 128. Two-pass attention: the text prefix [0, ar_len) is causal, the generation part (tms token + target image + ref patches) attends to everything."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp.down_proj"
+      ],
+      "note": "SwiGLU MLP; down_proj is called as a module because HiDreamO1TextConfig has no merged_mlp (the merged path would call comfy.ops.linear_input_act and could bypass the module). If a future config sets merged_mlp=True, switch this path to 'mlp'."
+    },
+    "notes": "One sequence of [text prompt tokens (with Qwen3-VL ViT tokens of reference images spliced in) | tms timestep token | target image 32x32 RGB pixel patches | reference image 32x32 patches]. No VAE: a 1024x1024 image is 32x32 = 1024 image tokens. KV CACHE CHANGES THE ROW COUNT: when the prompt's input_ids/position_ids match a cached entry (every step after the first of a generation, and also step 0 of a later generation with the same prompt because the cache lives on the model object), the layers only see positions [ar_len, T) (tms + image + ref patches); on a cache miss they see the whole sequence including the text prefix. So captured N and token mix differ between the first and later steps. The cache holds at most 2 entries (cond + uncond). Activations are (B, N, D), dim 3. The Qwen3-VL vision tower (visual.blocks, 27 blocks) runs only on reference images and is not hooked. Cond and uncond have different input_ids; they batch only when the token lengths match.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real config (Qwen3-VL-8B defaults) on meta: 36 layers, paths resolve, o_proj D=4096, GQA 32/8, merged_mlp False; tiny config (3 layers) real forward with build_extra_conds inputs, cold (cache miss) and hot (KV-cache hit) path: attn and MLP hooks fire once per layer in both, D matches, rows T vs T-ar_len. PASS (no reference images used)",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "?",
+    "nc_notes": "Single shared stack (LLM decoder) over text + image tokens, no per-modality weights, timestep enters only as one token (tms) rather than AdaLN.",
+    "comfyui_class": "HiDreamO1",
+    "comfyui_unet_model": "comfy.ldm.hidream_o1.model.HiDreamO1Transformer"
+  },
+  "HumoWanModel": {
+    "description": "HuMo (Wan 2.1-based human video with audio)",
+    "models": [
+      "humo-17b",
+      "humo-1.7b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). Blocks are WanAttentionBlockAudio: same self_attn / cross_attn / ffn plus audio_cross_attn_wrapper (audio cross-attention, WanT2VCrossAttentionGather, applied after the text cross-attn and before ffn). It runs once per block when audio_embed is given and is not hooked. Reference latents (reference_latent) are appended to the video token sequence and are captured. HuMo 17B uses the Wan 14B shapes (D=5120, 40 blocks); 1.7B uses D=1536, 30 blocks (public configs, not checked against files).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny HumoWanModel real CPU forward with audio_embed: self_attn.o and ffn fire once per block, D=64, forward order, in-block audio cross-attn ran on every block; D=5120 / 40-block config on meta resolves on all blocks.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN21_HuMo",
+    "comfyui_unet_model": "comfy.ldm.wan.model.HumoWanModel"
+  },
+  "HunyuanVideo": {
+    "description": "Tencent Hunyuan Flux-style DiT (comfy.ldm.hunyuan_video.model.HunyuanVideo), shared by HunyuanVideo 1.0 (T2V, I2V, SkyReels I2V), HunyuanImage 2.1 (+ refiner) and HunyuanVideo 1.5 (+ SR distilled). Uses comfy.ldm.flux.layers DoubleStreamBlock/SingleStreamBlock. Only double blocks hooked.",
+    "models": [
+      "hunyuanvideo (t2v)",
+      "hunyuanvideo-i2v",
+      "skyreels-v1-i2v (HunyuanVideoSkyreelsI2V)",
+      "hunyuan-image-2.1",
+      "hunyuan-image-2.1-refiner",
+      "hunyuanvideo-1.5",
+      "hunyuanvideo-1.5-sr-distilled"
+    ],
+    "block_path": "double_blocks",
+    "block_count": "params.depth from the checkpoint (count_blocks 'double_blocks.{}'): HunyuanVideo 1.0 = 20 (+40 single not hooked); HunyuanImage 2.1 = 20 (+40 single not hooked); HunyuanVideo 1.5 = 54 (0 single blocks). Numbers from diffusers 0.41.0 reference defaults (HunyuanVideoTransformer3DModel 20/40, HunyuanImageTransformer2DModel 20/40, HunyuanVideo15Transformer3DModel 54/none); not read from real checkpoints here.",
+    "hidden_dim": "hidden_size = img_in.proj.weight.shape[0] (model_detection.py; num_heads = hidden/128): HunyuanVideo 1.0 = 3072 (24 heads), HunyuanImage 2.1 = 3584 (28 heads), HunyuanVideo 1.5 = 2048 (16 heads), per the diffusers defaults above.",
+    "attn_attrs": {
+      "self_attn": [
+        "img_attn.proj"
+      ],
+      "cross_attn": [],
+      "note": "Identical comfy.ldm.flux.layers.DoubleStreamBlock (per-block Modulation, GELU MLP). img_attn.proj called once per block as a module, pre-gate, pre-residual, image/video tokens only. Do not confuse with txt_in.individual_token_refiner.blocks[*].self_attn.proj (the text TokenRefiner), which is not under double_blocks. Nothing resolves on SingleStreamBlock."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "img_mlp.2"
+      ],
+      "note": "build_mlp default: Sequential(Linear, GELU(tanh), Linear); index 2 is the output Linear (checkpoint keys img_mlp.fc2 are remapped to img_mlp.2 by supported_models.HunyuanVideo.process_unet_state_dict)."
+    },
+    "notes": "One registry key covers every model whose model_base class uses unet_model=comfy.ldm.hunyuan_video.model.HunyuanVideo: model_base.HunyuanVideo, HunyuanVideoI2V, HunyuanVideoSkyreelsI2V, HunyuanImage21, HunyuanImage21Refiner, HunyuanVideo15, HunyuanVideo15_SR_Distilled. type(diffusion_model).__name__ is always 'HunyuanVideo', so the old separate keys 'HunyuanVideoTransformer3DModel' and 'HunyuanImage21' never match. block_path 'double_blocks' for the same reason as Flux (single blocks resolve nothing); for HunyuanVideo 1.5 there are no single blocks so it is the full depth. Token content of the hooked rows: image/video latent tokens only (L = product of latent dims divided by patch_size: patch [1,2,2] for HV 1.0, [1,1,1] for HV 1.5, [1,1] for HunyuanImage 2.1 (2-D, 2-axis RoPE), [1,1,1] for its refiner); with ref_latent conditioning (accepted by model_base.HunyuanVideo.extra_conds for every HunyuanVideo-family model) the reference latent tokens are prepended to the img stream and are included in the rows. Text tokens (LLM + optional ByT5 glyph tokens + optional SigLIP vision tokens for 1.5) live in the txt stream and are not captured. I2V v2 (guiding_frame_index) uses per-token modulation (first frame vs rest), so the first-frame tokens are modulated differently inside the same row set. Activations [B, L, D] (3-D), so cond/uncond batching splits correctly; HunyuanVideo 1.0 is guidance-distilled (cfg 1 typical), HunyuanImage 2.1 / HV 1.5 are typically run with real CFG (cond+uncond batched, split correctly). HunyuanVideo 1.5 with meanflow (time_r_in) reads transformer_options['sigmas'] / 'sample_sigmas' (only present inside a real sampler).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real-size configs built on meta (HV1.0 20+40 D3072 patch [1,2,2]; HunyuanImage2.1 20+40 D3584 patch [1,1] byt5; HV1.5 54+0 D2048 vision_in) resolve 'double_blocks' with img_attn.proj and img_mlp.2 on every block; tiny CPU forwards of comfy.ldm.hunyuan_video.model.HunyuanVideo in 4 configs (HV1.0-style 3-D video with vector_in+guidance and txt mask; HV1.0 I2V guiding_frame_index; HunyuanImage2.1-style 2-D with ByT5 tokens, batch 2 cond+uncond; HV1.5-style with 0 single blocks, cond_type_embedding, ByT5, vision tokens and ref_latent) through the node's guider: both hooks fire exactly once per double block, D = hidden_size, rows = image/video (+ref) tokens only. See test_A_flux.log.",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream_partial",
+    "pred_crossings": "?",
+    "nc_notes": "HV1.0 and HunyuanImage 2.1: 20 dual-stream + 40 single-stream-parallel blocks, only the 20 double blocks' image stream captured. HV1.5: 54 dual-stream blocks and no single blocks, so it is fully captured and is effectively 'dual_stream' rather than partial. The old '1-2' prediction (double+single depth) is reset to '?'.",
+    "comfyui_class": "HunyuanVideo, HunyuanVideoI2V, HunyuanVideoSkyreelsI2V, HunyuanImage21, HunyuanImage21Refiner, HunyuanVideo15, HunyuanVideo15_SR_Distilled",
+    "comfyui_unet_model": "comfy.ldm.hunyuan_video.model.HunyuanVideo"
+  },
+  "Ideogram4Transformer2DModel": {
+    "description": "Ideogram 4 (single-stream NextDiT/Lumina2-family DiT, Qwen3-VL text features)",
+    "models": [
+      "ideogram-4"
+    ],
+    "block_path": "layers",
+    "block_count": 34,
+    "hidden_dim": 4608,
+    "attn_attrs": {
+      "self_attn": [
+        "attention.o"
+      ],
+      "cross_attn": [],
+      "note": "Ideogram4Attention.o is the output Linear (pre attention_norm2, pre-gate, pre-residual). Joint attention over [text, image] tokens; no separate cross-attention."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "feed_forward.w2"
+      ],
+      "note": "Lumina FeedForward (SwiGLU w1, w3 -> w2); w2 is called as a module."
+    },
+    "notes": "Defaults from the class: 18 heads x 256 = 4608, 34 layers, MLP 12288, latent 32 ch packed 2x2 into 128-d tokens. Rows pool text and image tokens (as in Z-Image). The UNCOND pass runs with context=None as an image-only sequence, so cond and uncond rows have different token counts (and are separate forwards). Checked on the real class (ComfyUI master 58b176f (2026-10-08)): tiny forward, attn+MLP fire once per layer.",
+    "verified": false,
+    "class_checked": "ComfyUI master 58b176f (2026-10-08): real config 34 layers/D 4608; tiny cond and uncond forwards",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "?",
+    "nc_notes": "Single joint attention on concatenated text+image tokens with block-diagonal segment mask and MRoPE; shared MLP. Same structural class as Z-Image NextDiT.",
+    "comfyui_class": "Ideogram4",
+    "comfyui_unet_model": "comfy.ldm.ideogram4.model.Ideogram4Transformer2DModel"
+  },
+  "Kandinsky5": {
+    "description": "Kandinsky 5.0 (video Lite / Pro and image Lite; cross-attention DiT with a small text encoder stack)",
+    "models": [
+      "kandinsky5-video-lite",
+      "kandinsky5-video-pro",
+      "kandinsky5-image-lite"
+    ],
+    "block_path": "visual_transformer_blocks",
+    "block_count": 32,
+    "hidden_dim": 1792,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attention.out_layer"
+      ],
+      "cross_attn": [
+        "cross_attention.out_layer"
+      ],
+      "note": "Visual self-attention output Linear (called once per block in both the normal and the >8192-token chunked attention path: only Q/K are chunked). cross_attention.out_layer is the text cross-attention output (documented only; the node does not hook cross_attn)."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "feed_forward"
+      ],
+      "note": "The whole FeedForward module is hooked, NOT feed_forward.out_layer: when the visual sequence is longer than 8192 tokens FeedForward._forward_chunked splits it into 4 chunks and out_layer fires 4 times per block (each on a quarter of the tokens). The module output is the full-sequence GELU MLP output, once per block."
+    },
+    "notes": "Rows are visual (video/image latent) tokens only; text is processed separately by 2 text_transformer_blocks (not hooked) and enters via cross-attention. N = T_latent * (H/16) * (W/16) (patch (1,2,2) on an 8x VAE latent; video Lite/Pro use the HunyuanVideo VAE, image Lite the Flux VAE); video sequences easily exceed 8192 tokens. Activations (B, N, D), dim 3. hidden_dim varies by checkpoint and is read from weights by comfy/model_detection.py (visual_embeddings.in_layer.bias): 1792 for video Lite (the class default, 32 visual blocks is the class default too), 4096 for video Pro, 2560 for image Lite (supported_models.Kandinsky5Image). The visual block count is counted from the checkpoint (count_blocks on visual_transformer_blocks.*); only the Lite-video class default (32) is known from source here. Full attention, no GQA (head_dim = sum(axes_dims) = 64 for Lite video, 128 for Pro/image).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: class-default (Lite video, 1792) and image-Lite (2560) configs on meta: 32 visual blocks, paths resolve, D matches; tiny config (2 text + 3 visual blocks) real forward on image (64 tok), video (192 tok) and 8464-token input (chunked FFN path): attn and MLP hooks fire once per block, D matches; feed_forward.out_layer shown to fire 4x per block above 8192 tokens. PASS. Pro (4096) config and real block counts of shipped checkpoints not built.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "?",
+    "nc_notes": "Visual-only residual stream with text cross-attention (PixArt/Wan-like), AdaLN from time + pooled text.",
+    "comfyui_class": "Kandinsky5, Kandinsky5Image",
+    "comfyui_unet_model": "comfy.ldm.kandinsky5.model.Kandinsky5"
+  },
+  "LTXAVModel": {
+    "description": "LTX-2 / LTX-2.x audio-video DiT (joint video + audio streams)",
+    "models": [
+      "ltx-2 (19B)",
+      "ltx-2.3 (22B)"
+    ],
+    "block_path": "transformer_blocks",
+    "block_count": 48,
+    "hidden_dim": 4096,
+    "attn_attrs": {
+      "self_attn": [
+        "attn1.to_out.0"
+      ],
+      "cross_attn": [
+        "attn2.to_out.0",
+        "audio_attn1.to_out.0",
+        "audio_attn2.to_out.0",
+        "audio_to_video_attn.to_out.0",
+        "video_to_audio_attn.to_out.0"
+      ],
+      "note": "BasicAVTransformerBlock has 6 CrossAttention modules: attn1 (video self), attn2 (video-text), audio_attn1 (audio self), audio_attn2 (audio-text), audio_to_video_attn (Q video, KV audio), video_to_audio_attn (Q audio, KV video). The node hooks only the first resolving self_attn path, i.e. the VIDEO self-attention output Linear (D = video width). The cross_attn list is for reference; the audio stream (D = audio width, 2048 at defaults) is not captured by the node. With apply_gated_attention (per-head gates), the gate is applied before to_out, so the hook sees gated output."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ff"
+      ],
+      "note": "FeedForward.forward() is comfy.ops.linear_input_act(self.net[2], self.net[0].proj(x), 'gelu_tanh') outside training (ldm/lightricks/model.py:330). With TensorWise INT8 weights, or fp16 on CUDA with fp16 accumulation, the fused branch never calls net[2].forward, so the old path 'ff.net.2' can get nothing. Hook the parent 'ff' (called as a module once per block); its output equals net[2]'s output, pre-gate (x.addcmul_(ff(y), gate_mlp)). Video MLP only; audio_ff (same FeedForward class, same trap) is not hooked."
+    },
+    "notes": "Loaded for any LTX checkpoint with audio_adaln_single.* (model_detection image_model 'ltxav'): the public LTX-2 and LTX-2.3 releases. Class defaults (LTX-2 19B): 48 blocks, video 32 heads x 128 = 4096, audio 32 x 64 = 2048, caption_channels 3840; detection only reads num_layers and attention_head_dim from the weights, everything else comes from the checkpoint's metadata config, so LTX-2.3 values were not checked (the code has LTX-2.3 options: cross_attention_adaln, caption_proj_before_connector, gated attention). Captured rows = VIDEO tokens only (batch-first [B, L_video, D]); audio tokens live in a separate tensor ax and are only seen through a2v cross-attention, which is added to x after attn1 and before ff, so the MLP hook does see audio influence. Video-only use (no audio latent, ax empty) skips the audio and a2v/v2a paths; the video hooks still fire once per block (checked). Guide/keyframe tokens are appended to the video sequence (variable token count). STG perturbs attn1 on selected blocks to to_out(V). The text Embeddings1DConnector transformers (video_embeddings_connector / audio_embeddings_connector) run in extra_conds (preprocess_text_embeds), not in the diffusion forward, and are not in block_path. Old key LTXVideoTransformer3DModel_23_AV never matched; its 'video_self_attn' style keys are not read by the node (it reads attn_attrs.self_attn and mlp_attrs.mlp only).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny LTXAVModel (video inner 32, audio inner 16, 3 blocks) real CPU forward with [video, audio] latents: attn1.to_out.0 and ff fire once per block, D=32, forward order; audio_attn1.to_out.0, audio_ff, a2v and v2a to_out.0 each ran once per block (not hooked); video-only input also fires once per block; fused linear_input_act path: ff.net.2 0x, ff once per block; LTX-2 class-default config on meta resolves on all 48 blocks, D=4096.",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream_av",
+    "pred_crossings": ">=2",
+    "nc_notes": "Separate attention and MLP weights per modality (video vs audio) plus bidirectional cross-modal attention in every block: MMDiT-like with audio as the second stream. The node's capture is video-stream only (attn1, ff).",
+    "comfyui_class": "LTXAV",
+    "comfyui_unet_model": "comfy.ldm.lightricks.av_model.LTXAVModel"
+  },
+  "LTXVModel": {
+    "description": "LTX-Video 0.9.x (video-only DiT; any LTX checkpoint without the audio branch)",
+    "models": [
+      "ltx-video-0.9 / 0.9.1 / 0.9.5 / 0.9.6 2B",
+      "ltx-video-0.9.7 / 0.9.8 13B"
+    ],
+    "block_path": "transformer_blocks",
+    "block_count": 28,
+    "hidden_dim": 2048,
+    "attn_attrs": {
+      "self_attn": [
+        "attn1.to_out.0"
+      ],
+      "cross_attn": [
+        "attn2.to_out.0"
+      ],
+      "note": "BasicTransformerBlock.attn1 = self-attention, attn2 = text cross-attention, both lightricks CrossAttention whose forward ends with self.to_out(out); to_out = Sequential(Linear, Dropout) so to_out.0 (the Linear) is called as a module once per block. Pre-gate (x += attn1(...) * gate_msa). With STG (stg_skip_self_attn on chosen blocks, nodes_lt.py) attn1 skips attention and returns to_out(V), so those blocks' attn rows are not attention outputs."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ff"
+      ],
+      "note": "FeedForward.forward() is comfy.ops.linear_input_act(self.net[2], self.net[0].proj(x), 'gelu_tanh') outside training (ldm/lightricks/model.py:330). With TensorWise INT8 weights, or fp16 on CUDA with fp16 accumulation, the fused branch never calls net[2].forward, so the old path 'ff.net.2' can get nothing. Hook the parent 'ff' (called as a module once per block); its output equals net[2]'s output, pre-gate (x.addcmul_(ff(y), gate_mlp))."
+    },
+    "notes": "Which LTX versions: ComfyUI model_detection picks image_model 'ltxav' (LTXAVModel) when the checkpoint has audio_adaln_single.* and 'ltxv' (this class) otherwise. So LTX-Video 0.9.x loads here; LTX-2 / LTX-2.3 checkpoints, which carry the audio branch, load as LTXAVModel. The class also has the LTX-2.3-style options (cross_attention_adaln, caption_proj_before_connector), so a video-only 2.x checkpoint would load here too; none was checked. Dims: class defaults are the 2B config (28 blocks, 32 heads x 64 = 2048, cross_attention_dim 2048, caption_channels 4096 = T5-XXL). Detection counts transformer_blocks.N and sets attention_head_dim = attn2.to_k.weight.shape[0] // 32 (heads fixed at 32), so 13B (0.9.7/0.9.8) = 48 blocks, 32 x 128 = 4096 (both built on meta and checked). Tokens: one flat sequence of video latent tokens (patch size 1, 32x32x8 VAE), batch-first. Keyframe / guide latents (LTXVAddGuide etc.) are appended at the END of the same sequence and tokens with negative denoise mask are dropped (grid_mask), so the token count varies with conditioning and the captured rows include guide tokens. Full self-attention, MHA, RoPE. Old keys LTXVideoTransformer3DModel_09 / _20 / _23 never matched a ComfyUI class; this entry replaces _09 and the video-only part of _23.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny LTXVModel (inner 32, 3 blocks) real CPU forward, default and cross_attention_adaln=True: attn1.to_out.0 and ff fire once per block, D=32, forward order; forcing linear_input_act's fused path: ff.net.2 fires 0x, ff once per block; 2B (class defaults) and 13B configs on meta resolve on all 28 / 48 blocks with D 2048 / 4096.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Separate self-attn (attn1) and text cross-attn (attn2) per block plus GELU MLP, AdaLN-single modulation (shared timestep embedding, per-block scale_shift_table). Same pattern as UNet BasicTransformerBlock but as a flat DiT.",
+    "comfyui_class": "LTXV",
+    "comfyui_unet_model": "comfy.ldm.lightricks.model.LTXVModel"
+  },
+  "MiniMaxH3Model": {
+    "description": "MiniMax H3 (joint video+audio DiT on one packed sequence)",
+    "models": [
+      "minimax-h3"
+    ],
+    "block_path": "blocks",
+    "block_count": 50,
+    "hidden_dim": 5376,
+    "attn_attrs": {
+      "self_attn": [
+        "attn.out_proj"
+      ],
+      "cross_attn": [],
+      "note": "Attention.out_proj is the output Linear, called as a module. One self-attention over the packed [text, (cond), audio, video] sequence."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp"
+      ],
+      "note": "Hook the MLP module, NOT mlp.fc2: MLP.forward calls comfy.ops.linear_input_act(self.fc2, ...), which on the fp16/INT8 paths uses fc2's weights without calling fc2, so a hook on fc2 can silently never fire."
+    },
+    "notes": "56 heads x 128 (inner 7168) projected to hidden 5376, 50 layers, MLP 14336 (class defaults). Batch size 1 only: activations are 2-D [tokens, D] packed rows, so cond and uncond are always separate forwards (R3 nodes.py attributes a single-branch forward whole; R2 would have cut the 2-D tensor along tokens). Each row mixes text, audio and video tokens, which run at different timesteps (audio uses its own sigma shift), so g here is a joint text+audio+video statistic. The token refiner (2 blocks) is not hooked. Checked on the real class (ComfyUI master 58b176f (2026-10-08)).",
+    "verified": false,
+    "class_checked": "ComfyUI master 58b176f (2026-10-08): real config 50 blocks/D 5376; tiny block-level forwards on 2-D packed input",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream_av",
+    "pred_crossings": "?",
+    "nc_notes": "One shared stream for text, audio and video tokens with per-modality AdaLN rows (3 modalities); no separate per-modality weights in attention or MLP.",
+    "comfyui_class": "MiniMaxH3",
+    "comfyui_unet_model": "comfy.ldm.minimax.model.MiniMaxH3Model"
+  },
+  "MiniTrainDIT": {
+    "description": "NVIDIA Cosmos Predict2 (text2image / video2world 2B, 14B)",
+    "models": [
+      "cosmos-predict2-2b-text2image",
+      "cosmos-predict2-14b-text2image",
+      "cosmos-predict2-2b-video2world",
+      "cosmos-predict2-14b-video2world"
+    ],
+    "block_path": "blocks",
+    "block_count": 28,
+    "hidden_dim": 2048,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.output_proj"
+      ],
+      "cross_attn": [
+        "cross_attn.output_proj"
+      ],
+      "note": "Block.self_attn / cross_attn are predict2 Attention; compute_attention returns self.output_dropout(self.output_proj(result)), output_proj a Linear called as a module once per block, pre-gate. Output [B, T*H*W, D]."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp.layer2"
+      ],
+      "note": "Block.mlp is GPT2FeedForward: layer1 -> GELU -> layer2, all called as modules (no linear_input_act); layer2 is the output Linear, once per block, output [B, T, H, W, D]."
+    },
+    "notes": "Batch-first throughout (unlike Cosmos 1 GeneralDIT), so cond/uncond batching splits correctly (checked with B=2). Captured rows = video/image latent tokens only (text via cross-attn: T5-XXL 1024-d for Predict2). Residual stream is kept in fp32 when compute dtype is fp16; hooked tensors are in compute dtype. Dims: ComfyUI detection reads model_channels from x_embedder, num_heads 16 for 2048 and 40 for 5120, num_blocks by counting blocks.N; 2B = 28 blocks and 14B = 36 blocks are the public configs (built on meta here). Anima (comfy.ldm.anima.model.Anima) subclasses MiniTrainDIT with the same blocks but its class name is 'Anima', a separate registry key (the existing registry key 'AnimaModel' does not match it; not this group's class, flagged only).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny MiniTrainDIT (D 64, 3 blocks, AdaLN-LoRA, learnable rope) real CPU forward: self_attn.output_proj and mlp.layer2 fire once per block, D=64, forward order; B=2 with branches [0,1] splits into cond/uncond with 32 rows each; 2B (28 blocks, D 2048) and 14B (36 blocks, D 5120) configs on meta resolve on all blocks.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "?",
+    "nc_notes": "Per block: self-attention over latent tokens, cross-attention to T5 text, GELU MLP, each with separate AdaLN(-LoRA) modulation; single stream.",
+    "comfyui_class": "CosmosPredict2",
+    "comfyui_unet_model": "comfy.ldm.cosmos.predict2.MiniTrainDIT"
+  },
+  "NextDiT": {
+    "description": "Z-Image Base/Turbo and Lumina 2 (comfy.ldm.lumina.model.NextDiT)",
+    "models": [
+      "z-image-base",
+      "z-image-turbo",
+      "lumina2"
+    ],
+    "block_path": "layers",
+    "block_count": 30,
+    "hidden_dim": 3840,
+    "attn_attrs": {
+      "self_attn": [
+        "attention.out"
+      ],
+      "cross_attn": []
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "feed_forward.w2"
+      ]
+    },
+    "notes": "NextDiT JointTransformerBlock with JointAttention and SwiGLU FeedForward. attention.out is the output projection Linear layer (nn.Linear) inside JointAttention, capturing attention output pre-clamp_fp16, pre-attention_norm2, pre-gate, pre-residual. JointAttention.forward() is called directly in JointTransformerBlock.forward(), so PyTorch hooks fire normally. NextDiT uses single joint attention on concatenated text+image sequence — no separate cross-attn in main layers, hence cross_attn is empty. For MLP: NextDiT FeedForward is SwiGLU (w1=gate, w3=up, w2=down/output). feed_forward.w2 captures the FFN output projection (pre-residual). TENTATIVE — needs discovery verification. D=3840, N=30, D/N=128. Full bidirectional attention. v3.0: Lumina 2 loads as this same class (the Lumina2NextDiT key never matched and is removed). Paths unchanged; Lumina 2 dims (D 2304, 26 layers) come from its checkpoint and were not checked here.",
+    "verified": true,
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "1",
+    "nc_notes": "Single joint attention on concatenated text+image sequence. No structural heterogeneity between attention operations at different layers. CONFIRMED: ZIT=1 crossing (g*=0.030), ZIB=1 crossing (g*=0.0085).",
+    "comfyui_class": "Lumina2 (shares NextDiT name) / Z-Image uses separate loader",
+    "comfyui_unet_model": "NextDiT (loaded directly, not via model_base)"
+  },
+  "OmniGen2Transformer2DModel": {
+    "description": "OmniGen2 (Lumina-style single-stream DiT, 32 joint layers + refiners)",
+    "models": [
+      "omnigen2"
+    ],
+    "block_path": "layers",
+    "block_count": 32,
+    "hidden_dim": 2520,
+    "attn_attrs": {
+      "self_attn": [
+        "attn.to_out.0"
+      ],
+      "cross_attn": [],
+      "note": "Joint self-attention over [text | ref images | noise image]. to_out is nn.Sequential(Linear, Dropout) and forward calls self.to_out[0](...) directly, so the Linear fires (pre norm2, pre tanh-gate). GQA: 21 query heads, 7 KV heads, head_dim 120."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "feed_forward.linear_2"
+      ],
+      "note": "LuminaFeedForward SwiGLU; linear_2 is the output Linear, called as a module. Inner dim 10240 (4*2520 rounded to a multiple of 256)."
+    },
+    "notes": "block_path is the 32 main layers only. The refiners run before them on single modalities and are deliberately not listed: context_refiner (2 blocks, text only, no modulation), noise_refiner (2 blocks, noise-image tokens only), ref_image_refiner (2 blocks, runs ONLY when reference images are given, so it would make hook firing conditional). Main-layer rows are text tokens (the full padded context length) + reference-image tokens (edit/in-context mode) + noise-image tokens, concatenated in that order; N = L_text + sum(ref tokens) + (H/16)*(W/16). attention_mask is set to None for the main layers, so text padding tokens attend and are captured. Activations (B, N, D), dim 3. Dims from comfy/model_detection.py (hidden_size 2520, num_layers 32, heads 21, kv 7); class defaults (2304/26) are NOT the shipped model. model_base.Boogu subclasses Omnigen2 but uses a different diffusion class (BooguTransformer2DModel), so it needs its own entry.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: real config (model_detection dims) on meta: 32 layers, paths resolve, D=2520, GQA 21/7, FFN 10240; tiny config (3 layers + 2-block refiners) real forward t2i and with one reference latent: attn and MLP hooks fire once per layer, D matches, rows = text + ref + image. PASS",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "?",
+    "nc_notes": "Single-stream joint layers with shared weights for all modalities; modality-specific processing only in the 2-block refiners before the main stack.",
+    "comfyui_class": "Omnigen2",
+    "comfyui_unet_model": "comfy.ldm.omnigen.omnigen2.OmniGen2Transformer2DModel"
+  },
+  "OpenAISignatureMMDITWrapper": {
+    "description": "Stable Diffusion 3 / 3.5 Medium and Large (MMDiT, joint attention)",
+    "models": [
+      "sd3-medium",
+      "sd3.5-medium",
+      "SD3.5-large",
+      "sd3.5-large",
+      "sd3.5-large-turbo"
+    ],
+    "block_path": "joint_blocks",
+    "block_count": "24 (SD3/3.5 Medium) / 38 (3.5 Large)",
+    "hidden_dim": "1536 (Medium) / 2432 (Large)",
+    "attn_attrs": {
+      "self_attn": [
+        "x_block.attn.proj"
+      ],
+      "cross_attn": [
+        "context_block.attn.proj"
+      ]
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "x_block.mlp.fc2"
+      ]
+    },
+    "notes": "MMDiT JointBlock: attn sub-modules' forward() is never called, but the output projection (attn.proj, nn.Linear) IS called during post_attention(). x_block.attn.proj is the latent-stream attention output (pre-gate, pre-residual, pre-FFN) — exists on ALL 38 blocks (x_block is always pre_only=False). context_block.attn.proj exists only on blocks 0-12 (pre_only=False). For MLP: x_block.mlp.fc2 is the MLP output projection. TENTATIVE — needs discovery verification. Use hook_mode=auto for dual-hook. Blocks 0-12: dual-stream, Blocks 13-37: single-stream. head_dim=64, num_heads=38. v3.0: the SD3Transformer2DModel key (diffusers name, never matched) is folded in here; SD3 and SD3.5 Medium load as this same class with 24 joint blocks, D 1536. dual_hook_supported stays false so new runs hook exactly what the archive hooked (attn only).",
+    "verified": true,
+    "dual_hook_supported": false,
+    "nc_source": "dual_stream",
+    "pred_crossings": ">=2",
+    "nc_notes": "MMDiT dual-stream: same mechanism as SD3 Medium. Blocks 0-12 dual, 13-37 single. MEASURED ~3 crossings with block hooks (needs attn-hook rerun). Strongest DM non-commutativity source.",
+    "comfyui_class": "SD3",
+    "comfyui_unet_model": "comfy.ldm.modules.diffusionmodules.mmdit.OpenAISignatureMMDITWrapper"
+  },
+  "QwenImage21Transformer2DModel": {
+    "description": "Qwen-Image 2.1 (single-stream DiT; text and reference tokens as a causal prefix)",
+    "models": [
+      "qwen-image-2.1"
+    ],
+    "block_path": "transformer_blocks",
+    "block_count": 32,
+    "hidden_dim": 4096,
+    "attn_attrs": {
+      "self_attn": [
+        "attn.to_out.0"
+      ],
+      "cross_attn": [],
+      "note": "Attention.to_out[0] is the output Linear, called as a module."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "img_mlp"
+      ],
+      "note": "Hook the MLP module, NOT img_mlp.out: the fused SwiGLU calls comfy.ops.linear_input_act(self.out, ...), which can bypass out's forward."
+    },
+    "transformer_options_set": {
+      "qwen_image21_cache": {
+        "device": "off"
+      }
+    },
+    "notes": "32 heads x 128 = 4096, 32 layers, MLP ratio 3 (class defaults). Unlike Qwen-Image 1 there are no per-modality MLPs: one img_mlp for all tokens. TRAP: by default ComfyUI caches the text/reference prefix K/V for the whole sampling run, so on step 0 each block runs twice (prefix rows, then image rows) and from step 1 only the image rows run. The registry sets transformer option qwen_image21_cache = {device: off} (R3 nodes.py applies 'transformer_options_set'), which recomputes the full [text, image] sequence every step. This is slower; it is the cache's documented way to rule itself out. Checked on the real class (ComfyUI master 58b176f (2026-10-08)).",
+    "verified": false,
+    "class_checked": "ComfyUI master 58b176f (2026-10-08): real config 32 blocks/D 4096; tiny 2-step forwards with the cache on (trap reproduced) and off",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "?",
+    "nc_notes": "Single-stream: shared attention and one shared MLP; text and reference tokens modulated at t = 0 and attended causally as a prefix.",
+    "comfyui_class": "QwenImage21",
+    "comfyui_unet_model": "comfy.ldm.qwen_image21.model.QwenImage21Transformer2DModel"
+  },
+  "QwenImageTransformer2DModel": {
+    "description": "Qwen-Image (MMDiT-style dual-stream image DiT), incl. Qwen-Image-Edit variants and Qwen-Image-Layered",
+    "models": [
+      "qwen-image",
+      "qwen-image-edit",
+      "qwen-image-edit-2509",
+      "qwen-image-edit-2511",
+      "qwen-image-layered"
+    ],
+    "block_path": "transformer_blocks",
+    "block_count": 60,
+    "hidden_dim": 3072,
+    "attn_attrs": {
+      "self_attn": [
+        "attn.to_out.0"
+      ],
+      "cross_attn": [],
+      "note": "Joint attention over concatenated [text | image] tokens. attn.to_out[0] is the image-stream output projection (Linear, called as a module); attn.to_add_out is the text-stream output (not hooked). Single joint attention, not cross-attn. 24 heads x 128, no GQA."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "img_mlp.net.2"
+      ],
+      "note": "Image-stream MLP output Linear (FeedForward.net = [GELU(proj), Dropout, Linear]; forward iterates net, so net.2 fires once). The old entry listed ['img_mlp.net.2', 'txt_mlp.net.2']: the node tries the list in order and hooks only the FIRST path that resolves, so txt_mlp.net.2 was never hooked (and with dual_hook_supported false no MLP hook was registered at all). txt_mlp is removed so the list says what is captured: sub_pos 1 is the image-stream MLP, matching sub_pos 0 (image-stream attention output). The text-stream MLP cannot be captured by this node (only one MLP slot per block)."
+    },
+    "notes": "QwenImageTransformerBlock: joint attention with separate per-modality projections (to_q/k/v + to_out for image, add_q/k/v_proj + to_add_out for text) + separate FeedForward per modality (img_mlp, txt_mlp), separate AdaLN (img_mod, txt_mod). Captured rows (both hooks) are IMAGE-stream tokens only: target latent tokens (H/16)*(W/16) plus, for the Edit models, the reference-latent tokens appended after them (ref_latents), so N varies with the number/size of reference images. Edit-2511 ('index_timestep_zero') modulates the reference tokens with t=0 parameters (the temb batch is doubled internally, but the activation batch is not). Activations (B, N, D), dim 3. hidden_dim 3072 = 24 heads x 128 and 60 layers are class defaults; comfy/model_detection.py overrides only num_layers (counted from the checkpoint, 60 for released Qwen-Image). Qwen-Image 2.1 (QwenImage21Transformer2DModel) and Mage-Flow (MageFlowTransformer2DModel) use different diffusion classes and need their own entries.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: class-default config on meta: 60 blocks, paths resolve, D=3072; tiny config (3 blocks) real forward t2i, edit with one ref latent, and edit with ref_latents_method index_timestep_zero (2511): attn and img_mlp.net.2 hooks fire once per block, D matches, rows = image-stream tokens (64 / 128). Old entry checked: dual_hook_supported false -> attn hooks only; with dual on, only img_mlp.net.2 (first path) is hooked, txt_mlp never. PASS",
+    "dual_hook_supported": true,
+    "nc_source": "dual_stream",
+    "pred_crossings": ">=2",
+    "nc_notes": "MMDiT-style: joint attention + SEPARATE MLPs per modality (img_mlp, txt_mlp). This is structurally identical to SD3.5 and is the strongest NC source in DMs. The separate MLPs create explicit non-commutativity. If D/N is sufficient, predict >=2 crossings.",
+    "comfyui_class": "QwenImage",
+    "comfyui_unet_model": "comfy.ldm.qwen_image.model.QwenImageTransformer2DModel"
+  },
+  "SCAIL2WanModel": {
+    "description": "SCAIL-2 (SCAIL + multi-identity mask stream)",
+    "models": [
+      "scail-2-14b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). Subclass of SCAILWanModel with an extra additive mask patch embedding; same blocks and token layout as SCAILWanModel. Added because the class name is a separate registry key.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny SCAIL2WanModel real CPU forward with clip_fea and pose_latents: self_attn.o and ffn fire once per block, D=64, forward order; 14B config on meta resolves on all 40 blocks.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN21_SCAIL2",
+    "comfyui_unet_model": "comfy.ldm.wan.model.SCAIL2WanModel"
+  },
+  "SCAILWanModel": {
+    "description": "SCAIL (Wan 2.1 i2v-based pose-driven animation)",
+    "models": [
+      "scail-preview-14b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). Blocks are plain WanAttentionBlock (i2v cross-attn). The reference latent frame is concatenated in time before the video and pose tokens (patch_embedding_pose) are appended to the sequence, so the hooks capture ref + video + pose tokens; the pose tokens are cut off after the head.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny SCAILWanModel real CPU forward with clip_fea and pose_latents: self_attn.o and ffn fire once per block, D=64, forward order; 14B config (class default dim 5120) on meta resolves on all 40 blocks.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN21_SCAIL",
+    "comfyui_unet_model": "comfy.ldm.wan.model.SCAILWanModel"
+  },
+  "SingleStreamDiT": {
+    "description": "Krea 2 (single-stream DiT with GQA and a text-fusion transformer)",
+    "models": [
+      "krea-2"
+    ],
+    "block_path": "blocks",
+    "block_count": "28 (class default; checkpoint may differ)",
+    "hidden_dim": "6144 (class default)",
+    "attn_attrs": {
+      "self_attn": [
+        "attn.wo"
+      ],
+      "cross_attn": [],
+      "note": "Attention.wo is the output Linear, applied after a sigmoid output gate (pre block gate, pre-residual). Joint attention over [text, image] tokens."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "mlp.down"
+      ],
+      "note": "SwiGLU (gate, up, down); down is called as a module."
+    },
+    "notes": "48 query heads, 12 KV heads (GQA 4), headdim 128, MLP multiplier 4 (class defaults). The text-fusion transformer (txtfusion.layerwise_blocks / refiner_blocks) has its own attn/mlp but is not in .blocks and is not hooked. Rows pool text and image tokens; with reference latents, reference tokens are also in the sequence. Checked on the real class (ComfyUI master 58b176f (2026-10-08)).",
+    "verified": false,
+    "class_checked": "ComfyUI master 58b176f (2026-10-08): class-default config 28 blocks/D 6144; tiny forward",
+    "dual_hook_supported": true,
+    "nc_source": "single_stream",
+    "pred_crossings": "?",
+    "nc_notes": "Single-stream joint attention with shared MLP and shared modulation; GQA ratio 4.",
+    "comfyui_class": "Krea2",
+    "comfyui_unet_model": "comfy.ldm.krea2.model.SingleStreamDiT"
+  },
+  "UNetModel": {
+    "description": "Stable Diffusion 1.5 and SDXL (ComfyUI UNetModel; both use this one class)",
+    "models": [
+      "sd1.5",
+      "sd1.5-variants",
+      "sdxl-base",
+      "sdxl-turbo",
+      "sdxl-variants"
+    ],
+    "block_path": "UNET_LINEARIZE",
+    "block_count": "16 (SD1.5) / 70 (SDXL), in forward order input_blocks -> middle_block -> output_blocks",
+    "hidden_dim": "varies by level: SD1.5 320/640/1280; SDXL 640/1280 (the CSV hidden_dim column records it per row)",
+    "attn_attrs": {
+      "self_attn": [
+        "attn1.to_out.0"
+      ],
+      "cross_attn": [
+        "attn2.to_out.0"
+      ],
+      "note": "comfy.ldm.modules.attention.BasicTransformerBlock. CrossAttention.to_out = Sequential(Linear, Dropout); .0 is the output Linear."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ff.net.2"
+      ],
+      "note": "FeedForward.net = Sequential(GEGLU, Dropout, Linear); .2 is the output Linear."
+    },
+    "notes": "R3: the old keys UNet2DConditionModel_SD15/_SDXL were diffusers class names and never matched ComfyUI's class (UNetModel), and the R2 Passive guider had no UNet path at all, so it found 0 blocks and wrote no telemetry. R3 nodes.py linearizes the UNet. Block structure and hook firing checked on the real class (tests/test_r3_blocks_real_comfy.py, ComfyUI master 58b176f (2026-10-08)); needs one real sampler run before verified=true. Token count per block varies with level (SD1.5 at 512px: 4096/1024/256/64), and so does D, so g is rank-limited where tokens < D; compare blocks only against their own isotropic (Marchenko-Pastur) baseline.",
+    "verified": false,
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn_unet",
+    "pred_crossings": "?",
+    "nc_notes": "Self-attention (attn1) + text cross-attention (attn2) + GEGLU FFN per block, with width and token count changing across U-Net levels and skip connections joining down and up paths. The D/N framework does not apply directly.",
+    "comfyui_class": "SD15 / SDXL",
+    "comfyui_unet_model": "comfy.ldm.modules.diffusionmodules.openaimodel.UNetModel"
+  },
+  "VaceWanModel": {
+    "description": "Wan 2.1 VACE (control / reference video DiT)",
+    "models": [
+      "wan2.1-vace-14b",
+      "wan2.1-vace-1.3b",
+      "wan2.2-vace-fun-a14b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). VACE side blocks (vace_blocks, VaceWanAttentionBlock, one every num_layers // vace_layers main blocks) run during the forward and add c_skip * strength into x after the mapped main block, but they are NOT in block_path and are not hooked; the residual they add shows up in the input of the next main block. Main blocks are plain WanAttentionBlock.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny VaceWanModel (4 blocks, 2 vace blocks) real CPU forward with vace_context: self_attn.o and ffn fire once per main block, D=64, forward order; vace_blocks ran 2x and are outside block_path; 14B config on meta (8 vace layers) resolves on all 40 blocks, D=5120.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN21_Vace",
+    "comfyui_unet_model": "comfy.ldm.wan.model.VaceWanModel"
+  },
+  "WanModel": {
+    "description": "Wan 2.1 / 2.2 video DiT (t2v, i2v, flf2v, TI2V-5B, FlowRVS)",
+    "models": [
+      "wan2.1-t2v-14b",
+      "wan2.1-t2v-1.3b",
+      "wan2.1-i2v-14b",
+      "wan2.1-flf2v-14b",
+      "wan2.2-t2v-a14b",
+      "wan2.2-i2v-a14b",
+      "wan2.2-ti2v-5b",
+      "wan2.1-fun (non-camera, non-vace)"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). Subclasses are separate registry keys because the node looks up type(dm).__name__: VaceWanModel, CameraWanModel, HumoWanModel, WanModel_S2V, AnimateWanModel, SCAILWanModel, SCAIL2WanModel have their own entries with the same paths. Not given entries: WanAnimate2Model (runs each block a second time on a pose branch via block.forward_pose when the pose cache is cold, so self_attn.o and ffn fire 2x per block on those steps: checked), CausalWanModel (same paths resolve; autoregressive frame-block inference calls the blocks once per temporal chunk, not checked by forward), WanDancerModel (not checked). The old key 'WanTransformer3DModel' (diffusers name) never matched a ComfyUI model; this entry replaces it. Old note said 'ffn ... 4-layer SwiGLU, ffn.3 is the final down projection': wrong, ffn has 3 entries with GELU(tanh) and the down projection is ffn.2.",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny WanModel (dim 64, 3 blocks) t2v and i2v (with clip_fea) real CPU forward: self_attn.o and ffn fire once per block, D=64, forward order; B=2 with branches [0,1] splits into cond/uncond with correct token counts; forcing linear_input_act's fused path: ffn.2 fires 0x, ffn fires once per block; 14B / 1.3B / 5B configs built on meta resolve on all 40/30/30 blocks with D 5120/1536/3072.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN21, WAN22, WAN21_FlowRVS",
+    "comfyui_unet_model": "comfy.ldm.wan.model.WanModel"
+  },
+  "WanModel_S2V": {
+    "description": "Wan 2.2 S2V (speech-to-video)",
+    "models": [
+      "wan2.2-s2v-14b"
+    ],
+    "block_path": "blocks",
+    "block_count": 40,
+    "hidden_dim": 5120,
+    "attn_attrs": {
+      "self_attn": [
+        "self_attn.o"
+      ],
+      "cross_attn": [
+        "cross_attn.o"
+      ],
+      "note": "WanAttentionBlock.self_attn is WanSelfAttention; .o is its output Linear, called as a module once per block forward (pre-gate: the block does x = addcmul(x, y, e[2])). cross_attn.o is the text (t2v) or CLIP-image+text (i2v) cross-attention output Linear; listed for reference only, the node hooks the first resolving self_attn path."
+    },
+    "mlp_attrs": {
+      "mlp": [
+        "ffn"
+      ],
+      "note": "ffn is WanFeedForward(nn.Sequential[Linear(dim, ffn_dim), GELU(tanh), Linear(ffn_dim, dim)]) whose forward() is comfy.ops.linear_input_act(self[2], self[0](x), 'gelu_tanh') (ldm/wan/model.py:199). With TensorWise INT8 weights, or fp16 activations on CUDA with fp16 accumulation enabled, linear_input_act runs a fused kernel and never calls self[2].forward, so a hook on 'ffn.2' gets nothing. The old path 'ffn.2' was therefore replaced by the parent 'ffn' (called as a module from WanAttentionBlock.forward, once per block); its output is the same tensor as ffn.2's output, pre-gate (block does x = addcmul(x, y, e[5]))."
+    },
+    "notes": "Tokens seen by both hooks = video latent tokens only (text enters only via cross-attn K/V), batch-first [B, L, D], so cond/uncond batching splits correctly. L = F_lat * (H_lat/2) * (W_lat/2). Extra tokens are appended to the same sequence in some cases and are captured too: reference_latent (ref_conv, Wan 2.x Fun) is prepended, in-context 'context_latents' are appended. Wan 2.2 TI2V-5B uses per-token timesteps (e has 4 dims); hooks are unaffected. Full (non-windowed) self-attention, MHA (num_heads = dim/128), head_dim 128. Dims come from the checkpoint: ComfyUI model_detection reads dim from head.modulation, num_heads = dim // 128, ffn_dim from blocks.0.ffn.0.weight, num_layers by counting blocks.N. Known public configs: Wan 2.1/2.2 14B and A14B (each expert): D=5120, 40 blocks, ffn 13824; Wan 2.1 1.3B: D=1536, 30 blocks, ffn 8960; Wan 2.2 TI2V-5B: D=3072, 30 blocks, ffn 14336 (checked by building those configs on meta; the D/L pairs themselves are from the public model configs, not from ComfyUI code). Blocks are plain WanAttentionBlock (t2v cross-attn). Audio is injected OUTSIDE the blocks by audio_injector after selected blocks (default layers 0,4,8,12,16,20,24,27,30,33,36,39), so it is not hooked; it changes the input of the next block. Reference latent tokens and FramePack motion tokens (reference_motion) are concatenated onto the video sequence, so the hooks capture video + ref + motion tokens. Timestep is per-frame (t is repeated over frames, e has 4 dims).",
+    "verified": false,
+    "class_checked": "ComfyUI 58b176f: tiny WanModel_S2V real CPU forward with audio_embed: self_attn.o and ffn fire once per block, D=64, forward order; 14B config on meta resolves on all 40 blocks, D=5120.",
+    "dual_hook_supported": true,
+    "nc_source": "cross_attn",
+    "pred_crossings": "1-2",
+    "nc_notes": "Each block: self-attention over visual tokens + cross-attention to umT5 text embeddings (plus 257 CLIP image tokens in i2v variants) + GELU MLP, all AdaLN-modulated by a shared time projection plus a per-block learned modulation table. Cross-attn adds moderate heterogeneity; self-attn and MLP dominate.",
+    "comfyui_class": "WAN22_S2V",
+    "comfyui_unet_model": "comfy.ldm.wan.model.WanModel_S2V"
+  }
+}

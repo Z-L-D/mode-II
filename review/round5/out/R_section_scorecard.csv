@@ -1,0 +1,13 @@
+id,prediction,verdict,result,design_deviation
+R1a,Preflight passes,CONFIRMED,"passive-branch; {cond,uncond} at 4.5 and {cond} at 1; 24 layers x 40 steps; finite prompt_influence in all 60 core CFG 4.5 gens",26/30 frozen prompts (4 replaced); global seeds 1001/1002 reused across prompts
+R1b,cond@4.5 = CFG1 at step 0,CONFIRMED,median |log| 0.000453 (max 0.0043),26/30 frozen prompts (4 replaced); global seeds 1001/1002 reused across prompts
+R1c,Seed identity not decodable (unique seeds),NOT SCORABLE,unique-seed design not run; post hoc accuracy 0.917 (CFG1),shared seeds make seed identity trivially decodable; a different estimand
+R1d,"sigma50 in [0.85,0.96] (unique seeds)",NOT SCORABLE,"post hoc seed-centred: CFG1 0.484, CFG4.5 cond 0.571",unique-seed design not run
+R1e,VR(4) CFG1 cond <= 1.0 (unique seeds),NOT SCORABLE,post hoc seed-centred VR4 1.79 (> 1.2 band),unique-seed design not run
+R1f,Guidance contracts cond spread,CONFIRMED,median 0.637; prompt bootstrap 0.454-0.870,26/30 frozen prompts (4 replaced); global seeds 1001/1002 reused across prompts
+R1g,cond/uncond distinguishable,CONFIRMED,min prompt_influence at sigma<=0.9: 0.727,26/30 frozen prompts (4 replaced); global seeds 1001/1002 reused across prompts
+R1h,BM vs cond (report only),REPORTED,"median log(gBM/gcond), steps>=2: +0.0008",26/30 frozen prompts (4 replaced); global seeds 1001/1002 reused across prompts
+R2a,"100-step passive: first +, not -+-+-, <=3 crossings",CONFIRMED,"+-, 1 crossing(s); 15/15 single seeds start +, 0/15 are -+-+-","15 of >=30 seeds (precision, not estimand)"
+R2b,|log(g100/g40)| <= 0.05 vs R3 CFG1,REFUTED,frozen comparison 0.2561 (yardstick 0.0716); same-prompt post hoc 0.0345,"15 of >=30 seeds (precision, not estimand)"
+R3,Instrument A/B,NOT SCORABLE,no A/B data,conditional on R2; not run
+R4,"G4 LLM / PSTF (C0-C4, D0-D6)",NOT SCORABLE,no new data,

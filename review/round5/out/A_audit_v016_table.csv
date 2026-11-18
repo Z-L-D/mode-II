@@ -1,0 +1,21 @@
+claim,reviewer,recomputed,status,note
+R1b median |log| step 0,0.000453,0.000453,Exact,
+"R1g min prompt_influence, sigma<=0.9",0.727,0.7272,Exact,prompt_influence is per layer; the minimum sits in the mid layers
+"R1h median log(gBM/gcond), steps>=2",0.00077,0.00077,Exact,
+"R1f median, last three quarters",0.575,0.5746,Reproduced with the v0.16 definition,"frozen B6 definition (mean of log g over layers) gives 0.637; both < 0.7, verdict unchanged"
+R1f quarters,1.00/0.77/0.55/0.46,1.00/0.77/0.55/0.46,Reproduced (v0.16 def.),frozen def.: 1.00/0.90/0.58/0.45
+VR(4) CFG1 cond,1.85,1.85,Exact,
+VR(4) CFG4.5 cond,1.25,1.25,Exact,
+VR(4) CFG4.5 uncond,0.59,0.592,Exact,
+VR(4) synthetic branch-mean,0.79,0.787,Exact,
+sigma50 seed-centred CFG1_cond,0.631,0.631,Exact with the reviewer row order,"same data, Claude row order (different fold partition): 0.484; uncentred 0.953 vs 0.935"
+sigma50 seed-centred CFG45_cond,0.596,0.596,Exact with the reviewer row order,"same data, Claude row order (different fold partition): 0.571; uncentred 0.632 vs 0.624"
+sigma50 seed-centred CFG45_uncond,0.571,0.571,Exact with the reviewer row order,"same data, Claude row order (different fold partition): 0.528; uncentred 0.612 vs 0.596"
+R2 passive 100-step pooled sequence,+- (1 crossing at 0.0593),+- (0.05929+-),Exact,
+"R2 single seeds: start +, -+-+-","15/15, 0/15","15/15, 0/15",Exact,
+40->100 same-prompt median |log g|,0.0326,0.0326,Exact,mapping 100->40 instead gives 0.0345
+"Topology map, 10 arm x functional cells",sequences in CURRENT_BRANCH_BETA_TOPOLOGY_MAP.csv,10/10 sequences identical,Exact,
+Legacy and passive 100-step sigma grids differ,max same-index diff 0.1816,0.1816,Exact,
+Legacy -+-+- survives regridding to the passive grid,-+-+-,-+-+-,"Reproduced (nearest-sigma thinning, not interpolation)",
+"512 arm intake: 27 prompts, 57,599 rows",27 prompts,"30 prompts, 57,600 rows",Intake-table error only,"one 512 CSV has no header row; the reviewer analysis loader (r4_common.load_member) handles it, the intake script does not"
+Guidance lag correlations (descriptive),rho -0.83 to -0.95 at all lags,range -0.95 to -0.83,"Read, not recomputed","the profile is flat across +-15 steps, so it carries no lead/lag information; agreed it is descriptive only"

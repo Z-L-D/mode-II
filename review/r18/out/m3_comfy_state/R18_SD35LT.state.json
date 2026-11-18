@@ -1,0 +1,520 @@
+{
+ "jobs": {
+  "p000_s1001": {
+   "status": "done",
+   "attempts": 3,
+   "prompt_id": "92db89e5-0d50-42a7-a6a2-5159c8ad64c3",
+   "last_error": "CheckpointLoaderSimple#1: Error while deserializing header: HeaderTooLarge\n\nFile path: G:\\models\\Stable-diffusion\\--sd3--\\sd3.5_large_turbo.safetensors\n\nThe safetensors file is corrupt or invalid. Make sure this is actually a safetensors file and not a ckpt or pt or other filetype.",
+   "outputs": [
+    "R18_SD35LT/p000_s1001_00001_.png"
+   ]
+  },
+  "p001_s1001": {
+   "status": "done",
+   "attempts": 3,
+   "prompt_id": "aa3ab4fc-03ba-41a7-ad3c-e8277529c4b6",
+   "last_error": "CheckpointLoaderSimple#1: Error while deserializing header: HeaderTooLarge\n\nFile path: G:\\models\\Stable-diffusion\\--sd3--\\sd3.5_large_turbo.safetensors\n\nThe safetensors file is corrupt or invalid. Make sure this is actually a safetensors file and not a ckpt or pt or other filetype.",
+   "outputs": [
+    "R18_SD35LT/p001_s1001_00001_.png"
+   ]
+  },
+  "p002_s1001": {
+   "status": "done",
+   "attempts": 3,
+   "prompt_id": "ceb77bbe-0f19-46f2-b28b-be8ff4b1dfc3",
+   "last_error": "CheckpointLoaderSimple#1: Error while deserializing header: HeaderTooLarge\n\nFile path: G:\\models\\Stable-diffusion\\--sd3--\\sd3.5_large_turbo.safetensors\n\nThe safetensors file is corrupt or invalid. Make sure this is actually a safetensors file and not a ckpt or pt or other filetype.",
+   "outputs": [
+    "R18_SD35LT/p002_s1001_00001_.png"
+   ]
+  },
+  "p003_s1001": {
+   "status": "done",
+   "attempts": 3,
+   "prompt_id": "26271872-5248-44b7-ac4a-66099633e705",
+   "last_error": "lost",
+   "outputs": [
+    "R18_SD35LT/p003_s1001_00001_.png"
+   ]
+  },
+  "p004_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "324e7c68-5485-4635-9d7a-66af4c21ab2c",
+   "outputs": [
+    "R18_SD35LT/p004_s1001_00001_.png"
+   ]
+  },
+  "p005_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "815faad1-9f0a-4f95-8c3a-dac47d6034fb",
+   "outputs": [
+    "R18_SD35LT/p005_s1001_00001_.png"
+   ]
+  },
+  "p006_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ca659597-e010-4b98-b0e6-97b2c2b89be2",
+   "outputs": [
+    "R18_SD35LT/p006_s1001_00001_.png"
+   ]
+  },
+  "p007_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ac8bb112-49cd-423b-a4f2-d3f3d954de5a",
+   "outputs": [
+    "R18_SD35LT/p007_s1001_00001_.png"
+   ]
+  },
+  "p008_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5fe73d64-fa48-41eb-a153-9a4fa2065b9e",
+   "outputs": [
+    "R18_SD35LT/p008_s1001_00001_.png"
+   ]
+  },
+  "p009_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d67bc965-082f-48e5-a2ad-75634c2c7ed7",
+   "outputs": [
+    "R18_SD35LT/p009_s1001_00001_.png"
+   ]
+  },
+  "p010_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4cf4d52a-a6c3-469b-b2ce-434f45c7405f",
+   "outputs": [
+    "R18_SD35LT/p010_s1001_00001_.png"
+   ]
+  },
+  "p011_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "ed9fdff1-b209-4cc8-8856-2ad3d01ad12a",
+   "outputs": [
+    "R18_SD35LT/p011_s1001_00001_.png"
+   ]
+  },
+  "p012_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "0d289d94-2981-487f-b351-3970ccf7a98a",
+   "outputs": [
+    "R18_SD35LT/p012_s1001_00001_.png"
+   ]
+  },
+  "p013_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "bdbdaa94-0130-4ac8-8359-058e52dca33b",
+   "outputs": [
+    "R18_SD35LT/p013_s1001_00001_.png"
+   ]
+  },
+  "p014_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e9deecc0-a823-4484-84fb-5b7d29a03619",
+   "outputs": [
+    "R18_SD35LT/p014_s1001_00001_.png"
+   ]
+  },
+  "p015_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d1a92f7d-8fb5-4391-a401-0312e9f6ebfa",
+   "outputs": [
+    "R18_SD35LT/p015_s1001_00001_.png"
+   ]
+  },
+  "p016_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e2bec3bd-93ae-4e41-b8d2-26a656572c50",
+   "outputs": [
+    "R18_SD35LT/p016_s1001_00001_.png"
+   ]
+  },
+  "p017_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6ca723bc-5cf4-4d9d-b448-4f02ffd7d086",
+   "outputs": [
+    "R18_SD35LT/p017_s1001_00001_.png"
+   ]
+  },
+  "p018_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "fd59bd3c-a74a-4120-a9d4-40dae989b5ec",
+   "outputs": [
+    "R18_SD35LT/p018_s1001_00001_.png"
+   ]
+  },
+  "p019_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "cded499c-462c-4504-9db9-7c58c8292d0f",
+   "outputs": [
+    "R18_SD35LT/p019_s1001_00001_.png"
+   ]
+  },
+  "p020_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "35f97e5d-3687-49dc-96bf-81df4abfff2a",
+   "outputs": [
+    "R18_SD35LT/p020_s1001_00001_.png"
+   ]
+  },
+  "p021_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "59c6211f-959f-4ed6-b852-ddb9f826f817",
+   "outputs": [
+    "R18_SD35LT/p021_s1001_00001_.png"
+   ]
+  },
+  "p022_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "444bd788-42e3-40fd-b886-42036d6f9da6",
+   "outputs": [
+    "R18_SD35LT/p022_s1001_00001_.png"
+   ]
+  },
+  "p023_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "83ac64e8-afff-4359-9e84-2db940b85362",
+   "outputs": [
+    "R18_SD35LT/p023_s1001_00001_.png"
+   ]
+  },
+  "p024_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f342b29d-678a-468b-8215-35e6dec6f6f9",
+   "outputs": [
+    "R18_SD35LT/p024_s1001_00001_.png"
+   ]
+  },
+  "p025_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e0177d2e-470b-4e0b-9930-07551e8561f0",
+   "outputs": [
+    "R18_SD35LT/p025_s1001_00001_.png"
+   ]
+  },
+  "p026_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8fc3b43e-0053-4c85-920f-591d46c7dfdf",
+   "outputs": [
+    "R18_SD35LT/p026_s1001_00001_.png"
+   ]
+  },
+  "p027_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "52b02c60-037f-4878-8fec-cb612e625e55",
+   "outputs": [
+    "R18_SD35LT/p027_s1001_00001_.png"
+   ]
+  },
+  "p028_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1e27685b-467e-4992-9860-579b445f55db",
+   "outputs": [
+    "R18_SD35LT/p028_s1001_00001_.png"
+   ]
+  },
+  "p029_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d1242974-62ac-464c-bad4-c970d936edb7",
+   "outputs": [
+    "R18_SD35LT/p029_s1001_00001_.png"
+   ]
+  },
+  "p030_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "aa2717ff-941c-4816-8201-01039633bc8d",
+   "outputs": [
+    "R18_SD35LT/p030_s1001_00001_.png"
+   ]
+  },
+  "p031_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "e6a9d608-a063-4c8e-9280-18d71979e6ff",
+   "outputs": [
+    "R18_SD35LT/p031_s1001_00001_.png"
+   ]
+  },
+  "p032_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "dcd34a81-9c23-487a-bff3-3e169b8b37a1",
+   "outputs": [
+    "R18_SD35LT/p032_s1001_00001_.png"
+   ]
+  },
+  "p033_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2fa4b685-e14b-4894-9661-293caa06fe07",
+   "outputs": [
+    "R18_SD35LT/p033_s1001_00001_.png"
+   ]
+  },
+  "p034_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "acfd77d4-561b-4021-bf99-34005bffd970",
+   "outputs": [
+    "R18_SD35LT/p034_s1001_00001_.png"
+   ]
+  },
+  "p035_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "14124e5f-7009-43fb-a422-057176302eb9",
+   "outputs": [
+    "R18_SD35LT/p035_s1001_00001_.png"
+   ]
+  },
+  "p036_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "1c468b1a-c1d0-4427-8e5e-b9e1d7c5f74b",
+   "outputs": [
+    "R18_SD35LT/p036_s1001_00001_.png"
+   ]
+  },
+  "p037_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4bc34ef4-68b7-44c9-b730-34827f5d8f7d",
+   "outputs": [
+    "R18_SD35LT/p037_s1001_00001_.png"
+   ]
+  },
+  "p038_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "18819207-02bd-4b28-82cd-f76ae98a986c",
+   "outputs": [
+    "R18_SD35LT/p038_s1001_00001_.png"
+   ]
+  },
+  "p039_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "f45e08b1-027d-4419-954d-aa4d68961d80",
+   "outputs": [
+    "R18_SD35LT/p039_s1001_00001_.png"
+   ]
+  },
+  "p040_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "93b2ed12-77e1-4ce1-ae7c-de2e59649538",
+   "outputs": [
+    "R18_SD35LT/p040_s1001_00001_.png"
+   ]
+  },
+  "p041_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "5ce65b64-54c7-4ac3-9cd5-f212aebcb949",
+   "outputs": [
+    "R18_SD35LT/p041_s1001_00001_.png"
+   ]
+  },
+  "p042_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3aa17f45-2526-4a40-b3a0-a88cfeb32339",
+   "outputs": [
+    "R18_SD35LT/p042_s1001_00001_.png"
+   ]
+  },
+  "p043_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4bbc4a70-be60-476f-bceb-6ade90602d6f",
+   "outputs": [
+    "R18_SD35LT/p043_s1001_00001_.png"
+   ]
+  },
+  "p044_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "69356c97-8a38-46c4-bd30-9a3f183390e3",
+   "outputs": [
+    "R18_SD35LT/p044_s1001_00001_.png"
+   ]
+  },
+  "p045_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a8a4f0c1-b594-4ad8-b585-7bcf4d24b1e3",
+   "outputs": [
+    "R18_SD35LT/p045_s1001_00001_.png"
+   ]
+  },
+  "p046_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4ede71d2-01b4-4430-b260-e90c045a9c1b",
+   "outputs": [
+    "R18_SD35LT/p046_s1001_00001_.png"
+   ]
+  },
+  "p047_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "d1babacc-3aa8-4c4a-b2a9-ada3ff120ee2",
+   "outputs": [
+    "R18_SD35LT/p047_s1001_00001_.png"
+   ]
+  },
+  "p048_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "2eaa5a1e-5e12-4bab-957f-aca5b2fc2913",
+   "outputs": [
+    "R18_SD35LT/p048_s1001_00001_.png"
+   ]
+  },
+  "p049_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "8c4427f7-8be3-4727-a8ce-b60da2ac0661",
+   "outputs": [
+    "R18_SD35LT/p049_s1001_00001_.png"
+   ]
+  },
+  "p050_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3a6b9a81-3c3e-4561-9a6e-90dcfda5ba0d",
+   "outputs": [
+    "R18_SD35LT/p050_s1001_00001_.png"
+   ]
+  },
+  "p051_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "6347bcab-8cb2-4e87-a467-69150dbe7ef7",
+   "outputs": [
+    "R18_SD35LT/p051_s1001_00001_.png"
+   ]
+  },
+  "p052_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "b66a60fd-8321-49f6-a2e4-a9eb49041e20",
+   "outputs": [
+    "R18_SD35LT/p052_s1001_00001_.png"
+   ]
+  },
+  "p053_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3e6fbf1e-8f2e-499a-a73d-b760f4d4e849",
+   "outputs": [
+    "R18_SD35LT/p053_s1001_00001_.png"
+   ]
+  },
+  "p054_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "3b58cfc5-f6e7-438f-aa43-a924844bb7f9",
+   "outputs": [
+    "R18_SD35LT/p054_s1001_00001_.png"
+   ]
+  },
+  "p055_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "49f5fa6f-f3b9-43d7-a273-6dc5ae5a3b01",
+   "outputs": [
+    "R18_SD35LT/p055_s1001_00001_.png"
+   ]
+  },
+  "p056_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "0ce1dc7d-8ab0-4d5b-87be-74b1dc43caf2",
+   "outputs": [
+    "R18_SD35LT/p056_s1001_00001_.png"
+   ]
+  },
+  "p057_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "4e9e478f-b849-4b59-b5fa-aa2879f67dfa",
+   "outputs": [
+    "R18_SD35LT/p057_s1001_00001_.png"
+   ]
+  },
+  "p058_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "a3699018-1c1d-4a9d-b45b-27600d3947bd",
+   "outputs": [
+    "R18_SD35LT/p058_s1001_00001_.png"
+   ]
+  },
+  "p059_s1001": {
+   "status": "done",
+   "attempts": 1,
+   "prompt_id": "fbff79d0-7648-410b-81f5-bd0b10c5818d",
+   "outputs": [
+    "R18_SD35LT/p059_s1001_00001_.png"
+   ]
+  }
+ },
+ "meta": {
+  "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\sd35_large_turbo_api.json",
+  "args": {
+   "mode": "capture",
+   "workflow": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\workflows\\local\\sd35_large_turbo_api.json",
+   "session": "R18_SD35LT",
+   "tsv": "prompts_r3_cond60.tsv",
+   "only": "0-3",
+   "prompt_mode": "normal",
+   "fixed_text": "A photograph of a wooden chair in an empty room",
+   "n_seeds": 1,
+   "seed0": 1001,
+   "ignore_tsv_seed": false,
+   "guider": [],
+   "sketch_only": "",
+   "swap_guider": "none",
+   "res": 0,
+   "steps": 0,
+   "clip_subset": "lgt",
+   "unet": "",
+   "text_node": "",
+   "clones": 16,
+   "k_points": "",
+   "clone_sampler": "euler_ancestral",
+   "server": "http://127.0.0.1:8188",
+   "state_dir": "E:\\Applications\\cos-probe\\capture_code_r4\\tier_controls_r18\\m3_comfy_state",
+   "max_attempts": 4,
+   "timeout": 0,
+   "dry_run": false,
+   "write_first": ""
+  }
+ }
+}

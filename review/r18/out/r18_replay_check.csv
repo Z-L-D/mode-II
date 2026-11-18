@@ -1,0 +1,9 @@
+a,b,sub,shared,identical,median_max_rel,max_rel
+ZIT2,ZITSV,attn,58,58,0.0,0.0
+ZIT2,ZITSV,mlp,58,58,0.0,0.0
+S_PIXART,PIXART,attn,60,60,0.0,0.0
+S_PIXART,PIXART,mlp,60,60,0.0,0.0
+S_COSMOS2B,COSMOS2B,attn,60,60,0.0,0.0
+S_COSMOS2B,COSMOS2B,mlp,60,60,0.0,0.0
+S_SD3M,SD3M,attn,60,60,0.0,0.0
+S_SD35M,SD35M,attn,60,60,0.0,0.0

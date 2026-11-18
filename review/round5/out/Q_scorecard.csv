@@ -1,0 +1,23 @@
+id,prediction,verdict,result
+Q1a,New CFG1 run reproduces Round 3 CFG1,CONFIRMED,median |log| 0.0e+00; 100% of cells identical to 6 decimals (60 pairs)
+Q1b,"Round 3 ZIB ""branch-mean"" = mean of the two branches",CONFIRMED,"attn 2.2e-16, mlp 2.2e-16 (19 pairs); ZIB CFG1 retest 0"
+Q1c,"Pooling raises g on one trajectory, gap unchanged",CONFIRMED,"median +0.0403 (band 0.04-0.10, met by 0.0003); 100% of cells > 0; gap 1.5e-05"
+Q1d,Same direction at 768 and 512,CONFIRMED,768 +0.050; 512 +0.088
+Q1e,Concavity bound sqrt(g_pool) >= mean sqrt(g_branch),CONFIRMED,holds in 100.0% of cells; median slack 0.022 log
+Q1f,Pooled excess tracks 1 - prompt_influence,CONFIRMED,rho 0.83
+Q2a,ZIB CFG4 cond inherits ZIT geometry,CONFIRMED,0.992 attn / 0.992 mlp
+Q2b,cond closer to ZIT than uncond,CONFIRMED,uncond 0.981 / 0.989
+Q2c,ZIB CFG1 vs CFG4 cond geometry,CONFIRMED,0.991 / 0.993
+Q3a,More prompts stabilise sigma50,CONFIRMED,5-95% width 60 prompts 0.063 vs 30 prompts 0.111; medians 0.733 vs 0.524
+Q3b,Guidance makes fate onset earlier (cond),CONFIRMED,median paired diff +0.030; positive in 66.5% of partitions
+Q3c,Archive early onset holds on the 30 core prompts (2 runs),REFUTED,sigma50 undefined (R2 never > 0.5) in 93.5% of partitions; median of the rest 0.084
+Q4a,Walk-like CFG1 persistence with unique seeds,CONFIRMED,VR(4) 1.95
+Q4b,cond > branch-mean > uncond with unique seeds,REFUTED,"cond 0.86, BM 0.64, uncond 0.66"
+Q4c,VR(10)@100 within 25% of VR(4)@40,REFUTED,"ratios 1.89 (CFG1), 2.22 (CFG4.5 cond)"
+Q5a,CFG1 40->100 shift within seed noise,REFUTED,observed 0.0326 vs null p95 0.0266 (p = 0.023); 100-step g higher in 88% of cells
+Q5b,CFG4.5 cond 40->100 shift within seed noise,CONFIRMED,observed 0.0068 vs null p95 0.0216
+Q6a,Low-g lobe of +-+- below 2 bootstrap SE in every arm,REFUTED,CFG1_1024_cond z=2.13; CFG45_1024_cond z=1.96; CFG45_1024_uncond z=0.05; CFG45_1024_BM z=1.82; CFG45_768_cond z=0.43; CFG45_768_BM z=0.15
+Q6b,R3 pooled 512 on the 29 shared prompts is +-,REFUTED,+-+- (0.01677+-;0.02417-+;0.07797+-)
+Q7a,"Contraction < 0.7 in last 3 quarters (pyramid, unique seeds)",REFUTED,40 steps 0.725; 100 steps 1.351
+Q7b,No contraction in the first quarter (>= 0.85),REFUTED,40 steps 0.455; 100 steps 0.592
+Q8,"Plateau onset in [0.75, 0.90] on every new arm",REFUTED,S10_1024 0.841; S45_1024_cond 0.810; S45_1024_uncond 0.810; S45_768_cond 0.759; S45_512_cond 0.721; P10_40 0.894; P10_100 0.893; P45_40_cond 0.841; P45_100_cond 0.867; Z10_attn 0.805; Z40_cond_attn 0.805; Z10_mlp 0.779; Z40_cond_mlp 0.779

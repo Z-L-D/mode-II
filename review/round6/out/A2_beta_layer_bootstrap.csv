@@ -1,0 +1,15 @@
+set,submodule,gens,observed_n,observed_pattern,boot,frac_1,frac_3,frac_5plus,frac_3_plus_minus_plus,modal_n
+ZIT archive,as loaded (pooled),486,1,+-,100,0.83,0.17,0.0,0.17,1
+ZIT archive,attn,486,1,+-,100,0.95,0.05,0.0,0.05,1
+ZIT archive,mlp,486,3,+- -+ +-,100,0.0,0.9,0.1,0.9,3
+ZIB archive (pooled CFG4),as loaded (pooled),482,1,+-,100,0.99,0.01,0.0,0.01,1
+ZIB archive (pooled CFG4),attn,482,3,+- -+ +-,100,0.32,0.67,0.01,0.67,3
+ZIB archive (pooled CFG4),mlp,482,3,+- -+ +-,100,0.16,0.84,0.0,0.84,3
+MOCHI archive CFG4.5,as loaded (pooled),430,1,+-,100,0.81,0.19,0.0,0.19,1
+MOCHI archive CFG1,as loaded (pooled),60,5,+- -+ +- -+ +-,100,0.27,0.55,0.18,0.55,3
+SD35M archive,as loaded (pooled),481,3,+- -+ +-,100,0.0,1.0,0.0,1.0,3
+SD35L archive,as loaded (pooled),486,3,+- -+ +-,100,0.0,1.0,0.0,1.0,3
+ZIB R4 CFG4 cond branch,attn,20,1,+-,100,0.28,0.37,0.3,0.37,3
+ZIB R4 CFG4 cond branch,mlp,20,1,+-,100,0.96,0.04,0.0,0.04,1
+ZIB R4 CFG1 cond,attn,20,1,+-,100,0.56,0.38,0.06,0.38,1
+ZIB R4 CFG1 cond,mlp,20,3,+- -+ +-,100,0.18,0.74,0.07,0.74,3

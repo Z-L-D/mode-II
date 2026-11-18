@@ -1,0 +1,81 @@
+channel,step,sigma,observed,obs_3cross,surr_frac_3cross,surr_frac_obs,n_draws
+ZIB archive (pooled CFG4) mlp,0.0,1.0,+- -+ +- -+ +-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,1.0,0.9863,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,2.0,0.9718,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,3.0,0.9565,+- -+ +- -+ +-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,4.0,0.9403,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,5.0,0.9231,,False,0.0,0.0,20
+ZIB archive (pooled CFG4) mlp,6.0,0.9048,+-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,7.0,0.8852,+-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,8.0,0.8644,+-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,9.0,0.8421,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,10.0,0.8182,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,11.0,0.7925,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,12.0,0.7647,+- -+,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,13.0,0.7347,+- -+,False,0.7,0.0,20
+ZIB archive (pooled CFG4) mlp,14.0,0.7021,+- -+,False,0.15,0.0,20
+ZIB archive (pooled CFG4) mlp,15.0,0.6667,+- -+ +- -+,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,16.0,0.6279,+-,False,1.0,0.0,20
+ZIB archive (pooled CFG4) mlp,17.0,0.5854,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,18.0,0.5385,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,19.0,0.4865,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,20.0,0.4286,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,21.0,0.3636,+- -+ +-,True,1.0,1.0,20
+ZIB archive (pooled CFG4) mlp,22.0,0.2903,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) mlp,23.0,0.2069,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) mlp,24.0,0.1111,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,0.0,1.0,+- -+ +-,True,0.3,0.3,20
+ZIB archive (pooled CFG4) attn,1.0,0.9863,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,2.0,0.9718,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,3.0,0.9565,+- -+ +-,True,0.05,0.05,20
+ZIB archive (pooled CFG4) attn,4.0,0.9403,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,5.0,0.9231,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,6.0,0.9048,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,7.0,0.8852,+-,False,0.2,0.8,20
+ZIB archive (pooled CFG4) attn,8.0,0.8644,+-,False,0.85,0.15,20
+ZIB archive (pooled CFG4) attn,9.0,0.8421,+-,False,0.95,0.05,20
+ZIB archive (pooled CFG4) attn,10.0,0.8182,+- -+ +-,True,0.3,0.3,20
+ZIB archive (pooled CFG4) attn,11.0,0.7925,+-,False,0.25,0.75,20
+ZIB archive (pooled CFG4) attn,12.0,0.7647,+- -+ +-,True,0.05,0.05,20
+ZIB archive (pooled CFG4) attn,13.0,0.7347,+- -+ +- -+ +-,False,0.1,0.0,20
+ZIB archive (pooled CFG4) attn,14.0,0.7021,+- -+ +- -+ +-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,15.0,0.6667,+- -+ +- -+ +-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,16.0,0.6279,+- -+ +- -+ +-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,17.0,0.5854,+- -+ +- -+ +-,False,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,18.0,0.5385,+- -+ +-,True,0.0,0.0,20
+ZIB archive (pooled CFG4) attn,19.0,0.4865,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,20.0,0.4286,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,21.0,0.3636,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,22.0,0.2903,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,23.0,0.2069,+-,False,0.0,1.0,20
+ZIB archive (pooled CFG4) attn,24.0,0.1111,+-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,0.0,1.0,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,1.0,0.9943,+- -+ +- -+ +-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,2.0,0.9884,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,3.0,0.9818,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,4.0,0.9751,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,5.0,0.9679,+- -+ +- -+ +-,False,1.0,0.0,20
+MOCHI archive CFG4.5 attn,6.0,0.96,+- -+ +- -+ +-,False,1.0,0.0,20
+MOCHI archive CFG4.5 attn,7.0,0.9518,+- -+ +- -+ +-,False,1.0,0.0,20
+MOCHI archive CFG4.5 attn,8.0,0.943,+- -+ +- -+ +-,False,1.0,0.0,20
+MOCHI archive CFG4.5 attn,9.0,0.9333,+- -+ +- -+ +-,False,1.0,0.0,20
+MOCHI archive CFG4.5 attn,10.0,0.9232,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,11.0,0.9122,+- -+ +- -+ +-,False,1.0,0.0,20
+MOCHI archive CFG4.5 attn,12.0,0.9,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,13.0,0.8871,+- -+ +-,True,1.0,1.0,20
+MOCHI archive CFG4.5 attn,14.0,0.873,+- -+ +-,True,0.8,0.8,20
+MOCHI archive CFG4.5 attn,15.0,0.8571,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,16.0,0.8402,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,17.0,0.8215,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,18.0,0.8,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,19.0,0.7767,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,20.0,0.7506,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,21.0,0.72,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,22.0,0.6861,+-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,23.0,0.647,+-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,24.0,0.6,+-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,25.0,0.546,+-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,26.0,0.4814,+-,False,0.0,1.0,20
+MOCHI archive CFG4.5 attn,27.0,0.4,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,28.0,0.3011,+- -+ +-,True,0.0,0.0,20
+MOCHI archive CFG4.5 attn,29.0,0.1744,+- -+ +-,True,0.05,0.05,20

@@ -1,0 +1,13 @@
+6db32be71d0477feed4f3aee0e9922f515943d39fb0f9aa48ca20db34e5ca721  PREREG_R18.md
+frozen 2026-11-09T10:32Z
+24a739d43eccb8ea7063b8ca16230414d08820b227d607349d63de38d714fab3  PREREG_R18_ADDENDUM_B.md
+09617d9482a1cfe70742e7d033d82505d6d645f5f0fd8c412a468780dd23045e  capture_code_r4/tier_controls_r18/cka_r18b.py
+136d158521b98ef670c40d73d81e00a262e217384c72781d353b17f7916e6d29  capture_code_r4/nodes.py (R8 act_sketch)
+frozen 2026-11-09T12:42Z (addendum B, before any R18 capture)
+e13c7f59424bff278466b0bb887c748897f39770da6a0d2394ebe87aba445770  PREREG_R18_ADDENDUM_B.md (with amendment B.1)
+5ec00942db41c840782dc23714fbe040271acb9d76279899618e7184c609e9b8  capture_code_r4/tier_controls_r18/m3_comfy.py (sketch_only)
+frozen 2026-11-09T15:55Z (amendment B.1, before any R18 capture)
+219c9d8d8920cfbe04b909ecab5d198a53c0e0e5b740b6bdc913d10195b8c25d  /mnt/project-files/review/r18/PREREG_R18_ADDENDUM_B2.md
+6bb02f1de75e7cd3cc1c4b15084c50a538d459f708df4b0e57e26e41cbd90302  /mnt/project-files/review/r18/cka_fix/cka_r18b_v2.py
+9b07ea11c640692df5a6ec240d911cfb2ac60dbf00b26a6e0054863f0c5989eb  /mnt/project-files/review/r18/PREREG_R18_ADDENDUM_B2.md  (B.2a)
+b7e292d3f8cc4603b99b05709ab03e9c1f80c12676ac89577e085610ec34e727  /mnt/project-files/review/r18/cka_fix/cka_r18b_v2.py  (B.2a)

@@ -1,0 +1,7 @@
+channel,n_steps,observed_3cross_steps,null_mean,null_q95,null_max,n_draws,p
+SD35M archive attn,40,13,7.0,7.0,7,60,0.01639344262295082
+SD35L archive attn,28,24,8.4,11.0,13,60,0.01639344262295082
+MOCHI archive CFG4.5 attn,30,18,14.0,15.0,16,60,0.01639344262295082
+ZIT-25 archive attn,25,8,3.0,5.0,6,60,0.01639344262295082
+ZIT-25 archive mlp,25,9,15.75,17.0,17,60,1.0
+ZIT archive mlp,8,3,2.566666666666667,3.0,4,60,0.5409836065573771

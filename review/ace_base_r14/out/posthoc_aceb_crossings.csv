@@ -1,0 +1,4 @@
+cube,point_n,point_pattern,boot_mode,boot_mode_share,count_dist
+ACEB_mlp,2,-+,2,1.0,{2: 100}
+ACEBU_attn,1,+,1,1.0,{1: 100}
+ACEBU_mlp,2,-+,2,0.84,"{2: 84, 4: 16}"

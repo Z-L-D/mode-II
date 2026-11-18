@@ -1,0 +1,8 @@
+id,test,verdict,detail
+R12-1,Z1 cond <-> Turbo-8 above null p95 (attn and mlp),SUPPORTED,attn 0.707 vs p95 0.292; mlp 0.719 vs p95 0.198
+R12-2,"lineage below same weights: attn <= 0.85, mlp <= 0.87",SUPPORTED,"attn 0.707, mlp 0.719"
+R12-3,lineage above unrelated: attn >= max unrelated + 0.30; mlp >= null p95 + 0.30,SUPPORTED,attn 0.707 vs 0.211+0.30=0.511; mlp 0.719 vs 0.198+0.30=0.498
+R12-4,"Z1 <-> Z3 (identical settings): R12-2 and R12-3 bounds, same-weights ref = Z3<->Turbo-8",SUPPORTED,attn 0.713 (<= 0.990-0.10=0.890; >= 0.212+0.30=0.512); mlp 0.697 (<= 0.992-0.10=0.892; >= p95 0.213+0.30=0.513)
+R12-5,Z2 (Base CFG 1) <-> Turbo-8: R12-1 to R12-3,SUPPORTED,"attn 0.714 (p95 0.273, unrel max 0.211); mlp 0.718 (p95 0.204)"
+R12-6,ACE Base <-> ACE Turbo,NOT SCORED,ACE-Step 1.5 Base not run yet
+R12-7,ACE Base layer-axis crossings,NOT SCORED,ACE-Step 1.5 Base not run yet

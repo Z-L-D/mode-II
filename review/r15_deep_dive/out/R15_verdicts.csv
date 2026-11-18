@@ -1,0 +1,8 @@
+id,verdict,detail
+R15-1,SUPPORTED,"4/5 channels; SD3.5M CFG4.5 attn: step0 0.008 (uncond sd 4.4e-15), step 4 0.682, final 0.998 -> pass; ZIT-25 CFG4 attn: step0 0.079 (uncond sd 2.7e-15), step 3 0.835, final 0.930 -> pass; ZIT-25 CFG4 mlp: step0 -0.000 (uncond sd 4.4e-15), step 3 0.805, final 0.797 -> fail; SD1.5 U-Net attn: step0 0.120 (uncond sd 0.15), step 5 0.848, final 0.998 -> pass; SD1.5 U-Net mlp: step0 0.049 (uncond sd 0.066), step 5 0.673, final 0.988 -> pass"
+R15-2,SUPPORTED,"30 prompts; CFG4.5 <= CFG1 + 0.02 at 100% of steps; mean share CFG4.5 0.257, CFG1 0.533"
+R15-3,REFUTED,attn first 0.063 (p 0.116); attn sigma0.75 0.050 (p 0.141); attn last 0.068 (p 0.086); mlp first -0.037 (p 0.765); mlp sigma0.75 0.020 (p 0.239); mlp last -0.003 (p 0.372)
+R15-4,SUPPORTED,(a) True: min margin 0.438; (b) True: ACE mlp margin 0.186; (c) True: max unrelated margin -0.015
+R15-5,SUPPORTED,attn AUC lineage>unrelated 1.000; attn AUC same>lineage 1.000; mlp AUC lineage>unrelated 1.000
+R15-6,SUPPORTED,attn Q35-Q25 -0.216 (p95 0.301); attn Q35-Q25 (drop last) -0.192 (p95 0.288); attn Q35-G3 -0.225 (p95 0.305); attn Q35-G3 (drop last) -0.207 (p95 0.314); attn Q25-G3 -0.120 (p95 0.371); attn Q25-G3 (drop last) -0.147 (p95 0.350); mlp Q35-Q25 0.656 (p95 0.323); mlp Q35-Q25 (drop last) 0.439 (p95 0.310); mlp Q35-G3 -0.075 (p95 0.275); mlp Q35-G3 (drop last) 0.281 (p95 0.254); mlp Q25-G3 -0.363 (p95 0.338); mlp Q25-G3 (drop last) 0.111 (p95 0.304)
+R15-7,SUPPORTED,"Q25 attn 0.092 (p 0.001, 120 prompts); Q25 mlp 0.120 (p 0.001, 120 prompts); Q35 attn 0.137 (p 0.001, 120 prompts); Q35 mlp 0.125 (p 0.001, 120 prompts)"

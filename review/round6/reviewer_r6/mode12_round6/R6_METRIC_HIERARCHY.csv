@@ -1,0 +1,14 @@
+metric_level,pair,value,definition,provenance
+coarse scalar g,ZIB-Mochi attention,0.9405,historical sigma-aligned population correlation,recovered prior analysis
+coarse scalar g,ZIB-ZIT attention,0.9325,historical sigma-aligned population correlation,recovered prior analysis
+coarse scalar g,ZIT-Mochi attention,0.822,historical sigma-aligned population correlation,recovered prior analysis
+coarse scalar g,ZIB-ZIT MLP,0.9715,historical sigma-aligned population correlation,recovered prior analysis
+registered multivariate shape,ZIB-ZIT attention (minimum current range),0.972,equal-sigma/circular-shift audited,v0.17 ledger
+registered multivariate shape,Z-Image-Mochi unrelated (upper calibration),0.83,unrelated shape can remain high,v0.17 ledger
+local tangent,ZIB-ZIT attention,0.943,matched-sigma depth derivative cosine,v0.17 ledger
+local tangent,ZIB-ZIT MLP,0.968,matched-sigma depth derivative cosine,v0.17 ledger
+local tangent,best unrelated upper bound,0.24,all unrelated pairs <= this,v0.17 ledger
+same-theme residual,ZIB-ZIT start,0.611,backbone-subtracted theme residual,publication v0.5
+same-theme residual,ZIB-ZIT mid,0.794,backbone-subtracted theme residual,publication v0.5
+same-theme residual,ZIB-ZIT end,0.649,backbone-subtracted theme residual,publication v0.5
+same-theme residual,SD35M-Mochi early disjoint-prompt,0.119,weak unrelated early residual signal,publication v0.5
