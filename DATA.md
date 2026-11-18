@@ -1,7 +1,7 @@
 # Data: where the telemetry goes
 
 The raw telemetry (about 0.7 GB) and the derived cubes (about 0.3 GB) are too large for GitHub. They are distributed as a
-Hugging Face dataset: *Hugging Face link to be added when the dataset is published*. Every path below is relative to the repository root. SHA-256 values for every file are in
+Hugging Face dataset: [LINK](https://huggingface.co/buckets/modeLIMINAL/Mode_I-II_Data). Every path below is relative to the repository root. SHA-256 values for every file are in
 `telemetry_sha256.txt`.
 
 ## Raw telemetry
